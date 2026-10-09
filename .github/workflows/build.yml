@@ -42,7 +42,16 @@ jobs:
 
       - name: Apply slim patch
         run: |
-          git apply -v .github/slim.patch || echo "[warn] slim.patch 未应用"
+          echo "=== 应用前确认功能键仍在 ==="
+          grep -c "enableAppLibrary" src/Hooks/AppLibrary.xm || echo "(已无)"
+          git apply -v .github/slim.patch
+          echo "=== 应用后校验（应全部为 0）==="
+          for k in enableAppLibrary disableDock forceFloatingDock hideLabels hideBadges disableTapGesture showWelcome showBackground dropShadow showPageLabels labelTextColor; do
+            n=$(grep -rn "$k" --include=*.xm --include=*.m --include=*.h --include=*.plist src Prefs 2>/dev/null | wc -l)
+            echo "  $k = $n"
+          done
+          test ! -f Prefs/Resources/PageLabels.plist && echo "  PageLabels.plist 已删除 OK"
+          test ! -f Prefs/Resources/Customization.plist && echo "  Customization.plist 已删除 OK"
 
       - name: Auto-fix all known build issues
         run: |
@@ -103,6 +112,14 @@ jobs:
                                 'include $(THEOS)/makefiles/common.mk\n\nGO_EASY_ON_ME = 1')
               return s
           edit('Makefile', fix_mk)
+
+          # ---------- 5b. ARIHeaderCell.m: PACKAGE_VERSION / PACKAGE_TYPE 未定义 ----------
+          def fix_header_cell(s):
+              target = '@"Version " PACKAGE_VERSION " (" PACKAGE_TYPE ")"'
+              if target in s:
+                  return s.replace(target, '@"Version 1.4.1 (rootless)"')
+              return s
+          edit('Prefs/src/ARIHeaderCell.m', fix_header_cell)
 
           # ---------- 6. Prefs Makefile: 修签名标志 + 允许动态查找符号 ----------
           def fix_prefs_mk(s):
