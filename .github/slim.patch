@@ -99,7 +99,7 @@ index f8dc45c..0000000
 -</plist>
 \ No newline at end of file
 diff --git a/Prefs/Resources/Editor.plist b/Prefs/Resources/Editor.plist
-index 47884da..e17183b 100644
+index 47884da..e888d37 100644
 --- a/Prefs/Resources/Editor.plist
 +++ b/Prefs/Resources/Editor.plist
 @@ -8,7 +8,7 @@
@@ -151,7 +151,7 @@ index 47884da..e17183b 100644
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -67,24 +66,11 @@ Disable Tap Gesture: Disables the triple tap gesture that can be used to invoke
+@@ -67,26 +66,13 @@ Disable Tap Gesture: Disables the triple tap gesture that can be used to invoke
  			<key>key</key>
  			<string>hide3DTouchActions</string>
  			<key>label</key>
@@ -177,9 +177,13 @@ index 47884da..e17183b 100644
 +		
      </array>
  	<key>title</key>
- 	<string>Editor</string>
+-	<string>Editor</string>
++	<string>编辑选项</string>
+ </dict>
+ </plist>
+\ No newline at end of file
 diff --git a/Prefs/Resources/General.plist b/Prefs/Resources/General.plist
-index 84a44a2..753397b 100644
+index 84a44a2..0d909b6 100644
 --- a/Prefs/Resources/General.plist
 +++ b/Prefs/Resources/General.plist
 @@ -8,9 +8,9 @@
@@ -458,7 +462,7 @@ index 84a44a2..753397b 100644
  	</array>
  	<key>title</key>
 -	<string>General</string>
-+	<string>常规</string>
++	<string>常规配置</string>
  </dict>
  </plist>
 \ No newline at end of file
@@ -582,7 +586,7 @@ index 1d0b076..0000000
 -</plist>
 \ No newline at end of file
 diff --git a/Prefs/Resources/Root.plist b/Prefs/Resources/Root.plist
-index f15561d..1c7058e 100644
+index f15561d..e5fc334 100644
 --- a/Prefs/Resources/Root.plist
 +++ b/Prefs/Resources/Root.plist
 @@ -8,7 +8,7 @@
@@ -695,8 +699,7 @@ index f15561d..1c7058e 100644
 -			<string>Editor</string>
 +			<string>编辑选项</string>
  			<key>child</key>
--			<string>Editor</string>
-+			<string>编辑选项</string>
+ 			<string>Editor</string>
  			<key>icon</key>
  			<string>sliders</string>
  		</dict>
@@ -1242,7 +1245,7 @@ index 00e602e..573cf48 100644
          NSString *const zenithPath = @THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/Zenith.dylib";
          if([[NSFileManager defaultManager] fileExistsAtPath:zenithPath]) {
 diff --git a/src/Hooks/IconView.xm b/src/Hooks/IconView.xm
-index 6597fba..91c84ba 100644
+index 6597fba..cbc72aa 100644
 --- a/src/Hooks/IconView.xm
 +++ b/src/Hooks/IconView.xm
 @@ -45,23 +45,6 @@
@@ -1286,7 +1289,7 @@ index 6597fba..91c84ba 100644
  	}
  }
  
-@@ -137,57 +117,10 @@
+@@ -137,55 +117,33 @@
  	%orig;
  	if(self.superview && [self.superview isKindOfClass:objc_getClass("SBIconListView")]) {
  		self._atriaLastIconListView = (SBIconListView *)self.superview;
@@ -1302,7 +1305,7 @@ index 6597fba..91c84ba 100644
 -	%orig(editing, animated);
 -}
 -
--%new
+ %new
 -- (void)_atriaGenerateDropShadow:(CGRect)rect {
 -	if(self.layer.shadowRadius > 0.0F) {
 -		CGFloat width = rect.size.width;
@@ -1312,9 +1315,23 @@ index 6597fba..91c84ba 100644
 -			(width - sqrt(width * width * scale)) / 2.0F, 
 -			(height - sqrt(height * height * scale)) / 2.0F);
 -		self.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:scaledRect cornerRadius:[self iconImageCornerRadius]].CGPath;
--	}
++// 决定长按菜单里 Atria 图标的着色。
++// 我们用的是 PNG data 图标(SBSApplicationShortcutCustomImageIcon)，颜色在生成时就固定了，
++// 不会像系统模板图标那样跟随 overrideUserInterfaceStyle 重新着色。
++// 因此对「文字深浅切换」这类强制菜单外观的插件，直接读它的偏好来决定颜色。
++- (UIColor *)_atriaMenuIconTintColor {
++	NSUserDefaults *glfDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.yechen.globalfont"];
++	[glfDefaults synchronize];
++
++	id enabledValue = [glfDefaults objectForKey:@"enabled"];
++	if([enabledValue respondsToSelector:@selector(boolValue)] && [enabledValue boolValue]) {
++		// 0 = 默认, 1 = 浅色, 2 = 深色
++		NSInteger menuMode = [[glfDefaults objectForKey:@"menuAppearanceMode"] integerValue];
++		if(menuMode == 2) return [UIColor whiteColor];
++		if(menuMode == 1) return [UIColor blackColor];
+ 	}
 -}
--
+ 
 -%new
 -- (void)_atriaSetupDropShadow:(BOOL)isEditing {
 -	BOOL enabled = [[ARITweakManager sharedInstance] boolValueForKey:@"dropShadow"];
@@ -1333,36 +1350,30 @@ index 6597fba..91c84ba 100644
 -	} else {
 -		self.layer.shadowOpacity = 0.0F;
 -		self.layer.shadowRadius = 0.0F;
--	}
++	// 未使用该类插件或设为「默认」：跟随系统外观
++	UIUserInterfaceStyle style = self.traitCollection.userInterfaceStyle;
++	if(style == UIUserInterfaceStyleUnspecified) {
++		style = [UITraitCollection currentTraitCollection].userInterfaceStyle;
+ 	}
 -}
 -
 -- (void)setBounds:(CGRect)arg1 {
 -	%orig(arg1);
 -	[self _atriaGenerateDropShadow:arg1];
--}
--
++	return (style == UIUserInterfaceStyleDark) ? [UIColor whiteColor] : [UIColor blackColor];
+ }
+ 
  %new
- - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type {
- 	SBSApplicationShortcutItem *item = [[objc_getClass("SBSApplicationShortcutItem") alloc] init];
-@@ -197,8 +130,16 @@
- 	// SFSymbols
+@@ -198,7 +156,7 @@
  	UIImage *image = [UIImage systemImageNamed:@"gear"];
  
-+	// 动态色(如 labelColor)在转成 PNG 时只会按当前 trait 解析一次，
-+	// 导致深色模式下仍生成黑色图标。这里显式按深浅模式取具体颜色。
-+	UIUserInterfaceStyle style = self.traitCollection.userInterfaceStyle;
-+	if(style == UIUserInterfaceStyleUnspecified) {
-+		style = [UITraitCollection currentTraitCollection].userInterfaceStyle;
-+	}
-+	UIColor *tintColor = (style == UIUserInterfaceStyleDark) ? [UIColor whiteColor] : [UIColor blackColor];
-+
  	// Tint our image
 -	image = [image imageWithTintColor:[UIColor labelColor]];
-+	image = [image imageWithTintColor:tintColor];
++	image = [image imageWithTintColor:[self _atriaMenuIconTintColor]];
  
  	// Get data respresentation of the image
  	NSData *iconData = UIImagePNGRepresentation(image);
-@@ -214,19 +155,16 @@
+@@ -214,19 +172,16 @@
  	// Add shortcut item to activate editor
  	// I found this really cool gist to allow me to do this, tyvm to the author <3
  	// Link: https://gist.github.com/MTACS/8e26c4f430b27d6a1d2a11f0a828f250
@@ -1387,7 +1398,7 @@ index 6597fba..91c84ba 100644
  	}
  
  	return items;
-@@ -244,48 +182,6 @@
+@@ -244,48 +199,6 @@
  
  %end
  
