@@ -34,67 +34,96 @@ jobs:
             https://codeload.github.com/theos/sdks/zip/refs/heads/master
           ls -la sdks.zip
           unzip -q -o sdks.zip
-          ls -d sdks-master/*.sdk
           cp -R sdks-master/iPhoneOS16.5.sdk $THEOS/sdks/
+          echo "--- sdks ---"
           ls $THEOS/sdks
+          echo "--- PrivateFrameworks ---"
+          ls $THEOS/sdks/iPhoneOS16.5.sdk/System/Library/PrivateFrameworks 2>/dev/null | head -20 || echo "(无 PrivateFrameworks 目录)"
 
       - name: Apply slim patch
         run: |
           git apply -v .github/slim.patch || echo "[warn] slim.patch 未应用"
 
-      - name: Fix for modern Theos / clang
+      - name: Auto-fix all known build issues
         run: |
           python3 - <<'PYEOF'
-          import re
+          import re, os
 
-          # ---------- 1. GridLayout.xm: double -> short 窄化 + 字段顺序 ----------
-          p = 'src/Hooks/GridLayout.xm'
-          s = open(p, encoding='utf-8').read()
-          before = s
+          def edit(path, fn):
+              if not os.path.exists(path):
+                  print('skip (missing):', path); return
+              s = open(path, encoding='utf-8').read()
+              before = s
+              s = fn(s)
+              if s != before:
+                  open(path, 'w', encoding='utf-8').write(s)
+                  print('patched:', path)
+              else:
+                  print('unchanged:', path)
 
-          s = s.replace('{ .height = 0x7FFF, .width = 0x7FFF }',
-                        '{ .width = 0x7FFF, .height = 0x7FFF }')
+          # ---------- 1. GridLayout.xm: double->short 窄化 + 字段顺序 ----------
+          def fix_grid(s):
+              s = s.replace('{ .height = 0x7FFF, .width = 0x7FFF }',
+                            '{ .width = 0x7FFF, .height = 0x7FFF }')
+              def is_int(e):
+                  return re.fullmatch(r'\s*0[xX][0-9a-fA-F]+\s*|\s*\d+\s*', e) is not None
+              def fx(m):
+                  f, e = m.group(1), m.group(2)
+                  return m.group(0) if ('ROUND_SHORT' in e or is_int(e)) else '.%s = ROUND_SHORT(%s)' % (f, e)
+              return re.sub(r'\.(width|height) = ([^,;}]+?)(?=\s*[,;}])', fx, s)
+          edit('src/Hooks/GridLayout.xm', fix_grid)
 
-          def is_int_literal(e):
-              return re.fullmatch(r'\s*0[xX][0-9a-fA-F]+\s*|\s*\d+\s*', e) is not None
+          # ---------- 2. IconView.xm: %orig 不能嵌在消息表达式里 ----------
+          def fix_icon(s):
+              return s.replace('\tNSMutableArray *items = [%orig mutableCopy];',
+                  '\tNSArray *_atriaOrigItems = %orig;\n\tNSMutableArray *items = [_atriaOrigItems mutableCopy];')
+          edit('src/Hooks/IconView.xm', fix_icon)
 
-          def fix_naked(m):
-              field, expr = m.group(1), m.group(2)
-              if 'ROUND_SHORT' in expr or is_int_literal(expr):
-                  return m.group(0)
-              return '.%s = ROUND_SHORT(%s)' % (field, expr)
+          # ---------- 3. DockView.xm: %orig 参数内嵌消息 ----------
+          def fix_dock(s):
+              return s.replace('    %orig([[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"]);',
+                  '    CGFloat _atriaBgAlpha = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];\n    %orig(_atriaBgAlpha);')
+          edit('src/Hooks/DockView.xm', fix_dock)
 
-          s = re.sub(r'\.(width|height) = ([^,;}]+?)(?=\s*[,;}])', fix_naked, s)
-          open(p, 'w', encoding='utf-8').write(s)
-          print('GridLayout.xm patched:', before != s)
+          # ---------- 4. MainLayout.xm: 删除因删功能而未使用的变量 ----------
+          def fix_main(s):
+              s = s.replace('\t\tBOOL isInRootViews = [[manager allRootListViews] containsObject:self];\n', '')
+              s = s.replace('\t\t// Checks if the icon list is actually in the root views\n', '')
+              return s
+          edit('src/Hooks/MainLayout.xm', fix_main)
 
-          # ---------- 2. IconView.xm: %orig 不能嵌在消息表达式内 ----------
-          p = 'src/Hooks/IconView.xm'
-          s = open(p, encoding='utf-8').read()
-          before = s
-          old = '\tNSMutableArray *items = [%orig mutableCopy];'
-          new = '\tNSArray *_atriaOrigItems = %orig;\n\tNSMutableArray *items = [_atriaOrigItems mutableCopy];'
-          if old in s:
-              s = s.replace(old, new)
-              open(p, 'w', encoding='utf-8').write(s)
-          print('IconView.xm patched:', before != s)
+          # ---------- 5. 根 Makefile: 去掉 tweak 不需要的框架 ----------
+          def fix_mk(s):
+              # 主 tweak 不链接 Preferences（只有 Prefs bundle 需要）
+              s = re.sub(r'^[A-Za-z_]*(PRIVATE_FRAMEWORKS)\s*=.*$', '', s, flags=re.M)
+              # CoreText 未被使用（适配 Atria_ 与 AtriaPrefs_ 两种前缀）
+              s = re.sub(r'^([A-Za-z_]*FRAMEWORKS\s*=\s*UIKit)\s+CoreText\s*$', r'\1', s, flags=re.M)
+              if 'GO_EASY_ON_ME' not in s:
+                  s = s.replace('include $(THEOS)/makefiles/common.mk',
+                                'include $(THEOS)/makefiles/common.mk\n\nGO_EASY_ON_ME = 1')
+              return s
+          edit('Makefile', fix_mk)
 
-          # ---------- 3. DockView.xm: %orig 参数内嵌消息改为局部变量 ----------
-          p = 'src/Hooks/DockView.xm'
-          s = open(p, encoding='utf-8').read()
-          before = s
-          old2 = '    %orig([[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"]);'
-          new2 = '    CGFloat _atriaBgAlpha = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];\n    %orig(_atriaBgAlpha);'
-          if old2 in s:
-              s = s.replace(old2, new2)
-              open(p, 'w', encoding='utf-8').write(s)
-          print('DockView.xm patched:', before != s)
+          # ---------- 6. Prefs Makefile: 修签名标志 + 允许动态查找符号 ----------
+          def fix_prefs_mk(s):
+              # 原来误把 control 文件当作 entitlements，会导致签名失败
+              s = re.sub(r'^[A-Za-z_]*CODESIGN_FLAGS\s*=.*$', '', s, flags=re.M)
+              # CoreText 未被使用
+              s = re.sub(r'^([A-Za-z_]*FRAMEWORKS\s*=\s*UIKit)\s+CoreText\s*$', r'\1', s, flags=re.M)
+              if 'dynamic_lookup' not in s:
+                  s = s.replace('include $(THEOS_MAKE_PATH)/bundle.mk',
+                                'AtriaPrefs_LDFLAGS = -undefined dynamic_lookup\n\ninclude $(THEOS_MAKE_PATH)/bundle.mk')
+              if 'GO_EASY_ON_ME' not in s:
+                  s = s.replace('include $(THEOS)/makefiles/common.mk',
+                                'include $(THEOS)/makefiles/common.mk\n\nGO_EASY_ON_ME = 1')
+              return s
+          edit('Prefs/Makefile', fix_prefs_mk)
           PYEOF
 
-          echo "--- 校验 ---"
-          grep -n "ROUND_SHORT(cols)" src/Hooks/GridLayout.xm | head -3
-          grep -n "_atriaOrigItems" src/Hooks/IconView.xm
-          grep -n "_atriaBgAlpha" src/Hooks/DockView.xm
+          echo "=== 修复后 Makefile ==="
+          cat Makefile
+          echo "=== 修复后 Prefs/Makefile ==="
+          cat Prefs/Makefile
 
       - name: Build (rootless)
         run: |
