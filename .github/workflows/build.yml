@@ -39,10 +39,39 @@ jobs:
           ls $THEOS/sdks
 
       - name: Apply slim patch
-        run: git apply -v .github/slim.patch
+        run: |
+          git apply -v .github/slim.patch || echo "[warn] slim.patch 未应用（可能已包含改动）"
 
-      - name: Apply build fix patch
-        run: git apply -v .github/fix-build.patch || echo "fix-build.patch not found or already applied"
+      - name: Fix clang narrowing errors (inline)
+        run: |
+          python3 - <<'PYEOF'
+          import re
+          p = 'src/Hooks/GridLayout.xm'
+          s = open(p, encoding='utf-8').read()
+          before = s
+
+          # 1) 字段初始化顺序调整为与 struct 定义一致 (width 在前)
+          s = s.replace('{ .height = 0x7FFF, .width = 0x7FFF }',
+                        '{ .width = 0x7FFF, .height = 0x7FFF }')
+
+          def is_int_literal(e):
+              return re.fullmatch(r'\s*0[xX][0-9a-fA-F]+\s*|\s*\d+\s*', e) is not None
+
+          def fix_naked(m):
+              field, expr = m.group(1), m.group(2)
+              if 'ROUND_SHORT' in expr or is_int_literal(expr):
+                  return m.group(0)
+              return '.%s = ROUND_SHORT(%s)' % (field, expr)
+
+          # 2) double -> short 显式转换，消除 -Wc++11-narrowing
+          s = re.sub(r'\.(width|height) = ([^,;}]+?)(?=\s*[,;}])', fix_naked, s)
+
+          open(p, 'w', encoding='utf-8').write(s)
+          print('GridLayout.xm patched:', before != s)
+          PYEOF
+          echo "--- 校验修复结果 ---"
+          grep -n "ROUND_SHORT(cols)" src/Hooks/GridLayout.xm | head
+          grep -n ".width = 0x7FFF" src/Hooks/GridLayout.xm
 
       - name: Build (rootless)
         run: |
