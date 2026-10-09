@@ -1,0 +1,1743 @@
+diff --git a/Prefs/Resources/Customization.plist b/Prefs/Resources/Customization.plist
+deleted file mode 100644
+index f8dc45c..0000000
+--- a/Prefs/Resources/Customization.plist
++++ /dev/null
+@@ -1,93 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-<plist version="1.0">
+-<dict>
+-	<key>items</key>
+-	<array>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Drop Shadow</string>
+-			<key>footerText</key>
+-			<string>Adds a shadow effect behind each icon</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>dropShadow</string>
+-			<key>label</key>
+-			<string>Enable Drop Shadow</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Background Blur</string>
+-			<key>footerText</key>
+-			<string>Shows a configurable blur behind your icons</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>showBackground</string>
+-			<key>label</key>
+-			<string>Show Background Blur</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Blur Tint</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>blurTintEnabled</string>
+-			<key>label</key>
+-			<string>Enable Tint</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSLinkCell</string>
+-			<key>cellClass</key>
+-			<string>HBColorPickerTableCell</string>
+-			<key>label</key>
+-			<string>Blur Tint</string>
+-			<key>showAlphaSlider</key>
+-			<false/>
+-			<key>default</key>
+-			<string></string>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>blurTintColor</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-	</array>
+-	<key>title</key>
+-	<string>More Customization</string>
+-</dict>
+-</plist>
+\ No newline at end of file
+diff --git a/Prefs/Resources/Editor.plist b/Prefs/Resources/Editor.plist
+index 47884da..b0c2ea1 100644
+--- a/Prefs/Resources/Editor.plist
++++ b/Prefs/Resources/Editor.plist
+@@ -71,20 +71,7 @@ Disable Tap Gesture: Disables the triple tap gesture that can be used to invoke
+ 			<key>PostNotification</key>
+ 			<string>me.lau.Atria/ReloadPrefs</string>
+ 		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>disableTapGesture</string>
+-			<key>label</key>
+-			<string>Disable Tap Gesture</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
++		
+     </array>
+ 	<key>title</key>
+ 	<string>Editor</string>
+diff --git a/Prefs/Resources/General.plist b/Prefs/Resources/General.plist
+index 84a44a2..d7db722 100644
+--- a/Prefs/Resources/General.plist
++++ b/Prefs/Resources/General.plist
+@@ -26,18 +26,7 @@
+ 			<key>PostNotification</key>
+ 			<string>me.lau.Atria/ReloadPrefs</string>
+ 		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>disableDock</string>
+-			<key>label</key>
+-			<string>Disable Dock</string>
+-		</dict>
++		
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSSwitchCell</string>
+@@ -52,216 +41,23 @@
+ 			<key>PostNotification</key>
+ 			<string>me.lau.Atria/ReloadPrefs</string>
+ 		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Homescreen Gestures</string>
+-			<key>footerText</key>
+-			<string>Disables homescreen activation gestures for certain features. Disabling app library gesture will not work if floating dock is enabled. Requires a respring to apply.</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>disableTodayGesture</string>
+-			<key>label</key>
+-			<string>Disable Today View</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>disableAppLibraryGesture</string>
+-			<key>label</key>
+-			<string>Disable App Library</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>iPad/Floating Dock</string>
+-			<key>footerText</key>
+-			<string>Requires a respring to apply.</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>forceFloatingDock</string>
+-			<key>label</key>
+-			<string>Force Floating Dock</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>disableFloatingDockGestures</string>
+-			<key>label</key>
+-			<string>Disable Dock Gestures</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>floatingDockAppLibrary</string>
+-			<key>label</key>
+-			<string>Show App Library</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>floatingDockRecents</string>
+-			<key>label</key>
+-			<string>Show Recents</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSegmentCell</string>
+-			<key>default</key>
+-			<integer>3</integer>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>maxFloatingDockRecents</string>
+-            <key>validTitles</key>
+-			<array>
+-				<string>1 App</string>
+-				<string>2 Apps</string>
+-				<string>3 Apps</string>
+-			</array>
+-			<key>validValues</key>
+-			<array>
+-				<integer>1</integer>
+-				<integer>2</integer>
+-				<integer>3</integer>
+-			</array>
+-		</dict>
+-        <dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Hide Stuff</string>
+-			<key>footerText</key>
+-			<string>If these settings do not appear to instantly apply, try scrolling to a different page and back. Some may require a respring to apply.</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>hideBadges</string>
+-			<key>label</key>
+-			<string>Hide Icon Badges</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>hidePageDots</string>
+-			<key>label</key>
+-			<string>Hide Page Dots</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>hideFolderIconBG</string>
+-			<key>label</key>
+-			<string>Hide Folder Icon Blur</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Icon Labels</string>
+-			<key>footerText</key>
+-			<string>If these settings do not appear to instantly apply, try scrolling to a different page and back</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>hideLabels</string>
+-			<key>label</key>
+-			<string>Hide on Homescreen</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>hideLabelsAppLibrary</string>
+-			<key>label</key>
+-			<string>Hide in App Library</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>hideLabelsFolders</string>
+-			<key>label</key>
+-			<string>Hide In Folders</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
++		
++		
++		
++		
++		
++		
++		
++		
++		
++        
++		
++		
++		
++		
++		
++		
++		
+ 	</array>
+ 	<key>title</key>
+ 	<string>General</string>
+diff --git a/Prefs/Resources/PageLabels.plist b/Prefs/Resources/PageLabels.plist
+deleted file mode 100644
+index 1d0b076..0000000
+--- a/Prefs/Resources/PageLabels.plist
++++ /dev/null
+@@ -1,112 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-<plist version="1.0">
+-<dict>
+-	<key>items</key>
+-	<array>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Welcome Label</string>
+-			<key>footerText</key>
+-			<string>Welcome message only applies to the first page. Tap the label to edit the text. Automatically enabled if "Show All Page Labels" is. The following can be used for dynamic text replacement:
+-%GREETING%: Time-based greeting
+-%TEMPERATURE%: Current temperature
+-%LOCATION%: Weather city</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>showWelcome</string>
+-			<key>label</key>
+-			<string>Show Welcome Message</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>showWeatherIcon</string>
+-			<key>label</key>
+-			<string>Show Weather Icon</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-        <dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Page Labels</string>
+-			<key>footerText</key>
+-			<string>Shows a configurable label on homescreen pages. Tap the label to edit the text.</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>showPageLabels</string>
+-			<key>label</key>
+-			<string>Show All Page Labels</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>pageLabelShadow</string>
+-			<key>label</key>
+-			<string>Label Shadow</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
+-			<string>Text Color</string>
+-			<key>footerText</key>
+-			<string>Custom fonts may be used by placing a .ttf file at /Library/PreferenceBundles/AtriaPrefs.bundle/Custom.ttf. If the font fails to load, the default will be used. A respring is required for the font to be reloaded.</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSLinkCell</string>
+-			<key>cellClass</key>
+-			<string>HBColorPickerTableCell</string>
+-			<key>label</key>
+-			<string>Text Color</string>
+-			<key>showAlphaSlider</key>
+-			<false/>
+-			<key>default</key>
+-			<string>#FFFFFF</string>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>labelTextColor</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-	</array>
+-	<key>title</key>
+-	<string>Page Labels</string>
+-</dict>
+-</plist>
+\ No newline at end of file
+diff --git a/Prefs/Resources/Root.plist b/Prefs/Resources/Root.plist
+index f15561d..653628c 100644
+--- a/Prefs/Resources/Root.plist
++++ b/Prefs/Resources/Root.plist
+@@ -74,18 +74,7 @@
+ 			<key>label</key>
+ 			<string>Layout Modifications</string>
+ 		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>enableAppLibrary</string>
+-			<key>label</key>
+-			<string>Force App Library</string>
+-		</dict>
++		
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSSwitchCell</string>
+@@ -128,30 +117,8 @@
+ 			<key>icon</key>
+ 			<string>sliders</string>
+ 		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSLinkCell</string>
+-			<key>detail</key>
+-			<string>ARIChildListController</string>
+-			<key>label</key>
+-			<string>Page Labels</string>
+-			<key>child</key>
+-			<string>PageLabels</string>
+-			<key>icon</key>
+-			<string>text</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSLinkCell</string>
+-			<key>detail</key>
+-			<string>ARIChildListController</string>
+-			<key>label</key>
+-			<string>More Customization</string>
+-			<key>child</key>
+-			<string>Customization</string>
+-			<key>icon</key>
+-			<string>paint</string>
+-		</dict>
++		
++		
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+diff --git a/layout/DEBIAN/control b/layout/DEBIAN/control
+index 2709321..a34401e 100644
+--- a/layout/DEBIAN/control
++++ b/layout/DEBIAN/control
+@@ -1,6 +1,6 @@
+ Architecture: iphoneos-arm
+ Author: ren7995
+-Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader, ws.hbang.alderis (>= 1.1)
++Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader
+ Conflicts: com.irepo.boxy4, me.kritanta.homepluspro
+ Description: A proper homescreen layout editor for iOS 13-16
+ Maintainer: ren7995
+diff --git a/src/Hooks/AppLibrary.xm b/src/Hooks/AppLibrary.xm
+index a1613f8..d1526c7 100644
+--- a/src/Hooks/AppLibrary.xm
++++ b/src/Hooks/AppLibrary.xm
+@@ -10,30 +10,6 @@
+ 
+ static id fixedLayoutForAppLibrary = nil;
+ 
+-%hook SBIconController
+-
+-// Option to disable AppLibrary
+-- (BOOL)isAppLibrarySupported {
+-	static const BOOL enabled = [[ARITweakManager sharedInstance] boolValueForKey:@"enableAppLibrary"];
+-	return enabled;
+-}
+-
+-%end
+-
+-%hook SBRootFolderControllerConfiguration
+-
+-- (UIInterfaceOrientationMask)ignoresOverscrollOnFirstPageOrientations {
+-	static const BOOL disableTodayGesture = [[ARITweakManager sharedInstance] boolValueForKey:@"disableTodayGesture"];
+-	return disableTodayGesture ? 0 : %orig;
+-}
+-
+-- (UIInterfaceOrientationMask)ignoresOverscrollOnLastPageOrientations {
+-	static const BOOL disableGesture = ![[ARITweakManager sharedInstance] boolValueForKey:@"enableAppLibrary"] || [[ARITweakManager sharedInstance] boolValueForKey:@"disableAppLibraryGesture"];
+-	return disableGesture ? 0 : UIInterfaceOrientationMaskAll;
+-}
+-
+-%end
+-
+ %group AppLibraryFix
+ 
+ // Subclass layout provider. I could have just added a property to tag an instance as our fix,
+diff --git a/src/Hooks/DockView.xm b/src/Hooks/DockView.xm
+index b010cc7..1890f44 100644
+--- a/src/Hooks/DockView.xm
++++ b/src/Hooks/DockView.xm
+@@ -20,18 +20,8 @@ static SBFloatingDockController *fdController;
+     [self setBackgroundAlpha:[manager floatValueForKey:@"dock_bg"]];
+ }
+ 
+-- (CGFloat)dockHeight {
+-    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableDock"])
+-        return 0;
+-    return %orig;
+-}
+-
+ // Override background alpha
+ - (void)setBackgroundAlpha:(CGFloat)alpha {
+-    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableDock"]) {
+-        %orig(0);
+-        return;
+-    }
+     %orig([[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"]);
+ }
+ 
+@@ -63,69 +53,11 @@ static SBFloatingDockController *fdController;
+     return orig;
+ }
+ 
+-- (BOOL)isGesturePossible {
+-    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableFloatingDockGestures"]) return NO;
+-    return %orig;
+-}
+-
+-// handlePresentFloatingDockGesture:
+-
+ %new
+ + (SBFloatingDockController *)_atriaSharedInstance {
+     return fdController;
+ }
+ 
+-+ (BOOL)isFloatingDockSupported {
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    return ([manager boolValueForKey:@"forceFloatingDock"] && ![manager boolValueForKey:@"disableDock"]) || %orig;
+-}
+-
+-%end
+-
+-
+-%hook SBFloatingDockDefaults
+-
+-- (BOOL)recentsEnabled {
+-    return [[ARITweakManager sharedInstance] boolValueForKey:@"floatingDockRecents"];
+-}
+-
+-- (BOOL)appLibraryEnabled {
+-    return [[ARITweakManager sharedInstance] boolValueForKey:@"floatingDockAppLibrary"];
+-}
+-
+-%end
+-
+-%hook SBFloatingDockSuggestionsModel
+-
+-
+-// iOS 13-15
+-- (id)initWithMaximumNumberOfSuggestions:(unsigned long long)arg1
+-                          iconController:(id)arg2
+-                       recentsController:(id)arg3
+-                        recentsDataStore:(id)arg4
+-                         recentsDefaults:(id)arg5
+-                    floatingDockDefaults:(id)arg6
+-                    appSuggestionManager:(id)arg7
+-                         analyticsClient:(id)arg8
+-                   applicationController:(id)arg9 {
+-    NSUInteger maxRecents = [[ARITweakManager sharedInstance] intValueForKey:@"maxFloatingDockRecents"];
+-    return %orig(maxRecents, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+-}
+-
+-// iOS 16
+-- (id)initWithMaximumNumberOfSuggestions:(unsigned long long)arg1 
+-                          iconController:(id)arg2 
+-                       recentsController:(id)arg3 
+-                        recentsDataStore:(id)arg4 
+-                         recentsDefaults:(id)arg5 
+-                    floatingDockDefaults:(id)arg6 
+-                    appSuggestionManager:(id)arg7 
+-                   applicationController:(id)arg8 {
+-    NSUInteger maxRecents = [[ARITweakManager sharedInstance] intValueForKey:@"maxFloatingDockRecents"];
+-    return %orig(maxRecents, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+-}
+-
+-
+ %end
+ 
+ 
+diff --git a/src/Hooks/Helper.xm b/src/Hooks/Helper.xm
+index 00e602e..42007d2 100644
+--- a/src/Hooks/Helper.xm
++++ b/src/Hooks/Helper.xm
+@@ -7,7 +7,6 @@
+ #import "../Manager/ARITweakManager.h"
+ #import "../Manager/ARIEditManager.h"
+ #import "../UI/Splash/ARISplashViewController.h"
+-#import "../UI/Label/ARILabelView.h"
+ 
+ #include <dlfcn.h>
+ 
+@@ -56,16 +55,6 @@
+ %end
+ 
+ 
+-%hook SBIconScrollView
+-
+-- (void)scrollRectToVisible:(CGRect)rect animated:(BOOL)animated {
+-    // Prevents the scroll view from scrolling on its own when typing in text fields
+-    // for homescreen page labels. Crossing my fingers this doesn't break anything.
+-}
+-
+-%end
+-
+-
+ %hook SpringBoard
+ 
+ - (void)applicationDidFinishLaunching:(id)arg1 {
+@@ -76,30 +65,6 @@
+ %end
+ 
+ 
+-%group TodayViewFixiPad
+-%hook SBTodayViewController
+-
+-// These next two hooked methods fix label bugging on iPad with today view
+-
+-- (void)viewWillAppear:(BOOL)arg1 {
+-    %orig;
+-    [[NSNotificationCenter defaultCenter]
+-            postNotificationName:ARIUpdateLabelVisibilityNotification
+-                          object:nil
+-                        userInfo:@{@"alpha" : @(0.0F), @"animationDuration" : @(0.3F)}];
+-}
+-
+-- (void)viewDidDisappear:(BOOL)arg1 {
+-    %orig;
+-    [[NSNotificationCenter defaultCenter]
+-            postNotificationName:ARIUpdateLabelVisibilityNotification
+-                          object:nil
+-                        userInfo:@{@"alpha" : @(1.0F), @"animationDuration" : @(0.3F)}];
+-}
+-
+-%end
+-%end
+-
+ %group ZenithFix
+ %hook SBIconListModel
+ 
+@@ -135,10 +100,6 @@
+ 		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+ 		%init();
+ 
+-        if([manager isDeviceIPad]) {
+-            %init(TodayViewFixiPad);
+-        }
+-
+         // Zenith compatibility
+         NSString *const zenithPath = @THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/Zenith.dylib";
+         if([[NSFileManager defaultManager] fileExistsAtPath:zenithPath]) {
+diff --git a/src/Hooks/IconView.xm b/src/Hooks/IconView.xm
+index 6597fba..f5ef38d 100644
+--- a/src/Hooks/IconView.xm
++++ b/src/Hooks/IconView.xm
+@@ -52,13 +52,6 @@
+ 		return;
+ 	}
+ 
+-	if(IconIsInRoot(self)) {
+-    	if([manager boolValueForKey:@"hideLabels"]) allows = NO;
+-	} else if(IconIsInAppLibrary(self) || IconIsInAppLibraryPod(self)) {
+-		if([manager boolValueForKey:@"hideLabelsAppLibrary"]) allows = NO;
+-	} else if(IconIsInFolder(self)) {
+-		if([manager boolValueForKey:@"hideLabelsFolders"]) allows = NO;
+-	}
+ 	%orig(allows);
+ }
+ 
+@@ -121,15 +114,12 @@
+ 		resize();
+ 		CATransform3D to = self.layer.sublayerTransform;
+ 		animation.toValue = [NSValue value:&to withObjCType:@encode(CATransform3D)];
+-		// Add completion handler (must be done before adding animation to layer)
+-		[CATransaction setCompletionBlock:^{ [self _atriaGenerateDropShadow:self.bounds]; }];
+ 		// Add animation to layer and commit
+ 		[self.layer addAnimation:animation forKey:animation.keyPath];
+ 		[CATransaction commit];
+ 	} else {
+-		// Resize and update drop shadow immediately
++		// Resize immediately
+ 		resize();
+-		[self _atriaGenerateDropShadow:self.bounds];
+ 	}
+ }
+ 
+@@ -140,54 +130,13 @@
+ 		// Update allowsLabelArea
+ 		[self setAllowsLabelArea:self.allowsLabelArea];
+ 	}
+-	[self _atriaSetupDropShadow:[[[objc_getClass("SBIconController") sharedInstance] iconManager] isEditing]];
+ 	[self _updateIconImageViewAnimated:YES];
+ }
+ 
+ - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+-	[self _atriaSetupDropShadow:editing];
+ 	%orig(editing, animated);
+ }
+ 
+-%new
+-- (void)_atriaGenerateDropShadow:(CGRect)rect {
+-	if(self.layer.shadowRadius > 0.0F) {
+-		CGFloat width = rect.size.width;
+-		CGFloat height = rect.size.height;
+-		float scale = self.layer.sublayerTransform.m11;
+-		CGRect scaledRect = CGRectInset(rect, 
+-			(width - sqrt(width * width * scale)) / 2.0F, 
+-			(height - sqrt(height * height * scale)) / 2.0F);
+-		self.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:scaledRect cornerRadius:[self iconImageCornerRadius]].CGPath;
+-	}
+-}
+-
+-%new
+-- (void)_atriaSetupDropShadow:(BOOL)isEditing {
+-	BOOL enabled = [[ARITweakManager sharedInstance] boolValueForKey:@"dropShadow"];
+-	SBIcon *icon = [self icon];
+-	BOOL widgetOrAppIcon = [icon application] || [icon isKindOfClass:objc_getClass("SBWidgetIcon")] || [icon isKindOfClass:objc_getClass("SBBookmarkIcon")];
+-	// Don't apply shadows in floating dock, because dynamic scaling of the app icons gets weird
+-	// Use containsString instead of the macro because we need to check for the suggestions location too
+-	if(enabled && !isEditing && widgetOrAppIcon && ![self.location containsString:@"Floating"]) {
+-		if(self.layer.shadowRadius > 0.0F) return;
+-		self.layer.masksToBounds = NO;
+-		self.layer.shadowOpacity = 0.4F;
+-		self.layer.shadowRadius = 5.0F;
+-		self.layer.shadowColor = [UIColor blackColor].CGColor;
+-		self.layer.drawsAsynchronously = YES;
+-		[self _atriaGenerateDropShadow:self.bounds];
+-	} else {
+-		self.layer.shadowOpacity = 0.0F;
+-		self.layer.shadowRadius = 0.0F;
+-	}
+-}
+-
+-- (void)setBounds:(CGRect)arg1 {
+-	%orig(arg1);
+-	[self _atriaGenerateDropShadow:arg1];
+-}
+-
+ %new
+ - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type {
+ 	SBSApplicationShortcutItem *item = [[objc_getClass("SBSApplicationShortcutItem") alloc] init];
+@@ -221,10 +170,6 @@
+ 	if(IconIsInRoot(self)) {
+ 		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Layout" type:@"me.lau.atria.edit.hs"]];
+ 		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Page Dots" type:@"me.lau.atria.edit.pagedot"]];
+-		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Page Labels" type:@"me.lau.atria.edit.label"]];
+-		if([[ARITweakManager sharedInstance] boolValueForKey:@"showBackground"]) {
+-			[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Background Blur" type:@"me.lau.atria.edit.blur"]];
+-		}
+ 	} else if(IconIsInDock(self)) {
+ 		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Dock" type:@"me.lau.atria.edit.dock"]];
+ 	}
+@@ -244,48 +189,6 @@
+ 
+ %end
+ 
+-// I don't think this needs explaining
+-%hook SBIconBadgeView
+-
+-- (CGFloat)alpha {
+-	CGFloat orig = %orig;
+-	return orig == 1 ? ![[ARITweakManager sharedInstance] boolValueForKey:@"hideBadges"] : orig;
+-}
+-
+-- (void)setAlpha:(CGFloat)arg1 {
+-	%orig(arg1 == 1 ? ![[ARITweakManager sharedInstance] boolValueForKey:@"hideBadges"] : arg1);
+-}
+-
+-
+-%end
+-
+-%hook SBIconListPageControl
+-
+-- (void)setHidden:(BOOL)arg1  {
+-	// Hide page dots
+-	if([[ARITweakManager sharedInstance] boolValueForKey:@"hidePageDots"]) {
+-		%orig(YES);
+-		return;
+-	}
+-	%orig(arg1);
+-}
+-
+-%end
+-
+-%hook SBFolderIconImageView
+-
+-- (void)setBackgroundView:(id)arg1 {
+-	if([[ARITweakManager sharedInstance] boolValueForKey:@"hideFolderIconBG"]) {
+-		// By setting a fresh UIView, it doesn't bug out, and it fades instead of glitching when closing the folder
+-		%orig([UIView new]);
+-		return;
+-	}
+-
+-	%orig(arg1);
+-}
+-
+-%end
+-
+ %ctor {
+ 	if([[ARITweakManager sharedInstance] isEnabled]) {
+ 		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+diff --git a/src/Hooks/MainLayout.xm b/src/Hooks/MainLayout.xm
+index 4af459b..073ab61 100644
+--- a/src/Hooks/MainLayout.xm
++++ b/src/Hooks/MainLayout.xm
+@@ -6,10 +6,6 @@
+ #import "Shared.h"
+ #import "../Manager/ARITweakManager.h"
+ #import "../Manager/ARIEditManager.h"
+-#import "../UI/Label/ARILabelView.h"
+-#import "../UI/Label/ARIPageLabelView.h"
+-#import "../UI/Label/ARIWelcomeLabelView.h"
+-#import "../UI/ARIBackgroundView.h"
+ 
+ static BOOL didLaunchSB = NO;
+ 
+@@ -18,8 +14,6 @@ static BOOL didLaunchSB = NO;
+ @end
+ 
+ %hook SBIconListView
+-%property (nonatomic, strong) ARILabelView *_atriaPageLabel;
+-%property (nonatomic, strong) ARIBackgroundView *_atriaBackground;
+ %property (nonatomic, strong) UITapGestureRecognizer *_atriaTap;
+ %property (nonatomic, strong) SBIconListFlowExtendedLayout *_atriaCachedLayout;
+ %property (nonatomic, strong) SBIconListFlowExtendedLayout *_originalLayout;
+@@ -72,17 +66,12 @@ static BOOL didLaunchSB = NO;
+ 
+ 		// Checks if the icon list is actually in the root views
+ 		BOOL isInRootViews = [[manager allRootListViews] containsObject:self];
+-		BOOL isFirstIconList = [manager firstIconListView] == self;
+-		BOOL showPageLabel = (isFirstIconList && [manager boolValueForKey:@"showWelcome"]) || (isInRootViews && [manager boolValueForKey:@"showPageLabels"]);
+ 
+-		// Add tap gesture if we didn't already. Do this here to enable/disable dynamically
+-		if(!self._atriaTap && ![manager boolValueForKey:@"disableTapGesture"]) {
++		// Add tap gesture if we didn't already
++		if(!self._atriaTap) {
+ 			self._atriaTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_atriaBeginEditing)];
+ 			[self._atriaTap setNumberOfTapsRequired:3];
+ 			[self addGestureRecognizer:self._atriaTap];
+-		} else if(self._atriaTap && [manager boolValueForKey:@"disableTapGesture"]) {
+-			[self removeGestureRecognizer:self._atriaTap];
+-			self._atriaTap = nil;
+ 		}
+ 
+ 		// Per-page layout requires copying this object
+@@ -111,8 +100,7 @@ static BOOL didLaunchSB = NO;
+ 		CGFloat spaceX = [manager floatValueForKey:@"hs_spacing_x" forListView:self];
+ 		CGFloat spaceY = [manager floatValueForKey:@"hs_spacing_y" forListView:self];
+ 
+-		// Add spacing for page label
+-		if(showPageLabel) topInset += 60;
++
+ 
+ 		// Set layout insets
+ 		UIEdgeInsets origPortrait = config.portraitLayoutInsets;
+@@ -145,47 +133,6 @@ static BOOL didLaunchSB = NO;
+ 			landscapeInsets.right - spaceX / 2
+ 		)];
+ 
+-		// Update background
+-		if(!(isInRootViews && [manager boolValueForKey:@"showBackground"])) {
+-			// Remove background if not needed
+-			if(self._atriaBackground) {
+-				[self._atriaBackground removeFromSuperview];
+-				self._atriaBackground = nil;
+-			}
+-		} else {
+-			// Create background
+-			if(!self._atriaBackground) self._atriaBackground = [[ARIBackgroundView alloc] init];
+-			// Insert subview at index 0
+-			if(!self._atriaBackground.superview) [self insertSubview:self._atriaBackground atIndex:0];
+-			else [self sendSubviewToBack:self._atriaBackground];
+-
+-			self._atriaBackground.portraitLayoutGuide = portraitInsets;
+-			self._atriaBackground.landscapeLayoutGuide = landscapeInsets;
+-			[self._atriaBackground updateView];
+-		}
+-
+-		// Update page label
+-		if(!showPageLabel) {
+-			// Remove page label if not needed
+-			if(self._atriaPageLabel) {
+-				[self._atriaPageLabel removeFromSuperview];
+-				self._atriaPageLabel = nil;
+-			}
+-		} else {
+-			// Create label if needed
+-			if(!self._atriaPageLabel) {
+-				if (isFirstIconList) self._atriaPageLabel = [[ARIWelcomeLabelView alloc] init];
+-				else self._atriaPageLabel = [[ARIPageLabelView alloc] init];
+-			}
+-			// Add to superview and add inital anchors
+-			// The dynamic label will constrain itself
+-			if(!self._atriaPageLabel.superview) [self addSubview:self._atriaPageLabel];
+-
+-			self._atriaPageLabel.portraitOrigin = CGPointMake(portraitInsets.left, origPortrait.top);
+-			self._atriaPageLabel.landscapeOrigin = CGPointMake(landscapeInsets.left, origLandscape.top);;
+-			[self._atriaPageLabel updateView];
+-		}
+-
+ 		// Create a new flow layout with our modified (and copied) configuration
+ 		// layoutConfiguration is readonly on SBIconListFlowExtendedLayout
+ 		if([manager firmwareVersion] >= 14) {
+@@ -200,9 +147,6 @@ static BOOL didLaunchSB = NO;
+ 		NSUInteger cols = [manager intValueForKey:@"dock_columns"];
+ 		NSUInteger rows = [manager intValueForKey:@"dock_rows"];
+ 
+-		// Disable dock
+-		if([manager boolValueForKey:@"disableDock"]) cols = rows = 0;
+-
+ 		[config setNumberOfPortraitColumns:cols];
+ 		[config setNumberOfPortraitRows:rows];
+ 		// Flip for landscape
+diff --git a/src/Manager/ARIEditManager.m b/src/Manager/ARIEditManager.m
+index 1913330..de2f3ce 100644
+--- a/src/Manager/ARIEditManager.m
++++ b/src/Manager/ARIEditManager.m
+@@ -102,11 +102,7 @@
+ 
+     [alert addAction:[self _createEditAlertAction:@"Homescreen Pages" editLocation:@"hs"]];
+     [alert addAction:[self _createEditAlertAction:@"Dock" editLocation:@"dock"]];
+-    [alert addAction:[self _createEditAlertAction:@"Page Labels" editLocation:@"label"]];
+     [alert addAction:[self _createEditAlertAction:@"Page Dots" editLocation:@"pagedot"]];
+-    if([manager boolValueForKey:@"showBackground"]) {
+-        [alert addAction:[self _createEditAlertAction:@"Background Blur" editLocation:@"blur"]];
+-    }
+     [alert addAction:[UIAlertAction actionWithTitle:@"Cancel"
+                                               style:UIAlertActionStyleCancel
+                                             handler:^(UIAlertAction *action){
+diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
+index 8749041..deef7c9 100644
+--- a/src/Manager/ARITweakManager.h
++++ b/src/Manager/ARITweakManager.h
+@@ -80,8 +80,6 @@ typedef struct SBRootFolderViewMetrics {
+ - (BOOL)isFolderIcon;
+ - (CGFloat)iconImageCornerRadius;
+ - (void)_atriaUpdateIconContentScale;
+-- (void)_atriaSetupDropShadow:(BOOL)isEditing;
+-- (void)_atriaGenerateDropShadow:(CGRect)rect;
+ - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type;
+ @end
+ 
+@@ -106,8 +104,6 @@ typedef struct SBRootFolderViewMetrics {
+ @end
+ 
+ @class SBIcon;
+-@class ARILabelView;
+-@class ARIBackgroundView;
+ @interface SBIconListView : UIView
+ @property (nonatomic, assign, getter=isEditing, nonatomic) BOOL editing;
+ @property (nonatomic, strong) NSString *iconLocation;
+@@ -116,8 +112,6 @@ typedef struct SBRootFolderViewMetrics {
+ @property (nonatomic, assign) UIEdgeInsets additionalLayoutInsets; // iOS 14+
+ @property (nonatomic, assign) UIEdgeInsets layoutInsets;           // iOS 13
+ 
+-@property (nonatomic, strong) ARILabelView *_atriaPageLabel;
+-@property (nonatomic, strong) ARIBackgroundView *_atriaBackground;
+ @property (nonatomic, strong) UITapGestureRecognizer *_atriaTap;
+ @property (nonatomic, strong) SBIconListFlowExtendedLayout *_atriaCachedLayout;
+ @property (nonatomic, strong) SBIconListFlowExtendedLayout *_originalLayout;
+diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
+index 9f08730..3db9e22 100644
+--- a/src/Manager/ARITweakManager.m
++++ b/src/Manager/ARITweakManager.m
+@@ -51,66 +51,21 @@
+         _orderedSettingKeys = [[NSMutableOrderedSet alloc] initWithCapacity:50];
+         _optionsRegistry = [[NSMutableDictionary alloc] init];
+ 
+-        [self _registerOption:@"showWelcome"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+-        [self _registerOption:@"showWeatherIcon"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+         [self _registerOption:@"showTooltips"
+                   translation:nil
+                  defaultValue:@(YES)
+                    lowerLimit:0
+                    upperLimit:0];
+-        [self _registerOption:@"labelText"
+-                  translation:nil
+-                 defaultValue:@"\%GREETING\%, user"
+-                   lowerLimit:0
+-                   upperLimit:0];
+-        [self _registerOption:@"labelTextColor"
+-                  translation:nil
+-                 defaultValue:@"#FFFFFF"
+-                   lowerLimit:0
+-                   upperLimit:0];
+-        [self _registerOption:@"blurTintColor"
+-                  translation:nil
+-                 defaultValue:@"#FFFFFF"
+-                   lowerLimit:0
+-                   upperLimit:0];
+         [self _registerOption:@"layoutEnabled"
+                   translation:nil
+                  defaultValue:@(YES)
+                    lowerLimit:0
+                    upperLimit:0];
+-        [self _registerOption:@"enableAppLibrary"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+         [self _registerOption:@"saveIconState"
+                   translation:nil
+                  defaultValue:@(YES)
+                    lowerLimit:0
+                    upperLimit:0];
+-        [self _registerOption:@"hideLabelsAppLibrary"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+-        [self _registerOption:@"hideLabels"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+-        [self _registerOption:@"hideLabelsFolders"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+         [self _registerOption:@"scaleInsideFolders"
+                   translation:nil
+                  defaultValue:@(YES)
+@@ -121,22 +76,6 @@
+                  defaultValue:@(YES)
+                    lowerLimit:0
+                    upperLimit:0];
+-        [self _registerOption:@"floatingDockAppLibrary"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+-        [self _registerOption:@"floatingDockRecents"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+-        [self _registerOption:@"maxFloatingDockRecents"
+-                  translation:nil
+-                 defaultValue:@(3)
+-                   lowerLimit:0
+-                   upperLimit:0];
+-
+         // Homescreen
+         [self _registerOption:@"hs_rows"
+                   translation:@"Rows"
+@@ -362,13 +301,6 @@
+ 
+     NSDictionary *dict = [_preferences dictionaryRepresentation];
+     for(NSString *key in [dict allKeys]) {
+-        // Welcome is now renamed to label
+-        if([key hasPrefix:@"welcome"]) {
+-            NSString *newKey = [key stringByReplacingCharactersInRange:NSMakeRange(0, 7) withString:@"label"];
+-            [self _migrateSettingFromKey:key toKey:newKey];
+-            continue;
+-        }
+-
+         if([key length] <= 3) continue;
+         // Previous per-page layout prefix was formatted as _%d_ and now is Page%d_
+         NSString *sub = [key substringToIndex:3];
+@@ -420,7 +352,7 @@
+         return;
+     }
+ 
+-    BOOL updateRoot = [editingLocation isEqualToString:@"hs"] || [editingLocation isEqualToString:@"label"] || [editingLocation isEqualToString:@"blur"];
++    BOOL updateRoot = [editingLocation isEqualToString:@"hs"];
+     [self updateLayoutForRoot:updateRoot forDock:[editingLocation isEqualToString:@"dock"] animated:animated];
+ }
+ 
+@@ -501,7 +433,7 @@
+ 
+ - (void)onSpringboardLaunched {
+     // If floating dock is enabled, default to 6 dock columns. See explanation in init method for why this is done here.
+-    if([self boolValueForKey:@"forceFloatingDock"] || [[self class] isUsingFloatingDock]) {
++    if([[self class] isUsingFloatingDock]) {
+         [self _registerOption:@"dock_columns"
+                   translation:@"Columns"
+                  defaultValue:@(15) // iPad Pro dock icon limit
+diff --git a/src/UI/ARIBackgroundView.h b/src/UI/ARIBackgroundView.h
+deleted file mode 100644
+index 61bf145..0000000
+--- a/src/UI/ARIBackgroundView.h
++++ /dev/null
+@@ -1,14 +0,0 @@
+-//
+-// Created by ren7995 on 2021-05-03 09:05:52
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import <UIKit/UIKit.h>
+-
+-#import "ARIDynamicView.h"
+-
+-@interface ARIBackgroundView : ARIDynamicView
+-@property (nonatomic, assign) UIEdgeInsets portraitLayoutGuide;
+-@property (nonatomic, assign) UIEdgeInsets landscapeLayoutGuide;
+-- (instancetype)init;
+-@end
+diff --git a/src/UI/ARIBackgroundView.m b/src/UI/ARIBackgroundView.m
+deleted file mode 100644
+index 98a7b02..0000000
+--- a/src/UI/ARIBackgroundView.m
++++ /dev/null
+@@ -1,93 +0,0 @@
+-//
+-// Created by ren7995 on 2021-05-03 09:07:52
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "ARIBackgroundView.h"
+-#import "../Manager/ARITweakManager.h"
+-
+-#include <objc/runtime.h>
+-
+-@implementation ARIBackgroundView {
+-    NSLayoutConstraint *_viewTopAnchor;
+-    NSLayoutConstraint *_viewBottomAnchor;
+-    NSLayoutConstraint *_viewLeadingAnchor;
+-    NSLayoutConstraint *_viewTrailingAnchor;
+-    UIVisualEffectView *_effectView;
+-}
+-
+-- (instancetype)init {
+-    self = [super init];
+-    if(self) {
+-        self.layer.cornerCurve = kCACornerCurveContinuous;
+-        self.layer.masksToBounds = YES;
+-
+-        _effectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemUltraThinMaterial]];
+-        [self addSubview:_effectView];
+-        _effectView.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [_effectView.widthAnchor constraintEqualToAnchor:self.widthAnchor],
+-            [_effectView.heightAnchor constraintEqualToAnchor:self.heightAnchor],
+-            [_effectView.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [_effectView.centerYAnchor constraintEqualToAnchor:self.centerYAnchor],
+-        ]];
+-    }
+-    return self;
+-}
+-
+-- (void)updateView {
+-    if(!self.superview) return;
+-
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    SBIconListView *superv = (SBIconListView *)self.superview;
+-    self.layer.cornerRadius = [manager floatValueForKey:@"blur_corner_radius" forListView:superv];
+-
+-    _effectView.alpha = [manager floatValueForKey:@"blur_alpha" forListView:superv];
+-    if([manager boolValueForKey:@"blurTintEnabled"]) {
+-        self.backgroundColor = [[self class] colorFromHexString:[manager rawValueForKey:@"blurTintColor"]
+-                                                      withAlpha:[manager floatValueForKey:@"blur_intensity"]];
+-    } else {
+-        self.backgroundColor = nil;
+-    }
+-
+-    [self updateAnchors];
+-}
+-
+-- (void)updateAnchors {
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    // Allow per-page customization
+-    SBIconListView *superv = (SBIconListView *)self.superview;
+-    CGFloat topInset = [manager floatValueForKey:@"blur_inset_top" forListView:superv];
+-    CGFloat bottomInset = [manager floatValueForKey:@"blur_inset_bottom" forListView:superv];
+-    CGFloat leftInset = [manager floatValueForKey:@"blur_inset_left" forListView:superv];
+-    CGFloat rightInset = [manager floatValueForKey:@"blur_inset_right" forListView:superv];
+-
+-    UIEdgeInsets insets = UIInterfaceOrientationIsPortrait([ARITweakManager currentDeviceOrientation])
+-                              ? self.portraitLayoutGuide
+-                              : self.landscapeLayoutGuide;
+-
+-    _viewTopAnchor.constant = insets.top - 10 + topInset;
+-    _viewBottomAnchor.constant = -insets.bottom + 10 + bottomInset;
+-    _viewLeadingAnchor.constant = insets.left - 10 + leftInset;
+-    _viewTrailingAnchor.constant = -insets.right + 10 + rightInset;
+-}
+-
+-- (void)didMoveToSuperview {
+-    [super didMoveToSuperview];
+-    if(!self.superview) return;
+-
+-    // Setup initial anchors
+-    _viewTopAnchor = [self.topAnchor constraintEqualToAnchor:self.superview.topAnchor];
+-    _viewLeadingAnchor = [self.leadingAnchor constraintEqualToAnchor:self.superview.leadingAnchor];
+-    _viewTrailingAnchor = [self.trailingAnchor constraintEqualToAnchor:self.superview.trailingAnchor];
+-    _viewBottomAnchor = [self.bottomAnchor constraintEqualToAnchor:self.superview.bottomAnchor];
+-
+-    [NSLayoutConstraint activateConstraints:@[
+-        _viewTopAnchor,
+-        _viewLeadingAnchor,
+-        _viewBottomAnchor,
+-        _viewTrailingAnchor,
+-    ]];
+-}
+-
+-@end
+diff --git a/src/UI/Label/ARILabelView.h b/src/UI/Label/ARILabelView.h
+deleted file mode 100644
+index 28ecaf6..0000000
+--- a/src/UI/Label/ARILabelView.h
++++ /dev/null
+@@ -1,21 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-27 18:20:41
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import <UIKit/UIKit.h>
+-
+-#import "../ARIDynamicView.h"
+-
+-static NSString *const ARIUpdateLabelVisibilityNotification = @"me.lau.Atria/UpdateLabelVisibility";
+-
+-@interface ARILabelView : ARIDynamicView <UITextFieldDelegate>
+-@property (nonatomic, strong) UITextField *textField;
+-@property (nonatomic, assign) CGPoint portraitOrigin;
+-@property (nonatomic, assign) CGPoint landscapeOrigin;
+-- (instancetype)init;
+-- (void)setupTextField:(UITextField *)textField;
+-- (NSString *)loadRawText;
+-- (NSString *)processRawText:(NSString *)rawText isScheduledUpdate:(BOOL)scheduled;
+-- (void)saveTextValue:(NSString *)text;
+-@end
+diff --git a/src/UI/Label/ARILabelView.m b/src/UI/Label/ARILabelView.m
+deleted file mode 100644
+index 6c9621f..0000000
+--- a/src/UI/Label/ARILabelView.m
++++ /dev/null
+@@ -1,205 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-27 18:20:43
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "ARILabelView.h"
+-#import "../../Manager/ARITweakManager.h"
+-
+-#import <CoreText/CTFont.h>
+-#import <CoreText/CTFontDescriptor.h>
+-#import <CoreText/CTFontManager.h>
+-
+-@implementation ARILabelView {
+-    NSString *_rawText;
+-    NSLayoutConstraint *_labelTopAnchor;
+-    NSLayoutConstraint *_labelLeadingAnchor;
+-    NSLayoutConstraint *_labelTrailingAnchor;
+-}
+-
+-- (instancetype)init {
+-    self = [super init];
+-    if(self) {
+-        UIToolbar *toolbar = [[UIToolbar alloc] init];
+-        toolbar.translucent = YES;
+-        UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(endTextEntry)];
+-        UIBarButtonItem *spacingItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+-        UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(textFieldShouldReturn:)];
+-        [toolbar setItems:@[ cancelItem, spacingItem, doneItem ] animated:NO];
+-        [toolbar sizeToFit];
+-
+-        _textField = [UITextField new];
+-        _textField.adjustsFontSizeToFitWidth = YES;
+-        _textField.translatesAutoresizingMaskIntoConstraints = NO;
+-        _textField.delegate = self;
+-        _textField.inputAccessoryView = toolbar;
+-        _textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+-        [self addSubview:_textField];
+-        [NSLayoutConstraint activateConstraints:@[
+-            [_textField.widthAnchor constraintEqualToAnchor:self.widthAnchor],
+-            [_textField.heightAnchor constraintEqualToAnchor:self.heightAnchor],
+-            [_textField.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [_textField.centerYAnchor constraintEqualToAnchor:self.centerYAnchor],
+-        ]];
+-
+-        [self setupTextField:_textField];
+-    }
+-    return self;
+-}
+-
+-- (void)updateText:(NSTimer *)timer {
+-    // Don't update the text while the user is editing, or we will discard what they typed
+-    if([_textField isEditing]) return;
+-
+-    BOOL scheduled = timer != nil;
+-    // If wasn't a scheduled update, reload raw text
+-    if(!scheduled) _rawText = [self loadRawText];
+-    // Process text
+-    _textField.text = [self processRawText:_rawText isScheduledUpdate:scheduled];
+-}
+-
+-- (void)setupTextField:(UITextField *)textField {
+-}
+-
+-- (NSString *)loadRawText {
+-    // Implemented in inheriting classes
+-    return nil;
+-}
+-
+-- (NSString *)processRawText:(NSString *)rawText isScheduledUpdate:(BOOL)scheduled {
+-    // Implemented in inheriting classes
+-    return nil;
+-}
+-
+-- (void)updateLabelVisibility:(NSNotification *)notification {
+-    if(!notification.userInfo) return;
+-    [UIView animateWithDuration:((NSNumber *)notification.userInfo[@"animationDuration"]).floatValue
+-                     animations:^{
+-                         self.alpha = ((NSNumber *)notification.userInfo[@"alpha"]).floatValue;
+-                     }
+-                     completion:nil];
+-}
+-
+-- (void)updateView {
+-    if(!self.superview) return;
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    SBIconListView *superv = (SBIconListView *)self.superview;
+-
+-    [self updateText:nil];
+-
+-    // Get text size
+-    CGFloat textSize = [manager floatValueForKey:@"label_textSize" forListView:superv];
+-
+-    // Load font
+-    CTFontDescriptorRef cfdesc = [[self class] getCustomFontDescriptorOrNull];
+-
+-    // Update text size
+-    if(cfdesc != NULL) {
+-        CTFontRef ctfont = CTFontCreateWithFontDescriptor(cfdesc, textSize, nil);
+-        _textField.font = CFBridgingRelease(ctfont);
+-    } else {
+-        _textField.font = [UIFont systemFontOfSize:textSize weight:UIFontWeightSemibold];
+-    }
+-
+-    // Text color
+-    _textField.textColor = [[self class] colorFromHexString:[manager rawValueForKey:@"labelTextColor"] withAlpha:1.0F];
+-
+-    // Text shadow
+-    if([manager boolValueForKey:@"pageLabelShadow"] && _textField.layer.shadowOpacity == 0.0) {
+-        _textField.layer.shadowOpacity = 0.5F;
+-        _textField.layer.shadowRadius = 5.0F;
+-        _textField.layer.shadowColor = [UIColor blackColor].CGColor;
+-        _textField.layer.shadowOffset = CGSizeZero;
+-        _textField.layer.shouldRasterize = YES;
+-        _textField.layer.rasterizationScale = UIScreen.mainScreen.scale;
+-    } else if(![manager boolValueForKey:@"pageLabelShadow"] && _textField.layer.shadowOpacity > 0.0) {
+-        _textField.layer.shadowOpacity = 0.0F;
+-        _textField.layer.shadowRadius = 0.0F;
+-    }
+-
+-    [self updateAnchors];
+-}
+-
+-- (void)updateAnchors {
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    SBIconListView *superv = (SBIconListView *)self.superview;
+-    CGFloat leftInset = [manager floatValueForKey:@"label_inset_left" forListView:superv];
+-    CGFloat topInset = [manager floatValueForKey:@"label_inset_top" forListView:superv];
+-
+-    CGPoint origin = UIInterfaceOrientationIsPortrait([ARITweakManager currentDeviceOrientation])
+-                         ? self.portraitOrigin
+-                         : self.landscapeOrigin;
+-
+-    if([manager isDeviceIPad]) {
+-        // fr
+-        origin.x -= 40;
+-        origin.y -= 50;
+-    }
+-
+-    _labelLeadingAnchor.constant = origin.x + leftInset;
+-    _labelTrailingAnchor.constant = leftInset;
+-    _labelTopAnchor.constant = origin.y + topInset;
+-}
+-
+-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+-    [ARITweakManager dismissFloatingDockIfPossible];
+-    // Set to the raw text
+-    _textField.text = _rawText;
+-    return YES;
+-}
+-
+-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+-    // Save text
+-    [self saveTextValue:_textField.text];
+-    [self endTextEntry];
+-    return YES;
+-}
+-
+-- (void)saveTextValue:(NSString *)text {
+-    // Implemented in inheriting classes
+-}
+-
+-- (void)endTextEntry {
+-    [_textField resignFirstResponder];
+-    [ARITweakManager presentFloatingDockIfPossible];
+-    [self updateText:nil];
+-}
+-
+-- (void)didMoveToSuperview {
+-    [super didMoveToSuperview];
+-    if(!self.superview) return;
+-
+-    [self updateText:nil];
+-
+-    // Setup initial anchors
+-    _labelTopAnchor = [self.topAnchor constraintEqualToAnchor:self.superview.topAnchor];
+-    _labelLeadingAnchor = [self.leadingAnchor constraintEqualToAnchor:self.superview.leadingAnchor];
+-    _labelTrailingAnchor = [self.trailingAnchor constraintEqualToAnchor:self.superview.trailingAnchor];
+-
+-    [NSLayoutConstraint activateConstraints:@[
+-        _labelTopAnchor,
+-        _labelLeadingAnchor,
+-        [self.heightAnchor constraintEqualToConstant:50],
+-        _labelTrailingAnchor
+-    ]];
+-}
+-
+-- (void)removeFromSuperview {
+-    [self endTextEntry];
+-    [super removeFromSuperview];
+-}
+-
+-+ (CTFontDescriptorRef)getCustomFontDescriptorOrNull {
+-    static CTFontDescriptorRef cfdesc = NULL;
+-    static dispatch_once_t token;
+-    dispatch_once(&token, ^{
+-        // Load font once
+-        NSData *fileData = [NSData dataWithContentsOfFile:@THEOS_PACKAGE_INSTALL_PREFIX "/Library/PreferenceBundles/AtriaPrefs.bundle/Custom.ttf"];
+-        if(fileData) {
+-            cfdesc = CTFontManagerCreateFontDescriptorFromData((CFDataRef)fileData);
+-        }
+-    });
+-    return cfdesc;
+-}
+-
+-@end
+diff --git a/src/UI/Label/ARIPageLabelView.h b/src/UI/Label/ARIPageLabelView.h
+deleted file mode 100644
+index d7017e3..0000000
+--- a/src/UI/Label/ARIPageLabelView.h
++++ /dev/null
+@@ -1,10 +0,0 @@
+-//
+-// Created by ren7995 on 2023-05-30 18:33:14
+-// Copyright (c) 2023 ren7995. All rights reserved.
+-//
+-
+-#import "ARILabelView.h"
+-
+-@interface ARIPageLabelView : ARILabelView
+-- (instancetype)init;
+-@end
+\ No newline at end of file
+diff --git a/src/UI/Label/ARIPageLabelView.m b/src/UI/Label/ARIPageLabelView.m
+deleted file mode 100644
+index 08b447a..0000000
+--- a/src/UI/Label/ARIPageLabelView.m
++++ /dev/null
+@@ -1,32 +0,0 @@
+-//
+-// Created by ren7995 on 2023-05-30 18:33:23
+-// Copyright (c) 2023 ren7995. All rights reserved.
+-//
+-
+-#import "ARIPageLabelView.h"
+-#import "../../Manager/ARITweakManager.h"
+-
+-@implementation ARIPageLabelView
+-
+-- (instancetype)init {
+-    self = [super init];
+-    return self;
+-}
+-
+-- (NSString *)loadRawText {
+-    SBIconListView *superv = (SBIconListView *)self.superview;
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    NSString *text = [manager rawValueForKey:@"pageLabelText" forListView:superv];
+-    if(text) return text;
+-    return [NSString stringWithFormat:@"Page %d", (int)[manager indexOfListView:superv] + 1];
+-}
+-
+-- (NSString *)processRawText:(NSString *)rawText isScheduledUpdate:(BOOL)scheduled {
+-    return rawText;
+-}
+-
+-- (void)saveTextValue:(NSString *)text {
+-    [[ARITweakManager sharedInstance] setValue:text forKey:@"pageLabelText" forListView:(SBIconListView *)self.superview];
+-}
+-
+-@end
+diff --git a/src/UI/Label/ARIWelcomeLabelView.h b/src/UI/Label/ARIWelcomeLabelView.h
+deleted file mode 100644
+index 7708af9..0000000
+--- a/src/UI/Label/ARIWelcomeLabelView.h
++++ /dev/null
+@@ -1,18 +0,0 @@
+-//
+-// Created by ren7995 on 2023-05-30 18:39:01
+-// Copyright (c) 2023 ren7995. All rights reserved.
+-//
+-
+-#include "ARILabelView.h"
+-
+-@interface ARIWelcomeLabelView : ARILabelView
+-- (instancetype)init;
+-@end
+-
+-@interface WALockscreenWidgetViewController : UIView
+-- (void)updateWeather;
+-//- (void)setDelegate:(id)arg1;
+-- (NSString *)_temperature;
+-- (UIImage *)_conditionsImage;
+-- (NSString *)_locationName;
+-@end
+\ No newline at end of file
+diff --git a/src/UI/Label/ARIWelcomeLabelView.m b/src/UI/Label/ARIWelcomeLabelView.m
+deleted file mode 100644
+index 0348434..0000000
+--- a/src/UI/Label/ARIWelcomeLabelView.m
++++ /dev/null
+@@ -1,93 +0,0 @@
+-//
+-// Created by ren7995 on 2023-05-30 18:39:12
+-// Copyright (c) 2023 ren7995. All rights reserved.
+-//
+-
+-#import "ARIWelcomeLabelView.h"
+-#import "../../Manager/ARITweakManager.h"
+-
+-#import <objc/runtime.h>
+-
+-@implementation ARIWelcomeLabelView {
+-    NSCalendar *_calendar;
+-    NSTimer *_updateTimer;
+-    UIImageView *_imageView;
+-    WALockscreenWidgetViewController *_weatherUpdater;
+-}
+-
+-- (instancetype)init {
+-    self = [super init];
+-    if(self) {
+-        // Get calendar components of current date
+-        _calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+-        NSDateComponents *components = [_calendar components:NSCalendarUnitHour fromDate:[NSDate date]];
+-        // Set to the next hour on the dot
+-        components.minute = 0;
+-        components.hour = components.hour + 1;
+-
+-        // Add timer
+-        _updateTimer = [NSTimer timerWithTimeInterval:60 target:self selector:@selector(updateText:) userInfo:nil repeats:YES];
+-        [[NSRunLoop currentRunLoop] addTimer:_updateTimer forMode:NSDefaultRunLoopMode];
+-
+-        // System time was set listener
+-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateText:) name:NSSystemClockDidChangeNotification object:nil];
+-
+-        // Notification for showing/hiding label
+-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateLabelVisibility:) name:ARIUpdateLabelVisibilityNotification object:nil];
+-
+-        _weatherUpdater = [[objc_getClass("WALockscreenWidgetViewController") alloc] init];
+-        [_weatherUpdater updateWeather];
+-    }
+-    return self;
+-}
+-
+-- (void)setupTextField:(UITextField *)textField {
+-    _imageView = [[UIImageView alloc] init];
+-    _imageView.translatesAutoresizingMaskIntoConstraints = NO;
+-    [NSLayoutConstraint activateConstraints:@[
+-        [_imageView.widthAnchor constraintEqualToConstant:30],
+-        [_imageView.heightAnchor constraintEqualToConstant:30],
+-    ]];
+-
+-    textField.leftView = _imageView;
+-}
+-
+-- (NSString *)loadRawText {
+-    return [[ARITweakManager sharedInstance] rawValueForKey:@"labelText"];
+-}
+-
+-- (NSString *)processRawText:(NSString *)rawText isScheduledUpdate:(BOOL)scheduled {
+-    NSString *greeting = @"Welcome";
+-    NSDateComponents *components = [_calendar components:NSCalendarUnitHour fromDate:[NSDate date]];
+-    if(components.hour >= 4 && components.hour < 12) {
+-        greeting = @"Good morning";
+-    } else if(components.hour >= 12 && components.hour < 18) {
+-        greeting = @"Good afternoon";
+-    } else if(components.hour >= 18 || components.hour < 4) {
+-        greeting = @"Good evening";
+-    }
+-
+-    rawText = [rawText stringByReplacingOccurrencesOfString:@"\%GREETING\%" withString:greeting];
+-    rawText = [rawText stringByReplacingOccurrencesOfString:@"\%TEMPERATURE\%" withString:[_weatherUpdater _temperature] ?: @"--"];
+-    rawText = [rawText stringByReplacingOccurrencesOfString:@"\%LOCATION\%" withString:[_weatherUpdater _locationName] ?: @"Unknown"];
+-    _imageView.image = [_weatherUpdater _conditionsImage];
+-    return rawText;
+-}
+-
+-- (void)saveTextValue:(NSString *)text {
+-    [[ARITweakManager sharedInstance] setValue:text forKey:@"labelText"];
+-}
+-
+-- (void)updateView {
+-    [super updateView];
+-    self.textField.leftViewMode = [[ARITweakManager sharedInstance] boolValueForKey:@"showWeatherIcon"]
+-                                      ? UITextFieldViewModeAlways // UnlessEditing
+-                                      : UITextFieldViewModeNever;
+-}
+-
+-- (void)removeFromSuperview {
+-    [super removeFromSuperview];
+-    [_updateTimer invalidate];
+-}
+-
+-@end
+\ No newline at end of file
