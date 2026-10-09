@@ -1,6 +1,7 @@
 name: Build Atria (slim)
 
 on:
+  push:
   workflow_dispatch:
 
 jobs:
