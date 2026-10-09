@@ -41,6 +41,9 @@ jobs:
       - name: Apply slim patch
         run: git apply -v .github/slim.patch
 
+      - name: Apply build fix patch
+        run: git apply -v .github/fix-build.patch || echo "fix-build.patch not found or already applied"
+
       - name: Build (rootless)
         run: |
           make clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
