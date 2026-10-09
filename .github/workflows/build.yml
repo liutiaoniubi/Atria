@@ -127,6 +127,9 @@ jobs:
               s = re.sub(r'^[A-Za-z_]*CODESIGN_FLAGS\s*=.*$', '', s, flags=re.M)
               # CoreText 未被使用
               s = re.sub(r'^([A-Za-z_]*FRAMEWORKS\s*=\s*UIKit)\s+CoreText\s*$', r'\1', s, flags=re.M)
+              # Preferences.framework 二进制不在 SDK 里，链接会失败，去掉
+              s = re.sub(r'^[A-Za-z_]*PRIVATE_FRAMEWORKS\s*=.*Preferences.*$', '', s, flags=re.M)
+              # 用运行时查找代替链接该框架
               if 'dynamic_lookup' not in s:
                   s = s.replace('include $(THEOS_MAKE_PATH)/bundle.mk',
                                 'AtriaPrefs_LDFLAGS = -undefined dynamic_lookup\n\ninclude $(THEOS_MAKE_PATH)/bundle.mk')
