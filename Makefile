@@ -6,6 +6,9 @@ TARGET = iphone:clang:latest:13.0
 
 include $(THEOS)/makefiles/common.mk
 
+# 老代码在新版 clang 下会产生未使用变量等警告，这里不让警告中断构建
+GO_EASY_ON_ME = 1
+
 TWEAK_NAME = Atria
 
 Atria_FILES = $(wildcard src/Hooks/*.xm) $(wildcard src/Manager/*.m) $(wildcard src/Options/*.m) $(wildcard src/UI/*.m) $(wildcard src/UI/*/*.m) $(wildcard src/Editor/*.m)
