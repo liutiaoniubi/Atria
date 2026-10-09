@@ -98,7 +98,7 @@ jobs:
 
       - name: Build (rootless)
         run: |
-          make clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+          make clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless GO_EASY_ON_ME=1
 
       - name: Upload deb
         uses: actions/upload-artifact@v4
