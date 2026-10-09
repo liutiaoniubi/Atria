@@ -5,6 +5,8 @@ TARGET = iphone:clang:latest:13.0
 
 include $(THEOS)/makefiles/common.mk
 
+GO_EASY_ON_ME = 1
+
 BUNDLE_NAME = AtriaPrefs
 
 AtriaPrefs_FILES = $(wildcard src/*.m)
