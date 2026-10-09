@@ -606,10 +606,10 @@ index a1613f8..d1526c7 100644
  
  // Subclass layout provider. I could have just added a property to tag an instance as our fix,
 diff --git a/src/Hooks/DockView.xm b/src/Hooks/DockView.xm
-index b010cc7..1890f44 100644
+index b010cc7..b09021e 100644
 --- a/src/Hooks/DockView.xm
 +++ b/src/Hooks/DockView.xm
-@@ -20,18 +20,8 @@ static SBFloatingDockController *fdController;
+@@ -20,19 +20,10 @@ static SBFloatingDockController *fdController;
      [self setBackgroundAlpha:[manager floatValueForKey:@"dock_bg"]];
  }
  
@@ -625,10 +625,13 @@ index b010cc7..1890f44 100644
 -        %orig(0);
 -        return;
 -    }
-     %orig([[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"]);
+-    %orig([[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"]);
++    CGFloat _atriaBgAlpha = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];
++    %orig(_atriaBgAlpha);
  }
  
-@@ -63,69 +53,11 @@ static SBFloatingDockController *fdController;
+ - (void)traitCollectionDidChange:(UITraitCollection *)old {
+@@ -63,69 +54,11 @@ static SBFloatingDockController *fdController;
      return orig;
  }
  
@@ -698,6 +701,43 @@ index b010cc7..1890f44 100644
  %end
  
  
+diff --git a/src/Hooks/GridLayout.xm b/src/Hooks/GridLayout.xm
+index eff8fd2..9ae4f5e 100644
+--- a/src/Hooks/GridLayout.xm
++++ b/src/Hooks/GridLayout.xm
+@@ -31,9 +31,9 @@ static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols,
+ 	} else {
+ 		// Usually 2x2, 4x2, 4x4, 4x6
+ 		sizes.small = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols / 2), .height = ROUND_SHORT(rows / 3) };
+-		sizes.medium = (struct SBHIconGridSize) { .width = cols, .height = ROUND_SHORT(rows / 3) };
+-		sizes.large = (struct SBHIconGridSize) { .width = cols, .height = ROUND_SHORT(rows * 2 / 3) };
+-		sizes.extraLarge = (struct SBHIconGridSize) { .width = cols, .height = rows };
++		sizes.medium = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols), .height = ROUND_SHORT(rows / 3) };
++		sizes.large = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols), .height = ROUND_SHORT(rows * 2 / 3) };
++		sizes.extraLarge = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols), .height = ROUND_SHORT(rows) };
+ 	}
+ 	return sizes;
+ }
+@@ -59,8 +59,8 @@ static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols,
+ 	NSUInteger rows = [manager intValueForKey:@"hs_rows" forListView:[self _atriaListView]];
+ 
+ 	// Update grid size
+-	gridSize.height = rows;
+-	gridSize.width = cols;
++	gridSize.height = ROUND_SHORT(rows);
++	gridSize.width = ROUND_SHORT(cols);
+ 	// setGridSize method only exists on iOS 15+, but the ivar exists on 14 too
+ 	MSHookIvar<struct SBHIconGridSize>(self, "_gridSize") = gridSize;
+ 
+@@ -73,7 +73,7 @@ static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols,
+ 
+ - (struct SBHIconGridSize)gridSize {
+ 	if(!self._atriaLocation) {
+-		struct SBHIconGridSize size = { .height = 0x7FFF, .width = 0x7FFF };
++		struct SBHIconGridSize size = { .width = 0x7FFF, .height = 0x7FFF };
+ 		return size;
+ 	}
+ 	// If location is already set, size should have been modified as needed
 diff --git a/src/Hooks/Helper.xm b/src/Hooks/Helper.xm
 index 00e602e..42007d2 100644
 --- a/src/Hooks/Helper.xm
@@ -770,7 +810,7 @@ index 00e602e..42007d2 100644
          NSString *const zenithPath = @THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/Zenith.dylib";
          if([[NSFileManager defaultManager] fileExistsAtPath:zenithPath]) {
 diff --git a/src/Hooks/IconView.xm b/src/Hooks/IconView.xm
-index 6597fba..f5ef38d 100644
+index 6597fba..39eb90e 100644
 --- a/src/Hooks/IconView.xm
 +++ b/src/Hooks/IconView.xm
 @@ -52,13 +52,6 @@
@@ -859,7 +899,16 @@ index 6597fba..f5ef38d 100644
  %new
  - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type {
  	SBSApplicationShortcutItem *item = [[objc_getClass("SBSApplicationShortcutItem") alloc] init];
-@@ -221,10 +170,6 @@
+@@ -214,17 +163,14 @@
+ 	// Add shortcut item to activate editor
+ 	// I found this really cool gist to allow me to do this, tyvm to the author <3
+ 	// Link: https://gist.github.com/MTACS/8e26c4f430b27d6a1d2a11f0a828f250
+-	NSMutableArray *items = [%orig mutableCopy];
++	NSArray *_atriaOrigItems = %orig;
++	NSMutableArray *items = [_atriaOrigItems mutableCopy];
+ 	if(!(IconIsInRoot(self) || IconIsInDock(self))) return items;
+ 	if(!items) items = [NSMutableArray new];
+ 
  	if(IconIsInRoot(self)) {
  		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Layout" type:@"me.lau.atria.edit.hs"]];
  		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Page Dots" type:@"me.lau.atria.edit.pagedot"]];
@@ -870,7 +919,7 @@ index 6597fba..f5ef38d 100644
  	} else if(IconIsInDock(self)) {
  		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Dock" type:@"me.lau.atria.edit.dock"]];
  	}
-@@ -244,48 +189,6 @@
+@@ -244,48 +190,6 @@
  
  %end
  
@@ -920,7 +969,7 @@ index 6597fba..f5ef38d 100644
  	if([[ARITweakManager sharedInstance] isEnabled]) {
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
 diff --git a/src/Hooks/MainLayout.xm b/src/Hooks/MainLayout.xm
-index 4af459b..073ab61 100644
+index 4af459b..280cbee 100644
 --- a/src/Hooks/MainLayout.xm
 +++ b/src/Hooks/MainLayout.xm
 @@ -6,10 +6,6 @@
@@ -943,13 +992,15 @@ index 4af459b..073ab61 100644
  %property (nonatomic, strong) UITapGestureRecognizer *_atriaTap;
  %property (nonatomic, strong) SBIconListFlowExtendedLayout *_atriaCachedLayout;
  %property (nonatomic, strong) SBIconListFlowExtendedLayout *_originalLayout;
-@@ -72,17 +66,12 @@ static BOOL didLaunchSB = NO;
+@@ -70,19 +64,11 @@ static BOOL didLaunchSB = NO;
+ 		// This helps prevent unnecessary work, and additionally prevents issues related to the page reordering view
+ 		if([self.icons count] == 0) return;
  
- 		// Checks if the icon list is actually in the root views
- 		BOOL isInRootViews = [[manager allRootListViews] containsObject:self];
+-		// Checks if the icon list is actually in the root views
+-		BOOL isInRootViews = [[manager allRootListViews] containsObject:self];
 -		BOOL isFirstIconList = [manager firstIconListView] == self;
 -		BOOL showPageLabel = (isFirstIconList && [manager boolValueForKey:@"showWelcome"]) || (isInRootViews && [manager boolValueForKey:@"showPageLabels"]);
- 
+-
 -		// Add tap gesture if we didn't already. Do this here to enable/disable dynamically
 -		if(!self._atriaTap && ![manager boolValueForKey:@"disableTapGesture"]) {
 +		// Add tap gesture if we didn't already
@@ -963,7 +1014,7 @@ index 4af459b..073ab61 100644
  		}
  
  		// Per-page layout requires copying this object
-@@ -111,8 +100,7 @@ static BOOL didLaunchSB = NO;
+@@ -111,8 +97,7 @@ static BOOL didLaunchSB = NO;
  		CGFloat spaceX = [manager floatValueForKey:@"hs_spacing_x" forListView:self];
  		CGFloat spaceY = [manager floatValueForKey:@"hs_spacing_y" forListView:self];
  
@@ -973,7 +1024,7 @@ index 4af459b..073ab61 100644
  
  		// Set layout insets
  		UIEdgeInsets origPortrait = config.portraitLayoutInsets;
-@@ -145,47 +133,6 @@ static BOOL didLaunchSB = NO;
+@@ -145,47 +130,6 @@ static BOOL didLaunchSB = NO;
  			landscapeInsets.right - spaceX / 2
  		)];
  
@@ -1021,7 +1072,7 @@ index 4af459b..073ab61 100644
  		// Create a new flow layout with our modified (and copied) configuration
  		// layoutConfiguration is readonly on SBIconListFlowExtendedLayout
  		if([manager firmwareVersion] >= 14) {
-@@ -200,9 +147,6 @@ static BOOL didLaunchSB = NO;
+@@ -200,9 +144,6 @@ static BOOL didLaunchSB = NO;
  		NSUInteger cols = [manager intValueForKey:@"dock_columns"];
  		NSUInteger rows = [manager intValueForKey:@"dock_rows"];
  
