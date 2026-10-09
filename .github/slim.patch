@@ -558,6 +558,19 @@ index f15561d..653628c 100644
  		<dict>
  			<key>cell</key>
  			<string>PSGroupCell</string>
+diff --git a/Prefs/src/ARIHeaderCell.m b/Prefs/src/ARIHeaderCell.m
+index cc1df12..11915ac 100644
+--- a/Prefs/src/ARIHeaderCell.m
++++ b/Prefs/src/ARIHeaderCell.m
+@@ -30,7 +30,7 @@
+         ]];
+ 
+         UILabel *label = [[UILabel alloc] init];
+-        label.text = @"Version " PACKAGE_VERSION " (" PACKAGE_TYPE ")";
++        label.text = @"Version 1.4.1 (rootless)";
+         label.numberOfLines = 0;
+         label.font = [UIFont systemFontOfSize:14];
+         label.textAlignment = NSTextAlignmentCenter;
 diff --git a/layout/DEBIAN/control b/layout/DEBIAN/control
 index 2709321..a34401e 100644
 --- a/layout/DEBIAN/control
@@ -810,13 +823,20 @@ index 00e602e..42007d2 100644
          NSString *const zenithPath = @THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/Zenith.dylib";
          if([[NSFileManager defaultManager] fileExistsAtPath:zenithPath]) {
 diff --git a/src/Hooks/IconView.xm b/src/Hooks/IconView.xm
-index 6597fba..39eb90e 100644
+index 6597fba..baaaf9b 100644
 --- a/src/Hooks/IconView.xm
 +++ b/src/Hooks/IconView.xm
-@@ -52,13 +52,6 @@
- 		return;
- 	}
+@@ -45,23 +45,6 @@
+ 	return orig;
+ }
  
+-- (void)setAllowsLabelArea:(BOOL)allows {
+-	ARITweakManager *manager = [ARITweakManager sharedInstance];
+-	if([manager isShyLabelsInstalled]) {
+-		%orig(allows);
+-		return;
+-	}
+-
 -	if(IconIsInRoot(self)) {
 -    	if([manager boolValueForKey:@"hideLabels"]) allows = NO;
 -	} else if(IconIsInAppLibrary(self) || IconIsInAppLibraryPod(self)) {
@@ -824,10 +844,13 @@ index 6597fba..39eb90e 100644
 -	} else if(IconIsInFolder(self)) {
 -		if([manager boolValueForKey:@"hideLabelsFolders"]) allows = NO;
 -	}
- 	%orig(allows);
- }
- 
-@@ -121,15 +114,12 @@
+-	%orig(allows);
+-}
+-
+ - (void)_updateIconImageViewAnimated:(BOOL)arg1 {
+ 	%orig(arg1);
+ 	[self _atriaUpdateIconContentScale];
+@@ -121,15 +104,12 @@
  		resize();
  		CATransform3D to = self.layer.sublayerTransform;
  		animation.toValue = [NSValue value:&to withObjCType:@encode(CATransform3D)];
@@ -844,19 +867,22 @@ index 6597fba..39eb90e 100644
  	}
  }
  
-@@ -140,54 +130,13 @@
- 		// Update allowsLabelArea
- 		[self setAllowsLabelArea:self.allowsLabelArea];
+@@ -137,57 +117,10 @@
+ 	%orig;
+ 	if(self.superview && [self.superview isKindOfClass:objc_getClass("SBIconListView")]) {
+ 		self._atriaLastIconListView = (SBIconListView *)self.superview;
+-		// Update allowsLabelArea
+-		[self setAllowsLabelArea:self.allowsLabelArea];
  	}
 -	[self _atriaSetupDropShadow:[[[objc_getClass("SBIconController") sharedInstance] iconManager] isEditing]];
  	[self _updateIconImageViewAnimated:YES];
  }
  
- - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+-- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
 -	[self _atriaSetupDropShadow:editing];
- 	%orig(editing, animated);
- }
- 
+-	%orig(editing, animated);
+-}
+-
 -%new
 -- (void)_atriaGenerateDropShadow:(CGRect)rect {
 -	if(self.layer.shadowRadius > 0.0F) {
@@ -899,7 +925,25 @@ index 6597fba..39eb90e 100644
  %new
  - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type {
  	SBSApplicationShortcutItem *item = [[objc_getClass("SBSApplicationShortcutItem") alloc] init];
-@@ -214,17 +163,14 @@
+@@ -197,8 +130,16 @@
+ 	// SFSymbols
+ 	UIImage *image = [UIImage systemImageNamed:@"gear"];
+ 
++	// 动态色(如 labelColor)在转成 PNG 时只会按当前 trait 解析一次，
++	// 导致深色模式下仍生成黑色图标。这里显式按深浅模式取具体颜色。
++	UIUserInterfaceStyle style = self.traitCollection.userInterfaceStyle;
++	if(style == UIUserInterfaceStyleUnspecified) {
++		style = [UITraitCollection currentTraitCollection].userInterfaceStyle;
++	}
++	UIColor *tintColor = (style == UIUserInterfaceStyleDark) ? [UIColor whiteColor] : [UIColor blackColor];
++
+ 	// Tint our image
+-	image = [image imageWithTintColor:[UIColor labelColor]];
++	image = [image imageWithTintColor:tintColor];
+ 
+ 	// Get data respresentation of the image
+ 	NSData *iconData = UIImagePNGRepresentation(image);
+@@ -214,17 +155,14 @@
  	// Add shortcut item to activate editor
  	// I found this really cool gist to allow me to do this, tyvm to the author <3
  	// Link: https://gist.github.com/MTACS/8e26c4f430b27d6a1d2a11f0a828f250
@@ -919,7 +963,7 @@ index 6597fba..39eb90e 100644
  	} else if(IconIsInDock(self)) {
  		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Dock" type:@"me.lau.atria.edit.dock"]];
  	}
-@@ -244,48 +190,6 @@
+@@ -244,48 +182,6 @@
  
  %end
  
@@ -969,13 +1013,14 @@ index 6597fba..39eb90e 100644
  	if([[ARITweakManager sharedInstance] isEnabled]) {
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
 diff --git a/src/Hooks/MainLayout.xm b/src/Hooks/MainLayout.xm
-index 4af459b..280cbee 100644
+index 4af459b..2293602 100644
 --- a/src/Hooks/MainLayout.xm
 +++ b/src/Hooks/MainLayout.xm
-@@ -6,10 +6,6 @@
+@@ -5,11 +5,6 @@
+ 
  #import "Shared.h"
  #import "../Manager/ARITweakManager.h"
- #import "../Manager/ARIEditManager.h"
+-#import "../Manager/ARIEditManager.h"
 -#import "../UI/Label/ARILabelView.h"
 -#import "../UI/Label/ARIPageLabelView.h"
 -#import "../UI/Label/ARIWelcomeLabelView.h"
@@ -983,16 +1028,26 @@ index 4af459b..280cbee 100644
  
  static BOOL didLaunchSB = NO;
  
-@@ -18,8 +14,6 @@ static BOOL didLaunchSB = NO;
+@@ -18,18 +13,10 @@ static BOOL didLaunchSB = NO;
  @end
  
  %hook SBIconListView
 -%property (nonatomic, strong) ARILabelView *_atriaPageLabel;
 -%property (nonatomic, strong) ARIBackgroundView *_atriaBackground;
- %property (nonatomic, strong) UITapGestureRecognizer *_atriaTap;
+-%property (nonatomic, strong) UITapGestureRecognizer *_atriaTap;
  %property (nonatomic, strong) SBIconListFlowExtendedLayout *_atriaCachedLayout;
  %property (nonatomic, strong) SBIconListFlowExtendedLayout *_originalLayout;
-@@ -70,19 +64,11 @@ static BOOL didLaunchSB = NO;
+ %property (nonatomic, assign) BOOL _atriaNeedsLayout;
+ 
+-%new
+-- (void)_atriaBeginEditing {
+-	[[ARIEditManager sharedInstance] presentEditAlert];
+-}
+-
+ - (SBIconListFlowExtendedLayout *)layout {
+ 	SBIconListFlowExtendedLayout *orig = %orig;
+ 
+@@ -70,21 +57,6 @@ static BOOL didLaunchSB = NO;
  		// This helps prevent unnecessary work, and additionally prevents issues related to the page reordering view
  		if([self.icons count] == 0) return;
  
@@ -1003,18 +1058,18 @@ index 4af459b..280cbee 100644
 -
 -		// Add tap gesture if we didn't already. Do this here to enable/disable dynamically
 -		if(!self._atriaTap && ![manager boolValueForKey:@"disableTapGesture"]) {
-+		// Add tap gesture if we didn't already
-+		if(!self._atriaTap) {
- 			self._atriaTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_atriaBeginEditing)];
- 			[self._atriaTap setNumberOfTapsRequired:3];
- 			[self addGestureRecognizer:self._atriaTap];
+-			self._atriaTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_atriaBeginEditing)];
+-			[self._atriaTap setNumberOfTapsRequired:3];
+-			[self addGestureRecognizer:self._atriaTap];
 -		} else if(self._atriaTap && [manager boolValueForKey:@"disableTapGesture"]) {
 -			[self removeGestureRecognizer:self._atriaTap];
 -			self._atriaTap = nil;
- 		}
- 
+-		}
+-
  		// Per-page layout requires copying this object
-@@ -111,8 +97,7 @@ static BOOL didLaunchSB = NO;
+ 		SBIconListGridLayoutConfiguration *config = [orig.layoutConfiguration copy];
+ 
+@@ -111,8 +83,7 @@ static BOOL didLaunchSB = NO;
  		CGFloat spaceX = [manager floatValueForKey:@"hs_spacing_x" forListView:self];
  		CGFloat spaceY = [manager floatValueForKey:@"hs_spacing_y" forListView:self];
  
@@ -1024,7 +1079,7 @@ index 4af459b..280cbee 100644
  
  		// Set layout insets
  		UIEdgeInsets origPortrait = config.portraitLayoutInsets;
-@@ -145,47 +130,6 @@ static BOOL didLaunchSB = NO;
+@@ -145,47 +116,6 @@ static BOOL didLaunchSB = NO;
  			landscapeInsets.right - spaceX / 2
  		)];
  
@@ -1072,7 +1127,7 @@ index 4af459b..280cbee 100644
  		// Create a new flow layout with our modified (and copied) configuration
  		// layoutConfiguration is readonly on SBIconListFlowExtendedLayout
  		if([manager firmwareVersion] >= 14) {
-@@ -200,9 +144,6 @@ static BOOL didLaunchSB = NO;
+@@ -200,9 +130,6 @@ static BOOL didLaunchSB = NO;
  		NSUInteger cols = [manager intValueForKey:@"dock_columns"];
  		NSUInteger rows = [manager intValueForKey:@"dock_rows"];
  
@@ -1099,7 +1154,7 @@ index 1913330..de2f3ce 100644
                                                style:UIAlertActionStyleCancel
                                              handler:^(UIAlertAction *action){
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
-index 8749041..deef7c9 100644
+index 8749041..cac3ef4 100644
 --- a/src/Manager/ARITweakManager.h
 +++ b/src/Manager/ARITweakManager.h
 @@ -80,8 +80,6 @@ typedef struct SBRootFolderViewMetrics {
@@ -1120,20 +1175,57 @@ index 8749041..deef7c9 100644
  @interface SBIconListView : UIView
  @property (nonatomic, assign, getter=isEditing, nonatomic) BOOL editing;
  @property (nonatomic, strong) NSString *iconLocation;
-@@ -116,8 +112,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -116,13 +112,9 @@ typedef struct SBRootFolderViewMetrics {
  @property (nonatomic, assign) UIEdgeInsets additionalLayoutInsets; // iOS 14+
  @property (nonatomic, assign) UIEdgeInsets layoutInsets;           // iOS 13
  
 -@property (nonatomic, strong) ARILabelView *_atriaPageLabel;
 -@property (nonatomic, strong) ARIBackgroundView *_atriaBackground;
- @property (nonatomic, strong) UITapGestureRecognizer *_atriaTap;
+-@property (nonatomic, strong) UITapGestureRecognizer *_atriaTap;
  @property (nonatomic, strong) SBIconListFlowExtendedLayout *_atriaCachedLayout;
  @property (nonatomic, strong) SBIconListFlowExtendedLayout *_originalLayout;
+ @property (nonatomic, assign) BOOL _atriaNeedsLayout;
+-- (void)_atriaBeginEditing;
+ - (void)_atriaUpdateLayoutCache;
+ 
+ - (NSArray<SBIconView *> *)icons;
+@@ -195,7 +187,6 @@ typedef struct SBRootFolderViewMetrics {
+ @property (nonatomic, readonly, strong) NSMapTable *listViewModelMap;
+ @property (nonatomic, readonly, assign) NSUInteger firmwareVersion;
+ @property (nonatomic, readonly, assign, getter=isDeviceIPad) BOOL deviceIPad;
+-@property (nonatomic, readonly, assign, getter=isShyLabelsInstalled) BOOL shyLabelsInstalled;
+ - (void)updateLayoutForEditing:(BOOL)animated;
+ - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated;
+ - (void)relayoutEntireIconModel;
 diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
-index 9f08730..3db9e22 100644
+index 9f08730..7291248 100644
 --- a/src/Manager/ARITweakManager.m
 +++ b/src/Manager/ARITweakManager.m
-@@ -51,66 +51,21 @@
+@@ -18,14 +18,12 @@
+     NSMapTable *_listViewModelMap;
+     NSUInteger _firmwareVersion;
+     BOOL _deviceIPad;
+-    BOOL _shyLabelsInstalled;
+ }
+ 
+ @synthesize enabled = _enabled;
+ @synthesize preferences = _preferences;
+ @synthesize firmwareVersion = _firmwareVersion;
+ @synthesize deviceIPad = _deviceIPad;
+-@synthesize shyLabelsInstalled = _shyLabelsInstalled;
+ @synthesize listViewModelMap = _listViewModelMap;
+ 
+ // Shared instance and init methods
+@@ -37,8 +35,6 @@
+         UIDevice *device = [UIDevice currentDevice];
+         _firmwareVersion = [[[device systemVersion] componentsSeparatedByString:@"."][0] integerValue];
+         _deviceIPad = [[device model] hasPrefix:@"iPad"];
+-        // ShyLabels compatibility
+-        _shyLabelsInstalled = [[NSFileManager defaultManager] fileExistsAtPath:@THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/ShyLabels.dylib"];
+         // NSUserDefaults to get what values the user set
+         _preferences = [[NSUserDefaults alloc] initWithSuiteName:@"me.lau.AtriaPrefs"];
+         _enabled = [_preferences objectForKey:@"enabled"] ? [[_preferences objectForKey:@"enabled"] boolValue] : YES;
+@@ -51,66 +47,21 @@
          _orderedSettingKeys = [[NSMutableOrderedSet alloc] initWithCapacity:50];
          _optionsRegistry = [[NSMutableDictionary alloc] init];
  
@@ -1200,7 +1292,7 @@ index 9f08730..3db9e22 100644
          [self _registerOption:@"scaleInsideFolders"
                    translation:nil
                   defaultValue:@(YES)
-@@ -121,22 +76,6 @@
+@@ -121,22 +72,6 @@
                   defaultValue:@(YES)
                     lowerLimit:0
                     upperLimit:0];
@@ -1223,7 +1315,7 @@ index 9f08730..3db9e22 100644
          // Homescreen
          [self _registerOption:@"hs_rows"
                    translation:@"Rows"
-@@ -362,13 +301,6 @@
+@@ -362,13 +297,6 @@
  
      NSDictionary *dict = [_preferences dictionaryRepresentation];
      for(NSString *key in [dict allKeys]) {
@@ -1237,7 +1329,7 @@ index 9f08730..3db9e22 100644
          if([key length] <= 3) continue;
          // Previous per-page layout prefix was formatted as _%d_ and now is Page%d_
          NSString *sub = [key substringToIndex:3];
-@@ -420,7 +352,7 @@
+@@ -420,7 +348,7 @@
          return;
      }
  
@@ -1246,7 +1338,7 @@ index 9f08730..3db9e22 100644
      [self updateLayoutForRoot:updateRoot forDock:[editingLocation isEqualToString:@"dock"] animated:animated];
  }
  
-@@ -501,7 +433,7 @@
+@@ -501,7 +429,7 @@
  
  - (void)onSpringboardLaunched {
      // If floating dock is enabled, default to 6 dock columns. See explanation in init method for why this is done here.
