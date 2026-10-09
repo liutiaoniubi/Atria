@@ -99,62 +99,80 @@ index f8dc45c..0000000
 -</plist>
 \ No newline at end of file
 diff --git a/Prefs/Resources/Editor.plist b/Prefs/Resources/Editor.plist
-index 47884da..e888d37 100644
+deleted file mode 100644
+index 47884da..0000000
 --- a/Prefs/Resources/Editor.plist
-+++ b/Prefs/Resources/Editor.plist
-@@ -8,7 +8,7 @@
- 			<key>cell</key>
- 			<string>PSGroupCell</string>
- 			<key>label</key>
++++ /dev/null
+@@ -1,92 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-<plist version="1.0">
+-<dict>
+-	<key>items</key>
+-    <array>
+-        <dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
 -			<string>Editor Behavior</string>
-+			<string>编辑器行为</string>
- 		</dict>
-         <dict>
- 			<key>cell</key>
-@@ -20,13 +20,13 @@
- 			<key>key</key>
- 			<string>showTooltips</string>
- 			<key>label</key>
+-		</dict>
+-        <dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>showTooltips</string>
+-			<key>label</key>
 -			<string>Show Tooltips</string>
-+			<string>显示工具提示</string>
- 		</dict>
-         <dict>
- 			<key>cell</key>
- 			<string>PSGroupCell</string>
- 			<key>label</key>
+-		</dict>
+-        <dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
 -			<string>Open From</string>
-+			<string>从哪打开</string>
- 		</dict>
-         <dict>
- 			<key>cell</key>
-@@ -39,8 +39,8 @@
- 			<string>editorOpenFrom</string>
-             <key>validTitles</key>
- 			<array>
+-		</dict>
+-        <dict>
+-			<key>cell</key>
+-			<string>PSSegmentCell</string>
+-			<key>default</key>
+-			<integer>0</integer>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>editorOpenFrom</string>
+-            <key>validTitles</key>
+-			<array>
 -				<string>Bottom</string>
 -				<string>Top</string>
-+				<string>底部</string>
-+				<string>顶部</string>
- 			</array>
- 			<key>validValues</key>
- 			<array>
-@@ -52,10 +52,9 @@
- 			<key>cell</key>
- 			<string>PSGroupCell</string>
- 			<key>label</key>
+-			</array>
+-			<key>validValues</key>
+-			<array>
+-				<integer>0</integer>
+-				<integer>1</integer>
+-			</array>
+-		</dict>
+-        <dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
 -			<string>Activation Settings</string>
-+			<string>激活设置</string>
- 			<key>footerText</key>
+-			<key>footerText</key>
 -			<string>Hide Actions: Hides Atria's 3D touch actions from the menu. Turn on if you are done configuring, and do not want to see the options. 
 -Disable Tap Gesture: Disables the triple tap gesture that can be used to invoke Atria from the homescren pages</string>
-+			<string>隐藏触控编辑：从长按图标菜单中隐藏 Atria 的编辑选项。配置完成后若不想再看到这些选项，可开启此项。</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
-@@ -67,26 +66,13 @@ Disable Tap Gesture: Disables the triple tap gesture that can be used to invoke
- 			<key>key</key>
- 			<string>hide3DTouchActions</string>
- 			<key>label</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<false/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>hide3DTouchActions</string>
+-			<key>label</key>
 -			<string>Hide Actions</string>
 -			<key>PostNotification</key>
 -			<string>me.lau.Atria/ReloadPrefs</string>
@@ -170,17 +188,14 @@ index 47884da..e888d37 100644
 -			<string>disableTapGesture</string>
 -			<key>label</key>
 -			<string>Disable Tap Gesture</string>
-+			<string>隐藏触控编辑</string>
- 			<key>PostNotification</key>
- 			<string>me.lau.Atria/ReloadPrefs</string>
- 		</dict>
-+		
-     </array>
- 	<key>title</key>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-    </array>
+-	<key>title</key>
 -	<string>Editor</string>
-+	<string>编辑选项</string>
- </dict>
- </plist>
+-</dict>
+-</plist>
 \ No newline at end of file
 diff --git a/Prefs/Resources/Editor/alpha.png b/Prefs/Resources/Editor/alpha.png
 deleted file mode 100644
@@ -362,30 +377,39 @@ z99%QPaeJ#R5<Oyok2!8+Too7zWZKuiXSSGsIp<=F^<4o>^w84M($dn>($dn>($dn>
 j($dn>($dn>@}~X)&l)~S)u|>r00000NkvXXu0mjfez9_p
 
 diff --git a/Prefs/Resources/General.plist b/Prefs/Resources/General.plist
-index 84a44a2..0d909b6 100644
+deleted file mode 100644
+index 84a44a2..0000000
 --- a/Prefs/Resources/General.plist
-+++ b/Prefs/Resources/General.plist
-@@ -8,9 +8,9 @@
- 			<key>cell</key>
- 			<string>PSGroupCell</string>
- 			<key>label</key>
++++ /dev/null
+@@ -1,269 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+-<plist version="1.0">
+-<dict>
+-	<key>items</key>
+-	<array>
+-        <dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
 -			<string>General</string>
-+			<string>常规</string>
- 			<key>footerText</key>
+-			<key>footerText</key>
 -			<string>Requires a respring to apply.</string>
-+			<string>需要注销才能生效。</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
-@@ -22,22 +22,11 @@
- 			<key>key</key>
- 			<string>dynamicWidgetSizing</string>
- 			<key>label</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>dynamicWidgetSizing</string>
+-			<key>label</key>
 -			<string>Dynamic Widget Sizing</string>
-+			<string>自适应小组件尺寸</string>
- 			<key>PostNotification</key>
- 			<string>me.lau.Atria/ReloadPrefs</string>
- 		</dict>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
 -		<dict>
 -			<key>cell</key>
 -			<string>PSSwitchCell</string>
@@ -398,14 +422,16 @@ index 84a44a2..0d909b6 100644
 -			<key>label</key>
 -			<string>Disable Dock</string>
 -		</dict>
-+		
- 		<dict>
- 			<key>cell</key>
- 			<string>PSSwitchCell</string>
-@@ -48,222 +37,29 @@
- 			<key>key</key>
- 			<string>scaleInsideFolders</string>
- 			<key>label</key>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>scaleInsideFolders</string>
+-			<key>label</key>
 -			<string>Scale Icons In Folders</string>
 -			<key>PostNotification</key>
 -			<string>me.lau.Atria/ReloadPrefs</string>
@@ -617,33 +643,14 @@ index 84a44a2..0d909b6 100644
 -			<string>hideLabelsFolders</string>
 -			<key>label</key>
 -			<string>Hide In Folders</string>
-+			<string>缩放文件夹内图标</string>
- 			<key>PostNotification</key>
- 			<string>me.lau.Atria/ReloadPrefs</string>
- 		</dict>
-+		
-+		
-+		
-+		
-+		
-+		
-+		
-+		
-+		
-+        
-+		
-+		
-+		
-+		
-+		
-+		
-+		
- 	</array>
- 	<key>title</key>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
+-	</array>
+-	<key>title</key>
 -	<string>General</string>
-+	<string>常规配置</string>
- </dict>
- </plist>
+-</dict>
+-</plist>
 \ No newline at end of file
 diff --git a/Prefs/Resources/PageLabels.plist b/Prefs/Resources/PageLabels.plist
 deleted file mode 100644
@@ -1939,10 +1946,10 @@ zhPnzzFgw~C&c8;-XuF|$u{&DxBq;^%$JR;=>}X(%lh-^_YpA|5*+ToeccteG;AQ^*
 E09_{{4*&oF
 
 diff --git a/Prefs/Resources/Root.plist b/Prefs/Resources/Root.plist
-index f15561d..f396e33 100644
+index f15561d..197f2d1 100644
 --- a/Prefs/Resources/Root.plist
 +++ b/Prefs/Resources/Root.plist
-@@ -8,31 +8,17 @@
+@@ -8,23 +8,7 @@
  			<key>cell</key>
  			<string>PSGroupCell</string>
  			<key>footerText</key>
@@ -1965,11 +1972,9 @@ index f15561d..f396e33 100644
 -			<integer>70</integer>
 +			<string>长按桌面图标即可编辑布局</string>
  		</dict>
-+		
-+		
  		<dict>
  			<key>cell</key>
- 			<string>PSButtonCell</string>
+@@ -32,7 +16,7 @@
  			<key>action</key>
  			<string>exportSettingsString</string>
  			<key>label</key>
@@ -1978,7 +1983,7 @@ index f15561d..f396e33 100644
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -40,15 +26,15 @@
+@@ -40,15 +24,15 @@
  			<key>action</key>
  			<string>importSettingsString</string>
  			<key>label</key>
@@ -1997,7 +2002,7 @@ index f15561d..f396e33 100644
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -60,7 +46,7 @@
+@@ -60,7 +44,7 @@
  			<key>key</key>
  			<string>enabled</string>
  			<key>label</key>
@@ -2006,79 +2011,113 @@ index f15561d..f396e33 100644
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -72,20 +58,9 @@
+@@ -72,7 +56,7 @@
  			<key>key</key>
  			<string>layoutEnabled</string>
  			<key>label</key>
 -			<string>Layout Modifications</string>
--		</dict>
--		<dict>
--			<key>cell</key>
--			<string>PSSwitchCell</string>
--			<key>default</key>
--			<true/>
--			<key>defaults</key>
--			<string>me.lau.AtriaPrefs</string>
--			<key>key</key>
--			<string>enableAppLibrary</string>
--			<key>label</key>
--			<string>Force App Library</string>
 +			<string>启用布局修改</string>
  		</dict>
-+		
  		<dict>
  			<key>cell</key>
- 			<string>PSSwitchCell</string>
-@@ -96,13 +71,13 @@
+@@ -82,9 +66,17 @@
+ 			<key>defaults</key>
+ 			<string>me.lau.AtriaPrefs</string>
  			<key>key</key>
- 			<string>saveIconState</string>
+-			<string>enableAppLibrary</string>
++			<string>saveIconState</string>
+ 			<key>label</key>
+-			<string>Force App Library</string>
++			<string>保存图标状态</string>
++		</dict>
++		<dict>
++			<key>cell</key>
++			<string>PSGroupCell</string>
++			<key>label</key>
++			<string>常规配置</string>
++			<key>footerText</key>
++			<string>需要注销才能生效。</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+@@ -94,126 +86,91 @@
+ 			<key>defaults</key>
+ 			<string>me.lau.AtriaPrefs</string>
+ 			<key>key</key>
+-			<string>saveIconState</string>
++			<string>dynamicWidgetSizing</string>
  			<key>label</key>
 -			<string>Save Icon State</string>
-+			<string>保存图标状态</string>
++			<string>自适应小组件尺寸</string>
++			<key>PostNotification</key>
++			<string>me.lau.Atria/ReloadPrefs</string>
  		</dict>
  		<dict>
  			<key>cell</key>
- 			<string>PSGroupCell</string>
+-			<string>PSGroupCell</string>
++			<string>PSSwitchCell</string>
++			<key>default</key>
++			<true/>
++			<key>defaults</key>
++			<string>me.lau.AtriaPrefs</string>
++			<key>key</key>
++			<string>scaleInsideFolders</string>
  			<key>label</key>
 -			<string>Options</string>
-+			<string>选项</string>
++			<string>缩放文件夹内图标</string>
++			<key>PostNotification</key>
++			<string>me.lau.Atria/ReloadPrefs</string>
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -110,7 +85,7 @@
- 			<key>detail</key>
- 			<string>ARIChildListController</string>
- 			<key>label</key>
--			<string>General Options</string>
-+			<string>常规配置</string>
- 			<key>child</key>
- 			<string>General</string>
- 			<key>icon</key>
-@@ -122,99 +97,21 @@
- 			<key>detail</key>
- 			<string>ARIChildListController</string>
- 			<key>label</key>
--			<string>Editor</string>
-+			<string>编辑选项</string>
- 			<key>child</key>
- 			<string>Editor</string>
- 			<key>icon</key>
- 			<string>sliders</string>
- 		</dict>
--		<dict>
--			<key>cell</key>
 -			<string>PSLinkCell</string>
 -			<key>detail</key>
 -			<string>ARIChildListController</string>
--			<key>label</key>
++			<string>PSGroupCell</string>
+ 			<key>label</key>
+-			<string>General Options</string>
+-			<key>child</key>
+-			<string>General</string>
+-			<key>icon</key>
+-			<string>gear</string>
++			<string>编辑器行为</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+-			<string>PSLinkCell</string>
+-			<key>detail</key>
+-			<string>ARIChildListController</string>
++			<string>PSSwitchCell</string>
++			<key>default</key>
++			<true/>
++			<key>defaults</key>
++			<string>me.lau.AtriaPrefs</string>
++			<key>key</key>
++			<string>showTooltips</string>
+ 			<key>label</key>
+-			<string>Editor</string>
+-			<key>child</key>
+-			<string>Editor</string>
+-			<key>icon</key>
+-			<string>sliders</string>
++			<string>显示工具提示</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+-			<string>PSLinkCell</string>
+-			<key>detail</key>
+-			<string>ARIChildListController</string>
++			<string>PSGroupCell</string>
+ 			<key>label</key>
 -			<string>Page Labels</string>
 -			<key>child</key>
 -			<string>PageLabels</string>
 -			<key>icon</key>
 -			<string>text</string>
--		</dict>
--		<dict>
--			<key>cell</key>
++			<string>从哪打开</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
 -			<string>PSLinkCell</string>
 -			<key>detail</key>
 -			<string>ARIChildListController</string>
@@ -2088,17 +2127,34 @@ index f15561d..f396e33 100644
 -			<string>Customization</string>
 -			<key>icon</key>
 -			<string>paint</string>
--		</dict>
--		<dict>
--			<key>cell</key>
--			<string>PSGroupCell</string>
++			<string>PSSegmentCell</string>
++			<key>default</key>
++			<integer>0</integer>
++			<key>defaults</key>
++			<string>me.lau.AtriaPrefs</string>
++			<key>key</key>
++			<string>editorOpenFrom</string>
++			<key>validTitles</key>
++			<array>
++				<string>底部</string>
++				<string>顶部</string>
++			</array>
++			<key>validValues</key>
++			<array>
++				<integer>0</integer>
++				<integer>1</integer>
++			</array>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
 -		</dict>
 -		<dict>
 -			<key>cell</key>
 -			<string>PSButtonCell</string>
 -			<key>action</key>
 -			<string>resetPrefs:</string>
--			<key>label</key>
+ 			<key>label</key>
 -			<string>Reset All Preferences</string>
 -		</dict>
 -		<dict>
@@ -2108,11 +2164,21 @@ index f15561d..f396e33 100644
 -			<string>resetSaveState:</string>
 -			<key>label</key>
 -			<string>Reset Save State</string>
--		</dict>
--		<dict>
--			<key>cell</key>
++			<string>激活设置</string>
++			<key>footerText</key>
++			<string>隐藏触控编辑：从长按图标菜单中隐藏 Atria 的编辑选项。配置完成后若不想再看到这些选项，可开启此项。</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
 -			<string>PSGroupCell</string>
--			<key>label</key>
++			<string>PSSwitchCell</string>
++			<key>default</key>
++			<false/>
++			<key>defaults</key>
++			<string>me.lau.AtriaPrefs</string>
++			<key>key</key>
++			<string>hide3DTouchActions</string>
+ 			<key>label</key>
 -			<string>Credits</string>
 -			<key>footerText</key>
 -			<string>Thank you to everyone who has helped me along the way of making this tweak! A special thanks to everyone who helped test the tweak throughout its various stages. Much love to you all 💜
@@ -2151,19 +2217,12 @@ index f15561d..f396e33 100644
 -			<string>🐜</string>
 -			<key>height</key>
 -			<integer>70</integer>
--		</dict>
-+		
-+		
-+		
-+		
-+		
-+		
-+		
-+		
-+		
++			<string>隐藏触控编辑</string>
++			<key>PostNotification</key>
++			<string>me.lau.Atria/ReloadPrefs</string>
+ 		</dict>
  	</array>
  	<key>title</key>
- 	<string>Atria</string>
 diff --git a/Prefs/Resources/full.png b/Prefs/Resources/full.png
 deleted file mode 100644
 index 393db6f88211793a5705ead402af8ae95c1a0e02..0000000000000000000000000000000000000000
@@ -2730,6 +2789,176 @@ z6e$w2{Xk4uezakPqv7%RlmvVmif51BR2KC&B-NMAE9uP8H+IPs>(2lZ*Zc(IYn#Ot
 z3b*S<+3_nK(upf=Lrb}NIk8@UbHVNYYF9l?3`$>zap_C2=?Ue{Y!mxvysLLgfh5ZY
 q=5+Qe;T!qqf|5=p3bjAi9OD@AsV}}Xwzpp^eJ>#oFM9j=+y4REX!-a6
 
+diff --git a/Prefs/Resources/gear.png b/Prefs/Resources/gear.png
+deleted file mode 100644
+index eeb6595573b3b4ff54a70b19e9284f930ca6626c..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1292
+zcmV+n1@roeP)<h;3K|Lk000e1NJLTq0015U0015c1^@s6J20-I00001b5ch_0Itp)
+z=>Px#L}ge>W=%~1DgXcg2mk?xX#fNO00031000^Q000001E2u_0{{R30RRC20H6W@
+z1ONa40RR919-spN1ONa40RR919smFU0Lno(1poj9c1c7*R7ef2R%>ijMHD_W`?y;K
+z3sEU4YK$N$>JN-Y1%)ccN29ch{PKq+O2ZEyKN^Vv`iSYa4L=$oYA7N8&|sp8ru2m-
+zMq;7H)b}GXZG%P;F~Jz2YRlf+y>t9#VRq-<y@fXJO?J;Y-}%ltGjnIoTtV}EHpg4n
+zsu*pRL~$Legg7&q{d3PS?f-W^sq(?|2oMw(y(qfO#6YJd$*Vl_sNG<5kveY9&!frR
+zw}4zIY64l(Mx)PFM$R~$Y}-PT*W|M5zz}twHp!AAcCXQGDVXlOowg^wqJuLAPdjaO
+zEO-ND)&73!JY{erg;9)5J1s8=A-lEB%>UrOwa=Y+Z4)hVVoue2LWnxU4M?T79QHbT
+z8>sm@;mB9OOJDT==CgPIfV<~Mn;$6L;IuSJAz!u$TE_s!K&&PqD#N~j&GbDJuRzf&
+zY@CUHCsrH!+>W0N9y3ZEJ?|vq6~jng^4^i?8sI6zomC2|0yi1<W6+D3M8$-EY|!`$
+zMLwWcT^97Yag<#u{>08%D6B!>_n#vsWfRJwW2rywpUE7ua|H?y&UAf^cXYre{BNDv
+z&-wfe@}Pe42^7|_A}+j#A}yeeVo@3?$LkcS2eCYz80^^qBVdS=Lo=E00uYSAuCAvS
+z7sVXsO>CsiVWPH`;^uxY(-rpB)9xyniVq>#9bw;vIC{L_Ywy=7j9)Y)cik*SqER1q
+zG=eoKTG;7^q$MkUqtDAcWn;FUFYd(0g`mYYZggfkhb(%79d+GvJ+ak^jo*U&kRYMY
+zY01)?K+jd_6Ereu?691mk*S(QZ6#*CKJ3#rYNT+~R^j(ZOgf$fu{w%qV`v~hzfYYf
+zZ7fn}H5`eDK+JFXtTPO9#rdEeZLvQ$o{pAS`&@LIB8pYHaT9G{P(-3N5#w8<JwX(w
+zU`FC_?L{*#+$urJMGNmoI!m97^c6w8M%h?2qcz>PS<zdV3{ieIsik+v6gGyGPXoNZ
+zB#e17$8^u2m-(T@2cRL<)`9od9Oc8rj-VY62*o3~!NxQvU)Uz6Q!U#t^4D#wprbhS
+zom1}lLmyK2l*a3wohzkCwj<FK1)i<w0lR0a2kGFn4VQcfu#$hxdZ;d3i#-dRihXHn
+z{RKxuUw_xy3Bx)IaW+SeAI1aCVl6dQEKE297=2_DFu^Do$M0&`R~l?KsdM4n=EnWw
+z$81jEI4w&pYyt5Gn@|>Ah+U64EjQV@?7|ZFN0aR=myXqO;v}E7^Vx+J`q~$^v#dJ%
+zpV|5B!o=CX8*t9Pv<doqi&;I42EPryUu~bQgV&3Tx0aQ93A!8fsU3Y@=i4?G*j(c@
+znyty*_O6H}@4~rTOo}t7yg#;n?C(7>o;&_cja*-eWxLN#V072b)gDn@V|o*<im!V|
+zl3am-F2{g(;3IFJ;Teg&H1{W+YI^_yAC*KfjURT~SC`<I00K*W30~ecot++yYOlE6
+zM=lo|_Rp)Z?pA0B-PrwE48YI-h)?4qp(mX9a`u1H%7RQq%&IT|0000<MNUMnLSTZx
+CtxJ{w
+
+diff --git a/Prefs/Resources/gear@2x.png b/Prefs/Resources/gear@2x.png
+deleted file mode 100644
+index 4645fff349a1e8c6ce20e3b61fc4b1beb3670711..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 2387
+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
+FV1g<me-!`#
+
+diff --git a/Prefs/Resources/gear@3x.png b/Prefs/Resources/gear@3x.png
+deleted file mode 100644
+index 4dacc3ee5d8df0f74da1b223ffbd7c7aafd26015..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 3609
+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
+
 diff --git a/Prefs/Resources/paint.png b/Prefs/Resources/paint.png
 deleted file mode 100644
 index 6faace24c49d80dfa114fbe35bb554a63e75a7ea..0000000000000000000000000000000000000000
@@ -2877,6 +3106,137 @@ zV@1iDha|UHolVQHTH<Zkq4UU-seE0X={Va0YdA25p6#Ba1nxyRG!>!QO#nIJx<UrP
 zJck<9_=&Zb?0yW)(Al2Pj=(V-jec1e@Q+58e+1$)<Z0Q}#E=!^A{)jd5E=yi3!FdG
 q8QY83{=-vR&GvZT#2PX?+WG$+2Z0Au%?E%00000<MNUMnLSTZKo#|r$
 
+diff --git a/Prefs/Resources/sliders.png b/Prefs/Resources/sliders.png
+deleted file mode 100644
+index 7a73426c3ce19affc27fbfc10ebf63f66af739ea..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 889
+zcmV-<1BU#GP)<h;3K|Lk000e1NJLTq000~S000*V1^@s67|JhK00001b5ch_0Itp)
+z=>Px#L}ge>W=%~1DgXcg2mk?xX#fNO00031000^Q000001E2u_0{{R30RRC20H6W@
+z1ONa40RR919H0XL1ONa40RR917XSbN026J+vj6}B<4Ht8R7efQRZU1#Q4~Js&YO9I
+zn@|_InT>)QD+Dp49}{X-grg8btqWSTi0H?kF-tQcD5yY`$S7#l)TBvRM1w-MaMz-u
+zauH!j!Gwv<o0<1c-<5>tFq88d!UK<Y&bjA&-?{gmdoNRw5;nU|FsW<A6x2{65}UUc
+zk4)3`<y_DVr#eKZ%Q6(ux+n3Q{#r#cLByYhWJnS1B<2>7-m<LBrL|y-)-$@fz~NwI
+zhKcLe4tld}+pZr?U!Fl0ht2Ny%v7C?fFe+nb5yagKYQ?h*bE^dgKOw;ppq&p{)NOa
+z{o9Du7&h*sLo$e!+6~-R01ss>tKW^u<g-Spf8O)Hxk0p!ra6g~yb2;y+gQ1$wl&{2
+zM#D?m&X%GHHDC+1mrKxJ%Z@YmIMw$qn`A@nyfdt$<Ni>vB7*&BLxl=k9!(^_^u+0I
+zvY3i-baG25xcLsMiGZktS#&3#D>Xw8az_{L<(5EKCl2dAcZ#43AWi6i7YS?XK%C-E
+z*o;Ks3nOk4e%l>ihz`tUTj;C-=ri~>xsz7c*%69^EThMe@CtrS*ob&{ctN_(@QF-w
+zvk}>&e6quxC88(D7eVqBZQkloCT+0s5HZ!TFMw~Q2zSnUx)3j0*3Wx+OV#I#S>130
+ziQ{y{Qhit4KCgOSLJbrSb~RzPZ3sehNi=5lJ@-nm;qiZ+VS&|gbD%q{6g4;^a~Ugr
+zf1Cyq`ErXTRIcOlheN*El5QNe20rB?MRk#_tYmwx!S#GBss=CpDRgc$Eq0H=Y8PIN
+zL3HtJJbokYe8-XG_terO{Q&<!P`P{1tDd4%)p&AXR_6il4e%OrVmQ)nu+Rw3+kU)`
+zo|hLHWdIKuj;|gBvj^#XDK4oh%=j0;Rti`pMr;x{%}dWDs{s1nOr0TRs<%)}Q1m1&
+ziyG(^c#MxdN%r2>G1=nFc6hNr(9}Y;+B=~XZ$aKpd<o2;BWCpu=fn98{51imoz%^8
+P00000NkvXXu0mjfLDqr^
+
+diff --git a/Prefs/Resources/sliders@2x.png b/Prefs/Resources/sliders@2x.png
+deleted file mode 100644
+index d35de3afb7e017e3b853ac228f70b2be0889acb3..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1761
+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
+DlyNmP
+
+diff --git a/Prefs/Resources/sliders@3x.png b/Prefs/Resources/sliders@3x.png
+deleted file mode 100644
+index 4f5c758b7e0b2dc9c39d9505a517853fead7ca27..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 2618
+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
+
 diff --git a/Prefs/Resources/text.png b/Prefs/Resources/text.png
 deleted file mode 100644
 index 595790155cc77b53cb55faacf0eaf5858c8c9f3f..0000000000000000000000000000000000000000
@@ -3007,6 +3367,56 @@ zKm&pR1Cjq=rShDHn12i?rZHxYZlBYS%@)(g2t&R>dHc4p*h^WhL-rw5^KO8l79cT>
 zw-@(qT2S#QJ|~GgTrpE`({@zbt*>sLo;=`v)Ywz8Xc+pw0CY|}F~O7Rx0kK`1@MBV
 U6ZGav2mk;807*qoM6N<$f;sBF+5i9m
 
+diff --git a/Prefs/src/ARIChildListController.h b/Prefs/src/ARIChildListController.h
+deleted file mode 100644
+index 339e374..0000000
+--- a/Prefs/src/ARIChildListController.h
++++ /dev/null
+@@ -1,9 +0,0 @@
+-//
+-// Created by ren7995 on 2023-05-25 21:51:52
+-// Copyright (c) 2023 ren7995. All rights reserved.
+-//
+-
+-#import "ARIListController.h"
+-
+-@interface ARIChildListController : ARIListController
+-@end
+diff --git a/Prefs/src/ARIChildListController.m b/Prefs/src/ARIChildListController.m
+deleted file mode 100644
+index c208778..0000000
+--- a/Prefs/src/ARIChildListController.m
++++ /dev/null
+@@ -1,29 +0,0 @@
+-//
+-// Created by ren7995 on 2023-05-25 21:52:05
+-// Copyright (c) 2023 ren7995. All rights reserved.
+-//
+-
+-#import "ARIChildListController.h"
+-
+-@implementation ARIChildListController {
+-    NSString *_childName;
+-}
+-
+-- (NSArray *)specifiers {
+-    if(!_specifiers && _childName) {
+-        _specifiers = [self loadSpecifiersFromPlistName:_childName target:self];
+-    }
+-
+-    return _specifiers;
+-}
+-
+-- (void)setSpecifier:(PSSpecifier *)specifier {
+-    _childName = [specifier propertyForKey:@"child"];
+-    [self specifiers];
+-}
+-
+-- (BOOL)shouldReloadSpecifiersOnResume {
+-    return NO;
+-}
+-
+-@end
 diff --git a/Prefs/src/ARIHeaderCell.h b/Prefs/src/ARIHeaderCell.h
 deleted file mode 100644
 index 612aec7..0000000
@@ -3589,7 +3999,7 @@ index eff8fd2..9ae4f5e 100644
  	}
  	// If location is already set, size should have been modified as needed
 diff --git a/src/Hooks/Helper.xm b/src/Hooks/Helper.xm
-index 00e602e..573cf48 100644
+index 00e602e..3d5de72 100644
 --- a/src/Hooks/Helper.xm
 +++ b/src/Hooks/Helper.xm
 @@ -7,7 +7,6 @@
@@ -3600,7 +4010,7 @@ index 00e602e..573cf48 100644
  
  #include <dlfcn.h>
  
-@@ -20,7 +19,7 @@
+@@ -20,12 +19,12 @@
  
      ARITweakManager *manager = [ARITweakManager sharedInstance];
      if(![manager boolValueForKey:ARIDidSplashPreferenceKey]) {
@@ -3609,6 +4019,12 @@ index 00e602e..573cf48 100644
          [splash addEntry:@"3D touch an icon or triple tap your wallpaper to edit layout" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"square.grid.3x3.fill.square" : @"square"]];
          [splash addEntry:@"Drag the slider on the editor to see changes in real-time" image:[UIImage systemImageNamed:@"slider.horizontal.3"]];
          [splash addEntry:@"Tap the label underneath the slider and type in a value for precise control" image:[UIImage systemImageNamed:@"wand.and.rays"]];
+         [splash addEntry:@"Tap this icon on the editor to edit layout for the current page only" image:[UIImage systemImageNamed:@"doc"]];
+-        [splash addEntry:@"See the preference pane in the Settings app for even more options" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"gearshape" : @"gear"]];
++        [splash addEntry:@"更多选项请在「设置」中查看插件的偏好面板" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"gearshape" : @"gear"]];
+         [splash addEntry:@"If you encounter a bug, don't hesitate to report it! Please include your device and iOS version." image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"ladybug" : @"ant"]];
+         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+             [[objc_getClass("SBIconController") sharedInstance] presentViewController:splash animated:YES completion:nil];
 @@ -56,16 +55,6 @@
  %end
  
@@ -4029,12 +4445,22 @@ index 1913330..ee05f22 100644
                                              handler:^(UIAlertAction *action){
                                              }]];
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
-index 8749041..1877907 100644
+index 8749041..7bff79b 100644
 --- a/src/Manager/ARITweakManager.h
 +++ b/src/Manager/ARITweakManager.h
-@@ -78,10 +78,7 @@ typedef struct SBRootFolderViewMetrics {
+@@ -43,7 +43,6 @@ typedef struct SBRootFolderViewMetrics {
+ 
+ @interface SBIcon : NSObject
+ - (NSUInteger)gridSizeClass;
+-- (id)application;
+ @end
+ 
+ @interface SBDockView : UIView
+@@ -76,12 +75,8 @@ typedef struct SBRootFolderViewMetrics {
+ @property (nonatomic, assign, getter=isIconContentScalingEnabled) BOOL iconContentScalingEnabled;
+ @property (nonatomic, strong) NSString *location;
  - (void)_updateIconImageViewAnimated:(BOOL)arg1;
- - (void)_updateLabelArea;
+-- (void)_updateLabelArea;
  - (BOOL)isFolderIcon;
 -- (CGFloat)iconImageCornerRadius;
  - (void)_atriaUpdateIconContentScale;
@@ -4043,7 +4469,7 @@ index 8749041..1877907 100644
  - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type;
  @end
  
-@@ -106,8 +103,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -106,8 +101,6 @@ typedef struct SBRootFolderViewMetrics {
  @end
  
  @class SBIcon;
@@ -4052,7 +4478,7 @@ index 8749041..1877907 100644
  @interface SBIconListView : UIView
  @property (nonatomic, assign, getter=isEditing, nonatomic) BOOL editing;
  @property (nonatomic, strong) NSString *iconLocation;
-@@ -116,13 +111,9 @@ typedef struct SBRootFolderViewMetrics {
+@@ -116,21 +109,14 @@ typedef struct SBRootFolderViewMetrics {
  @property (nonatomic, assign) UIEdgeInsets additionalLayoutInsets; // iOS 14+
  @property (nonatomic, assign) UIEdgeInsets layoutInsets;           // iOS 13
  
@@ -4066,7 +4492,31 @@ index 8749041..1877907 100644
  - (void)_atriaUpdateLayoutCache;
  
  - (NSArray<SBIconView *> *)icons;
-@@ -195,7 +186,6 @@ typedef struct SBRootFolderViewMetrics {
+-- (SBIconListViewLayoutMetrics *)layoutMetrics;
+ - (SBIcon *)iconAtCoordinate:(struct SBIconCoordinate)co metrics:(id)metrics;
+-- (struct SBIconCoordinate)coordinateForIcon:(id)icon;
+ - (CGPoint)originForIconAtCoordinate:(struct SBIconCoordinate)co metrics:(id)metrics;
+-- (CGPoint)centerForIconCoordinate:(struct SBIconCoordinate)co metrics:(id)metrics;
+ - (CGSize)iconImageSizeForGridSizeClass:(NSUInteger)size;
+ - (CGSize)effectiveIconSpacing;
+ - (SBIconListModel *)model;
+@@ -157,7 +143,6 @@ typedef struct SBRootFolderViewMetrics {
+ @interface SBHIconManager : NSObject
+ @property (nonatomic, assign, getter=isEditing) BOOL editing;
+ - (SBIconListModel *)iconModel;
+-- (BOOL)relayout;
+ @end
+ 
+ @interface SBFloatingDockView : UIView
+@@ -183,7 +168,6 @@ typedef struct SBRootFolderViewMetrics {
+ @end
+ 
+ @interface SBIconController : UIViewController
+-- (SBFloatingDockController *)floatingDockController; // iOS 13-15 only (does not exist on 16)
+ - (SBRootFolderController *)_rootFolderController;
+ - (SBHIconManager *)iconManager;
+ + (SBIconController *)sharedInstance;
+@@ -195,7 +179,6 @@ typedef struct SBRootFolderViewMetrics {
  @property (nonatomic, readonly, strong) NSMapTable *listViewModelMap;
  @property (nonatomic, readonly, assign) NSUInteger firmwareVersion;
  @property (nonatomic, readonly, assign, getter=isDeviceIPad) BOOL deviceIPad;
