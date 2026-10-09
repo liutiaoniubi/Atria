@@ -99,13 +99,66 @@ index f8dc45c..0000000
 -</plist>
 \ No newline at end of file
 diff --git a/Prefs/Resources/Editor.plist b/Prefs/Resources/Editor.plist
-index 47884da..b0c2ea1 100644
+index 47884da..e17183b 100644
 --- a/Prefs/Resources/Editor.plist
 +++ b/Prefs/Resources/Editor.plist
-@@ -71,20 +71,7 @@ Disable Tap Gesture: Disables the triple tap gesture that can be used to invoke
- 			<key>PostNotification</key>
- 			<string>me.lau.Atria/ReloadPrefs</string>
+@@ -8,7 +8,7 @@
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
+-			<string>Editor Behavior</string>
++			<string>编辑器行为</string>
  		</dict>
+         <dict>
+ 			<key>cell</key>
+@@ -20,13 +20,13 @@
+ 			<key>key</key>
+ 			<string>showTooltips</string>
+ 			<key>label</key>
+-			<string>Show Tooltips</string>
++			<string>显示工具提示</string>
+ 		</dict>
+         <dict>
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
+-			<string>Open From</string>
++			<string>从哪打开</string>
+ 		</dict>
+         <dict>
+ 			<key>cell</key>
+@@ -39,8 +39,8 @@
+ 			<string>editorOpenFrom</string>
+             <key>validTitles</key>
+ 			<array>
+-				<string>Bottom</string>
+-				<string>Top</string>
++				<string>底部</string>
++				<string>顶部</string>
+ 			</array>
+ 			<key>validValues</key>
+ 			<array>
+@@ -52,10 +52,9 @@
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
+-			<string>Activation Settings</string>
++			<string>激活设置</string>
+ 			<key>footerText</key>
+-			<string>Hide Actions: Hides Atria's 3D touch actions from the menu. Turn on if you are done configuring, and do not want to see the options. 
+-Disable Tap Gesture: Disables the triple tap gesture that can be used to invoke Atria from the homescren pages</string>
++			<string>隐藏触控编辑：从长按图标菜单中隐藏 Atria 的编辑选项。配置完成后若不想再看到这些选项，可开启此项。</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+@@ -67,24 +66,11 @@ Disable Tap Gesture: Disables the triple tap gesture that can be used to invoke
+ 			<key>key</key>
+ 			<string>hide3DTouchActions</string>
+ 			<key>label</key>
+-			<string>Hide Actions</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
 -		<dict>
 -			<key>cell</key>
 -			<string>PSSwitchCell</string>
@@ -117,18 +170,36 @@ index 47884da..b0c2ea1 100644
 -			<string>disableTapGesture</string>
 -			<key>label</key>
 -			<string>Disable Tap Gesture</string>
--			<key>PostNotification</key>
--			<string>me.lau.Atria/ReloadPrefs</string>
--		</dict>
++			<string>隐藏触控编辑</string>
+ 			<key>PostNotification</key>
+ 			<string>me.lau.Atria/ReloadPrefs</string>
+ 		</dict>
 +		
      </array>
  	<key>title</key>
  	<string>Editor</string>
 diff --git a/Prefs/Resources/General.plist b/Prefs/Resources/General.plist
-index 84a44a2..d7db722 100644
+index 84a44a2..753397b 100644
 --- a/Prefs/Resources/General.plist
 +++ b/Prefs/Resources/General.plist
-@@ -26,18 +26,7 @@
+@@ -8,9 +8,9 @@
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
+-			<string>General</string>
++			<string>常规</string>
+ 			<key>footerText</key>
+-			<string>Requires a respring to apply.</string>
++			<string>需要注销才能生效。</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+@@ -22,22 +22,11 @@
+ 			<key>key</key>
+ 			<string>dynamicWidgetSizing</string>
+ 			<key>label</key>
+-			<string>Dynamic Widget Sizing</string>
++			<string>自适应小组件尺寸</string>
  			<key>PostNotification</key>
  			<string>me.lau.Atria/ReloadPrefs</string>
  		</dict>
@@ -148,10 +219,14 @@ index 84a44a2..d7db722 100644
  		<dict>
  			<key>cell</key>
  			<string>PSSwitchCell</string>
-@@ -52,216 +41,23 @@
- 			<key>PostNotification</key>
- 			<string>me.lau.Atria/ReloadPrefs</string>
- 		</dict>
+@@ -48,222 +37,29 @@
+ 			<key>key</key>
+ 			<string>scaleInsideFolders</string>
+ 			<key>label</key>
+-			<string>Scale Icons In Folders</string>
+-			<key>PostNotification</key>
+-			<string>me.lau.Atria/ReloadPrefs</string>
+-		</dict>
 -		<dict>
 -			<key>cell</key>
 -			<string>PSGroupCell</string>
@@ -359,9 +434,10 @@ index 84a44a2..d7db722 100644
 -			<string>hideLabelsFolders</string>
 -			<key>label</key>
 -			<string>Hide In Folders</string>
--			<key>PostNotification</key>
--			<string>me.lau.Atria/ReloadPrefs</string>
--		</dict>
++			<string>缩放文件夹内图标</string>
+ 			<key>PostNotification</key>
+ 			<string>me.lau.Atria/ReloadPrefs</string>
+ 		</dict>
 +		
 +		
 +		
@@ -381,7 +457,11 @@ index 84a44a2..d7db722 100644
 +		
  	</array>
  	<key>title</key>
- 	<string>General</string>
+-	<string>General</string>
++	<string>常规</string>
+ </dict>
+ </plist>
+\ No newline at end of file
 diff --git a/Prefs/Resources/PageLabels.plist b/Prefs/Resources/PageLabels.plist
 deleted file mode 100644
 index 1d0b076..0000000
@@ -502,13 +582,70 @@ index 1d0b076..0000000
 -</plist>
 \ No newline at end of file
 diff --git a/Prefs/Resources/Root.plist b/Prefs/Resources/Root.plist
-index f15561d..653628c 100644
+index f15561d..1c7058e 100644
 --- a/Prefs/Resources/Root.plist
 +++ b/Prefs/Resources/Root.plist
-@@ -74,18 +74,7 @@
- 			<key>label</key>
- 			<string>Layout Modifications</string>
+@@ -8,7 +8,7 @@
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>footerText</key>
+-			<string>In order to edit layout, 3D touch a homescreen icon, or triple tap behind them (on your wallpaper)</string>
++			<string>长按桌面图标即可编辑布局</string>
  		</dict>
+ 		<dict>
+ 			<key>cellClass</key>
+@@ -22,7 +22,7 @@
+ 			<key>displayName</key>
+ 			<string>ren</string>
+ 			<key>description</key>
+-			<string>Developer</string>
++			<string>开发者</string>
+ 			<key>height</key>
+ 			<integer>70</integer>
+ 		</dict>
+@@ -32,7 +32,7 @@
+ 			<key>action</key>
+ 			<string>exportSettingsString</string>
+ 			<key>label</key>
+-			<string>Export Settings</string>
++			<string>导出设置</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+@@ -40,15 +40,15 @@
+ 			<key>action</key>
+ 			<string>importSettingsString</string>
+ 			<key>label</key>
+-			<string>Import Settings from Clipboard</string>
++			<string>从剪贴板导入设置</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
+-			<string>Enable/Disable</string>
++			<string>启用/禁用</string>
+ 			<key>footerText</key>
+-			<string>A respring is required for these settings to change. Enabling "Save State" allows your icon layout to be preserved, even when going to safemode/stock.</string>
++			<string>更改这些设置需要注销才能生效。开启「保存图标状态」后，即使进入安全模式或未越狱状态，你的图标布局也会被保留。</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+@@ -60,7 +60,7 @@
+ 			<key>key</key>
+ 			<string>enabled</string>
+ 			<key>label</key>
+-			<string>Main Toggle</string>
++			<string>布局功能开关</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+@@ -72,20 +72,9 @@
+ 			<key>key</key>
+ 			<string>layoutEnabled</string>
+ 			<key>label</key>
+-			<string>Layout Modifications</string>
+-		</dict>
 -		<dict>
 -			<key>cell</key>
 -			<string>PSSwitchCell</string>
@@ -520,12 +657,46 @@ index f15561d..653628c 100644
 -			<string>enableAppLibrary</string>
 -			<key>label</key>
 -			<string>Force App Library</string>
--		</dict>
++			<string>启用布局修改</string>
+ 		</dict>
 +		
  		<dict>
  			<key>cell</key>
  			<string>PSSwitchCell</string>
-@@ -128,30 +117,8 @@
+@@ -96,13 +85,13 @@
+ 			<key>key</key>
+ 			<string>saveIconState</string>
+ 			<key>label</key>
+-			<string>Save Icon State</string>
++			<string>保存图标状态</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
+-			<string>Options</string>
++			<string>选项</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+@@ -110,7 +99,7 @@
+ 			<key>detail</key>
+ 			<string>ARIChildListController</string>
+ 			<key>label</key>
+-			<string>General Options</string>
++			<string>常规配置</string>
+ 			<key>child</key>
+ 			<string>General</string>
+ 			<key>icon</key>
+@@ -122,36 +111,14 @@
+ 			<key>detail</key>
+ 			<string>ARIChildListController</string>
+ 			<key>label</key>
+-			<string>Editor</string>
++			<string>编辑选项</string>
+ 			<key>child</key>
+-			<string>Editor</string>
++			<string>编辑选项</string>
  			<key>icon</key>
  			<string>sliders</string>
  		</dict>
@@ -558,8 +729,54 @@ index f15561d..653628c 100644
  		<dict>
  			<key>cell</key>
  			<string>PSGroupCell</string>
+@@ -162,7 +129,7 @@
+ 			<key>action</key>
+ 			<string>resetPrefs:</string>
+ 			<key>label</key>
+-			<string>Reset All Preferences</string>
++			<string>重置所有偏好设置</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+@@ -170,15 +137,15 @@
+ 			<key>action</key>
+ 			<string>resetSaveState:</string>
+ 			<key>label</key>
+-			<string>Reset Save State</string>
++			<string>重置保存状态</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
+-			<string>Credits</string>
++			<string>致谢</string>
+ 			<key>footerText</key>
+-			<string>Thank you to everyone who has helped me along the way of making this tweak! A special thanks to everyone who helped test the tweak throughout its various stages. Much love to you all 💜
++			<string>感谢每一位在开发这个插件过程中给予帮助的朋友！特别感谢在各个阶段参与测试的所有人。爱你们 💜
+ - ren</string>
+ 		</dict>
+ 		<dict>
+@@ -189,7 +156,7 @@
+ 			<key>displayName</key>
+ 			<string>cakePhone</string>
+ 			<key>description</key>
+-			<string>Tweak Icon/Advice</string>
++			<string>插件图标 / 建议</string>
+ 			<key>height</key>
+ 			<integer>70</integer>
+ 		</dict>
+@@ -201,7 +168,7 @@
+ 			<key>displayName</key>
+ 			<string>Alpha_Stream</string>
+ 			<key>description</key>
+-			<string>Icons/Advice</string>
++			<string>图标 / 建议</string>
+ 			<key>height</key>
+ 			<integer>70</integer>
+ 		</dict>
 diff --git a/Prefs/src/ARIHeaderCell.m b/Prefs/src/ARIHeaderCell.m
-index cc1df12..11915ac 100644
+index cc1df12..7872385 100644
 --- a/Prefs/src/ARIHeaderCell.m
 +++ b/Prefs/src/ARIHeaderCell.m
 @@ -30,7 +30,7 @@
@@ -567,10 +784,161 @@ index cc1df12..11915ac 100644
  
          UILabel *label = [[UILabel alloc] init];
 -        label.text = @"Version " PACKAGE_VERSION " (" PACKAGE_TYPE ")";
-+        label.text = @"Version 1.4.1 (rootless)";
++        label.text = @"版本 1.4.1（rootless）";
          label.numberOfLines = 0;
          label.font = [UIFont systemFontOfSize:14];
          label.textAlignment = NSTextAlignmentCenter;
+diff --git a/Prefs/src/ARIListController.m b/Prefs/src/ARIListController.m
+index 16a565a..9117c4e 100644
+--- a/Prefs/src/ARIListController.m
++++ b/Prefs/src/ARIListController.m
+@@ -18,23 +18,23 @@
+ - (void)viewDidLoad {
+     [super viewDidLoad];
+ 
+-    UIBarButtonItem *respring = [[UIBarButtonItem alloc] initWithTitle:@"Respring" style:UIBarButtonItemStylePlain target:self action:@selector(promptRespring:)];
++    UIBarButtonItem *respring = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(promptRespring:)];
+     self.navigationItem.rightBarButtonItem = respring;
+ }
+ 
+ - (void)promptRespring:(id)sender {
+     UIAlertController *alert = [UIAlertController
+-        alertControllerWithTitle:@"Respring"
+-                         message:@"Are you sure you want to respring?"
++        alertControllerWithTitle:@"注销"
++                         message:@"确定要注销吗？"
+                   preferredStyle:UIAlertControllerStyleAlert];
+ 
+     UIAlertAction *defaultAction = [UIAlertAction
+-        actionWithTitle:@"No"
++        actionWithTitle:@"取消"
+                   style:UIAlertActionStyleCancel
+                 handler:nil];
+ 
+     UIAlertAction *yes = [UIAlertAction
+-        actionWithTitle:@"Yes"
++        actionWithTitle:@"确定"
+                   style:UIAlertActionStyleDestructive
+                 handler:^(UIAlertAction *action) {
+                     [self respringWithAnimation];
+diff --git a/Prefs/src/ARIRootListController.m b/Prefs/src/ARIRootListController.m
+index 05aacc4..55bdb4c 100644
+--- a/Prefs/src/ARIRootListController.m
++++ b/Prefs/src/ARIRootListController.m
+@@ -18,16 +18,16 @@
+ 
+ - (void)resetPrefs:(id)sender {
+     UIAlertController *alert = [UIAlertController
+-        alertControllerWithTitle:@"Reset Preferences"
+-                         message:@"Are you sure you want to reset preferences? Your device will respring."
++        alertControllerWithTitle:@"重置偏好设置"
++                         message:@"确定要重置所有偏好设置吗？你的设备将会注销。"
+                   preferredStyle:UIAlertControllerStyleAlert];
+ 
+     UIAlertAction *defaultAction = [UIAlertAction
+-        actionWithTitle:@"No"
++        actionWithTitle:@"取消"
+                   style:UIAlertActionStyleCancel
+                 handler:nil];
+     UIAlertAction *yes = [UIAlertAction
+-        actionWithTitle:@"Yes"
++        actionWithTitle:@"确定"
+                   style:UIAlertActionStyleDestructive
+                 handler:^(UIAlertAction *action) {
+                     NSUserDefaults *prefs = [[NSUserDefaults standardUserDefaults] init];
+@@ -42,16 +42,16 @@
+ 
+ - (void)resetSaveState:(id)sender {
+     UIAlertController *alert = [UIAlertController
+-        alertControllerWithTitle:@"Reset Save State"
+-                         message:@"Are you sure you want to reset save state? Your device will respring."
++        alertControllerWithTitle:@"重置保存状态"
++                         message:@"确定要重置保存状态吗？你的设备将会注销。"
+                   preferredStyle:UIAlertControllerStyleAlert];
+ 
+     UIAlertAction *defaultAction = [UIAlertAction
+-        actionWithTitle:@"No"
++        actionWithTitle:@"取消"
+                   style:UIAlertActionStyleCancel
+                 handler:nil];
+     UIAlertAction *yes = [UIAlertAction
+-        actionWithTitle:@"Yes"
++        actionWithTitle:@"确定"
+                   style:UIAlertActionStyleDestructive
+                 handler:^(UIAlertAction *action) {
+                     NSUserDefaults *prefs = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
+@@ -76,7 +76,7 @@
+     NSMutableDictionary *dict = [[NSDictionary dictionaryWithContentsOfURL:url error:&error] mutableCopy]
+                                     ?: [NSMutableDictionary new];
+     if(error) {
+-        [self displayAlert:@"Failed to export" message:[NSString stringWithFormat:@"Error: %@", error.localizedDescription]];
++        [self displayAlert:@"导出失败" message:[NSString stringWithFormat:@"错误：%@", error.localizedDescription]];
+         return;
+     }
+ 
+@@ -89,24 +89,24 @@
+                                                        options:0
+                                                          error:&error];
+     if(error) {
+-        [self displayAlert:@"Failed to export" message:[NSString stringWithFormat:@"Error: %@", error.localizedDescription]];
++        [self displayAlert:@"导出失败" message:[NSString stringWithFormat:@"错误：%@", error.localizedDescription]];
+         return;
+     }
+ 
+     NSString *encoded = [jsonData base64EncodedStringWithOptions:0];
+     [UIPasteboard generalPasteboard].string = encoded;
+-    [self displayAlert:@"Success" message:@"Settings exported and copied to clipboard"];
++    [self displayAlert:@"成功" message:@"设置已导出并复制到剪贴板"];
+ }
+ 
+ - (void)importSettingsString {
+     NSString *pasteboardString = [UIPasteboard generalPasteboard].string;
+     if(!pasteboardString) {
+-        [self displayAlert:@"Failed to import" message:@"No string was found in your clipboard."];
++        [self displayAlert:@"导入失败" message:@"剪贴板中没有找到任何内容。"];
+         return;
+     }
+     NSData *decodeData = [[NSData alloc] initWithBase64EncodedString:pasteboardString options:0];
+     if(!decodeData) {
+-        [self displayAlert:@"Failed to import" message:@"Failed to decode. Perhaps the settings string in your clipboard is invalid?"];
++        [self displayAlert:@"导入失败" message:@"解码失败，剪贴板中的设置内容可能无效。"];
+         return;
+     }
+ 
+@@ -114,7 +114,7 @@
+     NSDictionary *settingsDictionary = [NSJSONSerialization JSONObjectWithData:decodeData options:kNilOptions error:&error];
+ 
+     if(!settingsDictionary) {
+-        [self displayAlert:@"Failed to import" message:[NSString stringWithFormat:@"Perhaps the settings string in your clipboard is invalid?\n\nError: %@", error.localizedDescription]];
++        [self displayAlert:@"导入失败" message:[NSString stringWithFormat:@"剪贴板中的设置内容可能无效？\n\n错误：%@", error.localizedDescription]];
+         return;
+     }
+ 
+@@ -134,12 +134,12 @@
+     [defaults synchronize];
+ 
+     UIAlertController *alert = [UIAlertController
+-        alertControllerWithTitle:@"Success"
+-                         message:[NSString stringWithFormat:@"Settings imported. You may now respring to apply completely.\n\nSettings imported: %@", settingsDictionary]
++        alertControllerWithTitle:@"成功"
++                         message:[NSString stringWithFormat:@"设置已导入。你可以注销以完全生效。\n\n已导入的设置：%@", settingsDictionary]
+                   preferredStyle:UIAlertControllerStyleAlert];
+ 
+     UIAlertAction *defaultAction = [UIAlertAction
+-        actionWithTitle:@"Respring"
++        actionWithTitle:@"注销"
+                   style:UIAlertActionStyleDestructive
+                 handler:^(UIAlertAction *action) {
+                     [self respringWithAnimation];
+@@ -155,7 +155,7 @@
+                   preferredStyle:UIAlertControllerStyleAlert];
+ 
+     UIAlertAction *defaultAction = [UIAlertAction
+-        actionWithTitle:@"OK"
++        actionWithTitle:@"好"
+                   style:UIAlertActionStyleCancel
+                 handler:nil];
+ 
 diff --git a/layout/DEBIAN/control b/layout/DEBIAN/control
 index 2709321..a34401e 100644
 --- a/layout/DEBIAN/control
@@ -583,6 +951,48 @@ index 2709321..a34401e 100644
  Conflicts: com.irepo.boxy4, me.kritanta.homepluspro
  Description: A proper homescreen layout editor for iOS 13-16
  Maintainer: ren7995
+diff --git a/src/Editor/ARIEditingMainView.m b/src/Editor/ARIEditingMainView.m
+index a459cd0..62fef91 100644
+--- a/src/Editor/ARIEditingMainView.m
++++ b/src/Editor/ARIEditingMainView.m
+@@ -70,7 +70,7 @@
+ 
+         // Label
+         UILabel *currentSettingLabel = [UILabel new];
+-        currentSettingLabel.text = @"Choose a setting";
++        currentSettingLabel.text = @"选择一项设置";
+         currentSettingLabel.font = [UIFont systemFontOfSize:20 weight:UIFontWeightSemibold];
+         currentSettingLabel.textAlignment = NSTextAlignmentCenter;
+         currentSettingLabel.numberOfLines = 1;
+@@ -310,7 +310,7 @@
+     if([ARIEditManager sharedInstance].singleListMode) {
+         // Single list mode
+         ARITweakManager *manager = [ARITweakManager sharedInstance];
+-        self.perPageIndicator.text = [NSString stringWithFormat:@"Page %lu Only", [manager indexOfListView:[[ARIEditManager sharedInstance] currentIconListViewIfSinglePage]] + 1];
++        self.perPageIndicator.text = [NSString stringWithFormat:@"仅第 %lu 页", [manager indexOfListView:[[ARIEditManager sharedInstance] currentIconListViewIfSinglePage]] + 1];
+ 
+         _perPage.image = [UIImage systemImageNamed:@"doc.fill"];
+     } else {
+@@ -329,8 +329,8 @@
+ 
+     if(_heightAnchor.constant == [self getBaseHeight]) {
+         // Activate
+-        [self.currentSettingLabel setText:@"Choose a setting"];
+-        [_instructions setText:@"Click the page icon to edit this page only"];
++        [self.currentSettingLabel setText:@"选择一项设置"];
++        [_instructions setText:@"点击页面图标可仅编辑本页"];
+ 
+         if(self.currentControls) {
+             [self.currentControls endTextEntry];
+@@ -370,7 +370,7 @@
+                          }];
+     } else {
+         // End
+-        [_instructions setText:@"Click the label at the top to go back"];
++        [_instructions setText:@"点击顶部的标签返回"];
+ 
+         [UIView animateWithDuration:0.3f
+             animations:^{
 diff --git a/src/Hooks/AppLibrary.xm b/src/Hooks/AppLibrary.xm
 index a1613f8..d1526c7 100644
 --- a/src/Hooks/AppLibrary.xm
@@ -752,7 +1162,7 @@ index eff8fd2..9ae4f5e 100644
  	}
  	// If location is already set, size should have been modified as needed
 diff --git a/src/Hooks/Helper.xm b/src/Hooks/Helper.xm
-index 00e602e..42007d2 100644
+index 00e602e..573cf48 100644
 --- a/src/Hooks/Helper.xm
 +++ b/src/Hooks/Helper.xm
 @@ -7,7 +7,6 @@
@@ -763,6 +1173,15 @@ index 00e602e..42007d2 100644
  
  #include <dlfcn.h>
  
+@@ -20,7 +19,7 @@
+ 
+     ARITweakManager *manager = [ARITweakManager sharedInstance];
+     if(![manager boolValueForKey:ARIDidSplashPreferenceKey]) {
+-        ARISplashViewController *splash = [[ARISplashViewController alloc] initWithSubtitle:@"Getting started"];
++        ARISplashViewController *splash = [[ARISplashViewController alloc] initWithSubtitle:@"开始使用"];
+         [splash addEntry:@"3D touch an icon or triple tap your wallpaper to edit layout" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"square.grid.3x3.fill.square" : @"square"]];
+         [splash addEntry:@"Drag the slider on the editor to see changes in real-time" image:[UIImage systemImageNamed:@"slider.horizontal.3"]];
+         [splash addEntry:@"Tap the label underneath the slider and type in a value for precise control" image:[UIImage systemImageNamed:@"wand.and.rays"]];
 @@ -56,16 +55,6 @@
  %end
  
@@ -823,7 +1242,7 @@ index 00e602e..42007d2 100644
          NSString *const zenithPath = @THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/Zenith.dylib";
          if([[NSFileManager defaultManager] fileExistsAtPath:zenithPath]) {
 diff --git a/src/Hooks/IconView.xm b/src/Hooks/IconView.xm
-index 6597fba..baaaf9b 100644
+index 6597fba..91c84ba 100644
 --- a/src/Hooks/IconView.xm
 +++ b/src/Hooks/IconView.xm
 @@ -45,23 +45,6 @@
@@ -943,7 +1362,7 @@ index 6597fba..baaaf9b 100644
  
  	// Get data respresentation of the image
  	NSData *iconData = UIImagePNGRepresentation(image);
-@@ -214,17 +155,14 @@
+@@ -214,19 +155,16 @@
  	// Add shortcut item to activate editor
  	// I found this really cool gist to allow me to do this, tyvm to the author <3
  	// Link: https://gist.github.com/MTACS/8e26c4f430b27d6a1d2a11f0a828f250
@@ -954,15 +1373,20 @@ index 6597fba..baaaf9b 100644
  	if(!items) items = [NSMutableArray new];
  
  	if(IconIsInRoot(self)) {
- 		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Layout" type:@"me.lau.atria.edit.hs"]];
- 		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Page Dots" type:@"me.lau.atria.edit.pagedot"]];
+-		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Layout" type:@"me.lau.atria.edit.hs"]];
+-		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Page Dots" type:@"me.lau.atria.edit.pagedot"]];
 -		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Page Labels" type:@"me.lau.atria.edit.label"]];
 -		if([[ARITweakManager sharedInstance] boolValueForKey:@"showBackground"]) {
 -			[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Background Blur" type:@"me.lau.atria.edit.blur"]];
 -		}
++		[items addObject:[self _atriaGenerateItemWithTitle:@"编辑布局" type:@"me.lau.atria.edit.hs"]];
++		[items addObject:[self _atriaGenerateItemWithTitle:@"编辑翻页点" type:@"me.lau.atria.edit.pagedot"]];
  	} else if(IconIsInDock(self)) {
- 		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Dock" type:@"me.lau.atria.edit.dock"]];
+-		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Dock" type:@"me.lau.atria.edit.dock"]];
++		[items addObject:[self _atriaGenerateItemWithTitle:@"编辑程序坞" type:@"me.lau.atria.edit.dock"]];
  	}
+ 
+ 	return items;
 @@ -244,48 +182,6 @@
  
  %end
@@ -1138,21 +1562,32 @@ index 4af459b..2293602 100644
  		[config setNumberOfPortraitRows:rows];
  		// Flip for landscape
 diff --git a/src/Manager/ARIEditManager.m b/src/Manager/ARIEditManager.m
-index 1913330..de2f3ce 100644
+index 1913330..ee05f22 100644
 --- a/src/Manager/ARIEditManager.m
 +++ b/src/Manager/ARIEditManager.m
-@@ -102,11 +102,7 @@
+@@ -97,17 +97,13 @@
+ - (void)presentEditAlert {
+     ARITweakManager *manager = [ARITweakManager sharedInstance];
+     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Atria"
+-                                                                   message:@"What would you like to edit?"
++                                                                   message:@"你想编辑什么？"
+                                                             preferredStyle:UIAlertControllerStyleAlert];
  
-     [alert addAction:[self _createEditAlertAction:@"Homescreen Pages" editLocation:@"hs"]];
-     [alert addAction:[self _createEditAlertAction:@"Dock" editLocation:@"dock"]];
+-    [alert addAction:[self _createEditAlertAction:@"Homescreen Pages" editLocation:@"hs"]];
+-    [alert addAction:[self _createEditAlertAction:@"Dock" editLocation:@"dock"]];
 -    [alert addAction:[self _createEditAlertAction:@"Page Labels" editLocation:@"label"]];
-     [alert addAction:[self _createEditAlertAction:@"Page Dots" editLocation:@"pagedot"]];
+-    [alert addAction:[self _createEditAlertAction:@"Page Dots" editLocation:@"pagedot"]];
 -    if([manager boolValueForKey:@"showBackground"]) {
 -        [alert addAction:[self _createEditAlertAction:@"Background Blur" editLocation:@"blur"]];
 -    }
-     [alert addAction:[UIAlertAction actionWithTitle:@"Cancel"
+-    [alert addAction:[UIAlertAction actionWithTitle:@"Cancel"
++    [alert addAction:[self _createEditAlertAction:@"主屏幕页面" editLocation:@"hs"]];
++    [alert addAction:[self _createEditAlertAction:@"程序坞" editLocation:@"dock"]];
++    [alert addAction:[self _createEditAlertAction:@"翻页点" editLocation:@"pagedot"]];
++    [alert addAction:[UIAlertAction actionWithTitle:@"取消"
                                                style:UIAlertActionStyleCancel
                                              handler:^(UIAlertAction *action){
+                                             }]];
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
 index 8749041..cac3ef4 100644
 --- a/src/Manager/ARITweakManager.h
@@ -1198,7 +1633,7 @@ index 8749041..cac3ef4 100644
  - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated;
  - (void)relayoutEntireIconModel;
 diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
-index 9f08730..7291248 100644
+index 9f08730..14c88a2 100644
 --- a/src/Manager/ARITweakManager.m
 +++ b/src/Manager/ARITweakManager.m
 @@ -18,14 +18,12 @@
@@ -1292,7 +1727,7 @@ index 9f08730..7291248 100644
          [self _registerOption:@"scaleInsideFolders"
                    translation:nil
                   defaultValue:@(YES)
-@@ -121,22 +72,6 @@
+@@ -121,90 +72,74 @@
                   defaultValue:@(YES)
                     lowerLimit:0
                     upperLimit:0];
@@ -1314,7 +1749,231 @@ index 9f08730..7291248 100644
 -
          // Homescreen
          [self _registerOption:@"hs_rows"
-                   translation:@"Rows"
+-                  translation:@"Rows"
++                  translation:@"行数"
+                  defaultValue:@(6)
+                    lowerLimit:2.0F
+                    upperLimit:20.0F];
+         [self _registerOption:@"hs_columns"
+-                  translation:@"Columns"
++                  translation:@"列数"
+                  defaultValue:@(4)
+                    lowerLimit:2.0F
+                    upperLimit:20.0F];
+         [self _registerOption:@"hs_iconScale"
+-                  translation:@"Icon Scale"
++                  translation:@"图标缩放"
+                  defaultValue:@(1.0)
+                    lowerLimit:0.01F
+                    upperLimit:2.0F];
+         [self _registerOption:@"hs_widgetIconScale"
+-                  translation:@"Widget Scale"
++                  translation:@"小组件缩放"
+                  defaultValue:@(1.0)
+                    lowerLimit:0.01F
+                    upperLimit:3.0F];
+         [self _registerOption:@"hs_spacing_x"
+-                  translation:@"Icon Spacing X"
++                  translation:@"图标横向间距"
+                  defaultValue:@(0)
+                    lowerLimit:-100.0F
+                    upperLimit:100.0F];
+         [self _registerOption:@"hs_spacing_y"
+-                  translation:@"Icon Spacing Y"
++                  translation:@"图标纵向间距"
+                  defaultValue:@(0)
+                    lowerLimit:-100.0F
+                    upperLimit:100.0F];
+         [self _registerOption:@"hs_inset_top"
+-                  translation:@"Top Inset"
++                  translation:@"顶部边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"hs_inset_left"
+-                  translation:@"Left Inset"
++                  translation:@"左侧边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"hs_inset_bottom"
+-                  translation:@"Bottom Inset"
++                  translation:@"底部边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"hs_inset_right"
+-                  translation:@"Right Inset"
++                  translation:@"右侧边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"hs_offset_top"
+-                  translation:@"Page Top Offset"
++                  translation:@"页面顶部偏移"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"hs_offset_left"
+-                  translation:@"Page Left Offset"
++                  translation:@"页面左侧偏移"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"hs_widgetXOffset"
+-                  translation:@"Widget X Offset"
++                  translation:@"小组件 X 偏移"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"hs_widgetYOffset"
+-                  translation:@"Widget Y Offset"
++                  translation:@"小组件 Y 偏移"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+@@ -213,119 +148,119 @@
+         // For some reason, on iOS 15 only (not 13-14 or 16+), calling +isFloatingDockSupported leads to a respring loop.
+         // Once SpringBoard launches, this option will be re-registered to adjust the default value if floating dock is enabled.
+         [self _registerOption:@"dock_columns"
+-                  translation:@"Columns"
++                  translation:@"列数"
+                  defaultValue:@(4)
+                    lowerLimit:2.0F
+                    upperLimit:20.0F];
+         [self _registerOption:@"dock_rows"
+-                  translation:@"Rows"
++                  translation:@"行数"
+                  defaultValue:@(1)
+                    lowerLimit:1.0F
+                    upperLimit:5.0F];
+         [self _registerOption:@"dock_iconScale"
+-                  translation:@"Icon Scale"
++                  translation:@"图标缩放"
+                  defaultValue:@(1)
+                    lowerLimit:0.01F
+                    upperLimit:2.0F];
+         [self _registerOption:@"dock_bg"
+-                  translation:@"Background Alpha"
++                  translation:@"背景透明度"
+                  defaultValue:@(1)
+                    lowerLimit:0.0F
+                    upperLimit:1.0F];
+         [self _registerOption:@"dock_spacing_x"
+-                  translation:@"Icon Spacing X"
++                  translation:@"图标横向间距"
+                  defaultValue:@(0)
+                    lowerLimit:-100.0F
+                    upperLimit:100.0F];
+         [self _registerOption:@"dock_spacing_y"
+-                  translation:@"Icon Spacing Y"
++                  translation:@"图标纵向间距"
+                  defaultValue:@(0)
+                    lowerLimit:-100.0F
+                    upperLimit:100.0F];
+         [self _registerOption:@"dock_inset_top"
+-                  translation:@"Top Inset"
++                  translation:@"顶部边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"dock_inset_left"
+-                  translation:@"Left Inset"
++                  translation:@"左侧边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"dock_inset_bottom"
+-                  translation:@"Bottom Inset"
++                  translation:@"底部边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"dock_inset_right"
+-                  translation:@"Right Inset"
++                  translation:@"右侧边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+ 
+         // Page labels
+         [self _registerOption:@"label_textSize"
+-                  translation:@"Text Size"
++                  translation:@"文字大小"
+                  defaultValue:@(27)
+                    lowerLimit:1.0F
+                    upperLimit:60.0F];
+         [self _registerOption:@"label_inset_left"
+-                  translation:@"Side Inset"
++                  translation:@"左右边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"label_inset_top"
+-                  translation:@"Vertical Inset"
++                  translation:@"上下边距"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+ 
+         // Blur background
+         [self _registerOption:@"blur_alpha"
+-                  translation:@"Background Alpha"
++                  translation:@"背景透明度"
+                  defaultValue:@(1)
+                    lowerLimit:0.0F
+                    upperLimit:1.0F];
+         [self _registerOption:@"blur_corner_radius"
+-                  translation:@"Corner Radius"
++                  translation:@"圆角半径"
+                  defaultValue:@(14)
+                    lowerLimit:0.0F
+                    upperLimit:100.0F];
+         [self _registerOption:@"blur_intensity"
+-                  translation:@"Tint Intensity"
++                  translation:@"色调强度"
+                  defaultValue:@(0.5F)
+                    lowerLimit:0.0F
+                    upperLimit:1.0F];
+ 
+         [self _registerOption:@"blur_inset_top"
+-                  translation:@"Top Position"
++                  translation:@"顶部位置"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"blur_inset_left"
+-                  translation:@"Left Position"
++                  translation:@"左侧位置"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"blur_inset_bottom"
+-                  translation:@"Bottom Position"
++                  translation:@"底部位置"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+         [self _registerOption:@"blur_inset_right"
+-                  translation:@"Right Position"
++                  translation:@"右侧位置"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+ 
+         // Page dots
+         [self _registerOption:@"pagedot_offsetX"
+-                  translation:@"Dot X Offset"
++                  translation:@"圆点 X 偏移"
+                  defaultValue:@(0)
+                    lowerLimit:-150.0F
+                    upperLimit:150.0F];
+         [self _registerOption:@"pagedot_offsetY"
+-                  translation:@"Dot Y Offset"
++                  translation:@"圆点 Y 偏移"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
 @@ -362,13 +297,6 @@
  
      NSDictionary *dict = [_preferences dictionaryRepresentation];
@@ -1338,15 +1997,18 @@ index 9f08730..7291248 100644
      [self updateLayoutForRoot:updateRoot forDock:[editingLocation isEqualToString:@"dock"] animated:animated];
  }
  
-@@ -501,7 +429,7 @@
+@@ -501,9 +429,9 @@
  
  - (void)onSpringboardLaunched {
      // If floating dock is enabled, default to 6 dock columns. See explanation in init method for why this is done here.
 -    if([self boolValueForKey:@"forceFloatingDock"] || [[self class] isUsingFloatingDock]) {
 +    if([[self class] isUsingFloatingDock]) {
          [self _registerOption:@"dock_columns"
-                   translation:@"Columns"
+-                  translation:@"Columns"
++                  translation:@"列数"
                   defaultValue:@(15) // iPad Pro dock icon limit
+                    lowerLimit:2.0F
+                    upperLimit:20.0F];
 diff --git a/src/UI/ARIBackgroundView.h b/src/UI/ARIBackgroundView.h
 deleted file mode 100644
 index 61bf145..0000000
@@ -1884,3 +2546,16 @@ index 0348434..0000000
 -
 -@end
 \ No newline at end of file
+diff --git a/src/UI/Splash/ARISplashViewController.m b/src/UI/Splash/ARISplashViewController.m
+index 707f0b7..62c62c9 100644
+--- a/src/UI/Splash/ARISplashViewController.m
++++ b/src/UI/Splash/ARISplashViewController.m
+@@ -59,7 +59,7 @@
+         [_dismiss addTarget:self
+                       action:@selector(dismissSelf:)
+             forControlEvents:UIControlEventTouchUpInside];
+-        [_dismiss setTitle:@"Dismiss" forState:UIControlStateNormal];
++        [_dismiss setTitle:@"关闭" forState:UIControlStateNormal];
+         _dismiss.layer.cornerRadius = 20;
+         _dismiss.layer.masksToBounds = YES;
+         _dismiss.layer.cornerCurve = kCACornerCurveContinuous;
