@@ -12,19 +12,37 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Theos
-        uses: Randomblock1/theos-action@v1
-        with:
-          theos-dir: 'theos'
-          theos-sdks: 'https://github.com/theos/sdks'
+      - name: Install dependencies
+        run: |
+          brew install ldid xz dpkg 2>/dev/null || true
+
+      - name: Clone Theos
+        run: |
+          export THEOS=$GITHUB_WORKSPACE/theos
+          echo "THEOS=$THEOS" >> $GITHUB_ENV
+          echo "PATH=$THEOS/bin:$PATH" >> $GITHUB_ENV
+          git clone --recursive https://github.com/theos/theos.git $THEOS
+          echo "--- theos cloned ---"
+
+      - name: Download iPhoneOS SDK
+        run: |
+          export THEOS=$GITHUB_WORKSPACE/theos
+          mkdir -p $THEOS/sdks
+          cd /tmp
+          curl -fsSL -A "Mozilla/5.0" \
+            -o sdks.zip \
+            https://codeload.github.com/theos/sdks/zip/refs/heads/master
+          ls -la sdks.zip
+          unzip -q -o sdks.zip
+          ls -d sdks-master/*.sdk
+          cp -R sdks-master/iPhoneOS16.5.sdk $THEOS/sdks/
+          ls $THEOS/sdks
 
       - name: Apply slim patch
         run: git apply -v .github/slim.patch
 
       - name: Build (rootless)
         run: |
-          export THEOS=$GITHUB_WORKSPACE/theos
-          export PATH=$THEOS/bin:$PATH
           make clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
 
       - name: Upload deb
