@@ -229,6 +229,38 @@ z6g!TU9D%u)9FA&9j?J}64pg>Dj@q_K4q<mlj^}qsE^au$VZYLYV&+cll^(m7MJ{`B
 z45e}nP|P2GnUuf~7y?6J2n>NCFa(Cc5E$`_>Q1Coh$e`X5>bQ~Q={mC=Ts?LN<s>I
 eN7!T)2K@(C1Yjb$v*|$q0000<MNUMnLSTY{_78~w
 
+diff --git a/Prefs/Resources/Editor/bg.png b/Prefs/Resources/Editor/bg.png
+deleted file mode 100644
+index 363e7ff04c353e1872c7b7a07c58d04ad268946a..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1164
+zcmV;71atd|P)<h;3K|Lk000e1NJLTq004#n004#v1ONa4vT!;Y00001b5ch_0Itp)
+z=>Px(MoC0LRCwC$ow086Fc8Q8m8zDBxkBnv^$or*u(0$oDj~td$}8{?6sdD&Ce|V`
+zpbD{dVJQR56(~}nLf~&eqzNP;BzM6{?(aFi^G}ZL<jyv5S>@2c2rH~GLIXKuSoipZ
+zvXxKVXB9>60L2bRMteu&2!(<|BbzWrt}sT~gt2mkvC1Y4<xvENzz`S$LtqFDfgvyi
+zhQJUQF3O{bGVT%q;|^sMk>^73iUFpWp$kKM7zVnSVTu7>IZ(`DTJC<6d|UFtSmN8N
+z&BUA@#m3?AmcVH)7(4I&%7zxltF2eixy=K^twxjXWyxc};&_~O4ycCGBBq{3lvXgj
+zy_}**1EY+Yj~S&63_l-dC{xYYU0*{=3mE<$cF9&pFl<v5T?68%YrhmQK&a)xbVbnw
+z{+jm7fMr}?65$*1OB5=g_v`{jX@W=>K|ybrBD{Dp6x7C}2c9pAg4%&-DG3)xLEk&V
+zCaY+HLJvo@K@r56HLLZtPAE>}_`#6P@(@3Ip*W3Wh-Vh7&lu{5;uMYr>bN4ec!fF^
+zI->B$u|yTO<o0e+#ZpfcemG22Sb9dq;}@hR5f^vI`Y5qjE1|D<@X2j9Y2(`WnMc&n
+zLJt#|*kTJ46ZFtR4UfLhU8C(fn`or9!@(bPea4FiG%@xa1jlIN!Drm)9#~sLGYv7s
+z0!x_aqwR^}37vxoj91y9gC|cMZS-Mci3Ns?E1F0vfI6zEpycs_6kweEUv~J9%0R*6
+zWhtS8D(XzD8IrO7)^i4V!Tc-``!dH%2x}Va25+H2?8_T&kP_wb9tnkl!aHAbLA)qF
+zBBM}H_((pE8-iZ(*E<savb>R@*o_?t)(a^L1?4%jXs<%Z$<%+MEhH0$L5@N}(MC<<
+z($kr%&ETujf60T<VL_pw&`BDKhk&1BVamqmi&jfD*-$7bG?N8m%nD<iBovRVC=}F*
+zzhRNIk9eNrj$d@N#tx&#)sB0Y)PSJHJ#OA&htYDeO3;p6getr;DthcNdM>?!pdF3K
+zjveRPOxR(39oZyl$0%|o$5~h=I}G#4CP_P1kt;dQ&)c%Y*dEy=X~%C$V34#!UK3k8
+zk~x4*cm`0JS{?0>MVF%;vK-IJhnjrC%g-J8?I%BkB~&0mBndAjHM}T+XGux$mL#h<
+zBxy_sI3&T%@v>wv^-+>yElIkxC5}XTuZ6efiS)9?!cvsYH(%D~o3Au%zL9NNCs1T^
+z!=7yA41gkYn|x*acR&=GIv7BXj0lV(Lx+jTF*7VqB>Vs(Ihu;ec%lz2ljH0djZ)o-
+z6g!TU9D%u)9FA&9j?J}64pg>Dj@q_K4q<mlj^}qsE^au$VZYLYV&+cll^(m7MJ{`B
+z45e}nP|P2GnUuf~7y?6J2n>NCFa(Cc5E$`_>Q1Coh$e`X5>bQ~Q={mC=Ts?LN<s>I
+eN7!T)2K@(C1Yjb$v*|$q0000<MNUMnLSTY{_78~w
+
 diff --git a/Prefs/Resources/Editor/columns.png b/Prefs/Resources/Editor/columns.png
 deleted file mode 100644
 index 2016057d7f5737483adafdfa8ec586dedb68b450..0000000000000000000000000000000000000000
@@ -319,6 +351,30 @@ zl$&UtbNEZm{zuQ3`(Ide?c<~eTNYk_^U^To-;@5iz$7DAzNh~49z&(7Lz{GzlTzmQ
 z*?z0|(Q-s($rBO&e~M4%HO-mQGDG11zou0-@#1qjj=Pnf-3d(c44$rjF6*2UngD;^
 Bc!B@`
 
+diff --git a/Prefs/Resources/Editor/inset_bottom.png b/Prefs/Resources/Editor/inset_bottom.png
+deleted file mode 100644
+index dec5a83d627ca64337110c061f5937d297de981d..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 776
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFdg!AaSW-r
+z^>&VLws4||o4*V9+7%i*UWRG8E~(p^wS}Wp`LANr&EM=XUgA*#I*U?*Z$I$j*ioXW
+z7sDkbaMbB<higE`QjyDQkCi+>fAsTmjkPE~xA{!U#KU*2XU_b-SKzq8b&Y^UPIEOJ
+zR|YS1X_PtqrbEXyt20Pox|Hjt+uastk{+3sq)j~h_k3s3st^~KDUZ+hXI=|luB4PS
+z_vME*9?QGh`f|$GYb+0QT^wOmbv$WRs7chzuuhj{p<1q?0)aVyZm(I{)FE|vLa>Xm
+zrN)YdGnuAbx!}X8m6fr~=}_LK|8LmhIb{PIjixN*N!4(cJQdJ}jcI^Q{BixHhl_56
+zz0#YWxBQXQuQIQ^jTy@yJeyrsly^F7=`{(l2W@*hp0(L-FEX1{IyqmvJMVwq(mS?R
+zhYm9I^(d63v>bMkF}_@XriZ!XSI@FjswE~@`|nHpsw%-jeZOGd$9bvm3XSe68Oc06
+zdu{V;(Y{HZ>w5z4mD-;Af9&IyRThU=KRA0VU2j?7(agAG`(8vobGlV^)Wd!Ki?iWw
+zm#<hKi@5jA^nupn%)mmsh>mFfdoSw}wRl;L4!)izzwcnO*bR=TmrGN`z1xy?zW#aP
+zE4NX6$N9AL>h~qRH}w_Tv9f-e(9FPNAT4rQYO-gjp=6As*^KuQ*2YJ23d+_LsCKeW
+z;tdIjOsKyexO=C!>4iee$fJ`UipV#|8J-U~v$4EsbMn;9o|g)n_#M}uC|3A(gE8;e
+zmp+!i?<=IfblJ53lCwSGQ?PKZcVEwZ+r3Ki(F$`@OLs3Xw*d->$L@W^*lhjdoKN`s
+z6YB2AEW@^iocS8#_-kXkboA@M)t<XH-apFXACcVo`pxZ++u3%Uie6=tu65S`fC~cr
+cQ{B(tS#bNt+{^<PfJvLd)78&qol`;+05kVrX#fBK
+
 diff --git a/Prefs/Resources/Editor/inset_left.png b/Prefs/Resources/Editor/inset_left.png
 deleted file mode 100644
 index 0518140bd92daa069fa7d590bd2b1659780b3044..0000000000000000000000000000000000000000
@@ -372,6 +428,30 @@ zvM9k1kEB+tk><u^_~zD5;TcC)M6?DPb_Z_bTAU-cI7QU$q|Pz#)dtsm>UPG(-3~MU
 z<F{Sp|M3V@&x<^JKkU-|qV;8($7AW`A0E#OdzTu#QfldnTNhpaxt&vRpE@V^^OT;2
 z#~$4d)&5rGe$e5TPjYUGM$mh1=edhwOOyUD)>A$+IkhRUt-4M^ZGqEFq3ks?<de1@
 amtQbdZ2GyvT?>HOj=|H_&t;ucLK6TRH>;Ka
+
+diff --git a/Prefs/Resources/Editor/inset_top.png b/Prefs/Resources/Editor/inset_top.png
+deleted file mode 100644
+index 155cf20f748aff58915dac0f4ebd70f80a7f5414..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 795
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFkSU@aSW-r
+z^>)tLY+*-<_W2!LYgcGInY22j%j2)t)f-Azy1(!Xp1E6pVDXm)tOu36^tN)&YiV%j
+ze{^v1g2n|A9r7DFxB|Tl&!*YDQM<YRNP|Yov+sZU?pmHXd}jCVm*=>hI22n1;KUE{
+zl!!;Hx%Y~C|0efao!~XQ`AqZkn~m<rm~wg8nveT_>ot8QkX_Og7#*|0-A!}Gl!F%%
+zQ+ou1ZQiUlkchjb{J1hBs?DtYM9-eOSwZ!>KYyn7_iR0JglG2}1Jf_B7Eig++gp*=
+z-(z!o<H^#Urc0*CEpst1`^xTjv&7u;{P`O!)^~jGD!iT;m1t1&<c$2bt4Ch$I24vM
+zDfit*^D_3E9ap)W=QhP^)vQx1DTzqk_5Zuh>&~da^o!Tp*B_m7YopYaK4lxPD_#Ci
+za_fZVKCVtGwPE1<U=gToW|{byjq~-6GtZComNlz)@_uTo+#UKu=cDSz$Vbvkj=6@%
+z-TBlhoomATET*b^?$g%+qNQmuHxv@}E_#H1?AomN@6^T#8cW-*&nf=uK7Vpe_lk<+
+zI_D-mta!0<%Q?gAS*~*~-&uaJI?uQn5tIT>9shm$lti=sc>Lin*>riSYcH2;(c?~y
+zfTNqe9HVSjiMVy22-+6sY>~R@@O78VnxbsZ#<jINn;*~NYEEo_`eao>aO?WT0&7Km
+z(?fsERt>Q}<+u8ScV>OJ#M14dtAZLAzOv7)3Tiy4%<kIB5!BLU!m`rASL&Diqf3+8
+z6m)f}J^$|(ukqw?<x+7rB7`RLoScA(dORmB>`$tG`KtJ(W7Mw+brWXwMeqb&d^p>&
+z%WB%y?&s#*7aDDy3ljX@E&qy?oY+2nQ(yh}OFi5A0+JcF_9$#kZJE`%;_R6ZX2w|#
+nCYww{PhYwga{Y32@L#spvfDTM8eX0QrgjETS3j3^P6<r_zV~d8
 
 diff --git a/Prefs/Resources/Editor/intensity.png b/Prefs/Resources/Editor/intensity.png
 deleted file mode 100644
@@ -432,6 +512,34 @@ zs%2G?mvxjgIJ`3SLxaAW?0H}!khwqi1ozkbb+@`7#>~ylufAb=H*J$-e#~S)D=uJq
 zIOBOVXR}(}spp$I?^jOjIV<&h0-M=sh533#Hm_Wbmg!$}YuuRjzx`P9wV!U&3ZL^W
 ri9PBeu)*=yD*ZXGF1Wy{zYNKif7Y#XK7AUP=@>j+{an^LB{Ts5NWiM3
 
+diff --git a/Prefs/Resources/Editor/offsetY.png b/Prefs/Resources/Editor/offsetY.png
+deleted file mode 100644
+index e98a49e3b2d986321d24aa82b3be0ebc462c3a10..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 958
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFjsiGIEGZ*
+zdOP>5SG1!<+x!kLEiJJ<Oo1UsvU>k3y>Q#pwr+3py$0{Xg-r{lOv?!pk1c(Asnz3T
+zP=KNa+aG7a66Hvf&Ut!TD=jD6i~5y3t39VTlfUTRneXRj9zIi}&?4Zpr~X#tqZz{c
+zE<N8Spm?j}v29#<i9k_!k6+)Wpo)q+7ap$?VSe+}<Ke@?gFCu|YLc!`ICS`Ni{bS>
+zi~e?o|5%@G75k|#&X3CrsKEV(sHU66hr556`S<zj%`8%MWV`wOZpEzloC#)YN-n)i
+z;k@X3sQj{I-6e(^<;TCDO^ciTl%qIL<ph5e!-~|S9@A8Ww|N;R_9$d7+LE?^efrTC
+zvf*cL%ura|CZcJUaVj(Ptdyp6U*_&fsxJ2FZQ(8}&tERP`a-sx=cdYWcR$|s9T(<o
+z&(-Cw+;e!*^FH0f+DbJVH+J>8CNGHH?%rc>x4z?v?}X)<Ti<-{%dI}r@wDP-`KwbM
+zk!L>kb=W5H6i=O+bl1E|WKmn?yUn#H7j@Q(Hs?%IIVdi5x^Go#pL5U~gQuUQ4HSVv
+z#(_p83MEa`;JmcNQy_I)538EvQ5K)@bGz2ohxe>A7Zf(Qd`I+#xl!!L83(G5#!k#N
+zi52bTyrZ4uS}uC@)02__!$#xiFX~klXTo%z%?#Na)pK4yLomeWfr{6^<j$_6Hr9{h
+zy=T1=(lxpgqM`P|WMjwm?!s?PVnAE;j=dM(!lC8nyjpJ8y%WyU<&K*MUKWYdFUR6W
+z#UsC!j)+(<u}JB=wP~@`Pp2l8**v$lRFvCP7ksn*oT`_Vmt<SL?~CZ+ZykasEwidO
+z_H<b7doHt8cC&j=?tR5Kr&X^dUKRc*d+6VBIm2tckAI4H%N+UF*imTnf0}Jli>Fkp
+zv=~=Jrm^7Sg2S5fxl+DuJx|w2hJ9A^xT5j0&~1ONsNb^9?qB|Y?=!vMHcQQ{CrQ81
+zEjQ++W%7xMiBCOkyTcZ>g&)aX*OgLr{M6#|Eguel=qjGweY*9<(`zqe?>Dg3NySZE
+zaQmBA*5nuo=C^G7dsuF!UuX?|7#uTA$GqY|hqmzc0$}L=KQ-msE|c!JPj)R3DZCYX
+z+srU*fzM05`7t%84f7&a9+zWYx9`i#hidL!%2tKb1Z4f^c|G2;bKlWb{p;rxoDq5p
+eirn|}_V3{Jy7r7m+zOZ>89ZJ6T-G@yGywp0Tey<|
+
 diff --git a/Prefs/Resources/Editor/offset_left.png b/Prefs/Resources/Editor/offset_left.png
 deleted file mode 100644
 index cb953ff8faea8c75df76b8b522204720dd516f30..0000000000000000000000000000000000000000
@@ -464,6 +572,37 @@ zgxz^!%ipo&8U71x4J_&2xQt8ry_oW9F6Gx^$*!VqN79q+<D`?%Yh1Z&^LCrA`{Itp
 zH~HhPoBr1PGHcqB2Xhu(_*8teIz}sXxk#$4>ZjGd)=xBy*S^(Kf4U-qYgg6L_irMK
 z1ZI0)*(M_Sapgh#&AF30cl-b8Tz^0oQXuGm`^+wKa&l_x@{j%-|FKthHYS~4wssS+
 PpknZJ^>bP0l+XkKxhXT`
+
+diff --git a/Prefs/Resources/Editor/offset_top.png b/Prefs/Resources/Editor/offset_top.png
+deleted file mode 100644
+index 6037b68401b364d94a09c8d0b75bb44434bb1b30..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1117
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bu!wuQIEGZ*
+zdOP>5cSxYbvHI^pP19T(yOqKdJ$_tl4_iF(hFa9l7x^#jGp?>n-JzlEv1mqb<d#>=
+zF>YNcr<1taln%~u^AyUOaH`)@caQPez3Io&W<Iw$e;3Fqte^AU^1IwKJAIEyDxR0V
+zg-e_NI3iPS`OLhd;c$xK#f>Kfnd%d_eBRh|DB*`&`+5z(Nu3J~B=%i+uiPcPXJdc_
+zPw|(Z&qQ-Y<0jhdyYy~yd5K}TaO=T<1;@oj(ktfg_^EXCh(0&ZuK<O;d%W-bkn)#E
+zKfCEtah|yMfxt9j^S$Si%NV~$_|J)4b~;tY_Q@Ki$^&)`QW6`xQd>8#TV#>FRw29R
+zVvybaBORvJVmlusH7?N+S>3Z)z3eLAyA4?nE#8N1WRXd~_o>Tp)~cB5+p}a@{dTr2
+zo_&5=_>!B^UvIIk3;)R1KF>NXB5q<@{n^#hlH0^?1(qlL@vCs%mDLzB?dsW<a-W^d
+zk4w*Jzq=f9e8$5W<xB217S1|q)OGO)SCF^$&SP$sdX`_3<S(6O(LPhu`fQiGX~9hX
+zHAZI_oVQK@hS}{$YZuPqGdjXBcgv>Rn)2o%CnhFNTK?p<<b+3+m9^#HZ#=MExz=&Z
+zhYOWFQ;#3+x+{|H_hheAqQR5Z=li?=eBo<7_+fJQw>2MxkE->BJk7dvD4MTg&oaFW
+zXN6iA?tGGBm3a`BnYN^2DZAdU8Jvx)l{R`RK2Z1^xbeqYrL~IAPJ+1(ysbPP&Py66
+z_yu-ck^Hdt9B<V3ugVKnoV|95yRJd7b-$bzXIlaX0i+_)q=*IG=4kuJ9yN(mv%_hL
+zlZT&((o-j+MFN__Mw(m`)xJiCdAde9fAZ;IF>s8VUo=gm_LSve<@bR$NpAD&^R>SH
+z{4O;8$5Y*|_?RTkf0LDzlY(Y=_;k(O_^f?9qf4}Vu<W9nCo@(}w^^+}%L^EkzxqWC
+zPMEB&d0@m_+Mo4|Yx5cd$MxRUdViljc*DDH<K}gS)e^eTz4eQ3$x6J8xbm$)R#|GN
+zeD|%ow|qS-T{wQ9t+zR4I?=CX!~Zh&V=F|@+wXA|_+57?%;rCLdBT?sNv3%_;tqR#
+zpR`TNyk^<$rB|Pbu&!Qu{Ou}MqqMDGW<1}KE$eq~y7I68RmWw^RKg|{uD<C#ZA!PG
+zr?`&H>z<G=n==y6eCk?rI(A~tdx_3H$@2U<>rd>w6Qj4FJ2kuP4s+SZ8=tx&`*z*)
+zd@B>brnPL2dRXJ0#n;;{wmORayP5aFHoc~@@byNqTPd?I>CL~Fbo*zNu<JCl`=8i;
+zXKm4}J<KUzZuv`B+cd@E<?Chs?Dvy2>@M|f=duX;7&7bWhW9s@9N%$TX8sOGX<$%I
+d+Vb`*``zjLp7mxi768i&22WQ%mvv4FO#sHn3xfav
 
 diff --git a/Prefs/Resources/Editor/pagedot.png b/Prefs/Resources/Editor/pagedot.png
 deleted file mode 100644
@@ -507,6 +646,67 @@ z^kuKFY42I)eYw>2a%jdbF5mElFIU~!Ds@-_X8N5}9^Y{5zU*CkCb6x{R$nMFowd&G
 za_BrRpk8i<hX02OYZkn`RC2ef^?FI>u60l|v`k{B?hXSv4Ps8u?w*A&vyK<~UI&{Y
 z3Nqtr#;#Mr3xRqW89u~Y^zoa-&RQ3}{=+Oi-|M0vcL2=*DlWR71@<D?oWkjbCb4fV
 v*1g<yp#*4#6UYoH-|$MH(*61q_b~{*bH4uN@4GX=IAid1^>bP0l+XkK?=;yF
+
+diff --git a/Prefs/Resources/Editor/spacing_x.png b/Prefs/Resources/Editor/spacing_x.png
+deleted file mode 100644
+index 4f7ae974590cd4902ebabd56f509578a2574fa5c..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1066
+zcmV+_1l9YAP)<h;3K|Lk000e1NJLTq004#n004#v1ONa4vT!;Y00001b5ch_0Itp)
+z=>Px&<Vi$9RCwC$oI6V^K^TVLhzcqy3O2T)1QG9dgP@K0LxhvwKVT^q8W0pw(s;v4
+z5G*ak!cx#cP!!@FK_N$is7dw|UdYausL?&{On9H|c9%_fnD3kUW@i>4gb+dqA%qY@
+z2qA<JLI@#*5JCtsf@=7&iV&hm!gBaXB8m`J;YYRpB6_fagyRa*9SLlpM_&<DSoswV
+zsmBVc^lTHCzplc9g-iX~$1omTQDMQt1BUf#74E5c(b1z%uDEnn#Y?bgk~>yhSMicc
+zwFnVQlS6}0+0aJDhWn$<gf=n~ZjVa++NiK#;g7pAR<)9`>aL8CRx(2F%7|(uBkHb<
+zq*gML?#i$<J1B!PT$JHKJ7%$sAo}1jLPj3Cu!~1*p~?1-9Z=DU*z3<dVZaC(9k_ly
+zcZwD#bqwM@<p+0+kg=I^_RP5=Zs^_dTiY-}M$C3T44)GL;!{*uI5a}WiE<^3_MZid
+z2aSqh3ki%EA!8JA<=Q#wf1;xwcgh3f7(<~EGD<Nkbey2$yDA27p*-vf6DTldoKc1a
+zJSo=?(EYt}#g+1)XG|G3=qf@G&!Vzz%r;oOw$AjW2%1Rq5Zy<h#R!UGGJ@J{RP^FT
+z<ce_=895xUL{Q|8Fj~K=q7M;~E2eE})2!O09E&1%?4j)|xuQX&%{XQZFVu>$EON&_
+zyr1QcI^2p}5kS82Rcjd*MeaC4%||Ml#b`5*0E%;>gs;L<n%wb0DxDLZ>3oJ<Vd8v7
+z1=d8cOlH14q6Eltj!o{AU|k88<IFc7D>Bwml4CPn%ZiLh=36I4n5>~9XJiy&UWCb9
+z=G$u#7729e!<7%_$S6iYB+zR#e`K!)N1|(8M49n2@(~bS>n-X&8+3WGFM?$`WA|!`
+zj2Y1?F3|9mf~^gEVmQ8ta${u_Vp<HxBk22Tb<&z9cLY&sq>Lhri&k-i-fZgDT2ZVe
+z5lj;-y36ojLgb2jc(b4V42j$k6lJ{bGNwdldiA}D;cgs=+_9kaEIP|5z=X&Z7q(Ym
+zS<xXT+~b%<sSz>?F(z`w9r}Ors-Pa{LdU2PGDgJGyIA(KpK@Y2EGFDdkZ~wRn?5Jr
+zxcU?wF(YI=DJq7XTLpZU^59J)WbD{F(?KVfB(&i4-EoHzG6vq;Mhu-!uh3}179O#S
+zF60>@!-GBqv5ncEzHsI;Cd!};E{gp>{N-|KE~HNjw^*d0*XA3)yE3>f%LX^>*@`$_
+zWN5MLnVWoVD<8Q1+ZHPPFhC0YWQ5W>_%RV%?%-!;l=i_75GkWlewvC9LI@#*5JCtc
+kgb+dqA%qY@2qEN+e<8)7B#@F)EC2ui07*qoM6N<$g0o!TiU0rr
+
+diff --git a/Prefs/Resources/Editor/spacing_y.png b/Prefs/Resources/Editor/spacing_y.png
+deleted file mode 100644
+index 4e110ed50343dc8518dbf4cc2e51db68fc89b69f..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1125
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bu*iG5IEGZ*
+zdOO$GJ0wuzc)hafib#<ioYAd{6Tdz4o;>k}TFg()Uu?CF(;hBrQRqxE+vl*_t3Xmz
+zFNQ7HK!o#|iC4gEN2U9I+{v@5&-?Jkyp=ou^Z)t0XZH%<<<EOwf6lgIKD&zNB$byB
+zR(Ds|B+Yb>;gEJ|yDVa`|F~58i5Bj~v-?Fw*bbYYYwdbu^pk_D`60Kn;-Vc#qPbfS
+zZa8!G!k$H|Pia4TtbJFp(p~>_X`lp8>Mtk9!q)E_yYDBee><h6tf=B)|2|24-$~=N
+z8(Y?V*>(Tqq=!1*8@um4(#$=Oye;W{&GPH%GPNRWS!O=7U^wd&adOi+)A+!c&1n;S
+zm%UiA=l-b{QQ7P}Ukn{LiFNU&Sx8yF65zkNq2SI3?MS1Tl%t=zG^4U*ejn)SGh()T
+zXmLLMw04oq>dGAB^6ZLs_t$;Xr-eVU2>kv+?AY4QvP<$3_Q`P*SI<<qnptZ9Og8^d
+z<3@>(UFus*3eHs=u`c>|Kq6&rQ<9Nc^Oehq?>5ACs`lr-nf)StUg@+QzSW1*O^dtv
+zb2c3CIANVINyU@>(YnO<rIQTXUOp6Y|MurIZ)(?*%Cp5@>kgka3Xhb1^ZrI!-<sVD
+zRx|$UORPGcbG5D`*f8+ddkvnpN!1?>PxXfcNbuN8lxk~Ta^Bdj{JJlEN|5Wu**bj{
+z$8%n3l&!teDPq{i!yc4+PEw*cbG?KACa1~D_qHBhnX>xQ5^<wvJX{$`IxpE(E^i24
+zJ@;Wr;uj0n#p<yVbNvo_{K%ao^`b90daK&a{@I>?p4;A<pXnsTb5MW)@-$#^#)6s}
+zA71<4IIARa%G{<vKXJE<ni5A#5}(X%n&>ZnEPHu^${({Toos&P#YgrS7aGp5yUSvG
+zN^+vyr?r#h{`W2I;$jZ*R8>y8xG+gc@O{9{nGrQI513qjN6uO``CF~F@7FHzchi>v
+z!*kNNigQwljl6aR-Ot+2XFWIbUSsUP-+%WH=c$Ko-oEp&!1=jM>ZYLhs$R$XgeOW%
+zw;h+ZSlp^UG3a*pzXKJ*+K1}?%Xe=KE83{^#{O@kVdm85^8dXRzX?BC^XZTN-^Po_
+zcU|4_Fi%$7*6m!@oewiV+nrTop0akD9DkPDi78hvCAW6(E4A1esCn`Kacj9E4YTGm
+z5ohDLQfk+@*Iz!g@u*9veK+4So%I?&?uefJ*4KIeUg4a~)7o8j=F?AKI9;x7CC8j=
+zvvp5W=jMIoLA%e1XD^!jaOPBn_b>PtmLKI<{XfV2$2{$YcXoV@6wck_o0;!XzVU9&
+z+U`XT;TdOR*ImmD{x!{8@m&#5WLVaTV#_PO^NVY`7yR%rKd5zh=Bm)l#>)%Mn|2*g
+mp7!&I?XC&H&|1R0KHk1%+WN@<Wjlc727{-opUXO@geCys9t=VN
 
 diff --git a/Prefs/Resources/Editor/textSize.png b/Prefs/Resources/Editor/textSize.png
 deleted file mode 100644
@@ -2253,10 +2453,10 @@ zhPnzzFgw~C&c8;-XuF|$u{&DxBq;^%$JR;=>}X(%lh-^_YpA|5*+ToeccteG;AQ^*
 E09_{{4*&oF
 
 diff --git a/Prefs/Resources/Root.plist b/Prefs/Resources/Root.plist
-index f15561d..3d85ebf 100644
+index f15561d..6819e79 100644
 --- a/Prefs/Resources/Root.plist
 +++ b/Prefs/Resources/Root.plist
-@@ -8,23 +8,7 @@
+@@ -8,47 +8,7 @@
  			<key>cell</key>
  			<string>PSGroupCell</string>
  			<key>footerText</key>
@@ -2277,96 +2477,97 @@ index f15561d..3d85ebf 100644
 -			<string>Developer</string>
 -			<key>height</key>
 -			<integer>70</integer>
-+			<string>长按桌面图标即可编辑布局</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
-@@ -32,7 +16,7 @@
- 			<key>action</key>
- 			<string>exportSettingsString</string>
- 			<key>label</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSButtonCell</string>
+-			<key>action</key>
+-			<string>exportSettingsString</string>
+-			<key>label</key>
 -			<string>Export Settings</string>
-+			<string>导出设置</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
-@@ -40,15 +24,15 @@
- 			<key>action</key>
- 			<string>importSettingsString</string>
- 			<key>label</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSButtonCell</string>
+-			<key>action</key>
+-			<string>importSettingsString</string>
+-			<key>label</key>
 -			<string>Import Settings from Clipboard</string>
-+			<string>从剪贴板导入设置</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
- 			<string>PSGroupCell</string>
- 			<key>label</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
 -			<string>Enable/Disable</string>
-+			<string>启用/禁用</string>
- 			<key>footerText</key>
+-			<key>footerText</key>
 -			<string>A respring is required for these settings to change. Enabling "Save State" allows your icon layout to be preserved, even when going to safemode/stock.</string>
-+			<string>更改这些设置需要注销才能生效。开启「保存图标状态」后，即使进入安全模式或未越狱状态，你的图标布局也会被保留。</string>
++			<string>拖动滑块即可调节，右侧显示当前数值。关闭开关即停用全部修改。</string>
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -60,7 +44,7 @@
+@@ -60,163 +20,56 @@
  			<key>key</key>
  			<string>enabled</string>
  			<key>label</key>
 -			<string>Main Toggle</string>
-+			<string>布局功能开关</string>
++			<string>启用</string>
++			<key>PostNotification</key>
++			<string>me.lau.Atria/ReloadPrefs</string>
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -72,7 +56,7 @@
- 			<key>key</key>
- 			<string>layoutEnabled</string>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
+-			<string>layoutEnabled</string>
++			<string>PSGroupCell</string>
  			<key>label</key>
 -			<string>Layout Modifications</string>
-+			<string>启用布局修改</string>
++			<string>主屏幕</string>
  		</dict>
  		<dict>
- 			<key>cell</key>
-@@ -82,9 +66,18 @@
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
+-			<key>default</key>
+-			<true/>
++			<key>cellClass</key>
++			<string>ARIValueSliderCell</string>
  			<key>defaults</key>
  			<string>me.lau.AtriaPrefs</string>
  			<key>key</key>
 -			<string>enableAppLibrary</string>
-+			<string>saveIconState</string>
-+			<key>label</key>
-+			<string>保存图标状态</string>
-+		</dict>
-+		
-+		
-+		
-+		<dict>
-+			<key>cell</key>
-+			<string>PSGroupCell</string>
++			<string>hs_offset_top</string>
  			<key>label</key>
 -			<string>Force App Library</string>
-+			<string>编辑器行为</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
-@@ -94,126 +87,57 @@
- 			<key>defaults</key>
- 			<string>me.lau.AtriaPrefs</string>
- 			<key>key</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSSwitchCell</string>
++			<string>页面顶部偏移</string>
++			<key>min</key>
++			<integer>-200</integer>
++			<key>max</key>
++			<integer>200</integer>
+ 			<key>default</key>
+-			<true/>
+-			<key>defaults</key>
+-			<string>me.lau.AtriaPrefs</string>
+-			<key>key</key>
 -			<string>saveIconState</string>
-+			<string>showTooltips</string>
- 			<key>label</key>
+-			<key>label</key>
 -			<string>Save Icon State</string>
-+			<string>显示工具提示</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
- 			<string>PSGroupCell</string>
- 			<key>label</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
+-			<key>label</key>
 -			<string>Options</string>
-+			<string>从哪打开</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
 -			<string>PSLinkCell</string>
 -			<key>detail</key>
 -			<string>ARIChildListController</string>
@@ -2412,23 +2613,7 @@ index f15561d..3d85ebf 100644
 -			<string>Customization</string>
 -			<key>icon</key>
 -			<string>paint</string>
-+			<string>PSSegmentCell</string>
-+			<key>default</key>
 +			<integer>0</integer>
-+			<key>defaults</key>
-+			<string>me.lau.AtriaPrefs</string>
-+			<key>key</key>
-+			<string>editorOpenFrom</string>
-+			<key>validTitles</key>
-+			<array>
-+				<string>底部</string>
-+				<string>顶部</string>
-+			</array>
-+			<key>validValues</key>
-+			<array>
-+				<integer>0</integer>
-+				<integer>1</integer>
-+			</array>
  		</dict>
  		<dict>
  			<key>cell</key>
@@ -2449,28 +2634,19 @@ index f15561d..3d85ebf 100644
 -			<string>resetSaveState:</string>
 -			<key>label</key>
 -			<string>Reset Save State</string>
-+			<string>激活设置</string>
-+			<key>footerText</key>
-+			<string>隐藏触控编辑：从长按图标菜单中隐藏 Atria 的编辑选项。配置完成后若不想再看到这些选项，可开启此项。</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
 -			<string>PSGroupCell</string>
-+			<string>PSSwitchCell</string>
-+			<key>default</key>
-+			<false/>
-+			<key>defaults</key>
-+			<string>me.lau.AtriaPrefs</string>
-+			<key>key</key>
-+			<string>hide3DTouchActions</string>
- 			<key>label</key>
+-			<key>label</key>
 -			<string>Credits</string>
 -			<key>footerText</key>
 -			<string>Thank you to everyone who has helped me along the way of making this tweak! A special thanks to everyone who helped test the tweak throughout its various stages. Much love to you all 💜
 -- ren</string>
--		</dict>
--		<dict>
--			<key>cellClass</key>
++			<string>翻页点</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cellClass</key>
 -			<string>ARITwitterCell</string>
 -			<key>username</key>
 -			<string>Quartz88244782</string>
@@ -2502,12 +2678,26 @@ index f15561d..3d85ebf 100644
 -			<string>🐜</string>
 -			<key>height</key>
 -			<integer>70</integer>
-+			<string>隐藏触控编辑</string>
-+			<key>PostNotification</key>
-+			<string>me.lau.Atria/ReloadPrefs</string>
++			<string>ARIValueSliderCell</string>
++			<key>defaults</key>
++			<string>me.lau.AtriaPrefs</string>
++			<key>key</key>
++			<string>pagedot_offsetY</string>
++			<key>label</key>
++			<string>圆点 Y 偏移</string>
++			<key>min</key>
++			<integer>-200</integer>
++			<key>max</key>
++			<integer>200</integer>
++			<key>default</key>
++			<integer>0</integer>
  		</dict>
  	</array>
  	<key>title</key>
+-	<string>Atria</string>
++	<string>桌面微调</string>
+ </dict>
+ </plist>
 diff --git a/Prefs/Resources/full.png b/Prefs/Resources/full.png
 deleted file mode 100644
 index 393db6f88211793a5705ead402af8ae95c1a0e02..0000000000000000000000000000000000000000
@@ -3652,6 +3842,19 @@ zKm&pR1Cjq=rShDHn12i?rZHxYZlBYS%@)(g2t&R>dHc4p*h^WhL-rw5^KO8l79cT>
 zw-@(qT2S#QJ|~GgTrpE`({@zbt*>sLo;=`v)Ywz8Xc+pw0CY|}F~O7Rx0kK`1@MBV
 U6ZGav2mk;807*qoM6N<$f;sBF+5i9m
 
+diff --git a/Prefs/layout/Library/PreferenceLoader/Preferences/AtriaPrefs.plist b/Prefs/layout/Library/PreferenceLoader/Preferences/AtriaPrefs.plist
+index 97c747d..550ec1d 100644
+--- a/Prefs/layout/Library/PreferenceLoader/Preferences/AtriaPrefs.plist
++++ b/Prefs/layout/Library/PreferenceLoader/Preferences/AtriaPrefs.plist
+@@ -15,7 +15,7 @@
+ 		<key>isController</key>
+ 		<true/>
+ 		<key>label</key>
+-		<string>Atria</string>
++		<string>桌面微调</string>
+ 	</dict>
+ </dict>
+ </plist>
 diff --git a/Prefs/src/ARIChildListController.h b/Prefs/src/ARIChildListController.h
 deleted file mode 100644
 index 339e374..0000000
@@ -3830,69 +4033,28 @@ index 16a565a..9117c4e 100644
                  handler:^(UIAlertAction *action) {
                      [self respringWithAnimation];
 diff --git a/Prefs/src/ARIRootListController.m b/Prefs/src/ARIRootListController.m
-index 05aacc4..a698544 100644
+index 05aacc4..c0bedaa 100644
 --- a/Prefs/src/ARIRootListController.m
 +++ b/Prefs/src/ARIRootListController.m
-@@ -6,161 +6,178 @@
+@@ -4,163 +4,15 @@
+ //
+ 
  #import "ARIRootListController.h"
- #import "../../src/UI/Splash/ARISplashViewController.h"
+-#import "../../src/UI/Splash/ARISplashViewController.h"
  
--@implementation ARIRootListController
-+// 当前版本仍然存在的设置项。
-+// 导出/导入只搬运这些键，已删除功能的残留键不会被写入，
-+// 避免旧配置里的废弃项在新版本中反复出现。
-+static NSArray<NSString *> *atriaBaseSettingKeys(void) {
-+	return @[
-+		// 主屏幕（编辑器可用，且支持按页单独设置）
-+		@"hs_spacing_x",
-+		@"hs_spacing_y",
-+		@"hs_inset_top",
-+		@"hs_inset_bottom",
-+		@"hs_offset_top",
-+		// 程序坞
-+		@"dock_bg",
-+		@"dock_spacing_x",
-+		// 翻页点
-+		@"pagedot_offsetY",
-+		// 开关
-+		@"enabled",
-+		@"layoutEnabled",
-+		@"saveIconState",
-+		@"showTooltips",
-+		@"editorOpenFrom",
-+		@"hide3DTouchActions",
-+	];
-+}
+ @implementation ARIRootListController
  
--- (NSArray *)specifiers {
+ - (NSArray *)specifiers {
 -    if(!_specifiers) {
 -        _specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
 -    }
-+// 分页面布局的页面清单（形如 ["Page0_", "Page2_"]）。
-+// 它是字符串数组，可以安全地放进 JSON；缺少它会导致导入后
-+// 按页的设置虽然存在，但不会被识别为已启用的分页面配置。
-+static NSString *const atriaPerPageListKey = @"_perPageListViews";
-+
-+// 判断某个偏好键是否是当前版本仍在使用的键，支持 "Page0_hs_spacing_x" 这类按页前缀。
-+static BOOL atriaIsValidSettingKey(NSString *key, NSSet<NSString *> *baseKeys) {
-+	if([key isEqualToString:atriaPerPageListKey]) return YES;
-+	if([baseKeys containsObject:key]) return YES;
-+
-+	// 按页配置：Page<序号>_<设置项名>
-+	if(![key hasPrefix:@"Page"]) return NO;
-+	NSRange separator = [key rangeOfString:@"_"];
-+	if(separator.location == NSNotFound || separator.location <= 4) return NO;
++	if(!_specifiers) {
++		_specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
++	}
  
 -    return _specifiers;
-+	NSString *digits = [key substringWithRange:NSMakeRange(4, separator.location - 4)];
-+	if(digits.length == 0) return NO;
-+	NSCharacterSet *nonDigits = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
-+	if([digits rangeOfCharacterFromSet:nonDigits].location != NSNotFound) return NO;
-+
-+	NSString *base = [key substringFromIndex:separator.location + 1];
-+	return [baseKeys containsObject:base];
- }
- 
+-}
+-
 -- (void)resetPrefs:(id)sender {
 -    UIAlertController *alert = [UIAlertController
 -        alertControllerWithTitle:@"Reset Preferences"
@@ -3915,22 +4077,8 @@ index 05aacc4..a698544 100644
 -    [alert addAction:defaultAction];
 -    [alert addAction:yes];
 -    [self presentViewController:alert animated:YES completion:nil];
-+// 只保留当前版本仍在使用的键
-+static NSDictionary *atriaFilteredSettings(NSDictionary *source) {
-+	NSSet<NSString *> *baseKeys = [NSSet setWithArray:atriaBaseSettingKeys()];
-+	NSMutableDictionary *result = [NSMutableDictionary new];
-+	for(NSString *key in [source allKeys]) {
-+		if(![key isKindOfClass:[NSString class]]) continue;
-+		// 下划线开头为内部设置，仅分页面清单例外
-+		if([key hasPrefix:@"_"] && ![key isEqualToString:atriaPerPageListKey]) continue;
-+		if(!atriaIsValidSettingKey(key, baseKeys)) continue;
-+		id value = source[key];
-+		if(!value) continue;
-+		result[key] = value;
-+	}
-+	return result;
- }
- 
+-}
+-
 -- (void)resetSaveState:(id)sender {
 -    UIAlertController *alert = [UIAlertController
 -        alertControllerWithTitle:@"Reset Save State"
@@ -3954,17 +4102,9 @@ index 05aacc4..a698544 100644
 -    [alert addAction:defaultAction];
 -    [alert addAction:yes];
 -    [self presentViewController:alert animated:YES completion:nil];
-+@implementation ARIRootListController
-+
-+- (NSArray *)specifiers {
-+	if(!_specifiers) {
-+		_specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
-+	}
-+
-+	return _specifiers;
- }
- 
- - (void)exportSettingsString {
+-}
+-
+-- (void)exportSettingsString {
 -    // Sync defaults
 -    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
 -    [defaults synchronize];
@@ -3995,34 +4135,9 @@ index 05aacc4..a698544 100644
 -    NSString *encoded = [jsonData base64EncodedStringWithOptions:0];
 -    [UIPasteboard generalPasteboard].string = encoded;
 -    [self displayAlert:@"Success" message:@"Settings exported and copied to clipboard"];
-+	// Sync defaults
-+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
-+	[defaults synchronize];
-+
-+	// 直接读取偏好域，而不是拼文件路径。
-+	// 用 @THEOS_PACKAGE_INSTALL_PREFIX 拼出来的路径在 rootless 下会指向
-+	// /var/jb/var/mobile/... ，导致读不到文件、导出永远为空。
-+	NSDictionary *stored = [defaults dictionaryRepresentation] ?: @{};
-+
-+	// 只导出当前版本仍在使用的设置
-+	NSDictionary *settings = atriaFilteredSettings(stored);
-+
-+	// Easier to make it json imho
-+	NSError *error = nil;
-+	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:settings
-+													   options:0
-+														 error:&error];
-+	if(error || !jsonData) {
-+		[self displayAlert:@"导出失败" message:[NSString stringWithFormat:@"错误：%@", error.localizedDescription ?: @"未知错误"]];
-+		return;
-+	}
-+
-+	NSString *encoded = [jsonData base64EncodedStringWithOptions:0];
-+	[UIPasteboard generalPasteboard].string = encoded;
-+	[self displayAlert:@"成功" message:[NSString stringWithFormat:@"已导出 %lu 项设置并复制到剪贴板", (unsigned long)settings.count]];
- }
- 
- - (void)importSettingsString {
+-}
+-
+-- (void)importSettingsString {
 -    NSString *pasteboardString = [UIPasteboard generalPasteboard].string;
 -    if(!pasteboardString) {
 -        [self displayAlert:@"Failed to import" message:@"No string was found in your clipboard."];
@@ -4070,61 +4185,9 @@ index 05aacc4..a698544 100644
 -                }];
 -    [alert addAction:defaultAction];
 -    [self presentViewController:alert animated:YES completion:nil];
-+	NSString *pasteboardString = [UIPasteboard generalPasteboard].string;
-+	if(!pasteboardString) {
-+		[self displayAlert:@"导入失败" message:@"剪贴板中没有找到任何内容。"];
-+		return;
-+	}
-+	NSData *decodeData = [[NSData alloc] initWithBase64EncodedString:pasteboardString options:0];
-+	if(!decodeData) {
-+		[self displayAlert:@"导入失败" message:@"解码失败，剪贴板中的设置内容可能无效。"];
-+		return;
-+	}
-+
-+	NSError *error = nil;
-+	NSDictionary *settingsDictionary = [NSJSONSerialization JSONObjectWithData:decodeData options:kNilOptions error:&error];
-+
-+	if(!settingsDictionary || ![settingsDictionary isKindOfClass:[NSDictionary class]]) {
-+		[self displayAlert:@"导入失败" message:[NSString stringWithFormat:@"剪贴板中的设置内容可能无效？\n\n错误：%@", error.localizedDescription ?: @"未知错误"]];
-+		return;
-+	}
-+
-+	// 只导入当前版本仍在使用的设置，忽略已删除功能的残留项
-+	NSDictionary *settings = atriaFilteredSettings(settingsDictionary);
-+	if(settings.count == 0) {
-+		[self displayAlert:@"导入失败" message:@"剪贴板中的内容不包含任何有效的 Atria 设置。"];
-+		return;
-+	}
-+
-+	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
-+	[defaults removePersistentDomainForName:ARIPreferenceDomain];
-+	defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
-+	[defaults synchronize];
-+
-+	// Set ARIDidSplashPreferenceKey, since they are in preferences already
-+	[defaults setObject:@(YES) forKey:ARIDidSplashPreferenceKey];
-+
-+	for(NSString *key in settings) {
-+		[defaults setObject:settings[key] forKey:key];
-+	}
-+	[defaults synchronize];
-+
-+	UIAlertController *alert = [UIAlertController
-+		alertControllerWithTitle:@"成功"
-+						 message:[NSString stringWithFormat:@"已导入 %lu 项设置。你可以注销以完全生效。\n\n%@", (unsigned long)settings.count, settings]
-+				  preferredStyle:UIAlertControllerStyleAlert];
-+
-+	UIAlertAction *defaultAction = [UIAlertAction
-+		actionWithTitle:@"注销"
-+				  style:UIAlertActionStyleDestructive
-+				handler:^(UIAlertAction *action) {
-+					[self respringWithAnimation];
-+				}];
-+	[alert addAction:defaultAction];
-+	[self presentViewController:alert animated:YES completion:nil];
- }
- 
- - (void)displayAlert:(NSString *)title message:(NSString *)message {
+-}
+-
+-- (void)displayAlert:(NSString *)title message:(NSString *)message {
 -    UIAlertController *alert = [UIAlertController
 -        alertControllerWithTitle:title
 -                         message:message
@@ -4137,18 +4200,7 @@ index 05aacc4..a698544 100644
 -
 -    [alert addAction:defaultAction];
 -    [self presentViewController:alert animated:YES completion:nil];
-+	UIAlertController *alert = [UIAlertController
-+		alertControllerWithTitle:title
-+						 message:message
-+				  preferredStyle:UIAlertControllerStyleAlert];
-+
-+	UIAlertAction *defaultAction = [UIAlertAction
-+		actionWithTitle:@"好"
-+				  style:UIAlertActionStyleCancel
-+				handler:nil];
-+
-+	[alert addAction:defaultAction];
-+	[self presentViewController:alert animated:YES completion:nil];
++	return _specifiers;
  }
  
  @end
@@ -4252,79 +4304,1047 @@ index a044c89..0000000
 -}
 -
 -@end
+diff --git a/Prefs/src/ARIValueSliderCell.h b/Prefs/src/ARIValueSliderCell.h
+new file mode 100644
+index 0000000..ef7dc1b
+--- /dev/null
++++ b/Prefs/src/ARIValueSliderCell.h
+@@ -0,0 +1,18 @@
++//
++//  设置面板用的滑块单元格：拖动调节 + 右侧实时显示当前数值
++//
++
++#import "ARIListController.h"
++
++// 不同版本的 SDK 里 Preferences 头文件并不一定齐全，
++// 这里优先使用真实的 PSTableCell，缺失时自行声明接口，保证两种情况都能编译。
++#if __has_include(<Preferences/PSTableCell.h>)
++#import <Preferences/PSTableCell.h>
++#else
++@interface PSTableCell : UITableViewCell
++- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier specifier:(PSSpecifier *)specifier;
++@end
++#endif
++
++@interface ARIValueSliderCell : PSTableCell
++@end
+diff --git a/Prefs/src/ARIValueSliderCell.m b/Prefs/src/ARIValueSliderCell.m
+new file mode 100644
+index 0000000..dbe7147
+--- /dev/null
++++ b/Prefs/src/ARIValueSliderCell.m
+@@ -0,0 +1,136 @@
++//
++//  设置面板用的滑块单元格：拖动调节 + 右侧实时显示当前数值
++//
++//  在 plist 中通过下列字段配置：
++//    key      偏好键名（必填）
++//    defaults 偏好域（可选，默认 me.lau.AtriaPrefs）
++//    min/max  滑块范围（可选，默认 0~100）
++//    default  默认值（可选，默认 0）
++//
++
++#import "ARIValueSliderCell.h"
++
++static NSString *const kAtriaReloadNotification = @"me.lau.Atria/ReloadPrefs";
++
++@implementation ARIValueSliderCell {
++	PSSpecifier *_atriaSpecifier;
++	UILabel *_titleLabel;
++	UISlider *_slider;
++	UILabel *_valueLabel;
++	NSString *_key;
++	NSString *_domain;
++	float _min;
++	float _max;
++	BOOL _isDecimal;
++}
++
++- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier specifier:(PSSpecifier *)specifier {
++	self = [super initWithStyle:style reuseIdentifier:reuseIdentifier specifier:specifier];
++	if(self) {
++		_atriaSpecifier = specifier;
++
++		NSDictionary *props = [specifier properties];
++		_key = props[@"key"];
++		_domain = props[@"defaults"] ?: ARIPreferenceDomain;
++
++		id minValue = props[@"min"];
++		id maxValue = props[@"max"];
++		_min = minValue ? [minValue floatValue] : 0.0F;
++		_max = maxValue ? [maxValue floatValue] : 100.0F;
++		if(_max < _min) _max = _min + 1.0F;
++
++		id defaultValue = props[@"default"];
++		float fallback = defaultValue ? [defaultValue floatValue] : 0.0F;
++
++		// 范围较小时按小数显示（例如背景透明度 0~1）
++		_isDecimal = (_max - _min) <= 2.0F;
++
++		NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:_domain];
++		[defaults synchronize];
++		id stored = [defaults objectForKey:_key];
++		float current = stored ? [stored floatValue] : fallback;
++		if(current < _min) current = _min;
++		if(current > _max) current = _max;
++
++		// 系统自带的 textLabel 会与我们自己的布局重叠，这里不使用它
++		self.textLabel.hidden = YES;
++		self.selectionStyle = UITableViewCellSelectionStyleNone;
++
++		_titleLabel = [[UILabel alloc] init];
++		_titleLabel.text = [specifier name] ?: _key;
++		_titleLabel.font = [UIFont systemFontOfSize:16];
++		_titleLabel.adjustsFontSizeToFitWidth = YES;
++		_titleLabel.minimumScaleFactor = 0.7F;
++		_titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
++		[self.contentView addSubview:_titleLabel];
++
++		_slider = [[UISlider alloc] init];
++		_slider.minimumValue = _min;
++		_slider.maximumValue = _max;
++		_slider.value = current;
++		_slider.continuous = YES;
++		_slider.translatesAutoresizingMaskIntoConstraints = NO;
++		[_slider addTarget:self action:@selector(_atriaValueChanged:) forControlEvents:UIControlEventValueChanged];
++		[self.contentView addSubview:_slider];
++
++		_valueLabel = [[UILabel alloc] init];
++		_valueLabel.text = [self _atriaTextForValue:current];
++		_valueLabel.font = [UIFont monospacedDigitSystemFontOfSize:14 weight:UIFontWeightRegular];
++		_valueLabel.textColor = [UIColor secondaryLabelColor];
++		_valueLabel.textAlignment = NSTextAlignmentRight;
++		_valueLabel.translatesAutoresizingMaskIntoConstraints = NO;
++		[self.contentView addSubview:_valueLabel];
++
++		[self _atriaSetupConstraints];
++	}
++	return self;
++}
++
++- (void)_atriaSetupConstraints {
++	UILayoutGuide *margin = self.contentView.layoutMarginsGuide;
++
++	[NSLayoutConstraint activateConstraints:@[
++		[_titleLabel.leadingAnchor constraintEqualToAnchor:margin.leadingAnchor],
++		[_titleLabel.centerYAnchor constraintEqualToAnchor:margin.centerYAnchor],
++		[_titleLabel.widthAnchor constraintEqualToAnchor:self.contentView.widthAnchor multiplier:0.34F],
++
++		[_valueLabel.trailingAnchor constraintEqualToAnchor:margin.trailingAnchor],
++		[_valueLabel.centerYAnchor constraintEqualToAnchor:margin.centerYAnchor],
++		[_valueLabel.widthAnchor constraintEqualToConstant:56.0F],
++
++		[_slider.leadingAnchor constraintEqualToAnchor:_titleLabel.trailingAnchor constant:8.0F],
++		[_slider.trailingAnchor constraintEqualToAnchor:_valueLabel.leadingAnchor constant:-8.0F],
++		[_slider.centerYAnchor constraintEqualToAnchor:margin.centerYAnchor],
++	]];
++}
++
++- (NSString *)_atriaTextForValue:(float)value {
++	if(_isDecimal) return [NSString stringWithFormat:@"%.2f", value];
++	return [NSString stringWithFormat:@"%.0f", value];
++}
++
++- (void)_atriaValueChanged:(UISlider *)sender {
++	float value = sender.value;
++
++	// 范围较大时按整数步进，避免拖出无意义的零碎小数
++	if(!_isDecimal) {
++		value = roundf(value);
++		sender.value = value;
++	}
++
++	_valueLabel.text = [self _atriaTextForValue:value];
++
++	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:_domain];
++	[defaults setObject:@(value) forKey:_key];
++	[defaults synchronize];
++
++	// 通知 SpringBoard 重新加载偏好并重排布局
++	CFNotificationCenterPostNotification(
++		CFNotificationCenterGetDarwinNotifyCenter(),
++		(__bridge CFStringRef)kAtriaReloadNotification,
++		NULL,
++		NULL,
++		YES);
++}
++
++@end
 diff --git a/layout/DEBIAN/control b/layout/DEBIAN/control
-index 2709321..a34401e 100644
+index 2709321..69ff9af 100644
 --- a/layout/DEBIAN/control
 +++ b/layout/DEBIAN/control
-@@ -1,6 +1,6 @@
+@@ -1,10 +1,10 @@
  Architecture: iphoneos-arm
  Author: ren7995
 -Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader, ws.hbang.alderis (>= 1.1)
 +Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader
  Conflicts: com.irepo.boxy4, me.kritanta.homepluspro
- Description: A proper homescreen layout editor for iOS 13-16
+-Description: A proper homescreen layout editor for iOS 13-16
++Description: iPhone桌面微调！
  Maintainer: ren7995
+-Name: Atria
++Name: 桌面微调
+ Package: me.lau.atria
+ Section: Tweaks
+ Version: 1.4.1
+\ No newline at end of file
+diff --git a/src/Editor/ARIEditingControlsView.h b/src/Editor/ARIEditingControlsView.h
+deleted file mode 100644
+index 24b7398..0000000
+--- a/src/Editor/ARIEditingControlsView.h
++++ /dev/null
+@@ -1,21 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-25 21:49:03
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import <UIKit/UIKit.h>
+-
+-@interface ARIEditingControlsView : UIView <UITextFieldDelegate>
+-@property (nonatomic, strong) UITextField *currentValueTextEntry;
+-@property (nonatomic, strong) NSString *targetSetting;
+-@property (nonatomic, strong) UISlider *slider;
+-@property (nonatomic, strong) UILabel *lowerLabel;
+-@property (nonatomic, strong) UILabel *upperLabel;
+-@property (nonatomic, assign) float lowerLimit;
+-@property (nonatomic, assign) float upperLimit;
+-- (instancetype)initWithTargetSetting:(NSString *)setting;
+-- (void)setupForSettingKey:(NSString *)key;
+-- (void)updateSliderValue;
+-- (void)updateCurrentText;
+-- (void)endTextEntry;
+-@end
+diff --git a/src/Editor/ARIEditingControlsView.m b/src/Editor/ARIEditingControlsView.m
+deleted file mode 100644
+index dd80600..0000000
+--- a/src/Editor/ARIEditingControlsView.m
++++ /dev/null
+@@ -1,227 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-25 21:49:35
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "ARIEditingControlsView.h"
+-#import "../Manager/ARIEditManager.h"
+-#import "../Manager/ARITweakManager.h"
+-
+-@implementation ARIEditingControlsView
+-
+-- (instancetype)initWithTargetSetting:(NSString *)key {
+-    self = [super init];
+-    if(self) {
+-        ARIOption *option = [[ARITweakManager sharedInstance] getSettingByKey:key];
+-        float lower = option.lowerLimit;
+-        float upper = option.upperLimit;
+-
+-        self.targetSetting = key;
+-        self.lowerLimit = lower;
+-        self.upperLimit = upper;
+-
+-        // Create slider with labels for low/high limit
+-        UISlider *slider = [[UISlider alloc] init];
+-        [slider addTarget:self action:@selector(sliderDidChange:event:) forControlEvents:UIControlEventValueChanged];
+-        [slider addTarget:self action:@selector(sliderDidBegin:) forControlEvents:UIControlEventTouchDown];
+-        [slider setBackgroundColor:[UIColor clearColor]];
+-        slider.minimumValue = lower;
+-        slider.maximumValue = upper;
+-        slider.continuous = YES;
+-        [self addSubview:slider];
+-        slider.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [slider.heightAnchor constraintEqualToAnchor:self.heightAnchor
+-                                                constant:-15],
+-            [slider.widthAnchor constraintEqualToAnchor:self.widthAnchor
+-                                               constant:-140],
+-            [slider.bottomAnchor constraintEqualToAnchor:self.bottomAnchor
+-                                                constant:-15],
+-            [slider.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-        ]];
+-        self.slider = slider;
+-
+-        UILabel *lowerLabel = [UILabel new];
+-        lowerLabel.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
+-        lowerLabel.textAlignment = NSTextAlignmentCenter;
+-        [self addSubview:lowerLabel];
+-        lowerLabel.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [lowerLabel.heightAnchor constraintEqualToAnchor:self.heightAnchor
+-                                                    constant:-15],
+-            [lowerLabel.widthAnchor constraintEqualToConstant:50],
+-            [lowerLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor
+-                                                    constant:-15],
+-            [lowerLabel.leadingAnchor constraintEqualToAnchor:self.leadingAnchor
+-                                                     constant:15],
+-        ]];
+-        self.lowerLabel = lowerLabel;
+-
+-        UILabel *upperLabel = [UILabel new];
+-        upperLabel.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
+-        upperLabel.textAlignment = NSTextAlignmentCenter;
+-        [self addSubview:upperLabel];
+-        upperLabel.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [upperLabel.heightAnchor constraintEqualToAnchor:self.heightAnchor
+-                                                    constant:-15],
+-            [upperLabel.widthAnchor constraintEqualToConstant:50],
+-            [upperLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor
+-                                                    constant:-15],
+-            [upperLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor
+-                                                      constant:-15],
+-        ]];
+-        self.upperLabel = upperLabel;
+-
+-        // Create toolbar and text field
+-        UIToolbar *toolbar = [[UIToolbar alloc] init];
+-        toolbar.translucent = YES;
+-        UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(endTextEntry)];
+-        UIBarButtonItem *spacingItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+-        UIBarButtonItem *doneItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(textFieldShouldReturn:)];
+-        [toolbar setItems:@[ cancelItem, spacingItem, doneItem ] animated:NO];
+-        [toolbar sizeToFit];
+-
+-        UITextField *textEntry = [UITextField new];
+-        textEntry.backgroundColor = [UIColor clearColor];
+-        textEntry.keyboardType = UIKeyboardTypeDecimalPad;
+-        textEntry.delegate = self;
+-        textEntry.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
+-        textEntry.textAlignment = NSTextAlignmentCenter;
+-        textEntry.inputAccessoryView = toolbar;
+-        [self addSubview:textEntry];
+-        textEntry.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [textEntry.heightAnchor constraintEqualToAnchor:self.heightAnchor
+-                                                   constant:-30],
+-            [textEntry.widthAnchor constraintEqualToConstant:50],
+-            [textEntry.bottomAnchor constraintEqualToAnchor:self.bottomAnchor],
+-            [textEntry.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-        ]];
+-        self.currentValueTextEntry = textEntry;
+-
+-        [self updateSliderValue];
+-
+-        // Detect rotation changes and update text label
+-        [[NSNotificationCenter defaultCenter]
+-            addObserver:self
+-               selector:@selector(updateCurrentText)
+-                   name:UIDeviceOrientationDidChangeNotification
+-                 object:nil];
+-    }
+-    return self;
+-}
+-
+-- (NSString *)_formatValue:(float)val {
+-    if(fmod(val, 1.0F) == 0.0F || [self.targetSetting containsString:@"rows"] || [self.targetSetting containsString:@"columns"])
+-        return [NSString stringWithFormat:@"%d", (int)val];
+-    return [NSString stringWithFormat:@"%.02f", val];
+-}
+-
+-- (NSString *)_adjustedKeyForCurrentOrientation {
+-    BOOL portrait = UIInterfaceOrientationIsPortrait([ARITweakManager currentDeviceOrientation]);
+-    if(portrait) return self.targetSetting;
+-    if([self.targetSetting hasSuffix:@"rows"])
+-        return [self.targetSetting stringByReplacingOccurrencesOfString:@"rows" withString:@"columns"];
+-    if([self.targetSetting hasSuffix:@"columns"])
+-        return [self.targetSetting stringByReplacingOccurrencesOfString:@"columns" withString:@"rows"];
+-    return self.targetSetting;
+-}
+-
+-- (void)setupForSettingKey:(NSString *)key {
+-    ARIOption *option = [[ARITweakManager sharedInstance] getSettingByKey:key];
+-    float lower = option.lowerLimit;
+-    float upper = option.upperLimit;
+-
+-    self.targetSetting = key;
+-    self.lowerLimit = lower;
+-    self.upperLimit = upper;
+-    self.slider.minimumValue = lower;
+-    self.slider.maximumValue = upper;
+-
+-    // Update to display approproate info for the new setting
+-    [self updateSliderValue];
+-}
+-
+-- (void)updateCurrentText {
+-    float val = [[ARITweakManager sharedInstance]
+-        floatValueForKey:[self _adjustedKeyForCurrentOrientation]
+-             forListView:[[ARIEditManager sharedInstance] currentIconListViewIfSinglePage]];
+-
+-    self.currentValueTextEntry.text = [self _formatValue:val];
+-}
+-
+-- (void)updateSliderValue {
+-    // -currentIconListViewIfSinglePage will return nil if not in single page mode, thus applying our config globally
+-    float val = [[ARITweakManager sharedInstance]
+-        floatValueForKey:[self _adjustedKeyForCurrentOrientation]
+-             forListView:[[ARIEditManager sharedInstance] currentIconListViewIfSinglePage]];
+-    self.slider.value = val;
+-    self.lowerLabel.text = [self _formatValue:self.lowerLimit];
+-    self.upperLabel.text = [self _formatValue:self.upperLimit];
+-
+-    [self updateCurrentText];
+-}
+-
+-- (void)sliderDidChange:(UISlider *)slider event:(UIEvent *)event {
+-    [self updateCurrentText];
+-    float value = slider.value;
+-
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    // -currentIconListViewIfSinglePage will return nil if not in single page mode, thus reading our global config
+-    NSString *key = [self _adjustedKeyForCurrentOrientation];
+-    SBIconListView *list = [[ARIEditManager sharedInstance] currentIconListViewIfSinglePage];
+-    if([manager floatValueForKey:key forListView:list] != value) {
+-        [manager setValue:@(value) forKey:key forListView:list];
+-        [manager updateLayoutForEditing:YES];
+-    }
+-}
+-
+-- (void)sliderDidBegin:(UISlider *)slider {
+-    [[ARITweakManager sharedInstance] feedbackForButton];
+-}
+-
+-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+-    [ARITweakManager dismissFloatingDockIfPossible];
+-    return YES;
+-}
+-
+-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+-    // Get numberical value
+-    if(self.currentValueTextEntry.text) {
+-        NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+-        [nf setNumberStyle:NSNumberFormatterDecimalStyle];
+-        NSNumber *num = [nf numberFromString:self.currentValueTextEntry.text];
+-
+-        if(num) {
+-            // I INTENTIONALLY allow numbers outside of the slider range
+-            // If you want 1000000 icons in a row, be my guest.
+-            ARITweakManager *manager = [ARITweakManager sharedInstance];
+-            [manager setValue:num
+-                       forKey:[self _adjustedKeyForCurrentOrientation]
+-                  forListView:[[ARIEditManager sharedInstance] currentIconListViewIfSinglePage]];
+-            [manager updateLayoutForEditing:YES];
+-
+-            [self updateSliderValue];
+-        }
+-    }
+-
+-    // We can call this method now that we updated our value
+-    [self endTextEntry];
+-
+-    return YES;
+-}
+-
+-- (void)endTextEntry {
+-    [self.currentValueTextEntry resignFirstResponder];
+-    // Restore/update text
+-    [self updateCurrentText];
+-    [ARITweakManager presentFloatingDockIfPossible];
+-}
+-
+-- (void)removeFromSuperview {
+-    [self endTextEntry];
+-    [super removeFromSuperview];
+-}
+-
+-@end
+diff --git a/src/Editor/ARIEditingMainView.h b/src/Editor/ARIEditingMainView.h
+deleted file mode 100644
+index ec26b43..0000000
+--- a/src/Editor/ARIEditingMainView.h
++++ /dev/null
+@@ -1,26 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-25 17:41:15
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import <Foundation/Foundation.h>
+-#import <UIKit/UIKit.h>
+-
+-#import "ARIEditingControlsView.h"
+-
+-@interface ARIEditingMainView : UIView
+-@property (nonatomic, readonly, strong) NSMutableArray *validsettingsForTarget;
+-@property (nonatomic, strong) UIVisualEffectView *matEffect;
+-@property (nonatomic, strong) ARIEditingControlsView *currentControls;
+-@property (nonatomic, strong) UILabel *currentSettingLabel;
+-@property (nonatomic, strong) UILabel *perPageIndicator;
+-@property (nonatomic, strong) NSString *currentSetting;
+-- (instancetype)initWithTarget:(NSString *)targetLoc;
+-- (void)setupForSettingKey:(NSString *)key;
+-- (void)updateForPan:(UIPanGestureRecognizer *)recognizer;
+-- (void)closeButtonTapped:(UITapGestureRecognizer *)tap;
+-- (void)resetSetting:(UITapGestureRecognizer *)tap;
+-- (void)toggleOptionsView:(UITapGestureRecognizer *)tap;
+-- (void)handePerPageTap:(UITapGestureRecognizer *)tap;
+-- (void)updateIsSingleListView;
+-@end
 diff --git a/src/Editor/ARIEditingMainView.m b/src/Editor/ARIEditingMainView.m
-index a459cd0..ea8dcb6 100644
+deleted file mode 100644
+index a459cd0..0000000
 --- a/src/Editor/ARIEditingMainView.m
-+++ b/src/Editor/ARIEditingMainView.m
-@@ -70,7 +70,7 @@
- 
-         // Label
-         UILabel *currentSettingLabel = [UILabel new];
++++ /dev/null
+@@ -1,403 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-25 17:41:17
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "ARIEditingMainView.h"
+-#import "../Manager/ARIEditManager.h"
+-#import "../Manager/ARITweakManager.h"
+-#import "ARISettingCollectionViewHost.h"
+-
+-#define CLAMP(x, min, max) x<min ? min : x> max ? max : x;
+-
+-@implementation ARIEditingMainView {
+-    NSMutableArray *_validsettingsForTarget;
+-    NSLayoutConstraint *_topAnchor;
+-    NSLayoutConstraint *_heightAnchor;
+-    ARISettingCollectionViewHost *_collection;
+-    UIImageView *_reset;
+-    UIImageView *_perPage;
+-    UIImageView *_xButton;
+-    UILabel *_instructions;
+-    BOOL _showTooltips;
+-    CGFloat _panTouchdownOffset;
+-    CGFloat _editorSpace;
+-}
+-
+-@synthesize validsettingsForTarget = _validsettingsForTarget;
+-
+-- (instancetype)initWithTarget:(NSString *)targetLoc {
+-    self = [super init];
+-    if(self) {
+-        NSArray *allSettingsKeys = [[ARITweakManager sharedInstance] editorSettingsKeys];
+-        _validsettingsForTarget = [NSMutableArray new];
+-        for(NSString *setting in allSettingsKeys) {
+-            if([setting hasPrefix:targetLoc]) {
+-                [_validsettingsForTarget addObject:setting];
+-            }
+-        }
+-        _showTooltips = [[ARITweakManager sharedInstance] boolValueForKey:@"showTooltips"];
+-
+-        // Subtle shadow to make the editor pop from the homescreen background
+-        self.layer.cornerRadius = 12;
+-        self.layer.cornerCurve = kCACornerCurveContinuous;
+-        self.layer.shadowOpacity = 0.5F;
+-        self.layer.shadowOffset = CGSizeZero;
+-        self.layer.shadowRadius = 5;
+-        self.translatesAutoresizingMaskIntoConstraints = NO;
+-
+-        CGFloat sw = UIScreen.mainScreen.bounds.size.width;
+-        _heightAnchor = [self.heightAnchor constraintEqualToConstant:[self getBaseHeight]],
+-        [NSLayoutConstraint activateConstraints:@[
+-            [self.widthAnchor constraintEqualToConstant:sw < 500 ? sw - 25 : 475],
+-            _heightAnchor,
+-        ]];
+-
+-        // Background blur
+-        UIVisualEffectView *matEffect = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemUltraThinMaterial]];
+-        [self addSubview:matEffect];
+-        matEffect.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [matEffect.widthAnchor constraintEqualToAnchor:self.widthAnchor],
+-            [matEffect.heightAnchor constraintEqualToAnchor:self.heightAnchor],
+-            [matEffect.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [matEffect.centerYAnchor constraintEqualToAnchor:self.centerYAnchor],
+-        ]];
+-        matEffect.layer.masksToBounds = YES;
+-        matEffect.layer.cornerRadius = 12;
+-        matEffect.layer.cornerCurve = kCACornerCurveContinuous;
+-        self.matEffect = matEffect;
+-
+-        // Label
+-        UILabel *currentSettingLabel = [UILabel new];
 -        currentSettingLabel.text = @"Choose a setting";
-+        currentSettingLabel.text = @"选择一项设置";
-         currentSettingLabel.font = [UIFont systemFontOfSize:20 weight:UIFontWeightSemibold];
-         currentSettingLabel.textAlignment = NSTextAlignmentCenter;
-         currentSettingLabel.numberOfLines = 1;
-@@ -206,10 +206,6 @@
- }
- 
- - (void)setupForSettingKey:(NSString *)key {
+-        currentSettingLabel.font = [UIFont systemFontOfSize:20 weight:UIFontWeightSemibold];
+-        currentSettingLabel.textAlignment = NSTextAlignmentCenter;
+-        currentSettingLabel.numberOfLines = 1;
+-        currentSettingLabel.adjustsFontSizeToFitWidth = YES;
+-        currentSettingLabel.minimumScaleFactor = 0.5F;
+-        [self addSubview:currentSettingLabel];
+-        currentSettingLabel.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [currentSettingLabel.widthAnchor constraintEqualToAnchor:self.widthAnchor
+-                                                            constant:-90],
+-            [currentSettingLabel.heightAnchor constraintEqualToConstant:30],
+-            [currentSettingLabel.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [currentSettingLabel.topAnchor constraintEqualToAnchor:self.topAnchor
+-                                                          constant:5],
+-        ]];
+-        self.currentSettingLabel = currentSettingLabel;
+-
+-        // Label
+-        UILabel *ppi = [UILabel new];
+-        ppi.font = [UIFont systemFontOfSize:9 weight:UIFontWeightRegular];
+-        ppi.textAlignment = NSTextAlignmentCenter;
+-        [self.currentSettingLabel addSubview:ppi];
+-        ppi.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [ppi.widthAnchor constraintEqualToAnchor:currentSettingLabel.widthAnchor],
+-            [ppi.heightAnchor constraintEqualToConstant:10],
+-            [ppi.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [ppi.topAnchor constraintEqualToAnchor:currentSettingLabel.bottomAnchor],
+-        ]];
+-        self.perPageIndicator = ppi;
+-
+-        _instructions = [UILabel new];
+-        _instructions.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
+-        [_instructions setLineBreakMode:NSLineBreakByWordWrapping];
+-        _instructions.textAlignment = NSTextAlignmentCenter;
+-        [self.currentSettingLabel addSubview:_instructions];
+-        _instructions.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [_instructions.widthAnchor constraintEqualToAnchor:self.widthAnchor
+-                                                      constant:-20],
+-            [_instructions.bottomAnchor constraintEqualToAnchor:self.bottomAnchor
+-                                                       constant:-5],
+-            [_instructions.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [_instructions.heightAnchor constraintEqualToConstant:15],
+-        ]];
+-        if(!_showTooltips) {
+-            [_instructions setHidden:YES];
+-        }
+-
+-        // Close button
+-        _xButton = [UIImageView new];
+-        _xButton.contentMode = UIViewContentModeScaleAspectFit;
+-        [self addSubview:_xButton];
+-        _xButton.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [_xButton.widthAnchor constraintEqualToConstant:22.5],
+-            [_xButton.heightAnchor constraintEqualToConstant:22.5],
+-            [_xButton.topAnchor constraintEqualToAnchor:self.topAnchor
+-                                               constant:7.5],
+-            [_xButton.trailingAnchor constraintEqualToAnchor:self.trailingAnchor
+-                                                    constant:-7.5],
+-        ]];
+-        _xButton.image = [UIImage systemImageNamed:@"xmark"];
+-        _xButton.tintColor = [UIColor labelColor];
+-
+-        // Reset button
+-        _reset = [UIImageView new];
+-        [self addSubview:_reset];
+-        _reset.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [_reset.widthAnchor constraintEqualToConstant:22.5],
+-            [_reset.heightAnchor constraintEqualToConstant:22.5],
+-            [_reset.topAnchor constraintEqualToAnchor:self.topAnchor
+-                                             constant:7.5],
+-            [_reset.leadingAnchor constraintEqualToAnchor:self.leadingAnchor
+-                                                 constant:7.5],
+-        ]];
+-        _reset.image = [UIImage systemImageNamed:@"gobackward"];
+-        _reset.tintColor = [UIColor labelColor];
+-
+-        // Toggle per-page
+-        _perPage = [UIImageView new];
+-        [self addSubview:_perPage];
+-        _perPage.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [_perPage.widthAnchor constraintEqualToConstant:22.5],
+-            [_perPage.heightAnchor constraintEqualToConstant:22.5],
+-            [_perPage.topAnchor constraintEqualToAnchor:self.topAnchor
+-                                               constant:7.5],
+-            [_perPage.leadingAnchor constraintEqualToAnchor:self.leadingAnchor
+-                                                   constant:7.5],
+-        ]];
+-        _perPage.tintColor = [UIColor labelColor];
+-        _perPage.alpha = 0;
+-        // No per-page
+-        if([targetLoc isEqualToString:@"dock"] || [targetLoc isEqualToString:@"pagedot"]) _perPage.hidden = YES;
+-
+-        // Add tap gestures and pan
+-        UITapGestureRecognizer *xTapped = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeButtonTapped:)];
+-        [_xButton addGestureRecognizer:xTapped];
+-        _xButton.userInteractionEnabled = YES;
+-
+-        UITapGestureRecognizer *resetAction = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetSetting:)];
+-        [_reset addGestureRecognizer:resetAction];
+-        _reset.userInteractionEnabled = YES;
+-
+-        UITapGestureRecognizer *openOptions = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleOptionsView:)];
+-        [currentSettingLabel addGestureRecognizer:openOptions];
+-        currentSettingLabel.userInteractionEnabled = YES;
+-
+-        UITapGestureRecognizer *togglePerPage = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handePerPageTap:)];
+-        [_perPage addGestureRecognizer:togglePerPage];
+-        _perPage.userInteractionEnabled = YES;
+-
+-        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(updateForPan:)];
+-        [self addGestureRecognizer:pan];
+-
+-        [[NSNotificationCenter defaultCenter]
+-            addObserver:self
+-               selector:@selector(keyboardWillShow:)
+-                   name:UIKeyboardWillShowNotification
+-                 object:nil];
+-
+-        [[NSNotificationCenter defaultCenter]
+-            addObserver:self
+-               selector:@selector(keyboardDidHide:)
+-                   name:UIKeyboardDidHideNotification
+-                 object:nil];
+-
+-        [self updateIsSingleListView];
+-    }
+-    return self;
+-}
+-
+-- (void)setupForSettingKey:(NSString *)key {
 -    // Queue update if adjusting dock columns/rows
 -    if([key isEqualToString:@"dock_columns"] || [key isEqualToString:@"dock_rows"]) {
 -        [[ARIEditManager sharedInstance] setDockLayoutQueued];
 -    }
-     ARITweakManager *manager = [ARITweakManager sharedInstance];
- 
-     self.currentSetting = key;
-@@ -310,7 +306,7 @@
-     if([ARIEditManager sharedInstance].singleListMode) {
-         // Single list mode
-         ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-
+-    self.currentSetting = key;
+-    self.currentSettingLabel.text = [manager getSettingByKey:key].translation;
+-
+-    if(!self.currentControls) {
+-        ARIEditingControlsView *controls = [[ARIEditingControlsView alloc] initWithTargetSetting:key];
+-        [self addSubview:controls];
+-        controls.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [controls.widthAnchor constraintEqualToAnchor:self.widthAnchor],
+-            [controls.heightAnchor constraintEqualToConstant:65],
+-            [controls.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [controls.bottomAnchor constraintEqualToAnchor:self.bottomAnchor
+-                                                  constant:_showTooltips ? -15 : 0],
+-        ]];
+-        [self layoutIfNeeded];
+-        self.currentControls = controls;
+-    } else {
+-        [self.currentControls setupForSettingKey:key];
+-    }
+-}
+-
+-- (void)didMoveToSuperview {
+-    [super didMoveToSuperview];
+-    if(!self.superview) return;
+-    [self _resetEditorSpace];
+-    // Set up initial layout anchor for y pos
+-    BOOL openFromTop = [[ARITweakManager sharedInstance] intValueForKey:@"editorOpenFrom"] == 1;
+-    _topAnchor = [self.topAnchor constraintEqualToAnchor:self.superview.topAnchor
+-                                                constant:openFromTop ? 50 : _editorSpace - _heightAnchor.constant];
+-    _topAnchor.active = YES;
+-}
+-
+-- (void)keyboardWillShow:(NSNotification *)notification {
+-    [self setEditorSpace:((NSValue *)notification.userInfo[@"UIKeyboardFrameEndUserInfoKey"]).CGRectValue.origin.y - 25];
+-}
+-
+-- (void)keyboardDidHide:(NSNotification *)notification {
+-    [self _resetEditorSpace];
+-}
+-
+-- (void)_resetEditorSpace {
+-    [self setEditorSpace:fmax(UIScreen.mainScreen.bounds.size.height * 0.85F, UIScreen.mainScreen.bounds.size.height - 140.0F)];
+-}
+-
+-- (void)updateForPan:(UIPanGestureRecognizer *)recognizer {
+-    // Move y pos with drag
+-    if(!self.superview) return;
+-    if(recognizer.state == UIGestureRecognizerStateBegan) {
+-        _panTouchdownOffset = [recognizer locationInView:self.superview].y - self.frame.origin.y;
+-    } else if(recognizer.state == UIGestureRecognizerStateChanged || recognizer.state != UIGestureRecognizerStateEnded) {
+-        [self _animateToPosition:[recognizer locationInView:self.superview].y - _panTouchdownOffset];
+-    }
+-}
+-
+-- (void)setEditorSpace:(CGFloat)space {
+-    _editorSpace = space;
+-    if(_topAnchor.constant + _heightAnchor.constant > _editorSpace) [self _animateToPosition:_editorSpace - _heightAnchor.constant];
+-}
+-
+-- (void)_animateToPosition:(CGFloat)position {
+-    [UIView animateWithDuration:0.1f
+-                     animations:^{
+-                         [self.superview layoutIfNeeded];
+-                         _topAnchor.constant =
+-                             CLAMP(position, 50, _editorSpace - _heightAnchor.constant);
+-                         [self.superview layoutIfNeeded];
+-                     }];
+-}
+-
+-- (void)closeButtonTapped:(UITapGestureRecognizer *)tap {
+-    [[ARITweakManager sharedInstance] feedbackForButton];
+-    [[ARIEditManager sharedInstance] toggleEditView:NO withTargetLocation:nil];
+-}
+-
+-- (void)resetSetting:(UITapGestureRecognizer *)tap {
+-    // Just set default value for the key
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    [manager feedbackForButton];
+-    [manager resetValueForKey:self.currentSetting forListView:[[ARIEditManager sharedInstance] currentIconListViewIfSinglePage]];
+-    [self.currentControls updateSliderValue];
+-
+-    [manager updateLayoutForEditing:YES];
+-}
+-
+-- (void)handePerPageTap:(UITapGestureRecognizer *)tap {
+-    // Just set default value for the key
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    [manager feedbackForButton];
+-    [[ARIEditManager sharedInstance] toggleSingleListMode];
+-
+-    [self updateIsSingleListView];
+-}
+-
+-- (void)updateIsSingleListView {
+-    // Let the user know
+-    if([ARIEditManager sharedInstance].singleListMode) {
+-        // Single list mode
+-        ARITweakManager *manager = [ARITweakManager sharedInstance];
 -        self.perPageIndicator.text = [NSString stringWithFormat:@"Page %lu Only", [manager indexOfListView:[[ARIEditManager sharedInstance] currentIconListViewIfSinglePage]] + 1];
-+        self.perPageIndicator.text = [NSString stringWithFormat:@"仅第 %lu 页", [manager indexOfListView:[[ARIEditManager sharedInstance] currentIconListViewIfSinglePage]] + 1];
- 
-         _perPage.image = [UIImage systemImageNamed:@"doc.fill"];
-     } else {
-@@ -329,8 +325,8 @@
- 
-     if(_heightAnchor.constant == [self getBaseHeight]) {
-         // Activate
+-
+-        _perPage.image = [UIImage systemImageNamed:@"doc.fill"];
+-    } else {
+-        // Global
+-        self.perPageIndicator.text = @"";
+-
+-        _perPage.image = [UIImage systemImageNamed:@"doc"];
+-    }
+-    [self.currentControls updateSliderValue];
+-}
+-
+-- (void)toggleOptionsView:(UITapGestureRecognizer *)tap {
+-    // Present collection view with settings options
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    [manager feedbackForButton];
+-
+-    if(_heightAnchor.constant == [self getBaseHeight]) {
+-        // Activate
 -        [self.currentSettingLabel setText:@"Choose a setting"];
 -        [_instructions setText:@"Click the page icon to edit this page only"];
-+        [self.currentSettingLabel setText:@"选择一项设置"];
-+        [_instructions setText:@"点击页面图标可仅编辑本页"];
- 
-         if(self.currentControls) {
-             [self.currentControls endTextEntry];
-@@ -370,7 +366,7 @@
-                          }];
-     } else {
-         // End
+-
+-        if(self.currentControls) {
+-            [self.currentControls endTextEntry];
+-        }
+-
+-        _collection = [[ARISettingCollectionViewHost alloc] init];
+-        _collection.translatesAutoresizingMaskIntoConstraints = NO;
+-        _collection.alpha = 0;
+-        [self addSubview:_collection];
+-        [NSLayoutConstraint activateConstraints:@[
+-            [_collection.widthAnchor constraintEqualToAnchor:self.widthAnchor],
+-            [_collection.topAnchor constraintEqualToAnchor:self.currentSettingLabel.bottomAnchor
+-                                                  constant:15],
+-            [_collection.bottomAnchor constraintEqualToAnchor:self.bottomAnchor
+-                                                     constant:_showTooltips ? -20 : -5],
+-            [_collection.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-        ]];
+-        [self layoutIfNeeded];
+-        [_collection setupGradient];
+-
+-        [UIView animateWithDuration:0.3f
+-                         animations:^{
+-                             _collection.alpha = 1;
+-                             _instructions.alpha = 1;
+-
+-                             [self.superview layoutIfNeeded];
+-                             // Set height anchor
+-                             _heightAnchor.constant = [self getBaseHeight] + 30;
+-                             [self _resetEditorSpace];
+-                             [self.superview layoutIfNeeded];
+-
+-                             // Fade
+-                             self.currentSettingLabel.alpha = 0.4;
+-                             self.currentControls.alpha = 0;
+-                             _reset.alpha = 0;
+-                             _perPage.alpha = 1;
+-                         }];
+-    } else {
+-        // End
 -        [_instructions setText:@"Click the label at the top to go back"];
-+        [_instructions setText:@"点击顶部的标签返回"];
- 
-         [UIView animateWithDuration:0.3f
-             animations:^{
+-
+-        [UIView animateWithDuration:0.3f
+-            animations:^{
+-                _collection.alpha = 0;
+-                _instructions.alpha = 0.5f;
+-
+-                [self.superview layoutIfNeeded];
+-                // Set height anchor
+-                _heightAnchor.constant = [self getBaseHeight];
+-                [self _resetEditorSpace];
+-                [self.superview layoutIfNeeded];
+-
+-                // Unfade
+-                self.currentSettingLabel.alpha = 1;
+-                self.currentControls.alpha = 1;
+-                _reset.alpha = 1;
+-                _perPage.alpha = 0;
+-            }
+-            completion:^(BOOL finished) {
+-                [_collection removeFromSuperview];
+-                _collection = nil;
+-            }];
+-    }
+-}
+-
+-- (float)getBaseHeight {
+-    return _showTooltips ? 110.0f : 100.0f;
+-}
+-
+-@end
+diff --git a/src/Editor/ARISettingCell.h b/src/Editor/ARISettingCell.h
+deleted file mode 100644
+index 765c2b0..0000000
+--- a/src/Editor/ARISettingCell.h
++++ /dev/null
+@@ -1,11 +0,0 @@
+-//
+-// Created by ren7995 on 2021-05-02 01:38:13
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import <UIKit/UIKit.h>
+-
+-@interface ARISettingCell : UICollectionViewCell
+-@property (nonatomic, strong) UILabel *opLabel;
+-@property (nonatomic, strong) UIImageView *img;
+-@end
+diff --git a/src/Editor/ARISettingCell.m b/src/Editor/ARISettingCell.m
+deleted file mode 100644
+index 4eded00..0000000
+--- a/src/Editor/ARISettingCell.m
++++ /dev/null
+@@ -1,50 +0,0 @@
+-//
+-// Created by ren7995 on 2021-05-02 01:38:11
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "ARISettingCell.h"
+-
+-@implementation ARISettingCell
+-
+-- (instancetype)initWithFrame:(CGRect)frame {
+-    self = [super initWithFrame:frame];
+-    if(self) {
+-        self.backgroundColor = [UIColor clearColor];
+-
+-        UILabel *label = [UILabel new];
+-        [self addSubview:label];
+-        label.translatesAutoresizingMaskIntoConstraints = NO;
+-        label.textAlignment = NSTextAlignmentCenter;
+-        label.font = [UIFont systemFontOfSize:10];
+-        [NSLayoutConstraint activateConstraints:@[
+-            [label.widthAnchor constraintEqualToAnchor:self.widthAnchor],
+-            [label.bottomAnchor constraintEqualToAnchor:self.bottomAnchor],
+-            [label.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [label.heightAnchor constraintEqualToConstant:15]
+-        ]];
+-        label.adjustsFontSizeToFitWidth = YES;
+-        label.numberOfLines = 1;
+-        label.minimumScaleFactor = 0.5F;
+-        self.opLabel = label;
+-
+-        UIImageView *img = [UIImageView new];
+-        img.contentMode = UIViewContentModeScaleAspectFit;
+-        [self addSubview:img];
+-        img.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [img.widthAnchor constraintEqualToAnchor:img.heightAnchor],
+-            [img.topAnchor constraintEqualToAnchor:self.topAnchor],
+-            [img.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-            [img.bottomAnchor constraintEqualToAnchor:label.topAnchor
+-                                             constant:-5]
+-        ]];
+-        self.img = img;
+-        self.img.tintColor = [UIColor labelColor];
+-
+-        [self layoutIfNeeded];
+-    }
+-    return self;
+-}
+-
+-@end
+diff --git a/src/Editor/ARISettingCollectionViewHost.h b/src/Editor/ARISettingCollectionViewHost.h
+deleted file mode 100644
+index d4409e6..0000000
+--- a/src/Editor/ARISettingCollectionViewHost.h
++++ /dev/null
+@@ -1,11 +0,0 @@
+-//
+-// Created by ren7995 on 2021-05-02 00:44:39
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import <UIKit/UIKit.h>
+-
+-@interface ARISettingCollectionViewHost : UIView
+-@property (nonatomic, strong) UICollectionView *collectionView;
+-- (void)setupGradient;
+-@end
+diff --git a/src/Editor/ARISettingCollectionViewHost.m b/src/Editor/ARISettingCollectionViewHost.m
+deleted file mode 100644
+index 471a36a..0000000
+--- a/src/Editor/ARISettingCollectionViewHost.m
++++ /dev/null
+@@ -1,49 +0,0 @@
+-//
+-// Created by ren7995 on 2021-05-02 00:44:58
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "ARISettingCollectionViewHost.h"
+-#import "../Manager/ARIEditManager.h"
+-#import "../UI/Effect/ARIFadeEffectView.h"
+-#import "ARISettingCell.h"
+-
+-@implementation ARISettingCollectionViewHost
+-
+-- (instancetype)init {
+-    // This class "hosts" a UICollectionView and handles a gradient fade effect on the edges
+-    self = [super init];
+-    if(self) {
+-        UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
+-        flow.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+-        UICollectionView *coll = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flow];
+-        coll.backgroundColor = [UIColor clearColor];
+-        [coll setShowsHorizontalScrollIndicator:YES];
+-        [coll setShowsVerticalScrollIndicator:NO];
+-        [coll registerClass:[ARISettingCell class] forCellWithReuseIdentifier:@"EditCell"];
+-        coll.delegate = [ARIEditManager sharedInstance];
+-        coll.dataSource = [ARIEditManager sharedInstance];
+-
+-        [self addSubview:coll];
+-        coll.translatesAutoresizingMaskIntoConstraints = NO;
+-        [NSLayoutConstraint activateConstraints:@[
+-            [coll.widthAnchor constraintEqualToAnchor:self.widthAnchor],
+-            [coll.heightAnchor constraintEqualToAnchor:self.heightAnchor],
+-            [coll.centerYAnchor constraintEqualToAnchor:self.centerYAnchor],
+-            [coll.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+-        ]];
+-
+-        self.collectionView = coll;
+-    }
+-    return self;
+-}
+-
+-- (void)setupGradient {
+-    ARIFadeEffectView *fadeView = [ARIFadeEffectView new];
+-    [self addSubview:fadeView];
+-    fadeView.frame = self.frame;
+-    [fadeView setupFade:self.superview.bounds];
+-    self.maskView = fadeView;
+-}
+-
+-@end
 diff --git a/src/Hooks/AppLibrary.xm b/src/Hooks/AppLibrary.xm
-index a1613f8..d1526c7 100644
+index a1613f8..db9a9dc 100644
 --- a/src/Hooks/AppLibrary.xm
 +++ b/src/Hooks/AppLibrary.xm
-@@ -10,30 +10,6 @@
+@@ -8,31 +8,11 @@
  
- static id fixedLayoutForAppLibrary = nil;
+ #include <objc/runtime.h>
  
+-static id fixedLayoutForAppLibrary = nil;
+-
 -%hook SBIconController
 -
 -// Option to disable AppLibrary
@@ -4336,7 +5356,10 @@ index a1613f8..d1526c7 100644
 -%end
 -
 -%hook SBRootFolderControllerConfiguration
--
++// 资源库布局修复需要继承系统的布局提供者
++@interface SBHDefaultIconListLayoutProvider : NSObject
++@end
+ 
 -- (UIInterfaceOrientationMask)ignoresOverscrollOnFirstPageOrientations {
 -	static const BOOL disableTodayGesture = [[ARITweakManager sharedInstance] boolValueForKey:@"disableTodayGesture"];
 -	return disableTodayGesture ? 0 : %orig;
@@ -4348,40 +5371,136 @@ index a1613f8..d1526c7 100644
 -}
 -
 -%end
--
++static id fixedLayoutForAppLibrary = nil;
+ 
  %group AppLibraryFix
  
- // Subclass layout provider. I could have just added a property to tag an instance as our fix,
-diff --git a/src/Hooks/DockView.xm b/src/Hooks/DockView.xm
-index b010cc7..b09021e 100644
---- a/src/Hooks/DockView.xm
-+++ b/src/Hooks/DockView.xm
-@@ -20,19 +20,10 @@ static SBFloatingDockController *fdController;
-     [self setBackgroundAlpha:[manager floatValueForKey:@"dock_bg"]];
+@@ -66,9 +46,6 @@ static id fixedLayoutForAppLibrary = nil;
+ 	if([manager isEnabled]) {
+ 		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+ 		%init();
+-
+-		if([manager boolValueForKey:@"layoutEnabled"]) {
+-			%init(AppLibraryFix);
+-		}
++		%init(AppLibraryFix);
+ 	}
  }
- 
+diff --git a/src/Hooks/DockController.xm b/src/Hooks/DockController.xm
+new file mode 100644
+index 0000000..0f4c497
+--- /dev/null
++++ b/src/Hooks/DockController.xm
+@@ -0,0 +1,38 @@
++//
++//  仅保留「引导页弹出时收起 / 关闭后恢复」所需的浮动程序坞实例引用。
++//  程序坞本身的布局与背景相关功能已移除。
++//
++
++#import "Shared.h"
++#import "../Manager/ARITweakManager.h"
++
++static SBFloatingDockController *fdController;
++
++%hook SBFloatingDockController
++
++// iOS 13-15
++- (id)initWithIconController:(id)arg1 {
++    id orig = %orig;
++    fdController = orig;
++    return orig;
++}
++
++// iOS 16+
++- (id)initWithWindowScene:(id)arg1 iconController:(id)arg2 {
++    id orig = %orig;
++    fdController = orig;
++    return orig;
++}
++
++%new
+++ (SBFloatingDockController *)_atriaSharedInstance {
++    return fdController;
++}
++
++%end
++
++%ctor {
++	if([[ARITweakManager sharedInstance] isEnabled]) {
++		%init();
++	}
++}
+diff --git a/src/Hooks/DockView.xm b/src/Hooks/DockView.xm
+deleted file mode 100644
+index b010cc7..0000000
+--- a/src/Hooks/DockView.xm
++++ /dev/null
+@@ -1,167 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-25 12:49:45
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "Shared.h"
+-#import "../Manager/ARITweakManager.h"
+-
+-@interface SBFloatingDockPlatterView : UIView
+-@property (nonatomic, strong) UIView *backgroundView;
+-@end
+-
+-static SBFloatingDockController *fdController;
+-
+-%hook SBDockView
+-
+-%new
+-- (void)_atriaUpdateDockForSettingsChanged {
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    [self setBackgroundAlpha:[manager floatValueForKey:@"dock_bg"]];
+-}
+-
 -- (CGFloat)dockHeight {
 -    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableDock"])
 -        return 0;
 -    return %orig;
 -}
 -
- // Override background alpha
- - (void)setBackgroundAlpha:(CGFloat)alpha {
+-// Override background alpha
+-- (void)setBackgroundAlpha:(CGFloat)alpha {
 -    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableDock"]) {
 -        %orig(0);
 -        return;
 -    }
 -    %orig([[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"]);
-+    CGFloat _atriaBgAlpha = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];
-+    %orig(_atriaBgAlpha);
- }
- 
- - (void)traitCollectionDidChange:(UITraitCollection *)old {
-@@ -63,69 +54,11 @@ static SBFloatingDockController *fdController;
-     return orig;
- }
- 
+-}
+-
+-- (void)traitCollectionDidChange:(UITraitCollection *)old {
+-    %orig(old);
+-    // Call the setter to force the background alpha to reset
+-    // This fixes the dock becoming full alpha after changing dark/light mode
+-    // Don't ask me how, but calling -setBackgroundAlpha: directly wasn't working,
+-    // but this does, even with 0.0 delay. What works works I guess
+-    [self performSelector:@selector(setBackgroundAlpha:) withObject:@(1.0f) afterDelay:0.0];
+-}
+-
+-%end
+-
+-
+-%hook SBFloatingDockController
+-
+-// iOS 13-15
+-- (id)initWithIconController:(id)arg1 {
+-    id orig = %orig;
+-    fdController = orig;
+-    return orig;
+-}
+-
+-// iOS 16+
+-- (id)initWithWindowScene:(id)arg1 iconController:(id)arg2 {
+-    id orig = %orig;
+-    fdController = orig;
+-    return orig;
+-}
+-
 -- (BOOL)isGesturePossible {
 -    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableFloatingDockGestures"]) return NO;
 -    return %orig;
@@ -4389,11 +5508,11 @@ index b010cc7..b09021e 100644
 -
 -// handlePresentFloatingDockGesture:
 -
- %new
- + (SBFloatingDockController *)_atriaSharedInstance {
-     return fdController;
- }
- 
+-%new
+-+ (SBFloatingDockController *)_atriaSharedInstance {
+-    return fdController;
+-}
+-
 -+ (BOOL)isFloatingDockSupported {
 -    ARITweakManager *manager = [ARITweakManager sharedInstance];
 -    return ([manager boolValueForKey:@"forceFloatingDock"] && ![manager boolValueForKey:@"disableDock"]) || %orig;
@@ -4445,11 +5564,47 @@ index b010cc7..b09021e 100644
 -}
 -
 -
- %end
- 
- 
+-%end
+-
+-
+-%hook SBFloatingDockView
+-
+-%new
+-- (void)_atriaUpdateDockForSettingsChanged {
+-    self.backgroundView.layer.opacity = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];
+-}
+-
+-- (void)didMoveToSuperview {
+-    %orig;
+-    [self _atriaUpdateDockForSettingsChanged];
+-}
+-
+-- (void)traitCollectionDidChange:(UITraitCollection *)old {
+-    %orig(old);
+-    [self performSelector:@selector(_atriaUpdateDockForSettingsChanged) withObject:nil afterDelay:0.0];
+-}
+-
+-%end
+-
+-
+-%hook SBFloatingDockPlatterView
+-
+-- (void)setBackgroundView:(UIView *)arg1 {
+-    arg1.layer.opacity = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];
+-    %orig(arg1);
+-}
+-
+-%end
+-
+-
+-%ctor {
+-	if([[ARITweakManager sharedInstance] isEnabled]) {
+-		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+-		%init();
+-	}
+-}
 diff --git a/src/Hooks/GridLayout.xm b/src/Hooks/GridLayout.xm
-index eff8fd2..723d83a 100644
+index eff8fd2..8e507ad 100644
 --- a/src/Hooks/GridLayout.xm
 +++ b/src/Hooks/GridLayout.xm
 @@ -10,70 +10,13 @@
@@ -4614,7 +5769,8 @@ index eff8fd2..723d83a 100644
 -
  %ctor {
  	ARITweakManager *manager = [ARITweakManager sharedInstance];
- 	if([manager isEnabled] && [manager boolValueForKey:@"layoutEnabled"]) {
+-	if([manager isEnabled] && [manager boolValueForKey:@"layoutEnabled"]) {
++	if([manager isEnabled]) {
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
  
          %init();
@@ -4628,36 +5784,68 @@ index eff8fd2..723d83a 100644
  	}
  }
 diff --git a/src/Hooks/Helper.xm b/src/Hooks/Helper.xm
-index 00e602e..3d5de72 100644
+index 00e602e..f1ab46b 100644
 --- a/src/Hooks/Helper.xm
 +++ b/src/Hooks/Helper.xm
-@@ -7,7 +7,6 @@
+@@ -5,9 +5,7 @@
+ 
+ #import "Shared.h"
  #import "../Manager/ARITweakManager.h"
- #import "../Manager/ARIEditManager.h"
+-#import "../Manager/ARIEditManager.h"
  #import "../UI/Splash/ARISplashViewController.h"
 -#import "../UI/Label/ARILabelView.h"
  
  #include <dlfcn.h>
  
-@@ -20,12 +19,12 @@
+@@ -16,53 +14,19 @@
  
+ - (void)viewDidAppear:(BOOL)animated {
+     %orig;
+-    [[ARIEditManager sharedInstance] toggleEditView:NO withTargetLocation:nil];
+-
      ARITweakManager *manager = [ARITweakManager sharedInstance];
      if(![manager boolValueForKey:ARIDidSplashPreferenceKey]) {
 -        ARISplashViewController *splash = [[ARISplashViewController alloc] initWithSubtitle:@"Getting started"];
-+        ARISplashViewController *splash = [[ARISplashViewController alloc] initWithSubtitle:@"开始使用"];
-         [splash addEntry:@"3D touch an icon or triple tap your wallpaper to edit layout" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"square.grid.3x3.fill.square" : @"square"]];
-         [splash addEntry:@"Drag the slider on the editor to see changes in real-time" image:[UIImage systemImageNamed:@"slider.horizontal.3"]];
-         [splash addEntry:@"Tap the label underneath the slider and type in a value for precise control" image:[UIImage systemImageNamed:@"wand.and.rays"]];
-         [splash addEntry:@"Tap this icon on the editor to edit layout for the current page only" image:[UIImage systemImageNamed:@"doc"]];
+-        [splash addEntry:@"3D touch an icon or triple tap your wallpaper to edit layout" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"square.grid.3x3.fill.square" : @"square"]];
+-        [splash addEntry:@"Drag the slider on the editor to see changes in real-time" image:[UIImage systemImageNamed:@"slider.horizontal.3"]];
+-        [splash addEntry:@"Tap the label underneath the slider and type in a value for precise control" image:[UIImage systemImageNamed:@"wand.and.rays"]];
+-        [splash addEntry:@"Tap this icon on the editor to edit layout for the current page only" image:[UIImage systemImageNamed:@"doc"]];
 -        [splash addEntry:@"See the preference pane in the Settings app for even more options" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"gearshape" : @"gear"]];
-+        [splash addEntry:@"更多选项请在「设置」中查看插件的偏好面板" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"gearshape" : @"gear"]];
-         [splash addEntry:@"If you encounter a bug, don't hesitate to report it! Please include your device and iOS version." image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"ladybug" : @"ant"]];
+-        [splash addEntry:@"If you encounter a bug, don't hesitate to report it! Please include your device and iOS version." image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"ladybug" : @"ant"]];
++        ARISplashViewController *splash = [[ARISplashViewController alloc] initWithSubtitle:@"开始使用"];
++        [splash addEntry:@"打开「设置」，向下找到「桌面微调」即可调节所有布局参数" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"gearshape" : @"gear"]];
++        [splash addEntry:@"拖动滑块即可调整间距、边距与偏移，右侧会实时显示当前数值" image:[UIImage systemImageNamed:@"slider.horizontal.3"]];
++        [splash addEntry:@"部分设置需要注销后才会完全生效" image:[UIImage systemImageNamed:@"arrow.clockwise"]];
++        [splash addEntry:@"遇到问题欢迎反馈，请附上你的设备型号与系统版本。" image:[UIImage systemImageNamed:[manager firmwareVersion] >= 14 ? @"ladybug" : @"ant"]];
          dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
              [[objc_getClass("SBIconController") sharedInstance] presentViewController:splash animated:YES completion:nil];
-@@ -56,16 +55,6 @@
- %end
+         });
+     }
+ }
  
- 
+-- (void)viewDidDisappear:(BOOL)animated {
+-    %orig;
+-    [[ARIEditManager sharedInstance] toggleEditView:NO withTargetLocation:nil];
+-}
+-
+-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id)coordinator {
+-    %orig;
+-    [[ARIEditManager sharedInstance] toggleEditView:NO withTargetLocation:nil];
+-}
+-
+-%end
+-
+-
+-%hook SBMainSwitcherWindow
+-
+-- (void)setHidden:(BOOL)arg {
+-    %orig;
+-    [[ARIEditManager sharedInstance] toggleEditView:NO withTargetLocation:nil];
+-}
+-
+-%end
+-
+-
 -%hook SBIconScrollView
 -
 -- (void)scrollRectToVisible:(CGRect)rect animated:(BOOL)animated {
@@ -4665,13 +5853,10 @@ index 00e602e..3d5de72 100644
 -    // for homescreen page labels. Crossing my fingers this doesn't break anything.
 -}
 -
--%end
--
--
- %hook SpringBoard
+ %end
  
- - (void)applicationDidFinishLaunching:(id)arg1 {
-@@ -76,30 +65,6 @@
+ 
+@@ -76,30 +40,6 @@
  %end
  
  
@@ -4702,7 +5887,7 @@ index 00e602e..3d5de72 100644
  %group ZenithFix
  %hook SBIconListModel
  
-@@ -135,10 +100,6 @@
+@@ -135,10 +75,6 @@
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
  		%init();
  
@@ -4713,14 +5898,63 @@ index 00e602e..3d5de72 100644
          // Zenith compatibility
          NSString *const zenithPath = @THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/Zenith.dylib";
          if([[NSFileManager defaultManager] fileExistsAtPath:zenithPath]) {
-diff --git a/src/Hooks/IconView.xm b/src/Hooks/IconView.xm
-index 6597fba..0a1262d 100644
---- a/src/Hooks/IconView.xm
-+++ b/src/Hooks/IconView.xm
-@@ -27,167 +27,6 @@
- @end
+diff --git a/src/Hooks/IconState.xm b/src/Hooks/IconState.xm
+index 015b5a1..901bd67 100644
+--- a/src/Hooks/IconState.xm
++++ b/src/Hooks/IconState.xm
+@@ -29,14 +29,9 @@
  
- %hook SBIconView
+ %ctor {
+     ARITweakManager *manager = [ARITweakManager sharedInstance];
++    // 三个开关已合并为单一的「启用」：开启时同时启用布局修改与图标状态保存
+     if([manager isEnabled]) {
+-        // A user might want to disable this if they have a tweak like Velox Reloaded 2 which also saves icon state
+-        if([manager boolValueForKey:@"saveIconState"]) {
+-            NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+-		    %init();
+-        } else {
+-            // Clear the existing saved icon state so that the user's layout doesn't revert when re-enabling the option
+-            [[ARITweakManager sharedInstance] resetValueForKey:@"_saveState"];
+-        }
++        NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
++		%init();
+ 	}
+ }
+diff --git a/src/Hooks/IconView.xm b/src/Hooks/IconView.xm
+deleted file mode 100644
+index 6597fba..0000000
+--- a/src/Hooks/IconView.xm
++++ /dev/null
+@@ -1,294 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-25 12:49:37
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "Shared.h"
+-#import "../Manager/ARITweakManager.h"
+-#import "../Manager/ARIEditManager.h"
+-
+-#include <objc/runtime.h>
+-
+-@interface SBSApplicationShortcutIcon : NSObject
+-@end
+-
+-@interface SBSApplicationShortcutItem : NSObject
+-@property (nonatomic, retain) NSString *type;
+-@property (nonatomic, copy) NSString *localizedTitle;
+-@property (nonatomic, copy) SBSApplicationShortcutIcon *icon;
+-@property (nonatomic, copy) NSString *bundleIdentifierToLaunch;
+-- (void)setIcon:(SBSApplicationShortcutIcon *)arg1;
+-@end
+-
+-@interface SBSApplicationShortcutCustomImageIcon : SBSApplicationShortcutIcon
+-@property (nonatomic, readwrite) BOOL isTemplate;   
+-- (id)initWithImagePNGData:(id)arg1;
+-- (BOOL)isTemplate;
+-@end
+-
+-%hook SBIconView
 -// I hope this doesn't cause issues
 -%property (nonatomic, strong) SBIconListView *_atriaLastIconListView;
 -
@@ -4882,69 +6116,62 @@ index 6597fba..0a1262d 100644
 -	[self _atriaGenerateDropShadow:arg1];
 -}
 -
- %new
- - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type {
- 	SBSApplicationShortcutItem *item = [[objc_getClass("SBSApplicationShortcutItem") alloc] init];
-@@ -198,7 +37,29 @@
- 	UIImage *image = [UIImage systemImageNamed:@"gear"];
- 
- 	// Tint our image
+-%new
+-- (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type {
+-	SBSApplicationShortcutItem *item = [[objc_getClass("SBSApplicationShortcutItem") alloc] init];
+-	item.localizedTitle = title;
+-	item.type = type;
+-
+-	// SFSymbols
+-	UIImage *image = [UIImage systemImageNamed:@"gear"];
+-
+-	// Tint our image
 -	image = [image imageWithTintColor:[UIColor labelColor]];
-+	// 用 PNG data 图标(SBSApplicationShortcutCustomImageIcon)时颜色在生成时就固定了，
-+	// 不跟随 overrideUserInterfaceStyle。因此对「文字深浅切换」这类强制菜单外观的插件，
-+	// 直接读它的偏好来决定颜色。
-+	NSUserDefaults *glfDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"com.yechen.globalfont"];
-+	[glfDefaults synchronize];
-+	UIColor *tintColor = nil;
-+	id glfEnabled = [glfDefaults objectForKey:@"enabled"];
-+	if([glfEnabled respondsToSelector:@selector(boolValue)] && [glfEnabled boolValue]) {
-+		// 0 = 默认, 1 = 浅色, 2 = 深色
-+		NSInteger menuMode = [[glfDefaults objectForKey:@"menuAppearanceMode"] integerValue];
-+		if(menuMode == 2) tintColor = [UIColor whiteColor];
-+		else if(menuMode == 1) tintColor = [UIColor blackColor];
-+	}
-+
-+	// 未装该插件或设为「默认」：跟随系统外观
-+	if(!tintColor) {
-+		UIUserInterfaceStyle style = self.traitCollection.userInterfaceStyle;
-+		if(style == UIUserInterfaceStyleUnspecified) {
-+			style = [UITraitCollection currentTraitCollection].userInterfaceStyle;
-+		}
-+		tintColor = (style == UIUserInterfaceStyleDark) ? [UIColor whiteColor] : [UIColor blackColor];
-+	}
-+	image = [image imageWithTintColor:tintColor];
- 
- 	// Get data respresentation of the image
- 	NSData *iconData = UIImagePNGRepresentation(image);
-@@ -214,19 +75,16 @@
- 	// Add shortcut item to activate editor
- 	// I found this really cool gist to allow me to do this, tyvm to the author <3
- 	// Link: https://gist.github.com/MTACS/8e26c4f430b27d6a1d2a11f0a828f250
+-
+-	// Get data respresentation of the image
+-	NSData *iconData = UIImagePNGRepresentation(image);
+-	SBSApplicationShortcutCustomImageIcon *icon = [[objc_getClass("SBSApplicationShortcutCustomImageIcon") alloc] initWithImagePNGData:iconData];
+-	[item setIcon:icon];
+-
+-	return item;
+-}
+-
+-- (NSArray *)applicationShortcutItems {
+-	if([[ARITweakManager sharedInstance] boolValueForKey:@"hide3DTouchActions"] || [self isFolderIcon]) return %orig;
+-
+-	// Add shortcut item to activate editor
+-	// I found this really cool gist to allow me to do this, tyvm to the author <3
+-	// Link: https://gist.github.com/MTACS/8e26c4f430b27d6a1d2a11f0a828f250
 -	NSMutableArray *items = [%orig mutableCopy];
-+	NSArray *_atriaOrigItems = %orig;
-+	NSMutableArray *items = [_atriaOrigItems mutableCopy];
- 	if(!(IconIsInRoot(self) || IconIsInDock(self))) return items;
- 	if(!items) items = [NSMutableArray new];
- 
- 	if(IconIsInRoot(self)) {
+-	if(!(IconIsInRoot(self) || IconIsInDock(self))) return items;
+-	if(!items) items = [NSMutableArray new];
+-
+-	if(IconIsInRoot(self)) {
 -		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Layout" type:@"me.lau.atria.edit.hs"]];
 -		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Page Dots" type:@"me.lau.atria.edit.pagedot"]];
 -		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Page Labels" type:@"me.lau.atria.edit.label"]];
 -		if([[ARITweakManager sharedInstance] boolValueForKey:@"showBackground"]) {
 -			[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Background Blur" type:@"me.lau.atria.edit.blur"]];
 -		}
-+		[items addObject:[self _atriaGenerateItemWithTitle:@"编辑布局" type:@"me.lau.atria.edit.hs"]];
-+		[items addObject:[self _atriaGenerateItemWithTitle:@"编辑翻页点" type:@"me.lau.atria.edit.pagedot"]];
- 	} else if(IconIsInDock(self)) {
+-	} else if(IconIsInDock(self)) {
 -		[items addObject:[self _atriaGenerateItemWithTitle:@"Edit Dock" type:@"me.lau.atria.edit.dock"]];
-+		[items addObject:[self _atriaGenerateItemWithTitle:@"编辑程序坞" type:@"me.lau.atria.edit.dock"]];
- 	}
- 
- 	return items;
-@@ -244,48 +102,6 @@
- 
- %end
- 
+-	}
+-
+-	return items;
+-}
+-
+-+ (void)activateShortcut:(SBSApplicationShortcutItem *)item withBundleIdentifier:(NSString *)bundleID forIconView:(SBIconView *)iconView {
+-	NSString *prefix = @"me.lau.atria.edit.";
+-	if([[item type] containsString:prefix]) {
+-		NSString *loc = [[item type] stringByReplacingOccurrencesOfString:prefix withString:@""];
+-		[[ARIEditManager sharedInstance] toggleEditView:YES withTargetLocation:loc];
+-	} else {
+-		%orig;
+-	}
+-}
+-
+-%end
+-
 -// I don't think this needs explaining
 -%hook SBIconBadgeView
 -
@@ -4987,14 +6214,17 @@ index 6597fba..0a1262d 100644
 -
 -%end
 -
- %ctor {
- 	if([[ARITweakManager sharedInstance] isEnabled]) {
- 		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+-%ctor {
+-	if([[ARITweakManager sharedInstance] isEnabled]) {
+-		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+-		%init();
+-	}
+-}
 diff --git a/src/Hooks/MainLayout.xm b/src/Hooks/MainLayout.xm
-index 4af459b..d9097c8 100644
+index 4af459b..d0052a1 100644
 --- a/src/Hooks/MainLayout.xm
 +++ b/src/Hooks/MainLayout.xm
-@@ -5,43 +5,26 @@
+@@ -5,43 +5,22 @@
  
  #import "Shared.h"
  #import "../Manager/ARITweakManager.h"
@@ -5005,10 +6235,10 @@ index 4af459b..d9097c8 100644
 -#import "../UI/ARIBackgroundView.h"
 -
 -static BOOL didLaunchSB = NO;
- 
- @interface SBHDefaultIconListLayoutProvider : NSObject
- - (SBIconListFlowExtendedLayout *)layoutForIconLocation:(NSString *)location;
- @end
+-
+-@interface SBHDefaultIconListLayoutProvider : NSObject
+-- (SBIconListFlowExtendedLayout *)layoutForIconLocation:(NSString *)location;
+-@end
  
  %hook SBIconListView
 -%property (nonatomic, strong) ARILabelView *_atriaPageLabel;
@@ -5038,7 +6268,7 @@ index 4af459b..d9097c8 100644
  		self._atriaNeedsLayout = NO;
  	}
  
-@@ -70,57 +53,29 @@ static BOOL didLaunchSB = NO;
+@@ -70,122 +49,30 @@ static BOOL didLaunchSB = NO;
  		// This helps prevent unnecessary work, and additionally prevents issues related to the page reordering view
  		if([self.icons count] == 0) return;
  
@@ -5072,47 +6302,57 @@ index 4af459b..d9097c8 100644
  		// Offset moves the whole page
  		CGFloat topOffset = [manager floatValueForKey:@"hs_offset_top" forListView:self];
 -		CGFloat leftOffset = [manager floatValueForKey:@"hs_offset_left" forListView:self];
- 
- 		// Insets
- 		CGFloat topInset = [manager floatValueForKey:@"hs_inset_top" forListView:self];
- 		CGFloat bottomInset = [manager floatValueForKey:@"hs_inset_bottom" forListView:self];
+-
+-		// Insets
+-		CGFloat topInset = [manager floatValueForKey:@"hs_inset_top" forListView:self];
+-		CGFloat bottomInset = [manager floatValueForKey:@"hs_inset_bottom" forListView:self];
 -		CGFloat leftInset = [manager floatValueForKey:@"hs_inset_left" forListView:self];
 -		CGFloat rightInset = [manager floatValueForKey:@"hs_inset_right" forListView:self];
- 
- 		// Spacing is actually just inset adjustments that give the use the illusion of change
- 		CGFloat spaceX = [manager floatValueForKey:@"hs_spacing_x" forListView:self];
- 		CGFloat spaceY = [manager floatValueForKey:@"hs_spacing_y" forListView:self];
- 
+-
+-		// Spacing is actually just inset adjustments that give the use the illusion of change
+-		CGFloat spaceX = [manager floatValueForKey:@"hs_spacing_x" forListView:self];
+-		CGFloat spaceY = [manager floatValueForKey:@"hs_spacing_y" forListView:self];
+-
 -		// Add spacing for page label
 -		if(showPageLabel) topInset += 60;
-+
  
  		// Set layout insets
  		UIEdgeInsets origPortrait = config.portraitLayoutInsets;
- 		UIEdgeInsets portraitInsets = UIEdgeInsetsMake(
- 			origPortrait.top + topInset + topOffset,
+-		UIEdgeInsets portraitInsets = UIEdgeInsetsMake(
+-			origPortrait.top + topInset + topOffset,
 -			origPortrait.left + leftInset + leftOffset,
-+			origPortrait.left,
- 			origPortrait.bottom + bottomInset - topOffset,
+-			origPortrait.bottom + bottomInset - topOffset,
 -			origPortrait.right + rightInset - leftOffset
-+			origPortrait.right
- 		);
- 		// Make final insets with adjustments for icon spacing
+-		);
+-		// Make final insets with adjustments for icon spacing
  		[config setPortraitLayoutInsets:UIEdgeInsetsMake(
-@@ -134,9 +89,9 @@ static BOOL didLaunchSB = NO;
+-			portraitInsets.top - spaceY / 2,
+-			portraitInsets.left - spaceX / 2,
+-			portraitInsets.bottom - spaceY / 2,
+-			portraitInsets.right - spaceX / 2
++			origPortrait.top + topOffset,
++			origPortrait.left,
++			origPortrait.bottom - topOffset,
++			origPortrait.right
+ 		)];
+ 
+ 		// Landscape insets
  		UIEdgeInsets origLandscape = config.landscapeLayoutInsets;
- 		UIEdgeInsets landscapeInsets = UIEdgeInsetsMake(
- 			origLandscape.top + topInset + topOffset,
+-		UIEdgeInsets landscapeInsets = UIEdgeInsetsMake(
+-			origLandscape.top + topInset + topOffset,
 -			origLandscape.left + leftInset + leftOffset,
-+			origLandscape.left,
- 			origLandscape.bottom + bottomInset - topOffset,
+-			origLandscape.bottom + bottomInset - topOffset,
 -			origLandscape.right + rightInset - leftOffset
-+			origLandscape.right
- 		);
+-		);
  		[config setLandscapeLayoutInsets:UIEdgeInsetsMake(
- 			landscapeInsets.top - spaceY / 2,
-@@ -145,47 +100,6 @@ static BOOL didLaunchSB = NO;
- 			landscapeInsets.right - spaceX / 2
+-			landscapeInsets.top - spaceY / 2,
+-			landscapeInsets.left - spaceX / 2,
+-			landscapeInsets.bottom - spaceY / 2,
+-			landscapeInsets.right - spaceX / 2
++			origLandscape.top + topOffset,
++			origLandscape.left,
++			origLandscape.bottom - topOffset,
++			origLandscape.right
  		)];
  
 -		// Update background
@@ -5159,10 +6399,11 @@ index 4af459b..d9097c8 100644
  		// Create a new flow layout with our modified (and copied) configuration
  		// layoutConfiguration is readonly on SBIconListFlowExtendedLayout
  		if([manager firmwareVersion] >= 14) {
-@@ -195,36 +109,15 @@ static BOOL didLaunchSB = NO;
+@@ -194,60 +81,9 @@ static BOOL didLaunchSB = NO;
+ 			// SBIconListFlowExtendedLayout does not exist on 13
  			self._atriaCachedLayout = [[objc_getClass("SBIconListFlowLayout") alloc] initWithLayoutConfiguration:config];
  		}
- 	} else if(IconListIsDock(self)) {
+-	} else if(IconListIsDock(self)) {
 -		SBIconListGridLayoutConfiguration *config = orig.layoutConfiguration;
 -
 -		NSUInteger cols = [manager intValueForKey:@"dock_columns"];
@@ -5185,37 +6426,41 @@ index 4af459b..d9097c8 100644
 -				[manager floatValueForKey:@"dock_inset_right"]
 -			);
 -		} else {
-+		// 程序坞的行列数、四边边距与纵向间距均已移除，
-+		// 仅保留图标横向间距。其余沿用系统原生布局。
-+		if([manager firmwareVersion] < 14) {
- 			CGFloat spaceX = [manager floatValueForKey:@"dock_spacing_x"];
+-			CGFloat spaceX = [manager floatValueForKey:@"dock_spacing_x"];
 -			CGFloat spaceY = [manager floatValueForKey:@"dock_spacing_y"];
 -
- 			self.layoutInsets = UIEdgeInsetsMake(
+-			self.layoutInsets = UIEdgeInsetsMake(
 -				[manager floatValueForKey:@"dock_inset_top"] - spaceY / 2,
 -				[manager floatValueForKey:@"dock_inset_left"] - spaceX / 2,
 -				[manager floatValueForKey:@"dock_inset_bottom"] - spaceY / 2,
 -				[manager floatValueForKey:@"dock_inset_right"] - spaceX / 2
-+				0,
-+				0 - spaceX / 2,
-+				0,
-+				0 - spaceX / 2
- 			);
- 		}
- 
-@@ -240,10 +133,9 @@ static BOOL didLaunchSB = NO;
- 	ARITweakManager *manager = [ARITweakManager sharedInstance];
- 	if([manager firmwareVersion] >= 14 && IconListIsDock(self)) {
- 		CGFloat spaceX = [manager floatValueForKey:@"dock_spacing_x"];
--		CGFloat spaceY = [manager floatValueForKey:@"dock_spacing_y"];
- 		// I divide by 2 to keep it consistent with behavior of root
- 		// Root icon spacing is managed by adjusting insets, since that is what works
--		return CGSizeMake(spacing.width + spaceX / 2, spacing.height + spaceY / 2);
-+		return CGSizeMake(spacing.width + spaceX / 2, spacing.height);
+-			);
+-		}
+-
+-		// We don't need to copy our grid config for dock, so set it
+-		// to the original object now that we've modified the layout.
+-		self._atriaCachedLayout = orig;
  	}
- 	return spacing;
  }
-@@ -258,48 +150,6 @@ static BOOL didLaunchSB = NO;
+ 
+-- (CGSize)iconSpacing {
+-	CGSize spacing = %orig;
+-	// This doesn't work on iOS 13
+-	ARITweakManager *manager = [ARITweakManager sharedInstance];
+-	if([manager firmwareVersion] >= 14 && IconListIsDock(self)) {
+-		CGFloat spaceX = [manager floatValueForKey:@"dock_spacing_x"];
+-		CGFloat spaceY = [manager floatValueForKey:@"dock_spacing_y"];
+-		// I divide by 2 to keep it consistent with behavior of root
+-		// Root icon spacing is managed by adjusting insets, since that is what works
+-		return CGSizeMake(spacing.width + spaceX / 2, spacing.height + spaceY / 2);
+-	}
+-	return spacing;
+-}
+-
+ - (BOOL)automaticallyAdjustsLayoutMetricsToFit {
+ 	// automaticallyAdjustsLayoutMetricsToFit makes the icons auto scale
+ 	// and automatically lay themselves out. We don't want this.
+@@ -258,55 +94,13 @@ static BOOL didLaunchSB = NO;
  
  %end
  
@@ -5264,6 +6509,14 @@ index 4af459b..d9097c8 100644
  static void preferencesChanged() {
      [[ARITweakManager sharedInstance] updateLayoutForRoot:YES forDock:YES animated:YES];
  }
+ 
+ %ctor {
+ 	ARITweakManager *manager = [ARITweakManager sharedInstance];
+-	if([manager isEnabled] && [manager boolValueForKey:@"layoutEnabled"]) {
++	if([manager isEnabled]) {
+ 		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+ 		%init();
+ 
 diff --git a/src/Hooks/PageDots.xm b/src/Hooks/PageDots.xm
 index abd56ae..467684d 100644
 --- a/src/Hooks/PageDots.xm
@@ -5277,57 +6530,143 @@ index abd56ae..467684d 100644
  	pageControl.frame = newFrame;
  }
 diff --git a/src/Manager/ARIEditManager.h b/src/Manager/ARIEditManager.h
-index 6afa66c..12bd521 100644
+deleted file mode 100644
+index 6afa66c..0000000
 --- a/src/Manager/ARIEditManager.h
-+++ b/src/Manager/ARIEditManager.h
-@@ -16,7 +16,6 @@
- @property (nonatomic, readonly, assign) BOOL singleListMode;
- - (void)toggleEditView:(BOOL)toggle withTargetLocation:(NSString *)targetLoc;
- - (NSMutableArray *)currentValidSettings;
++++ /dev/null
+@@ -1,24 +0,0 @@
+-//
+-// Created by ren7995 on 2021-04-25 16:02:02
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import <Foundation/Foundation.h>
+-#import <UIKit/UIKit.h>
+-
+-#import "../Editor/ARIEditingMainView.h"
+-#import "ARITweakManager.h"
+-
+-@interface ARIEditManager : NSObject <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+-@property (nonatomic, strong) ARIEditingMainView *editView;
+-@property (nonatomic, readonly, assign) BOOL isEditing;
+-@property (nonatomic, readonly, strong) NSString *editingLocation;
+-@property (nonatomic, readonly, assign) BOOL singleListMode;
+-- (void)toggleEditView:(BOOL)toggle withTargetLocation:(NSString *)targetLoc;
+-- (NSMutableArray *)currentValidSettings;
 -- (void)setDockLayoutQueued;
- - (void)toggleSingleListMode;
- - (void)presentEditAlert;
- - (SBIconListView *)currentIconListViewIfSinglePage;
+-- (void)toggleSingleListMode;
+-- (void)presentEditAlert;
+-- (SBIconListView *)currentIconListViewIfSinglePage;
+-+ (instancetype)sharedInstance;
+-@end
 diff --git a/src/Manager/ARIEditManager.m b/src/Manager/ARIEditManager.m
-index 1913330..a6cd01c 100644
+deleted file mode 100644
+index 1913330..0000000
 --- a/src/Manager/ARIEditManager.m
-+++ b/src/Manager/ARIEditManager.m
-@@ -6,7 +6,6 @@
- 
- @implementation ARIEditManager {
-     BOOL _isEditing;
++++ /dev/null
+@@ -1,195 +0,0 @@
+-#import "ARIEditManager.h"
+-#import "../Editor/ARISettingCell.h"
+-#import "ARITweakManager.h"
+-
+-#include <objc/runtime.h>
+-
+-@implementation ARIEditManager {
+-    BOOL _isEditing;
 -    BOOL _queueDockLayout;
-     BOOL _singleList;
-     NSString *_editingLocation;
-     SBIconListView *_current;
-@@ -70,12 +69,6 @@
-         _isEditing = NO;
-         _editingLocation = nil;
- 
+-    BOOL _singleList;
+-    NSString *_editingLocation;
+-    SBIconListView *_current;
+-}
+-
+-@synthesize isEditing = _isEditing;
+-@synthesize singleListMode = _singleList;
+-@synthesize editingLocation = _editingLocation;
+-
+-+ (instancetype)sharedInstance {
+-    static dispatch_once_t token;
+-    static ARIEditManager *manager;
+-    dispatch_once(&token, ^{
+-        manager = [[self alloc] init];
+-    });
+-    return manager;
+-}
+-
+-// Edit helper
+-
+-- (void)toggleEditView:(BOOL)toggle withTargetLocation:(NSString *)targetLoc {
+-    if(toggle) {
+-        // Start edit
+-        if(_isEditing) return;
+-        _isEditing = YES;
+-        _editingLocation = targetLoc;
+-
+-        UIViewController *iconController = (UIViewController *)[objc_getClass("SBIconController") sharedInstance];
+-
+-        // Check if this list view has custom config
+-        _current = [[ARITweakManager sharedInstance] currentListView];
+-        // No per page layout for the following
+-        if(![targetLoc isEqualToString:@"dock"] && ![targetLoc isEqualToString:@"pagedot"]) {
+-            _singleList = [[ARITweakManager sharedInstance] doesCustomConfigForListViewExist:_current];
+-        } else {
+-            _singleList = NO;
+-        }
+-
+-        ARIEditingMainView *view = [[ARIEditingMainView alloc] initWithTarget:targetLoc];
+-        view.alpha = 0.0F;
+-        view.transform = CGAffineTransformMakeScale(0.25F, 0.25F);
+-        [iconController.view addSubview:view];
+-        [NSLayoutConstraint activateConstraints:@[
+-            [view.centerXAnchor constraintEqualToAnchor:iconController.view.centerXAnchor],
+-        ]];
+-
+-        [UIView animateWithDuration:0.2f
+-            delay:0.25f
+-            options:UIViewAnimationOptionCurveEaseOut
+-            animations:^{
+-                view.alpha = 1.0F;
+-                view.transform = CGAffineTransformMakeScale(1.0F, 1.0F);
+-            }
+-            completion:^(BOOL finished) {
+-                [view toggleOptionsView:nil];
+-            }];
+-        self.editView = view;
+-    } else {
+-        // End edit
+-        if(!_isEditing) return;
+-        _isEditing = NO;
+-        _editingLocation = nil;
+-
 -        // Finish layout
 -        if(_queueDockLayout) {
 -            [[ARITweakManager sharedInstance] relayoutEntireIconModel];
 -            _queueDockLayout = NO;
 -        }
 -
-         [UIView animateWithDuration:0.15f
-             delay:0.0f
-             options:UIViewAnimationOptionCurveEaseIn
-@@ -90,24 +83,16 @@
-     }
- }
- 
+-        [UIView animateWithDuration:0.15f
+-            delay:0.0f
+-            options:UIViewAnimationOptionCurveEaseIn
+-            animations:^{
+-                self.editView.alpha = 0.0F;
+-                self.editView.transform = CGAffineTransformMakeScale(0.2F, 0.2F);
+-            }
+-            completion:^(BOOL finished) {
+-                [self.editView removeFromSuperview];
+-                self.editView = nil;
+-            }];
+-    }
+-}
+-
 -- (void)setDockLayoutQueued {
 -    _queueDockLayout = YES;
 -}
 -
- - (void)presentEditAlert {
-     ARITweakManager *manager = [ARITweakManager sharedInstance];
-     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Atria"
+-- (void)presentEditAlert {
+-    ARITweakManager *manager = [ARITweakManager sharedInstance];
+-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Atria"
 -                                                                   message:@"What would you like to edit?"
-+                                                                   message:@"你想编辑什么？"
-                                                             preferredStyle:UIAlertControllerStyleAlert];
- 
+-                                                            preferredStyle:UIAlertControllerStyleAlert];
+-
 -    [alert addAction:[self _createEditAlertAction:@"Homescreen Pages" editLocation:@"hs"]];
 -    [alert addAction:[self _createEditAlertAction:@"Dock" editLocation:@"dock"]];
 -    [alert addAction:[self _createEditAlertAction:@"Page Labels" editLocation:@"label"]];
@@ -5336,18 +6675,96 @@ index 1913330..a6cd01c 100644
 -        [alert addAction:[self _createEditAlertAction:@"Background Blur" editLocation:@"blur"]];
 -    }
 -    [alert addAction:[UIAlertAction actionWithTitle:@"Cancel"
-+    [alert addAction:[self _createEditAlertAction:@"主屏幕页面" editLocation:@"hs"]];
-+    [alert addAction:[self _createEditAlertAction:@"程序坞" editLocation:@"dock"]];
-+    [alert addAction:[self _createEditAlertAction:@"翻页点" editLocation:@"pagedot"]];
-+    [alert addAction:[UIAlertAction actionWithTitle:@"取消"
-                                               style:UIAlertActionStyleCancel
-                                             handler:^(UIAlertAction *action){
-                                             }]];
+-                                              style:UIAlertActionStyleCancel
+-                                            handler:^(UIAlertAction *action){
+-                                            }]];
+-
+-    [[objc_getClass("SBIconController") sharedInstance] presentViewController:alert animated:YES completion:nil];
+-}
+-
+-- (UIAlertAction *)_createEditAlertAction:(NSString *)title editLocation:(NSString *)location {
+-    return [UIAlertAction actionWithTitle:title
+-                                    style:UIAlertActionStyleDefault
+-                                  handler:^(UIAlertAction *action) {
+-                                      [self toggleEditView:YES
+-                                          withTargetLocation:location];
+-                                  }];
+-}
+-
+-- (NSMutableArray *)currentValidSettings {
+-    return self.editView.validsettingsForTarget;
+-}
+-
+-- (void)toggleSingleListMode {
+-    _singleList = !_singleList;
+-    // Update if we just set to single list mode
+-    if(_singleList) _current = [[ARITweakManager sharedInstance] currentListView];
+-
+-    if(_singleList && ![[ARITweakManager sharedInstance] doesCustomConfigForListViewExist:_current]) {
+-        // Freeze config for the page
+-        [[ARITweakManager sharedInstance] createCustomForListView:_current];
+-    } else if(!_singleList) {
+-        // Clear custom config
+-        [[ARITweakManager sharedInstance] deleteCustomForListView:_current];
+-    }
+-}
+-
+-- (SBIconListView *)currentIconListViewIfSinglePage {
+-    return _singleList ? _current : nil;
+-}
+-
+-// Collection view delegate and data source
+-
+-- (ARISettingCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+-    ARISettingCell *cell = (ARISettingCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"EditCell" forIndexPath:indexPath];
+-    NSString *key = self.editView.validsettingsForTarget[indexPath.row];
+-    cell.opLabel.text = [[ARITweakManager sharedInstance] getSettingByKey:key].translation;
+-
+-    // Turn a key like "dock_inset_left" into "inset_left"
+-    NSArray *components = [key componentsSeparatedByString:@"_"];
+-    if([components count] > 1) {
+-        key = [key
+-            stringByReplacingOccurrencesOfString:[components[0] stringByAppendingString:@"_"]
+-                                      withString:@""];
+-    }
+-
+-    // Calculate path and set image
+-    NSString *path = [NSString stringWithFormat:@THEOS_PACKAGE_INSTALL_PREFIX "/Library/PreferenceBundles/AtriaPrefs.bundle/Editor/%@.png", key];
+-    cell.img.image = [[UIImage imageWithContentsOfFile:path] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] ?: [UIImage systemImageNamed:@"gear"];
+-
+-    return cell;
+-}
+-
+-- (NSInteger)collectionView:(UICollectionView *)collectionView
+-     numberOfItemsInSection:(NSInteger)numberOfItemsInSection {
+-    return [self.editView.validsettingsForTarget count];
+-}
+-
+-- (void)collectionView:(UICollectionView *)collectionView
+-    didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+-    NSString *key = self.editView.validsettingsForTarget[indexPath.row];
+-    [self.editView setupForSettingKey:key];
+-    [self.editView toggleOptionsView:nil];
+-}
+-
+-- (CGSize)collectionView:(UICollectionView *)collectionView
+-                    layout:(UICollectionViewLayout *)collectionViewLayout
+-    sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+-    return CGSizeMake(65, 65);
+-}
+-
+-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
+-                        layout:(UICollectionViewLayout *)collectionViewLayout
+-        insetForSectionAtIndex:(NSInteger)section {
+-    return UIEdgeInsetsMake(5, 10, 10, 10); // top, left, bottom, right
+-}
+-
+-@end
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
-index 8749041..2b4ee8b 100644
+index 8749041..262878b 100644
 --- a/src/Manager/ARITweakManager.h
 +++ b/src/Manager/ARITweakManager.h
-@@ -41,11 +41,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -41,52 +41,17 @@ typedef struct SBRootFolderViewMetrics {
      struct CGRect _field11;
  } SBRootFolderViewMetrics;
  
@@ -5356,10 +6773,12 @@ index 8749041..2b4ee8b 100644
 -- (id)application;
 -@end
 -
- @interface SBDockView : UIView
- - (void)setBackgroundAlpha:(CGFloat)alpha;
- - (void)_atriaUpdateDockForSettingsChanged;
-@@ -55,11 +50,7 @@ typedef struct SBRootFolderViewMetrics {
+-@interface SBDockView : UIView
+-- (void)setBackgroundAlpha:(CGFloat)alpha;
+-- (void)_atriaUpdateDockForSettingsChanged;
+-@end
+-
+ @class SBIconListView;
  @interface SBIconListModel : NSObject
  @property (nonatomic, strong) NSString *_atriaLocation;
  @property (nonatomic, strong) id folder;
@@ -5371,34 +6790,34 @@ index 8749041..2b4ee8b 100644
  - (NSUInteger)maxNumberOfIcons;
  - (NSArray *)icons;
  - (void)layout;
-@@ -67,7 +58,6 @@ typedef struct SBRootFolderViewMetrics {
+ @end
  
- @class SBSApplicationShortcutItem;
- @interface SBIconView : UIView
+-@class SBSApplicationShortcutItem;
+-@interface SBIconView : UIView
 -@property (nonatomic, strong) SBIconListView *_atriaLastIconListView;
- @property (nonatomic, strong) id icon;
- @property (nonatomic, strong) UIView *contentContainerView;
- @property (nonatomic, assign) BOOL allowsLabelArea;
-@@ -75,18 +65,11 @@ typedef struct SBRootFolderViewMetrics {
- @property (nonatomic, assign) CGFloat iconLabelAlpha;
- @property (nonatomic, assign, getter=isIconContentScalingEnabled) BOOL iconContentScalingEnabled;
- @property (nonatomic, strong) NSString *location;
+-@property (nonatomic, strong) id icon;
+-@property (nonatomic, strong) UIView *contentContainerView;
+-@property (nonatomic, assign) BOOL allowsLabelArea;
+-@property (nonatomic, assign) CGFloat iconContentScale;
+-@property (nonatomic, assign) CGFloat iconLabelAlpha;
+-@property (nonatomic, assign, getter=isIconContentScalingEnabled) BOOL iconContentScalingEnabled;
+-@property (nonatomic, strong) NSString *location;
 -- (void)_updateIconImageViewAnimated:(BOOL)arg1;
 -- (void)_updateLabelArea;
- - (BOOL)isFolderIcon;
+-- (BOOL)isFolderIcon;
 -- (CGFloat)iconImageCornerRadius;
 -- (void)_atriaUpdateIconContentScale;
 -- (void)_atriaSetupDropShadow:(BOOL)isEditing;
 -- (void)_atriaGenerateDropShadow:(CGRect)rect;
- - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type;
- @end
- 
+-- (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type;
+-@end
+-
  @interface SBIconListGridLayoutConfiguration : NSObject
 -@property (nonatomic, readwrite, assign) struct SBHIconGridSizeClassSizes iconGridSizeClassSizes;
  @property (nonatomic, readwrite, assign) NSUInteger numberOfPortraitColumns;
  @property (nonatomic, readwrite, assign) NSUInteger numberOfPortraitRows;
  @property (nonatomic, readwrite, assign) NSUInteger numberOfLandscapeColumns;
-@@ -106,8 +89,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -106,8 +71,6 @@ typedef struct SBRootFolderViewMetrics {
  @end
  
  @class SBIcon;
@@ -5407,7 +6826,7 @@ index 8749041..2b4ee8b 100644
  @interface SBIconListView : UIView
  @property (nonatomic, assign, getter=isEditing, nonatomic) BOOL editing;
  @property (nonatomic, strong) NSString *iconLocation;
-@@ -116,27 +97,13 @@ typedef struct SBRootFolderViewMetrics {
+@@ -116,27 +79,13 @@ typedef struct SBRootFolderViewMetrics {
  @property (nonatomic, assign) UIEdgeInsets additionalLayoutInsets; // iOS 14+
  @property (nonatomic, assign) UIEdgeInsets layoutInsets;           // iOS 13
  
@@ -5435,23 +6854,41 @@ index 8749041..2b4ee8b 100644
  - (void)layoutIconsNow;
  @end
  
-@@ -157,7 +124,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -147,7 +96,6 @@ typedef struct SBRootFolderViewMetrics {
+ - (void)layoutPageControlWithMetrics:(const struct SBRootFolderViewMetrics *)metrics;
+ - (SBIconListView *)currentIconListView;
+ - (SBIconListView *)firstIconListView;
+-- (SBDockView *)dockView;
+ @end
+ 
+ @interface SBRootFolderController : UIViewController
+@@ -157,17 +105,6 @@ typedef struct SBRootFolderViewMetrics {
  @interface SBHIconManager : NSObject
  @property (nonatomic, assign, getter=isEditing) BOOL editing;
  - (SBIconListModel *)iconModel;
 -- (BOOL)relayout;
- @end
- 
- @interface SBFloatingDockView : UIView
-@@ -167,7 +133,6 @@ typedef struct SBRootFolderViewMetrics {
- 
- @interface SBFloatingDockViewController : UIViewController
- - (SBFloatingDockView *)dockView;
+-@end
+-
+-@interface SBFloatingDockView : UIView
+-@property (nonatomic, strong) UIView *backgroundView;
+-- (void)_atriaUpdateDockForSettingsChanged;
+-@end
+-
+-@interface SBFloatingDockViewController : UIViewController
+-- (SBFloatingDockView *)dockView;
 -- (SBIconView *)libraryPodIconView;
  @end
  
  @interface SBFloatingDockController : NSObject
-@@ -183,7 +148,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -175,15 +112,11 @@ typedef struct SBRootFolderViewMetrics {
+ - (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16+
+ - (void)_dismissFloatingDockIfPresentedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
+ - (void)_presentFloatingDockIfDismissedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
+-- (SBIconListView *)userIconListView;
+-- (SBIconListView *)suggestionsIconListView;
+-- (SBFloatingDockViewController *)floatingDockViewController;
+ + (BOOL)isFloatingDockSupported;
+ + (SBFloatingDockController *)_atriaSharedInstance;
  @end
  
  @interface SBIconController : UIViewController
@@ -5459,7 +6896,7 @@ index 8749041..2b4ee8b 100644
  - (SBRootFolderController *)_rootFolderController;
  - (SBHIconManager *)iconManager;
  + (SBIconController *)sharedInstance;
-@@ -192,10 +156,8 @@ typedef struct SBRootFolderViewMetrics {
+@@ -192,25 +125,18 @@ typedef struct SBRootFolderViewMetrics {
  @interface ARITweakManager : NSObject
  @property (nonatomic, readonly, assign, getter=isEnabled) BOOL enabled;
  @property (nonatomic, readonly, strong) NSUserDefaults *preferences;
@@ -5467,16 +6904,59 @@ index 8749041..2b4ee8b 100644
  @property (nonatomic, readonly, assign) NSUInteger firmwareVersion;
  @property (nonatomic, readonly, assign, getter=isDeviceIPad) BOOL deviceIPad;
 -@property (nonatomic, readonly, assign, getter=isShyLabelsInstalled) BOOL shyLabelsInstalled;
- - (void)updateLayoutForEditing:(BOOL)animated;
+-- (void)updateLayoutForEditing:(BOOL)animated;
  - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated;
  - (void)relayoutEntireIconModel;
+ - (void)feedbackForButton;
+ - (void)onSpringboardLaunched;
+-- (NSUInteger)indexOfListView:(SBIconListView *)target;
+ - (SBRootFolderView *)rootFolderView;
+ - (NSArray<SBIconListView *> *)allRootListViews;
+ - (NSString *)prefixForListView:(SBIconListView *)target;
+ - (SBIconListView *)currentListView;
+ - (SBIconListView *)firstIconListView;
+ 
+-// Obtain information about available settings
+-- (NSArray<NSString *> *)editorSettingsKeys;
+-- (ARIOption *)getSettingByKey:(NSString *)key;
+ 
+ // Get/set preference values
+ - (int)intValueForKey:(NSString *)key;
+@@ -221,17 +147,8 @@ typedef struct SBRootFolderViewMetrics {
+ - (void)resetValueForKey:(NSString *)key;
+ 
+ // Get/set preference values by icon list view
+-- (int)intValueForKey:(NSString *)key forListView:(SBIconListView *)list;
+-- (BOOL)boolValueForKey:(NSString *)key forListView:(SBIconListView *)list;
+-- (id)rawValueForKey:(NSString *)key forListView:(SBIconListView *)list;
+ - (float)floatValueForKey:(NSString *)key forListView:(SBIconListView *)list;
+-- (void)setValue:(id)val forKey:(NSString *)key forListView:(SBIconListView *)listView;
+-- (void)resetValueForKey:(NSString *)key forListView:(SBIconListView *)listView;
+ 
+-// Per-page layout creation/deletion and management
+-- (void)deleteCustomForListView:(SBIconListView *)listView;
+-- (void)createCustomForListView:(SBIconListView *)listView;
+-- (BOOL)doesCustomConfigForListViewExist:(SBIconListView *)listView;
+ 
+ + (instancetype)sharedInstance;
+ + (UIInterfaceOrientation)currentDeviceOrientation;
 diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
-index 9f08730..e6537e6 100644
+index 9f08730..215b60b 100644
 --- a/src/Manager/ARITweakManager.m
 +++ b/src/Manager/ARITweakManager.m
-@@ -15,18 +15,14 @@
+@@ -4,7 +4,6 @@
+ //
+ 
+ #import "ARITweakManager.h"
+-#import "ARIEditManager.h"
+ 
+ #import "../Hooks/Shared.h"
+ 
+@@ -13,20 +12,15 @@
+ @implementation ARITweakManager {
+     BOOL _enabled;
      NSUserDefaults *_preferences;
-     NSMutableOrderedSet<NSString *> *_orderedSettingKeys;
+-    NSMutableOrderedSet<NSString *> *_orderedSettingKeys;
      NSMutableDictionary<NSString *, ARIOption *> *_optionsRegistry;
 -    NSMapTable *_listViewModelMap;
      NSUInteger _firmwareVersion;
@@ -5493,7 +6973,7 @@ index 9f08730..e6537e6 100644
  
  // Shared instance and init methods
  
-@@ -37,12 +33,9 @@
+@@ -37,295 +31,28 @@
          UIDevice *device = [UIDevice currentDevice];
          _firmwareVersion = [[[device systemVersion] componentsSeparatedByString:@"."][0] integerValue];
          _deviceIPad = [[device model] hasPrefix:@"iPad"];
@@ -5506,8 +6986,9 @@ index 9f08730..e6537e6 100644
  
          // Migrate old settings
          [self _migrateSettings];
-@@ -51,281 +44,63 @@
-         _orderedSettingKeys = [[NSMutableOrderedSet alloc] initWithCapacity:50];
+ 
+         // Create settings
+-        _orderedSettingKeys = [[NSMutableOrderedSet alloc] initWithCapacity:50];
          _optionsRegistry = [[NSMutableDictionary alloc] init];
  
 -        [self _registerOption:@"showWelcome"
@@ -5520,11 +7001,11 @@ index 9f08730..e6537e6 100644
 -                 defaultValue:@(YES)
 -                   lowerLimit:0
 -                   upperLimit:0];
-         [self _registerOption:@"showTooltips"
-                   translation:nil
-                  defaultValue:@(YES)
-                    lowerLimit:0
-                    upperLimit:0];
+-        [self _registerOption:@"showTooltips"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
 -        [self _registerOption:@"labelText"
 -                  translation:nil
 -                 defaultValue:@"\%GREETING\%, user"
@@ -5540,21 +7021,21 @@ index 9f08730..e6537e6 100644
 -                 defaultValue:@"#FFFFFF"
 -                   lowerLimit:0
 -                   upperLimit:0];
-         [self _registerOption:@"layoutEnabled"
-                   translation:nil
-                  defaultValue:@(YES)
-                    lowerLimit:0
-                    upperLimit:0];
+-        [self _registerOption:@"layoutEnabled"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
 -        [self _registerOption:@"enableAppLibrary"
 -                  translation:nil
 -                 defaultValue:@(YES)
 -                   lowerLimit:0
 -                   upperLimit:0];
-         [self _registerOption:@"saveIconState"
-                   translation:nil
-                  defaultValue:@(YES)
-                    lowerLimit:0
-                    upperLimit:0];
+-        [self _registerOption:@"saveIconState"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
 -        [self _registerOption:@"hideLabelsAppLibrary"
 -                  translation:nil
 -                 defaultValue:@(YES)
@@ -5619,19 +7100,15 @@ index 9f08730..e6537e6 100644
 -                   upperLimit:3.0F];
 -        [self _registerOption:@"hs_spacing_x"
 -                  translation:@"Icon Spacing X"
-+                        // Homescreen
-+                                        [self _registerOption:@"hs_spacing_x"
-+                  translation:@"图标横向间距"
-                  defaultValue:@(0)
-                    lowerLimit:-100.0F
-                    upperLimit:100.0F];
-         [self _registerOption:@"hs_spacing_y"
+-                 defaultValue:@(0)
+-                   lowerLimit:-100.0F
+-                   upperLimit:100.0F];
+-        [self _registerOption:@"hs_spacing_y"
 -                  translation:@"Icon Spacing Y"
-+                  translation:@"图标纵向间距"
-                  defaultValue:@(0)
-                    lowerLimit:-100.0F
-                    upperLimit:100.0F];
-         [self _registerOption:@"hs_inset_top"
+-                 defaultValue:@(0)
+-                   lowerLimit:-100.0F
+-                   upperLimit:100.0F];
+-        [self _registerOption:@"hs_inset_top"
 -                  translation:@"Top Inset"
 -                 defaultValue:@(0)
 -                   lowerLimit:-200.0F
@@ -5643,9 +7120,12 @@ index 9f08730..e6537e6 100644
 -                   upperLimit:200.0F];
 -        [self _registerOption:@"hs_inset_bottom"
 -                  translation:@"Bottom Inset"
--                 defaultValue:@(0)
--                   lowerLimit:-200.0F
--                   upperLimit:200.0F];
++                                                // Homescreen
++                                                                                        [self _registerOption:@"hs_offset_top"
++                  translation:@"页面顶部偏移"
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
 -        [self _registerOption:@"hs_inset_right"
 -                  translation:@"Right Inset"
 -                 defaultValue:@(0)
@@ -5653,24 +7133,19 @@ index 9f08730..e6537e6 100644
 -                   upperLimit:200.0F];
 -        [self _registerOption:@"hs_offset_top"
 -                  translation:@"Page Top Offset"
-+                  translation:@"顶部边距"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
 -        [self _registerOption:@"hs_offset_left"
 -                  translation:@"Page Left Offset"
-+                [self _registerOption:@"hs_inset_bottom"
-+                  translation:@"底部边距"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
 -        [self _registerOption:@"hs_widgetXOffset"
 -                  translation:@"Widget X Offset"
-+                [self _registerOption:@"hs_offset_top"
-+                  translation:@"页面顶部偏移"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
 -        [self _registerOption:@"hs_widgetYOffset"
 -                  translation:@"Widget Y Offset"
 -                 defaultValue:@(0)
@@ -5698,22 +7173,19 @@ index 9f08730..e6537e6 100644
 -                   upperLimit:2.0F];
 -        [self _registerOption:@"dock_bg"
 -                  translation:@"Background Alpha"
-+                                [self _registerOption:@"dock_bg"
-+                  translation:@"背景透明度"
-                  defaultValue:@(1)
-                    lowerLimit:0.0F
-                    upperLimit:1.0F];
-         [self _registerOption:@"dock_spacing_x"
+-                 defaultValue:@(1)
+-                   lowerLimit:0.0F
+-                   upperLimit:1.0F];
+-        [self _registerOption:@"dock_spacing_x"
 -                  translation:@"Icon Spacing X"
 -                 defaultValue:@(0)
 -                   lowerLimit:-100.0F
 -                   upperLimit:100.0F];
 -        [self _registerOption:@"dock_spacing_y"
 -                  translation:@"Icon Spacing Y"
-+                  translation:@"图标横向间距"
-                  defaultValue:@(0)
-                    lowerLimit:-100.0F
-                    upperLimit:100.0F];
+-                 defaultValue:@(0)
+-                   lowerLimit:-100.0F
+-                   upperLimit:100.0F];
 -        [self _registerOption:@"dock_inset_top"
 -                  translation:@"Top Inset"
 -                 defaultValue:@(0)
@@ -5798,16 +7270,27 @@ index 9f08730..e6537e6 100644
 -                   upperLimit:150.0F];
 -        [self _registerOption:@"pagedot_offsetY"
 -                  translation:@"Dot Y Offset"
-+                                                                                                        // Page dots
++                                                                                                                                                // Page dots
 +                [self _registerOption:@"pagedot_offsetY"
 +                  translation:@"圆点 Y 偏移"
                   defaultValue:@(0)
                     lowerLimit:-200.0F
                     upperLimit:200.0F];
-@@ -362,13 +137,6 @@
+@@ -351,39 +78,6 @@
+     // Save state
+     [self _migrateSettingFromKey:@"saveState" toKey:@"_saveState"];
  
-     NSDictionary *dict = [_preferences dictionaryRepresentation];
-     for(NSString *key in [dict allKeys]) {
+-    // Update list of per-page layout enabled list views
+-    NSMutableArray *perPage = [(NSArray *)[self rawValueForKey:@"_perPageListViews"] mutableCopy] ?: [NSMutableArray new];
+-    NSUInteger itemCount = [perPage count];
+-    for(NSUInteger i = 0; i < itemCount; i++) {
+-        NSString *newValue = [NSString stringWithFormat:@"Page%@_", [perPage[i] stringByReplacingOccurrencesOfString:@"_" withString:@""]];
+-        [perPage replaceObjectAtIndex:i withObject:newValue];
+-    }
+-    [self setValue:perPage forKey:@"_perPageListViews"];
+-
+-    NSDictionary *dict = [_preferences dictionaryRepresentation];
+-    for(NSString *key in [dict allKeys]) {
 -        // Welcome is now renamed to label
 -        if([key hasPrefix:@"welcome"]) {
 -            NSString *newKey = [key stringByReplacingCharactersInRange:NSMakeRange(0, 7) withString:@"label"];
@@ -5815,19 +7298,55 @@ index 9f08730..e6537e6 100644
 -            continue;
 -        }
 -
-         if([key length] <= 3) continue;
-         // Previous per-page layout prefix was formatted as _%d_ and now is Page%d_
-         NSString *sub = [key substringToIndex:3];
-@@ -420,7 +188,7 @@
-         return;
-     }
- 
--    BOOL updateRoot = [editingLocation isEqualToString:@"hs"] || [editingLocation isEqualToString:@"label"] || [editingLocation isEqualToString:@"blur"];
-+    BOOL updateRoot = [editingLocation isEqualToString:@"hs"];
-     [self updateLayoutForRoot:updateRoot forDock:[editingLocation isEqualToString:@"dock"] animated:animated];
+-        if([key length] <= 3) continue;
+-        // Previous per-page layout prefix was formatted as _%d_ and now is Page%d_
+-        NSString *sub = [key substringToIndex:3];
+-        if([sub hasPrefix:@"_"] && [sub hasSuffix:@"_"]) {
+-            NSString *newKey = [NSString
+-                stringWithFormat:@"Page%@_%@",
+-                                 [sub stringByReplacingOccurrencesOfString:@"_"
+-                                                                withString:@""],
+-                                 [key stringByReplacingOccurrencesOfString:sub
+-                                                                withString:@""]];
+-            [self _migrateSettingFromKey:key toKey:newKey];
+-            continue;
+-        }
+-    }
+-
+     // Set migration Version
+     [self setValue:@(1) forKey:@"_settingsMigrationVersion"];
+ }
+@@ -403,29 +97,11 @@
+                                            translation:translation
+                                           defaultValue:defaultValue
+                                                  range:range];
+-    if(option.accessibleWithEditor)
+-        [_orderedSettingKeys addObject:option.settingKey];
+     [_optionsRegistry setObject:option forKey:option.settingKey];
  }
  
-@@ -433,10 +201,7 @@
+ // Runtime manager methods
+ 
+-- (void)updateLayoutForEditing:(BOOL)animated {
+-    NSString *editingLocation = [ARIEditManager sharedInstance].editingLocation;
+-    if(!editingLocation) return;
+-
+-    if([editingLocation isEqualToString:@"pagedot"]) {
+-        // Will use cached metrics (see hook in PageDots.xm)
+-        [[self rootFolderView] layoutPageControlWithMetrics:NULL];
+-        return;
+-    }
+-
+-    BOOL updateRoot = [editingLocation isEqualToString:@"hs"] || [editingLocation isEqualToString:@"label"] || [editingLocation isEqualToString:@"blur"];
+-    [self updateLayoutForRoot:updateRoot forDock:[editingLocation isEqualToString:@"dock"] animated:animated];
+-}
+-
+-// Updates all layout
+-
+ - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated {
+     SBRootFolderView *rootFolderView = [self rootFolderView];
+ 
+@@ -433,34 +109,11 @@
          SBIconListView *current = [self currentListView];
          // Update visible columns and rows for current list view. Otherwise, SB doesn't
          // update this until we start scrolling
@@ -5839,17 +7358,32 @@ index 9f08730..e6537e6 100644
      };
  
      void (^applyLayout)() = ^void() {
-@@ -453,9 +218,6 @@
-                 [[fdController userIconListView] layoutIconsNow];
-                 [[fdController suggestionsIconListView] layoutIconsNow];
-                 SBFloatingDockViewController *fdvc = [fdController floatingDockViewController];
+-        if(forDock) {
+-            // Layout dock icons and set alpha
+-            if(![[self class] isUsingFloatingDock]) {
+-                // -dockListView doesn't exist on 13 but the ivar does
+-                SBIconListView *listView = (SBIconListView *)[rootFolderView valueForKeyPath:@"_dockListView"];
+-                [[rootFolderView dockView] _atriaUpdateDockForSettingsChanged];
+-                [listView layoutIconsNow];
+-            } else {
+-                SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
+-                // Icon list and suggestions
+-                [[fdController userIconListView] layoutIconsNow];
+-                [[fdController suggestionsIconListView] layoutIconsNow];
+-                SBFloatingDockViewController *fdvc = [fdController floatingDockViewController];
 -                // Fix for library pod icon
 -                if([fdvc respondsToSelector:@selector(libraryPodIconView)])
 -                    [[fdvc libraryPodIconView] _atriaUpdateIconContentScale];
-                 // Update dock background
-                 [[fdvc dockView] _atriaUpdateDockForSettingsChanged];
-             }
-@@ -500,16 +262,6 @@
+-                // Update dock background
+-                [[fdvc dockView] _atriaUpdateDockForSettingsChanged];
+-            }
+-        }
+-
++        // 程序坞的布局项与背景透明度均已移除，只需重新排布主屏幕各页
+         if(forRoot) {
+             // Enumerate list views in root and lay them out as well
+             for(SBIconListView *listView in rootFolderView.iconListViews) {
+@@ -500,21 +153,7 @@
  }
  
  - (void)onSpringboardLaunched {
@@ -5863,9 +7397,128 @@ index 9f08730..e6537e6 100644
 -        [self relayoutEntireIconModel];
 -    }
 -
-     if([[self class] isUsingFloatingDock]) {
-         // Update floating dock background alpha to fix a bug specific to iOS 14
-         SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
+-    if([[self class] isUsingFloatingDock]) {
+-        // Update floating dock background alpha to fix a bug specific to iOS 14
+-        SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
+-        [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
+-    }
++    // 程序坞背景透明度已移除，启动后无需再修复浮坞背景
+ }
+ 
+ - (SBRootFolderView *)rootFolderView {
+@@ -525,10 +164,6 @@
+     return [self rootFolderView].iconListViews;
+ }
+ 
+-- (NSUInteger)indexOfListView:(SBIconListView *)target {
+-    return [[self allRootListViews] indexOfObject:target];
+-}
+-
+ - (SBIconListView *)firstIconListView {
+     return [[self rootFolderView] firstIconListView];
+ }
+@@ -540,20 +175,12 @@
+ // Returns a string which serves as a prefix for per-page layout settings
+ 
+ - (NSString *)prefixForListView:(SBIconListView *)target {
+-    if(!target || !IconListIsRoot(target)) return @"";
+-    return [NSString stringWithFormat:@"Page%d_", (int)[self indexOfListView:target]];
++    // 分页面配置已移除，所有页面共用同一套值
++    return @"";
+ }
+ 
+ // Obtain information about available settings
+ 
+-- (NSMutableOrderedSet<NSString *> *)editorSettingsKeys {
+-    return _orderedSettingKeys;
+-}
+-
+-- (ARIOption *)getSettingByKey:(NSString *)key {
+-    return _optionsRegistry[key];
+-}
+-
+ // Get/set preference values
+ 
+ - (int)intValueForKey:(NSString *)key {
+@@ -595,78 +222,11 @@
+ // Get/set preference values by icon list view
+ // We try to locate value for the current list view, if it exists
+ 
+-- (int)intValueForKey:(NSString *)key forListView:(SBIconListView *)list {
+-    NSString *pageKey = [NSString stringWithFormat:@"%@%@", [self prefixForListView:list], key];
+-    return [_preferences objectForKey:pageKey] ? [[_preferences objectForKey:pageKey] integerValue] : [self intValueForKey:key];
+-}
+-
+-- (BOOL)boolValueForKey:(NSString *)key forListView:(SBIconListView *)list {
+-    NSString *pageKey = [NSString stringWithFormat:@"%@%@", [self prefixForListView:list], key];
+-    return [_preferences objectForKey:pageKey] ? [[_preferences objectForKey:pageKey] boolValue] : [self boolValueForKey:key];
+-}
+-
+-- (id)rawValueForKey:(NSString *)key forListView:(SBIconListView *)list {
+-    NSString *pageKey = [NSString stringWithFormat:@"%@%@", [self prefixForListView:list], key];
+-    return [_preferences objectForKey:pageKey] ?: [self rawValueForKey:key];
+-}
+-
+ - (float)floatValueForKey:(NSString *)key forListView:(SBIconListView *)list {
+     NSString *pageKey = [NSString stringWithFormat:@"%@%@", [self prefixForListView:list], key];
+     return [_preferences objectForKey:pageKey] ? [[_preferences objectForKey:pageKey] floatValue] : [self floatValueForKey:key];
+ }
+ 
+-- (void)setValue:(id)val forKey:(NSString *)key forListView:(SBIconListView *)listView {
+-    if(!listView)
+-        [self setValue:val forKey:key];
+-    else
+-        [self setValue:val forKey:[NSString stringWithFormat:@"%@%@", [self prefixForListView:listView], key]];
+-}
+-
+-- (void)resetValueForKey:(NSString *)key forListView:(SBIconListView *)listView {
+-    if(!listView)
+-        [self resetValueForKey:key];
+-    else
+-        [self resetValueForKey:[NSString stringWithFormat:@"%@%@", [self prefixForListView:listView], key]];
+-}
+-
+-// Per-page layout creation/deletion and management
+-
+-- (void)deleteCustomForListView:(SBIconListView *)listView {
+-    // Delete any keys for that list view
+-    NSString *prefix = [self prefixForListView:listView];
+-    NSDictionary *preferences = [_preferences dictionaryRepresentation];
+-    for(NSString *key in [preferences allKeys]) {
+-        if([key hasPrefix:prefix]) [self resetValueForKey:key];
+-    }
+-
+-    NSMutableArray *perPage = [(NSArray *)[self rawValueForKey:@"_perPageListViews"] mutableCopy] ?: [NSMutableArray new];
+-    [perPage removeObject:prefix];
+-    [self setValue:perPage forKey:@"_perPageListViews"];
+-
+-    [self updateLayoutForEditing:YES];
+-}
+-
+-- (void)createCustomForListView:(SBIconListView *)listView {
+-    // Freeze list view settings to what the current global config is
+-    NSString *prefix = [self prefixForListView:listView];
+-
+-    NSMutableArray *perPage = [(NSArray *)[self rawValueForKey:@"_perPageListViews"] mutableCopy] ?: [NSMutableArray new];
+-    [perPage addObject:prefix];
+-    [self setValue:perPage forKey:@"_perPageListViews"];
+-
+-    for(NSString *key in _orderedSettingKeys) {
+-        [_preferences setObject:[self rawValueForKey:key]
+-                         forKey:[NSString stringWithFormat:@"%@%@", prefix, key]];
+-    }
+-    [self updateLayoutForEditing:YES];
+-}
+-
+-- (BOOL)doesCustomConfigForListViewExist:(SBIconListView *)listView {
+-    NSArray *perPage = [self rawValueForKey:@"_perPageListViews"];
+-    if(!perPage) return NO;
+-    return [perPage containsObject:[self prefixForListView:listView]];
+-}
+-
+ + (UIInterfaceOrientation)currentDeviceOrientation {
+     return [[[UIApplication sharedApplication] windows] firstObject].windowScene.interfaceOrientation;
+ }
 diff --git a/src/UI/ARIBackgroundView.h b/src/UI/ARIBackgroundView.h
 deleted file mode 100644
 index 61bf145..0000000
@@ -6056,6 +7709,52 @@ index 5979d9d..0000000
 -
 -@end
 \ No newline at end of file
+diff --git a/src/UI/Effect/ARIFadeEffectView.h b/src/UI/Effect/ARIFadeEffectView.h
+deleted file mode 100644
+index 1f6e87a..0000000
+--- a/src/UI/Effect/ARIFadeEffectView.h
++++ /dev/null
+@@ -1,10 +0,0 @@
+-//
+-// Created by ren7995 on 2021-05-02 11:19:35
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import <UIKit/UIKit.h>
+-
+-@interface ARIFadeEffectView : UIView
+-- (void)setupFade:(CGRect)frame;
+-@end
+diff --git a/src/UI/Effect/ARIFadeEffectView.m b/src/UI/Effect/ARIFadeEffectView.m
+deleted file mode 100644
+index ba7134c..0000000
+--- a/src/UI/Effect/ARIFadeEffectView.m
++++ /dev/null
+@@ -1,24 +0,0 @@
+-//
+-// Created by ren7995 on 2021-05-02 11:19:22
+-// Copyright (c) 2021 ren7995. All rights reserved.
+-//
+-
+-#import "ARIFadeEffectView.h"
+-
+-@implementation ARIFadeEffectView
+-
+-- (void)setupFade:(CGRect)frame {
+-    CAGradientLayer *gradient = (CAGradientLayer *)self.layer;
+-    gradient.startPoint = CGPointMake(0.0, 0.5);
+-    gradient.endPoint = CGPointMake(1.0, 0.5);
+-
+-    gradient.frame = frame;
+-    gradient.colors = @[ (id)[UIColor clearColor].CGColor, (id)[UIColor whiteColor].CGColor, (id)[UIColor whiteColor].CGColor, (id)[UIColor clearColor].CGColor ];
+-    gradient.locations = @[ @(0.0), @(0.05), @(0.9), @(1.0) ];
+-}
+-
+-+ (Class)layerClass {
+-    return [CAGradientLayer class];
+-}
+-
+-@end
 diff --git a/src/UI/Label/ARILabelView.h b/src/UI/Label/ARILabelView.h
 deleted file mode 100644
 index 28ecaf6..0000000
@@ -6475,9 +8174,18 @@ index 0348434..0000000
 -@end
 \ No newline at end of file
 diff --git a/src/UI/Splash/ARISplashViewController.m b/src/UI/Splash/ARISplashViewController.m
-index 707f0b7..62c62c9 100644
+index 707f0b7..5fd2867 100644
 --- a/src/UI/Splash/ARISplashViewController.m
 +++ b/src/UI/Splash/ARISplashViewController.m
+@@ -40,7 +40,7 @@
+ 
+         // Main label
+         _tweakLabel = [[UILabel alloc] init];
+-        _tweakLabel.text = @"Atria";
++        _tweakLabel.text = @"桌面微调";
+         _tweakLabel.numberOfLines = 1;
+         _tweakLabel.font = [UIFont systemFontOfSize:40 weight:UIFontWeightBold];
+         _tweakLabel.textAlignment = NSTextAlignmentCenter;
 @@ -59,7 +59,7 @@
          [_dismiss addTarget:self
                        action:@selector(dismissSelf:)
