@@ -1159,6 +1159,24 @@ index 84a44a2..0000000
 -</dict>
 -</plist>
 \ No newline at end of file
+diff --git a/Prefs/Resources/Info.plist b/Prefs/Resources/Info.plist
+index ed7f00c..c1ea9e3 100644
+--- a/Prefs/Resources/Info.plist
++++ b/Prefs/Resources/Info.plist
+@@ -13,11 +13,11 @@
+ 	<key>CFBundlePackageType</key>
+ 	<string>BNDL</string>
+ 	<key>CFBundleShortVersionString</key>
+-	<string>1.0.0</string>
++	<string>1.5.0</string>
+ 	<key>CFBundleSignature</key>
+ 	<string>????</string>
+ 	<key>CFBundleVersion</key>
+-	<string>1.0</string>
++	<string>1.5.0</string>
+ 	<key>NSPrincipalClass</key>
+ 	<string>ARIRootListController</string>
+ </dict>
 diff --git a/Prefs/Resources/PageLabels.plist b/Prefs/Resources/PageLabels.plist
 deleted file mode 100644
 index 1d0b076..0000000
@@ -3989,10 +4007,26 @@ index cc1df12..0000000
 -
 -@end
 diff --git a/Prefs/src/ARIListController.h b/Prefs/src/ARIListController.h
-index 3f0d06e..585c4c5 100644
+index 3f0d06e..28a6cef 100644
 --- a/Prefs/src/ARIListController.h
 +++ b/Prefs/src/ARIListController.h
-@@ -19,6 +19,5 @@ static NSString *const ARIPreferenceDomain = @"me.lau.AtriaPrefs";
+@@ -1,13 +1,11 @@
+ //
+-// Created by ren7995 on 2023-05-25 21:53:27
+-// Copyright (c) 2023 ren7995. All rights reserved.
++// Created by liutiao on 2023-05-25 21:53:27
++// Copyright (c) 2023 liutiao. All rights reserved.
+ //
+ 
+ #import <Preferences/PSListController.h>
+ #import <Preferences/PSSpecifier.h>
+ 
+-// RGB: 81, 8, 126
+-#define kPrefTintColor [UIColor colorWithRed:0.32 green:0.03 blue:0.49 alpha:1.00]
+ static NSString *const ARIPreferenceDomain = @"me.lau.AtriaPrefs";
+ 
+ @interface ARIListController : PSListController
+@@ -19,6 +17,5 @@ static NSString *const ARIPreferenceDomain = @"me.lau.AtriaPrefs";
  @property (copy) NSArray *arguments;
  @property (copy) NSString *launchPath;
  - (id)init;
@@ -4000,9 +4034,31 @@ index 3f0d06e..585c4c5 100644
  - (void)launch;
  @end
 diff --git a/Prefs/src/ARIListController.m b/Prefs/src/ARIListController.m
-index 16a565a..9117c4e 100644
+index 16a565a..148748c 100644
 --- a/Prefs/src/ARIListController.m
 +++ b/Prefs/src/ARIListController.m
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2023-05-25 21:53:35
+-// Copyright (c) 2023 ren7995. All rights reserved.
++// Created by liutiao on 2023-05-25 21:53:35
++// Copyright (c) 2023 liutiao. All rights reserved.
+ //
+ 
+ #import "ARIListController.h"
+@@ -8,9 +8,9 @@
+ @implementation ARIListController
+ 
+ - (void)viewWillAppear:(BOOL)animated {
+-    [[UISegmentedControl appearanceWhenContainedInInstancesOfClasses:@[ self.class ]] setTintColor:kPrefTintColor];
+-    [[UISwitch appearanceWhenContainedInInstancesOfClasses:@[ self.class ]] setOnTintColor:kPrefTintColor];
+-    [[UISlider appearanceWhenContainedInInstancesOfClasses:@[ self.class ]] setTintColor:kPrefTintColor];
++    [[UISegmentedControl appearanceWhenContainedInInstancesOfClasses:@[ self.class ]] setTintColor:[UIColor systemGrayColor]];
++    [[UISwitch appearanceWhenContainedInInstancesOfClasses:@[ self.class ]] setOnTintColor:[UIColor systemGrayColor]];
++    [[UISlider appearanceWhenContainedInInstancesOfClasses:@[ self.class ]] setTintColor:[UIColor systemGrayColor]];
+ 
+     [super viewWillAppear:animated];
+ }
 @@ -18,23 +18,23 @@
  - (void)viewDidLoad {
      [super viewDidLoad];
@@ -4032,11 +4088,29 @@ index 16a565a..9117c4e 100644
                    style:UIAlertActionStyleDestructive
                  handler:^(UIAlertAction *action) {
                      [self respringWithAnimation];
+diff --git a/Prefs/src/ARIRootListController.h b/Prefs/src/ARIRootListController.h
+index 2825e3d..c30da88 100644
+--- a/Prefs/src/ARIRootListController.h
++++ b/Prefs/src/ARIRootListController.h
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2021-04-17 13:45:46
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-17 13:45:46
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
+ 
+ #import "ARIListController.h"
 diff --git a/Prefs/src/ARIRootListController.m b/Prefs/src/ARIRootListController.m
-index 05aacc4..c0bedaa 100644
+index 05aacc4..e2c79d7 100644
 --- a/Prefs/src/ARIRootListController.m
 +++ b/Prefs/src/ARIRootListController.m
-@@ -4,163 +4,15 @@
+@@ -1,166 +1,18 @@
+ //
+-// Created by ren7995 on 2021-04-17 13:45:45
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-17 13:45:45
++// Copyright (c) 2021 liutiao. All rights reserved.
  //
  
  #import "ARIRootListController.h"
@@ -4330,12 +4404,12 @@ index 0000000..ef7dc1b
 +@end
 diff --git a/Prefs/src/ARIValueSliderCell.m b/Prefs/src/ARIValueSliderCell.m
 new file mode 100644
-index 0000000..dbe7147
+index 0000000..871101c
 --- /dev/null
 +++ b/Prefs/src/ARIValueSliderCell.m
-@@ -0,0 +1,136 @@
+@@ -0,0 +1,193 @@
 +//
-+//  设置面板用的滑块单元格：拖动调节 + 右侧实时显示当前数值
++//  设置面板用的滑块单元格：拖动调节 + 右侧数值可点击直接输入
 +//
 +//  在 plist 中通过下列字段配置：
 +//    key      偏好键名（必填）
@@ -4347,6 +4421,17 @@ index 0000000..dbe7147
 +#import "ARIValueSliderCell.h"
 +
 +static NSString *const kAtriaReloadNotification = @"me.lau.Atria/ReloadPrefs";
++
++// 沿响应链找到承载本 cell 的视图控制器，用于弹出输入框
++static UIViewController *atriaPresentingController(UIView *view) {
++	UIResponder *responder = view;
++	while((responder = [responder nextResponder])) {
++		if([responder isKindOfClass:[UIViewController class]]) {
++			return (UIViewController *)responder;
++		}
++	}
++	return nil;
++}
 +
 +@implementation ARIValueSliderCell {
 +	PSSpecifier *_atriaSpecifier;
@@ -4378,7 +4463,7 @@ index 0000000..dbe7147
 +		id defaultValue = props[@"default"];
 +		float fallback = defaultValue ? [defaultValue floatValue] : 0.0F;
 +
-+		// 范围较小时按小数显示（例如背景透明度 0~1）
++		// 范围较小时按小数显示（例如 0~1 这类）
 +		_isDecimal = (_max - _min) <= 2.0F;
 +
 +		NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:_domain];
@@ -4405,6 +4490,11 @@ index 0000000..dbe7147
 +		_slider.maximumValue = _max;
 +		_slider.value = current;
 +		_slider.continuous = YES;
++		// 轨道整体使用单一灰色，不区分已划过与未划过的两段
++		UIColor *tint = [UIColor systemGrayColor];
++		_slider.minimumTrackTintColor = tint;
++		_slider.maximumTrackTintColor = tint;
++		_slider.thumbTintColor = [UIColor whiteColor];
 +		_slider.translatesAutoresizingMaskIntoConstraints = NO;
 +		[_slider addTarget:self action:@selector(_atriaValueChanged:) forControlEvents:UIControlEventValueChanged];
 +		[self.contentView addSubview:_slider];
@@ -4414,7 +4504,9 @@ index 0000000..dbe7147
 +		_valueLabel.font = [UIFont monospacedDigitSystemFontOfSize:14 weight:UIFontWeightRegular];
 +		_valueLabel.textColor = [UIColor secondaryLabelColor];
 +		_valueLabel.textAlignment = NSTextAlignmentRight;
++		_valueLabel.userInteractionEnabled = YES;
 +		_valueLabel.translatesAutoresizingMaskIntoConstraints = NO;
++		[_valueLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_atriaPromptForValue)]];
 +		[self.contentView addSubview:_valueLabel];
 +
 +		[self _atriaSetupConstraints];
@@ -4445,15 +4537,19 @@ index 0000000..dbe7147
 +	return [NSString stringWithFormat:@"%.0f", value];
 +}
 +
-+- (void)_atriaValueChanged:(UISlider *)sender {
-+	float value = sender.value;
++- (float)_atriaClamp:(float)value {
++	if(value < _min) return _min;
++	if(value > _max) return _max;
++	return value;
++}
++
++- (void)_atriaApplyValue:(float)rawValue {
++	float value = [self _atriaClamp:rawValue];
 +
 +	// 范围较大时按整数步进，避免拖出无意义的零碎小数
-+	if(!_isDecimal) {
-+		value = roundf(value);
-+		sender.value = value;
-+	}
++	if(!_isDecimal) value = roundf(value);
 +
++	_slider.value = value;
 +	_valueLabel.text = [self _atriaTextForValue:value];
 +
 +	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:_domain];
@@ -4469,25 +4565,64 @@ index 0000000..dbe7147
 +		YES);
 +}
 +
++- (void)_atriaValueChanged:(UISlider *)sender {
++	[self _atriaApplyValue:sender.value];
++}
++
++- (void)_atriaPromptForValue {
++	UIViewController *presenter = atriaPresentingController(self);
++	if(!presenter) return;
++
++	UIAlertController *alert = [UIAlertController
++		alertControllerWithTitle:[_atriaSpecifier name] ?: _key
++						 message:[NSString stringWithFormat:@"请输入 %.0f 到 %.0f 之间的数值", _min, _max]
++				  preferredStyle:UIAlertControllerStyleAlert];
++
++	[alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
++		textField.placeholder = [self _atriaTextForValue:_slider.value];
++		textField.text = [self _atriaTextForValue:_slider.value];
++		textField.keyboardType = _isDecimal ? UIKeyboardTypeDecimalPad : UIKeyboardTypeNumbersAndPunctuation;
++		textField.clearButtonMode = UITextFieldViewModeWhileEditing;
++	}];
++
++	UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
++	UIAlertAction *confirm = [UIAlertAction
++		actionWithTitle:@"确定"
++				  style:UIAlertActionStyleDefault
++				handler:^(UIAlertAction *action) {
++					NSString *input = [alert.textFields.firstObject.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
++					if(input.length == 0) return;
++					[self _atriaApplyValue:[input floatValue]];
++				}];
++
++	[alert addAction:cancel];
++	[alert addAction:confirm];
++	[presenter presentViewController:alert animated:YES completion:nil];
++}
++
 +@end
 diff --git a/layout/DEBIAN/control b/layout/DEBIAN/control
-index 2709321..69ff9af 100644
+index 2709321..d3afb51 100644
 --- a/layout/DEBIAN/control
 +++ b/layout/DEBIAN/control
 @@ -1,10 +1,10 @@
  Architecture: iphoneos-arm
- Author: ren7995
+-Author: ren7995
 -Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader, ws.hbang.alderis (>= 1.1)
++Author: liutiao
 +Depends: firmware (>= 13.0), mobilesubstrate, preferenceloader
  Conflicts: com.irepo.boxy4, me.kritanta.homepluspro
 -Description: A proper homescreen layout editor for iOS 13-16
-+Description: iPhone桌面微调！
- Maintainer: ren7995
+-Maintainer: ren7995
 -Name: Atria
++Description: iPhone桌面微调！
++Maintainer: liutiao
 +Name: 桌面微调
  Package: me.lau.atria
  Section: Tweaks
- Version: 1.4.1
+-Version: 1.4.1
+\ No newline at end of file
++Version: 1.5.0
 \ No newline at end of file
 diff --git a/src/Editor/ARIEditingControlsView.h b/src/Editor/ARIEditingControlsView.h
 deleted file mode 100644
@@ -5336,9 +5471,18 @@ index 471a36a..0000000
 -
 -@end
 diff --git a/src/Hooks/AppLibrary.xm b/src/Hooks/AppLibrary.xm
-index a1613f8..db9a9dc 100644
+index a1613f8..38f82c8 100644
 --- a/src/Hooks/AppLibrary.xm
 +++ b/src/Hooks/AppLibrary.xm
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2021-04-25 12:49:50
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-25 12:49:50
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
+ 
+ #import "Shared.h"
 @@ -8,31 +8,11 @@
  
  #include <objc/runtime.h>
@@ -5604,9 +5748,18 @@ index b010cc7..0000000
 -	}
 -}
 diff --git a/src/Hooks/GridLayout.xm b/src/Hooks/GridLayout.xm
-index eff8fd2..8e507ad 100644
+index eff8fd2..92e9bf3 100644
 --- a/src/Hooks/GridLayout.xm
 +++ b/src/Hooks/GridLayout.xm
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2023-01-05 15:47:33
+-// Copyright (c) 2023 ren7995. All rights reserved.
++// Created by liutiao on 2023-01-05 15:47:33
++// Copyright (c) 2023 liutiao. All rights reserved.
+ //
+ 
+ #import "Shared.h"
 @@ -10,70 +10,13 @@
  // Small macro to round to nearest short assuming x is positive
  #define ROUND_SHORT(x) (short)(x + 0.5)
@@ -5784,10 +5937,16 @@ index eff8fd2..8e507ad 100644
  	}
  }
 diff --git a/src/Hooks/Helper.xm b/src/Hooks/Helper.xm
-index 00e602e..f1ab46b 100644
+index 00e602e..7d507f2 100644
 --- a/src/Hooks/Helper.xm
 +++ b/src/Hooks/Helper.xm
-@@ -5,9 +5,7 @@
+@@ -1,13 +1,11 @@
+ //
+-// Created by ren7995 on 2021-04-25 15:48:29
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-25 15:48:29
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
  
  #import "Shared.h"
  #import "../Manager/ARITweakManager.h"
@@ -5899,9 +6058,18 @@ index 00e602e..f1ab46b 100644
          NSString *const zenithPath = @THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/Zenith.dylib";
          if([[NSFileManager defaultManager] fileExistsAtPath:zenithPath]) {
 diff --git a/src/Hooks/IconState.xm b/src/Hooks/IconState.xm
-index 015b5a1..901bd67 100644
+index 015b5a1..8d11755 100644
 --- a/src/Hooks/IconState.xm
 +++ b/src/Hooks/IconState.xm
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2021-04-27 18:35:28
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-27 18:35:28
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
+ 
+ #import "Shared.h"
 @@ -29,14 +29,9 @@
  
  %ctor {
@@ -6221,10 +6389,16 @@ index 6597fba..0000000
 -	}
 -}
 diff --git a/src/Hooks/MainLayout.xm b/src/Hooks/MainLayout.xm
-index 4af459b..d0052a1 100644
+index 4af459b..db78722 100644
 --- a/src/Hooks/MainLayout.xm
 +++ b/src/Hooks/MainLayout.xm
-@@ -5,43 +5,22 @@
+@@ -1,47 +1,26 @@
+ //
+-// Created by ren7995 on 2021-04-25 12:49:32
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-25 12:49:32
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
  
  #import "Shared.h"
  #import "../Manager/ARITweakManager.h"
@@ -6300,7 +6474,7 @@ index 4af459b..d0052a1 100644
 -		[config setNumberOfLandscapeRows:cols];
 -
  		// Offset moves the whole page
- 		CGFloat topOffset = [manager floatValueForKey:@"hs_offset_top" forListView:self];
+-		CGFloat topOffset = [manager floatValueForKey:@"hs_offset_top" forListView:self];
 -		CGFloat leftOffset = [manager floatValueForKey:@"hs_offset_left" forListView:self];
 -
 -		// Insets
@@ -6315,6 +6489,7 @@ index 4af459b..d0052a1 100644
 -
 -		// Add spacing for page label
 -		if(showPageLabel) topInset += 60;
++		CGFloat topOffset = [manager floatValueForKey:@"hs_offset_top"];
  
  		// Set layout insets
  		UIEdgeInsets origPortrait = config.portraitLayoutInsets;
@@ -6518,10 +6693,19 @@ index 4af459b..d0052a1 100644
  		%init();
  
 diff --git a/src/Hooks/PageDots.xm b/src/Hooks/PageDots.xm
-index abd56ae..467684d 100644
+index abd56ae..8c146a3 100644
 --- a/src/Hooks/PageDots.xm
 +++ b/src/Hooks/PageDots.xm
-@@ -23,7 +23,6 @@
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2021-07-06 14:59:57
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-07-06 14:59:57
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
+ 
+ #import "Shared.h"
+@@ -23,17 +23,35 @@
      ARITweakManager *manager = [ARITweakManager sharedInstance];
  	UIView *pageControl = [manager firmwareVersion] >= 16 ? self.scrollAccessoryView : self.pageControl;	
      CGRect newFrame = pageControl.frame;
@@ -6529,6 +6713,48 @@ index abd56ae..467684d 100644
      newFrame.origin.y += [manager floatValueForKey:@"pagedot_offsetY"];
  	pageControl.frame = newFrame;
  }
+ 
+ %end
+ 
++// 偏好变化时立即重新布局翻页点，这样拖动滑块就能实时看到效果，无需注销
++static void preferencesChanged() {
++    dispatch_async(dispatch_get_main_queue(), ^{
++        SBRootFolderView *rootFolderView = [[ARITweakManager sharedInstance] rootFolderView];
++        if(!rootFolderView) return;
++        // 传入 NULL 会复用上一次缓存的 metrics，安全地重排一次翻页点
++        [rootFolderView layoutPageControlWithMetrics:NULL];
++    });
++}
++
+ %ctor {
+ 	if([[ARITweakManager sharedInstance] isEnabled]) {
+ 		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+         %init();
++
++		CFNotificationCenterAddObserver(
++			CFNotificationCenterGetDarwinNotifyCenter(),
++			NULL,
++			(CFNotificationCallback)preferencesChanged,
++			(CFStringRef)@"me.lau.Atria/ReloadPrefs",
++			NULL,
++			CFNotificationSuspensionBehaviorDeliverImmediately
++		);
+ 	}
+ }
+ 
+diff --git a/src/Hooks/Shared.h b/src/Hooks/Shared.h
+index db006c0..92718b7 100644
+--- a/src/Hooks/Shared.h
++++ b/src/Hooks/Shared.h
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2021-04-25 12:49:18
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-25 12:49:18
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
+ 
+ #import <Foundation/Foundation.h>
 diff --git a/src/Manager/ARIEditManager.h b/src/Manager/ARIEditManager.h
 deleted file mode 100644
 index 6afa66c..0000000
@@ -6761,9 +6987,18 @@ index 1913330..0000000
 -
 -@end
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
-index 8749041..06d3163 100644
+index 8749041..2156a58 100644
 --- a/src/Manager/ARITweakManager.h
 +++ b/src/Manager/ARITweakManager.h
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2021-04-25 12:49:12
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-25 12:49:12
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
+ 
+ #import <Foundation/Foundation.h>
 @@ -41,52 +41,17 @@ typedef struct SBRootFolderViewMetrics {
      struct CGRect _field11;
  } SBRootFolderViewMetrics;
@@ -6857,18 +7092,21 @@ index 8749041..06d3163 100644
  - (void)layoutIconsNow;
  @end
  
-@@ -147,7 +99,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -145,9 +97,6 @@ typedef struct SBRootFolderViewMetrics {
+ @property (nonatomic, strong) UIView *pageControl; // SBIconListPageControl
+ @property (nonatomic, strong) UIView *scrollAccessoryView;
  - (void)layoutPageControlWithMetrics:(const struct SBRootFolderViewMetrics *)metrics;
- - (SBIconListView *)currentIconListView;
- - (SBIconListView *)firstIconListView;
+-- (SBIconListView *)currentIconListView;
+-- (SBIconListView *)firstIconListView;
 -- (SBDockView *)dockView;
  @end
  
  @interface SBRootFolderController : UIViewController
-@@ -157,17 +108,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -156,18 +105,6 @@ typedef struct SBRootFolderViewMetrics {
+ 
  @interface SBHIconManager : NSObject
  @property (nonatomic, assign, getter=isEditing) BOOL editing;
- - (SBIconListModel *)iconModel;
+-- (SBIconListModel *)iconModel;
 -- (BOOL)relayout;
 -@end
 -
@@ -6883,7 +7121,7 @@ index 8749041..06d3163 100644
  @end
  
  @interface SBFloatingDockController : NSObject
-@@ -175,15 +115,11 @@ typedef struct SBRootFolderViewMetrics {
+@@ -175,42 +112,24 @@ typedef struct SBRootFolderViewMetrics {
  - (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16+
  - (void)_dismissFloatingDockIfPresentedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
  - (void)_presentFloatingDockIfDismissedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
@@ -6897,9 +7135,10 @@ index 8749041..06d3163 100644
  @interface SBIconController : UIViewController
 -- (SBFloatingDockController *)floatingDockController; // iOS 13-15 only (does not exist on 16)
  - (SBRootFolderController *)_rootFolderController;
- - (SBHIconManager *)iconManager;
+-- (SBHIconManager *)iconManager;
  + (SBIconController *)sharedInstance;
-@@ -192,25 +128,18 @@ typedef struct SBRootFolderViewMetrics {
+ @end
+ 
  @interface ARITweakManager : NSObject
  @property (nonatomic, readonly, assign, getter=isEnabled) BOOL enabled;
  @property (nonatomic, readonly, strong) NSUserDefaults *preferences;
@@ -6909,15 +7148,15 @@ index 8749041..06d3163 100644
 -@property (nonatomic, readonly, assign, getter=isShyLabelsInstalled) BOOL shyLabelsInstalled;
 -- (void)updateLayoutForEditing:(BOOL)animated;
  - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated;
- - (void)relayoutEntireIconModel;
- - (void)feedbackForButton;
+-- (void)relayoutEntireIconModel;
+-- (void)feedbackForButton;
  - (void)onSpringboardLaunched;
 -- (NSUInteger)indexOfListView:(SBIconListView *)target;
  - (SBRootFolderView *)rootFolderView;
- - (NSArray<SBIconListView *> *)allRootListViews;
- - (NSString *)prefixForListView:(SBIconListView *)target;
- - (SBIconListView *)currentListView;
- - (SBIconListView *)firstIconListView;
+-- (NSArray<SBIconListView *> *)allRootListViews;
+-- (NSString *)prefixForListView:(SBIconListView *)target;
+-- (SBIconListView *)currentListView;
+-- (SBIconListView *)firstIconListView;
  
 -// Obtain information about available settings
 -- (NSArray<NSString *> *)editorSettingsKeys;
@@ -6925,29 +7164,35 @@ index 8749041..06d3163 100644
  
  // Get/set preference values
  - (int)intValueForKey:(NSString *)key;
-@@ -221,17 +150,8 @@ typedef struct SBRootFolderViewMetrics {
+@@ -221,17 +140,7 @@ typedef struct SBRootFolderViewMetrics {
  - (void)resetValueForKey:(NSString *)key;
  
  // Get/set preference values by icon list view
 -- (int)intValueForKey:(NSString *)key forListView:(SBIconListView *)list;
 -- (BOOL)boolValueForKey:(NSString *)key forListView:(SBIconListView *)list;
 -- (id)rawValueForKey:(NSString *)key forListView:(SBIconListView *)list;
- - (float)floatValueForKey:(NSString *)key forListView:(SBIconListView *)list;
+-- (float)floatValueForKey:(NSString *)key forListView:(SBIconListView *)list;
 -- (void)setValue:(id)val forKey:(NSString *)key forListView:(SBIconListView *)listView;
 -- (void)resetValueForKey:(NSString *)key forListView:(SBIconListView *)listView;
- 
+-
 -// Per-page layout creation/deletion and management
 -- (void)deleteCustomForListView:(SBIconListView *)listView;
 -- (void)createCustomForListView:(SBIconListView *)listView;
 -- (BOOL)doesCustomConfigForListViewExist:(SBIconListView *)listView;
++
  
  + (instancetype)sharedInstance;
  + (UIInterfaceOrientation)currentDeviceOrientation;
 diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
-index 9f08730..215b60b 100644
+index 9f08730..9f14bde 100644
 --- a/src/Manager/ARITweakManager.m
 +++ b/src/Manager/ARITweakManager.m
-@@ -4,7 +4,6 @@
+@@ -1,10 +1,9 @@
+ //
+-// Created by ren7995 on 2021-04-25 12:49:07
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-25 12:49:07
++// Copyright (c) 2021 liutiao. All rights reserved.
  //
  
  #import "ARITweakManager.h"
@@ -6976,7 +7221,7 @@ index 9f08730..215b60b 100644
  
  // Shared instance and init methods
  
-@@ -37,295 +31,28 @@
+@@ -37,295 +31,24 @@
          UIDevice *device = [UIDevice currentDevice];
          _firmwareVersion = [[[device systemVersion] componentsSeparatedByString:@"."][0] integerValue];
          _deviceIPad = [[device model] hasPrefix:@"iPad"];
@@ -7080,7 +7325,7 @@ index 9f08730..215b60b 100644
 -                   lowerLimit:0
 -                   upperLimit:0];
 -
--        // Homescreen
+         // Homescreen
 -        [self _registerOption:@"hs_rows"
 -                  translation:@"Rows"
 -                 defaultValue:@(6)
@@ -7123,18 +7368,15 @@ index 9f08730..215b60b 100644
 -                   upperLimit:200.0F];
 -        [self _registerOption:@"hs_inset_bottom"
 -                  translation:@"Bottom Inset"
-+                                                // Homescreen
-+                                                                                        [self _registerOption:@"hs_offset_top"
-+                  translation:@"页面顶部偏移"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
 -        [self _registerOption:@"hs_inset_right"
 -                  translation:@"Right Inset"
 -                 defaultValue:@(0)
 -                   lowerLimit:-200.0F
 -                   upperLimit:200.0F];
--        [self _registerOption:@"hs_offset_top"
+         [self _registerOption:@"hs_offset_top"
 -                  translation:@"Page Top Offset"
 -                 defaultValue:@(0)
 -                   lowerLimit:-200.0F
@@ -7156,9 +7398,8 @@ index 9f08730..215b60b 100644
 -                   upperLimit:200.0F];
 -
 -        // Dock options
-+                                // Dock options
-         // For some reason, on iOS 15 only (not 13-14 or 16+), calling +isFloatingDockSupported leads to a respring loop.
-         // Once SpringBoard launches, this option will be re-registered to adjust the default value if floating dock is enabled.
+-        // For some reason, on iOS 15 only (not 13-14 or 16+), calling +isFloatingDockSupported leads to a respring loop.
+-        // Once SpringBoard launches, this option will be re-registered to adjust the default value if floating dock is enabled.
 -        [self _registerOption:@"dock_columns"
 -                  translation:@"Columns"
 -                 defaultValue:@(4)
@@ -7261,25 +7502,22 @@ index 9f08730..215b60b 100644
 -                   upperLimit:200.0F];
 -        [self _registerOption:@"blur_inset_right"
 -                  translation:@"Right Position"
--                 defaultValue:@(0)
--                   lowerLimit:-200.0F
--                   upperLimit:200.0F];
--
--        // Page dots
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+ 
+         // Page dots
 -        [self _registerOption:@"pagedot_offsetX"
 -                  translation:@"Dot X Offset"
 -                 defaultValue:@(0)
 -                   lowerLimit:-150.0F
 -                   upperLimit:150.0F];
--        [self _registerOption:@"pagedot_offsetY"
+         [self _registerOption:@"pagedot_offsetY"
 -                  translation:@"Dot Y Offset"
-+                                                                                                                                                // Page dots
-+                [self _registerOption:@"pagedot_offsetY"
-+                  translation:@"圆点 Y 偏移"
                   defaultValue:@(0)
                     lowerLimit:-200.0F
                     upperLimit:200.0F];
-@@ -351,39 +78,6 @@
+@@ -351,39 +74,6 @@
      // Save state
      [self _migrateSettingFromKey:@"saveState" toKey:@"_saveState"];
  
@@ -7319,8 +7557,17 @@ index 9f08730..215b60b 100644
      // Set migration Version
      [self setValue:@(1) forKey:@"_settingsMigrationVersion"];
  }
-@@ -403,29 +97,11 @@
-                                            translation:translation
+@@ -394,73 +84,24 @@
+ }
+ 
+ - (void)_registerOption:(NSString *)key
+-            translation:(NSString *)translation
+            defaultValue:(id)defaultValue
+              lowerLimit:(float)lower
+              upperLimit:(float)upper {
+     float range[] = {lower, upper};
+     ARIOption *option = [[ARIOption alloc] initWithKey:key
+-                                           translation:translation
                                            defaultValue:defaultValue
                                                   range:range];
 -    if(option.accessibleWithEditor)
@@ -7349,16 +7596,15 @@ index 9f08730..215b60b 100644
  - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated {
      SBRootFolderView *rootFolderView = [self rootFolderView];
  
-@@ -433,34 +109,11 @@
-         SBIconListView *current = [self currentListView];
-         // Update visible columns and rows for current list view. Otherwise, SB doesn't
-         // update this until we start scrolling
+-    void (^updateVisibleIcons)(BOOL finished) = ^void(BOOL finished) {
+-        SBIconListView *current = [self currentListView];
+-        // Update visible columns and rows for current list view. Otherwise, SB doesn't
+-        // update this until we start scrolling
 -        if([current respondsToSelector:@selector(setVisibleColumnRange:)])
 -            [current setVisibleColumnRange:NSMakeRange(0, [self intValueForKey:@"hs_columns" forListView:current])];
 -        if([current respondsToSelector:@selector(setVisibleRowRange:)])
 -            [current setVisibleRowRange:NSMakeRange(0, [self intValueForKey:@"hs_rows" forListView:current])];
-+        // 列数/行数自定义已移除，无需再按偏好设置可见行列范围
-     };
+-    };
  
      void (^applyLayout)() = ^void() {
 -        if(forDock) {
@@ -7386,9 +7632,41 @@ index 9f08730..215b60b 100644
          if(forRoot) {
              // Enumerate list views in root and lay them out as well
              for(SBIconListView *listView in rootFolderView.iconListViews) {
-@@ -500,21 +153,7 @@
+@@ -469,91 +110,32 @@
+         }
+     };
+ 
+-    // If we want animation, pass the block here. Otherwise, call the block directly
+     if(animated) {
+         [UIView animateWithDuration:0.6f
+                               delay:0.0f
+                             options:UIViewAnimationOptionCurveEaseInOut
+                          animations:applyLayout
+-                         completion:updateVisibleIcons];
++                         completion:nil];
+     } else {
+         applyLayout();
+-        updateVisibleIcons(YES);
+     }
  }
  
+ // This lags the device somewhat, so limit this as much as possible!
+-- (void)relayoutEntireIconModel {
+-    // This will cause the entire icon model to re-layout
+-    [[[[objc_getClass("SBIconController") sharedInstance] iconManager] iconModel] layout];
+-    // In order to fix the custom widget sizing, we need to call this
+-    [self updateLayoutForRoot:YES forDock:NO animated:NO];
+-}
+-
+ // Util
+ 
+-- (void)feedbackForButton {
+-    // Create a generator (just like in AppStore apps) and make it give feedback
+-    static UIImpactFeedbackGenerator *generator = nil;
+-    if(!generator) generator = [[UIImpactFeedbackGenerator alloc] initWithStyle:UIImpactFeedbackStyleSoft];
+-    [generator impactOccurred];
+-}
+-
  - (void)onSpringboardLaunched {
 -    // If floating dock is enabled, default to 6 dock columns. See explanation in init method for why this is done here.
 -    if([self boolValueForKey:@"forceFloatingDock"] || [[self class] isUsingFloatingDock]) {
@@ -7409,27 +7687,32 @@ index 9f08730..215b60b 100644
  }
  
  - (SBRootFolderView *)rootFolderView {
-@@ -525,10 +164,6 @@
-     return [self rootFolderView].iconListViews;
+     return [[[objc_getClass("SBIconController") sharedInstance] _rootFolderController] rootFolderView];
  }
  
+-- (NSArray<SBIconListView *> *)allRootListViews {
+-    return [self rootFolderView].iconListViews;
+-}
+-
 -- (NSUInteger)indexOfListView:(SBIconListView *)target {
 -    return [[self allRootListViews] indexOfObject:target];
 -}
 -
- - (SBIconListView *)firstIconListView {
-     return [[self rootFolderView] firstIconListView];
- }
-@@ -540,20 +175,12 @@
+-- (SBIconListView *)firstIconListView {
+-    return [[self rootFolderView] firstIconListView];
+-}
+-
+-- (SBIconListView *)currentListView {
+-    return [self rootFolderView].currentIconListView;
+-}
+-
  // Returns a string which serves as a prefix for per-page layout settings
  
- - (NSString *)prefixForListView:(SBIconListView *)target {
+-- (NSString *)prefixForListView:(SBIconListView *)target {
 -    if(!target || !IconListIsRoot(target)) return @"";
 -    return [NSString stringWithFormat:@"Page%d_", (int)[self indexOfListView:target]];
-+    // 分页面配置已移除，所有页面共用同一套值
-+    return @"";
- }
- 
+-}
+-
  // Obtain information about available settings
  
 -- (NSMutableOrderedSet<NSString *> *)editorSettingsKeys {
@@ -7443,7 +7726,7 @@ index 9f08730..215b60b 100644
  // Get/set preference values
  
  - (int)intValueForKey:(NSString *)key {
-@@ -595,78 +222,11 @@
+@@ -595,78 +177,6 @@
  // Get/set preference values by icon list view
  // We try to locate value for the current list view, if it exists
  
@@ -7462,11 +7745,11 @@ index 9f08730..215b60b 100644
 -    return [_preferences objectForKey:pageKey] ?: [self rawValueForKey:key];
 -}
 -
- - (float)floatValueForKey:(NSString *)key forListView:(SBIconListView *)list {
-     NSString *pageKey = [NSString stringWithFormat:@"%@%@", [self prefixForListView:list], key];
-     return [_preferences objectForKey:pageKey] ? [[_preferences objectForKey:pageKey] floatValue] : [self floatValueForKey:key];
- }
- 
+-- (float)floatValueForKey:(NSString *)key forListView:(SBIconListView *)list {
+-    NSString *pageKey = [NSString stringWithFormat:@"%@%@", [self prefixForListView:list], key];
+-    return [_preferences objectForKey:pageKey] ? [[_preferences objectForKey:pageKey] floatValue] : [self floatValueForKey:key];
+-}
+-
 -- (void)setValue:(id)val forKey:(NSString *)key forListView:(SBIconListView *)listView {
 -    if(!listView)
 -        [self setValue:val forKey:key];
@@ -7521,6 +7804,78 @@ index 9f08730..215b60b 100644
 -
  + (UIInterfaceOrientation)currentDeviceOrientation {
      return [[[UIApplication sharedApplication] windows] firstObject].windowScene.interfaceOrientation;
+ }
+diff --git a/src/Options/ARIOption.h b/src/Options/ARIOption.h
+index 747d8bc..2fde56c 100644
+--- a/src/Options/ARIOption.h
++++ b/src/Options/ARIOption.h
+@@ -1,19 +1,16 @@
+ //
+-// Created by ren7995 on 2022-05-16 13:30:44
+-// Copyright (c) 2022 ren7995. All rights reserved.
++// Created by liutiao on 2022-05-16 13:30:44
++// Copyright (c) 2022 liutiao. All rights reserved.
+ //
+ 
+ #import <Foundation/Foundation.h>
+ 
+ @interface ARIOption : NSObject
+ @property (nonatomic, readonly, strong) NSString *settingKey;
+-@property (nonatomic, readonly, strong) NSString *translation;
+ @property (nonatomic, readonly, strong) id defaultValue;
+ @property (nonatomic, readonly, assign) float lowerLimit;
+ @property (nonatomic, readonly, assign) float upperLimit;
+-@property (nonatomic, readonly, assign) BOOL accessibleWithEditor;
+ - (instancetype)initWithKey:(NSString *)settingKey
+-                translation:(NSString *)settingTranslation
+                defaultValue:(id)defaultValue
+                       range:(float *)range;
+ @end
+\ No newline at end of file
+diff --git a/src/Options/ARIOption.m b/src/Options/ARIOption.m
+index 82e0db2..5680f5c 100644
+--- a/src/Options/ARIOption.m
++++ b/src/Options/ARIOption.m
+@@ -1,38 +1,31 @@
+ //
+-// Created by ren7995 on 2022-05-16 13:30:43
+-// Copyright (c) 2022 ren7995. All rights reserved.
++// Created by liutiao on 2022-05-16 13:30:43
++// Copyright (c) 2022 liutiao. All rights reserved.
+ //
+ 
+ #import "ARIOption.h"
+ 
+ @implementation ARIOption {
+     NSString *_settingKey;
+-    NSString *_translation;
+     id _defaultValue;
+     float _lowerLimit;
+     float _upperLimit;
+-    BOOL _accessibleWithEditor;
+ }
+ 
+ @synthesize settingKey = _settingKey;
+-@synthesize translation = _translation;
+ @synthesize defaultValue = _defaultValue;
+ @synthesize lowerLimit = _lowerLimit;
+ @synthesize upperLimit = _upperLimit;
+-@synthesize accessibleWithEditor = _accessibleWithEditor;
+ 
+ - (instancetype)initWithKey:(NSString *)settingKey
+-                translation:(NSString *)settingTranslation
+                defaultValue:(id)defaultValue
+                       range:(float *)range {
+     self = [super init];
+     if(self) {
+         _settingKey = settingKey;
+-        _translation = settingTranslation;
+         _defaultValue = defaultValue;
+         _lowerLimit = range[0];
+         _upperLimit = range[1];
+-        _accessibleWithEditor = _translation != nil;
+     }
+     return self;
  }
 diff --git a/src/UI/ARIBackgroundView.h b/src/UI/ARIBackgroundView.h
 deleted file mode 100644
@@ -8176,10 +8531,32 @@ index 0348434..0000000
 -
 -@end
 \ No newline at end of file
+diff --git a/src/UI/Splash/ARISplashViewController.h b/src/UI/Splash/ARISplashViewController.h
+index bce1e57..26b1068 100644
+--- a/src/UI/Splash/ARISplashViewController.h
++++ b/src/UI/Splash/ARISplashViewController.h
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2021-04-28 08:04:19
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-28 08:04:19
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
+ 
+ #import <UIKit/UIKit.h>
 diff --git a/src/UI/Splash/ARISplashViewController.m b/src/UI/Splash/ARISplashViewController.m
-index 707f0b7..5fd2867 100644
+index 707f0b7..b5d41e9 100644
 --- a/src/UI/Splash/ARISplashViewController.m
 +++ b/src/UI/Splash/ARISplashViewController.m
+@@ -1,6 +1,6 @@
+ //
+-// Created by ren7995 on 2021-04-28 08:04:44
+-// Copyright (c) 2021 ren7995. All rights reserved.
++// Created by liutiao on 2021-04-28 08:04:44
++// Copyright (c) 2021 liutiao. All rights reserved.
+ //
+ 
+ #import "ARISplashViewController.h"
 @@ -40,7 +40,7 @@
  
          // Main label
@@ -8198,3 +8575,12 @@ index 707f0b7..5fd2867 100644
          _dismiss.layer.cornerRadius = 20;
          _dismiss.layer.masksToBounds = YES;
          _dismiss.layer.cornerCurve = kCACornerCurveContinuous;
+@@ -68,7 +68,7 @@
+ 
+         // My label
+         _ren = [[UILabel alloc] init];
+-        _ren.text = @"made with love by ren7995";
++        _ren.text = @"made with love by liutiao";
+         _ren.font = [UIFont systemFontOfSize:12 weight:UIFontWeightLight];
+         _ren.textAlignment = NSTextAlignmentCenter;
+         _ren.translatesAutoresizingMaskIntoConstraints = NO;
