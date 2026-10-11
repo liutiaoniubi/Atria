@@ -6761,7 +6761,7 @@ index 1913330..0000000
 -
 -@end
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
-index 8749041..262878b 100644
+index 8749041..06d3163 100644
 --- a/src/Manager/ARITweakManager.h
 +++ b/src/Manager/ARITweakManager.h
 @@ -41,52 +41,17 @@ typedef struct SBRootFolderViewMetrics {
@@ -6817,16 +6817,19 @@ index 8749041..262878b 100644
  @property (nonatomic, readwrite, assign) NSUInteger numberOfPortraitColumns;
  @property (nonatomic, readwrite, assign) NSUInteger numberOfPortraitRows;
  @property (nonatomic, readwrite, assign) NSUInteger numberOfLandscapeColumns;
-@@ -106,8 +71,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -106,8 +71,9 @@ typedef struct SBRootFolderViewMetrics {
  @end
  
  @class SBIcon;
 -@class ARILabelView;
 -@class ARIBackgroundView;
++// SBIconListView.icons 的返回值类型需要 SBIconView 有声明，
++// 这里只做前向声明，不引入任何方法或属性。
++@class SBIconView;
  @interface SBIconListView : UIView
  @property (nonatomic, assign, getter=isEditing, nonatomic) BOOL editing;
  @property (nonatomic, strong) NSString *iconLocation;
-@@ -116,27 +79,13 @@ typedef struct SBRootFolderViewMetrics {
+@@ -116,27 +82,13 @@ typedef struct SBRootFolderViewMetrics {
  @property (nonatomic, assign) UIEdgeInsets additionalLayoutInsets; // iOS 14+
  @property (nonatomic, assign) UIEdgeInsets layoutInsets;           // iOS 13
  
@@ -6854,7 +6857,7 @@ index 8749041..262878b 100644
  - (void)layoutIconsNow;
  @end
  
-@@ -147,7 +96,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -147,7 +99,6 @@ typedef struct SBRootFolderViewMetrics {
  - (void)layoutPageControlWithMetrics:(const struct SBRootFolderViewMetrics *)metrics;
  - (SBIconListView *)currentIconListView;
  - (SBIconListView *)firstIconListView;
@@ -6862,7 +6865,7 @@ index 8749041..262878b 100644
  @end
  
  @interface SBRootFolderController : UIViewController
-@@ -157,17 +105,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -157,17 +108,6 @@ typedef struct SBRootFolderViewMetrics {
  @interface SBHIconManager : NSObject
  @property (nonatomic, assign, getter=isEditing) BOOL editing;
  - (SBIconListModel *)iconModel;
@@ -6880,7 +6883,7 @@ index 8749041..262878b 100644
  @end
  
  @interface SBFloatingDockController : NSObject
-@@ -175,15 +112,11 @@ typedef struct SBRootFolderViewMetrics {
+@@ -175,15 +115,11 @@ typedef struct SBRootFolderViewMetrics {
  - (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16+
  - (void)_dismissFloatingDockIfPresentedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
  - (void)_presentFloatingDockIfDismissedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
@@ -6896,7 +6899,7 @@ index 8749041..262878b 100644
  - (SBRootFolderController *)_rootFolderController;
  - (SBHIconManager *)iconManager;
  + (SBIconController *)sharedInstance;
-@@ -192,25 +125,18 @@ typedef struct SBRootFolderViewMetrics {
+@@ -192,25 +128,18 @@ typedef struct SBRootFolderViewMetrics {
  @interface ARITweakManager : NSObject
  @property (nonatomic, readonly, assign, getter=isEnabled) BOOL enabled;
  @property (nonatomic, readonly, strong) NSUserDefaults *preferences;
@@ -6922,7 +6925,7 @@ index 8749041..262878b 100644
  
  // Get/set preference values
  - (int)intValueForKey:(NSString *)key;
-@@ -221,17 +147,8 @@ typedef struct SBRootFolderViewMetrics {
+@@ -221,17 +150,8 @@ typedef struct SBRootFolderViewMetrics {
  - (void)resetValueForKey:(NSString *)key;
  
  // Get/set preference values by icon list view
