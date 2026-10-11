@@ -4293,7 +4293,7 @@ index 6597fba..f48b12f 100644
  	if([[ARITweakManager sharedInstance] isEnabled]) {
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
 diff --git a/src/Hooks/MainLayout.xm b/src/Hooks/MainLayout.xm
-index 4af459b..2293602 100644
+index 4af459b..7e05621 100644
 --- a/src/Hooks/MainLayout.xm
 +++ b/src/Hooks/MainLayout.xm
 @@ -5,11 +5,6 @@
@@ -4349,7 +4349,7 @@ index 4af459b..2293602 100644
  		// Per-page layout requires copying this object
  		SBIconListGridLayoutConfiguration *config = [orig.layoutConfiguration copy];
  
-@@ -111,8 +83,7 @@ static BOOL didLaunchSB = NO;
+@@ -111,16 +83,18 @@ static BOOL didLaunchSB = NO;
  		CGFloat spaceX = [manager floatValueForKey:@"hs_spacing_x" forListView:self];
  		CGFloat spaceY = [manager floatValueForKey:@"hs_spacing_y" forListView:self];
  
@@ -4358,8 +4358,38 @@ index 4af459b..2293602 100644
 +
  
  		// Set layout insets
++		// 注意：页面整体偏移(hs_offset_*)不再写进 layout configuration，
++		// 否则 SpringBoard 的原生图标动画（解锁/返回桌面）会按偏移后的布局来计算轨迹，
++		// 导致进入桌面的动画形态被改变。偏移改为在下方用视图 transform 叠加。
  		UIEdgeInsets origPortrait = config.portraitLayoutInsets;
-@@ -145,47 +116,6 @@ static BOOL didLaunchSB = NO;
+ 		UIEdgeInsets portraitInsets = UIEdgeInsetsMake(
+-			origPortrait.top + topInset + topOffset,
+-			origPortrait.left + leftInset + leftOffset,
+-			origPortrait.bottom + bottomInset - topOffset,
+-			origPortrait.right + rightInset - leftOffset
++			origPortrait.top + topInset,
++			origPortrait.left + leftInset,
++			origPortrait.bottom + bottomInset,
++			origPortrait.right + rightInset
+ 		);
+ 		// Make final insets with adjustments for icon spacing
+ 		[config setPortraitLayoutInsets:UIEdgeInsetsMake(
+@@ -133,10 +107,10 @@ static BOOL didLaunchSB = NO;
+ 		// Landscape insets
+ 		UIEdgeInsets origLandscape = config.landscapeLayoutInsets;
+ 		UIEdgeInsets landscapeInsets = UIEdgeInsetsMake(
+-			origLandscape.top + topInset + topOffset,
+-			origLandscape.left + leftInset + leftOffset,
+-			origLandscape.bottom + bottomInset - topOffset,
+-			origLandscape.right + rightInset - leftOffset
++			origLandscape.top + topInset,
++			origLandscape.left + leftInset,
++			origLandscape.bottom + bottomInset,
++			origLandscape.right + rightInset
+ 		);
+ 		[config setLandscapeLayoutInsets:UIEdgeInsetsMake(
+ 			landscapeInsets.top - spaceY / 2,
+@@ -145,47 +119,6 @@ static BOOL didLaunchSB = NO;
  			landscapeInsets.right - spaceX / 2
  		)];
  
@@ -4407,7 +4437,22 @@ index 4af459b..2293602 100644
  		// Create a new flow layout with our modified (and copied) configuration
  		// layoutConfiguration is readonly on SBIconListFlowExtendedLayout
  		if([manager firmwareVersion] >= 14) {
-@@ -200,9 +130,6 @@ static BOOL didLaunchSB = NO;
+@@ -194,15 +127,21 @@ static BOOL didLaunchSB = NO;
+ 			// SBIconListFlowExtendedLayout does not exist on 13
+ 			self._atriaCachedLayout = [[objc_getClass("SBIconListFlowLayout") alloc] initWithLayoutConfiguration:config];
+ 		}
++
++		// 页面整体偏移：用视图 transform 叠加，而不是改 layout。
++		// 这样图标布局本身完全保持原生，SpringBoard 的进入/解锁动画按原生坐标计算，
++		// 动画形态不变，只是整个页面被平移。
++		if(topOffset != 0 || leftOffset != 0) {
++			self.transform = CGAffineTransformMakeTranslation(leftOffset, topOffset);
++		} else if(!CGAffineTransformIsIdentity(self.transform)) {
++			self.transform = CGAffineTransformIdentity;
++		}
+ 	} else if(IconListIsDock(self)) {
+ 		SBIconListGridLayoutConfiguration *config = orig.layoutConfiguration;
+ 
  		NSUInteger cols = [manager intValueForKey:@"dock_columns"];
  		NSUInteger rows = [manager intValueForKey:@"dock_rows"];
  
