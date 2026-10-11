@@ -3830,11 +3830,67 @@ index 16a565a..9117c4e 100644
                  handler:^(UIAlertAction *action) {
                      [self respringWithAnimation];
 diff --git a/Prefs/src/ARIRootListController.m b/Prefs/src/ARIRootListController.m
-index 05aacc4..7395106 100644
+index 05aacc4..a698544 100644
 --- a/Prefs/src/ARIRootListController.m
 +++ b/Prefs/src/ARIRootListController.m
-@@ -16,55 +16,6 @@
-     return _specifiers;
+@@ -6,161 +6,178 @@
+ #import "ARIRootListController.h"
+ #import "../../src/UI/Splash/ARISplashViewController.h"
+ 
+-@implementation ARIRootListController
++// 当前版本仍然存在的设置项。
++// 导出/导入只搬运这些键，已删除功能的残留键不会被写入，
++// 避免旧配置里的废弃项在新版本中反复出现。
++static NSArray<NSString *> *atriaBaseSettingKeys(void) {
++	return @[
++		// 主屏幕（编辑器可用，且支持按页单独设置）
++		@"hs_spacing_x",
++		@"hs_spacing_y",
++		@"hs_inset_top",
++		@"hs_inset_bottom",
++		@"hs_offset_top",
++		// 程序坞
++		@"dock_bg",
++		@"dock_spacing_x",
++		// 翻页点
++		@"pagedot_offsetY",
++		// 开关
++		@"enabled",
++		@"layoutEnabled",
++		@"saveIconState",
++		@"showTooltips",
++		@"editorOpenFrom",
++		@"hide3DTouchActions",
++	];
++}
+ 
+-- (NSArray *)specifiers {
+-    if(!_specifiers) {
+-        _specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
+-    }
++// 分页面布局的页面清单（形如 ["Page0_", "Page2_"]）。
++// 它是字符串数组，可以安全地放进 JSON；缺少它会导致导入后
++// 按页的设置虽然存在，但不会被识别为已启用的分页面配置。
++static NSString *const atriaPerPageListKey = @"_perPageListViews";
++
++// 判断某个偏好键是否是当前版本仍在使用的键，支持 "Page0_hs_spacing_x" 这类按页前缀。
++static BOOL atriaIsValidSettingKey(NSString *key, NSSet<NSString *> *baseKeys) {
++	if([key isEqualToString:atriaPerPageListKey]) return YES;
++	if([baseKeys containsObject:key]) return YES;
++
++	// 按页配置：Page<序号>_<设置项名>
++	if(![key hasPrefix:@"Page"]) return NO;
++	NSRange separator = [key rangeOfString:@"_"];
++	if(separator.location == NSNotFound || separator.location <= 4) return NO;
+ 
+-    return _specifiers;
++	NSString *digits = [key substringWithRange:NSMakeRange(4, separator.location - 4)];
++	if(digits.length == 0) return NO;
++	NSCharacterSet *nonDigits = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
++	if([digits rangeOfCharacterFromSet:nonDigits].location != NSNotFound) return NO;
++
++	NSString *base = [key substringFromIndex:separator.location + 1];
++	return [baseKeys containsObject:base];
  }
  
 -- (void)resetPrefs:(id)sender {
@@ -3859,8 +3915,22 @@ index 05aacc4..7395106 100644
 -    [alert addAction:defaultAction];
 -    [alert addAction:yes];
 -    [self presentViewController:alert animated:YES completion:nil];
--}
--
++// 只保留当前版本仍在使用的键
++static NSDictionary *atriaFilteredSettings(NSDictionary *source) {
++	NSSet<NSString *> *baseKeys = [NSSet setWithArray:atriaBaseSettingKeys()];
++	NSMutableDictionary *result = [NSMutableDictionary new];
++	for(NSString *key in [source allKeys]) {
++		if(![key isKindOfClass:[NSString class]]) continue;
++		// 下划线开头为内部设置，仅分页面清单例外
++		if([key hasPrefix:@"_"] && ![key isEqualToString:atriaPerPageListKey]) continue;
++		if(!atriaIsValidSettingKey(key, baseKeys)) continue;
++		id value = source[key];
++		if(!value) continue;
++		result[key] = value;
++	}
++	return result;
+ }
+ 
 -- (void)resetSaveState:(id)sender {
 -    UIAlertController *alert = [UIAlertController
 -        alertControllerWithTitle:@"Reset Save State"
@@ -3884,83 +3954,204 @@ index 05aacc4..7395106 100644
 -    [alert addAction:defaultAction];
 -    [alert addAction:yes];
 -    [self presentViewController:alert animated:YES completion:nil];
--}
--
++@implementation ARIRootListController
++
++- (NSArray *)specifiers {
++	if(!_specifiers) {
++		_specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
++	}
++
++	return _specifiers;
+ }
+ 
  - (void)exportSettingsString {
-     // Sync defaults
-     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
-@@ -76,7 +27,7 @@
-     NSMutableDictionary *dict = [[NSDictionary dictionaryWithContentsOfURL:url error:&error] mutableCopy]
-                                     ?: [NSMutableDictionary new];
-     if(error) {
+-    // Sync defaults
+-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
+-    [defaults synchronize];
+-
+-    // Load preferences plist
+-    NSError *error;
+-    NSURL *url = [NSURL fileURLWithPath:@THEOS_PACKAGE_INSTALL_PREFIX "/var/mobile/Library/Preferences/me.lau.AtriaPrefs.plist"];
+-    NSMutableDictionary *dict = [[NSDictionary dictionaryWithContentsOfURL:url error:&error] mutableCopy]
+-                                    ?: [NSMutableDictionary new];
+-    if(error) {
 -        [self displayAlert:@"Failed to export" message:[NSString stringWithFormat:@"Error: %@", error.localizedDescription]];
-+        [self displayAlert:@"导出失败" message:[NSString stringWithFormat:@"错误：%@", error.localizedDescription]];
-         return;
-     }
- 
-@@ -89,24 +40,24 @@
-                                                        options:0
-                                                          error:&error];
-     if(error) {
+-        return;
+-    }
+-
+-    // The underscore prefix means it's an internal setting, not meant to be shared
+-    for(NSString *key in [dict allKeys])
+-        if([key hasPrefix:@"_"]) [dict removeObjectForKey:key];
+-
+-    // Easier to make it json imho
+-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict
+-                                                       options:0
+-                                                         error:&error];
+-    if(error) {
 -        [self displayAlert:@"Failed to export" message:[NSString stringWithFormat:@"Error: %@", error.localizedDescription]];
-+        [self displayAlert:@"导出失败" message:[NSString stringWithFormat:@"错误：%@", error.localizedDescription]];
-         return;
-     }
- 
-     NSString *encoded = [jsonData base64EncodedStringWithOptions:0];
-     [UIPasteboard generalPasteboard].string = encoded;
+-        return;
+-    }
+-
+-    NSString *encoded = [jsonData base64EncodedStringWithOptions:0];
+-    [UIPasteboard generalPasteboard].string = encoded;
 -    [self displayAlert:@"Success" message:@"Settings exported and copied to clipboard"];
-+    [self displayAlert:@"成功" message:@"设置已导出并复制到剪贴板"];
++	// Sync defaults
++	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
++	[defaults synchronize];
++
++	// 直接读取偏好域，而不是拼文件路径。
++	// 用 @THEOS_PACKAGE_INSTALL_PREFIX 拼出来的路径在 rootless 下会指向
++	// /var/jb/var/mobile/... ，导致读不到文件、导出永远为空。
++	NSDictionary *stored = [defaults dictionaryRepresentation] ?: @{};
++
++	// 只导出当前版本仍在使用的设置
++	NSDictionary *settings = atriaFilteredSettings(stored);
++
++	// Easier to make it json imho
++	NSError *error = nil;
++	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:settings
++													   options:0
++														 error:&error];
++	if(error || !jsonData) {
++		[self displayAlert:@"导出失败" message:[NSString stringWithFormat:@"错误：%@", error.localizedDescription ?: @"未知错误"]];
++		return;
++	}
++
++	NSString *encoded = [jsonData base64EncodedStringWithOptions:0];
++	[UIPasteboard generalPasteboard].string = encoded;
++	[self displayAlert:@"成功" message:[NSString stringWithFormat:@"已导出 %lu 项设置并复制到剪贴板", (unsigned long)settings.count]];
  }
  
  - (void)importSettingsString {
-     NSString *pasteboardString = [UIPasteboard generalPasteboard].string;
-     if(!pasteboardString) {
+-    NSString *pasteboardString = [UIPasteboard generalPasteboard].string;
+-    if(!pasteboardString) {
 -        [self displayAlert:@"Failed to import" message:@"No string was found in your clipboard."];
-+        [self displayAlert:@"导入失败" message:@"剪贴板中没有找到任何内容。"];
-         return;
-     }
-     NSData *decodeData = [[NSData alloc] initWithBase64EncodedString:pasteboardString options:0];
-     if(!decodeData) {
+-        return;
+-    }
+-    NSData *decodeData = [[NSData alloc] initWithBase64EncodedString:pasteboardString options:0];
+-    if(!decodeData) {
 -        [self displayAlert:@"Failed to import" message:@"Failed to decode. Perhaps the settings string in your clipboard is invalid?"];
-+        [self displayAlert:@"导入失败" message:@"解码失败，剪贴板中的设置内容可能无效。"];
-         return;
-     }
- 
-@@ -114,7 +65,7 @@
-     NSDictionary *settingsDictionary = [NSJSONSerialization JSONObjectWithData:decodeData options:kNilOptions error:&error];
- 
-     if(!settingsDictionary) {
+-        return;
+-    }
+-
+-    NSError *error;
+-    NSDictionary *settingsDictionary = [NSJSONSerialization JSONObjectWithData:decodeData options:kNilOptions error:&error];
+-
+-    if(!settingsDictionary) {
 -        [self displayAlert:@"Failed to import" message:[NSString stringWithFormat:@"Perhaps the settings string in your clipboard is invalid?\n\nError: %@", error.localizedDescription]];
-+        [self displayAlert:@"导入失败" message:[NSString stringWithFormat:@"剪贴板中的设置内容可能无效？\n\n错误：%@", error.localizedDescription]];
-         return;
-     }
- 
-@@ -134,12 +85,12 @@
-     [defaults synchronize];
- 
-     UIAlertController *alert = [UIAlertController
+-        return;
+-    }
+-
+-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
+-    [defaults removePersistentDomainForName:ARIPreferenceDomain];
+-    defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
+-    [defaults synchronize];
+-
+-    // Set ARIDidSplashPreferenceKey, since they are in preferences already
+-    [defaults setObject:@(YES) forKey:ARIDidSplashPreferenceKey];
+-
+-    for(NSString *key in [settingsDictionary allKeys]) {
+-        // The underscore prefix means it's an internal setting, not meant to be shared
+-        if([key hasPrefix:@"_"]) continue;
+-        [defaults setObject:settingsDictionary[key] forKey:key];
+-    }
+-    [defaults synchronize];
+-
+-    UIAlertController *alert = [UIAlertController
 -        alertControllerWithTitle:@"Success"
 -                         message:[NSString stringWithFormat:@"Settings imported. You may now respring to apply completely.\n\nSettings imported: %@", settingsDictionary]
-+        alertControllerWithTitle:@"成功"
-+                         message:[NSString stringWithFormat:@"设置已导入。你可以注销以完全生效。\n\n已导入的设置：%@", settingsDictionary]
-                   preferredStyle:UIAlertControllerStyleAlert];
- 
-     UIAlertAction *defaultAction = [UIAlertAction
+-                  preferredStyle:UIAlertControllerStyleAlert];
+-
+-    UIAlertAction *defaultAction = [UIAlertAction
 -        actionWithTitle:@"Respring"
-+        actionWithTitle:@"注销"
-                   style:UIAlertActionStyleDestructive
-                 handler:^(UIAlertAction *action) {
-                     [self respringWithAnimation];
-@@ -155,7 +106,7 @@
-                   preferredStyle:UIAlertControllerStyleAlert];
+-                  style:UIAlertActionStyleDestructive
+-                handler:^(UIAlertAction *action) {
+-                    [self respringWithAnimation];
+-                }];
+-    [alert addAction:defaultAction];
+-    [self presentViewController:alert animated:YES completion:nil];
++	NSString *pasteboardString = [UIPasteboard generalPasteboard].string;
++	if(!pasteboardString) {
++		[self displayAlert:@"导入失败" message:@"剪贴板中没有找到任何内容。"];
++		return;
++	}
++	NSData *decodeData = [[NSData alloc] initWithBase64EncodedString:pasteboardString options:0];
++	if(!decodeData) {
++		[self displayAlert:@"导入失败" message:@"解码失败，剪贴板中的设置内容可能无效。"];
++		return;
++	}
++
++	NSError *error = nil;
++	NSDictionary *settingsDictionary = [NSJSONSerialization JSONObjectWithData:decodeData options:kNilOptions error:&error];
++
++	if(!settingsDictionary || ![settingsDictionary isKindOfClass:[NSDictionary class]]) {
++		[self displayAlert:@"导入失败" message:[NSString stringWithFormat:@"剪贴板中的设置内容可能无效？\n\n错误：%@", error.localizedDescription ?: @"未知错误"]];
++		return;
++	}
++
++	// 只导入当前版本仍在使用的设置，忽略已删除功能的残留项
++	NSDictionary *settings = atriaFilteredSettings(settingsDictionary);
++	if(settings.count == 0) {
++		[self displayAlert:@"导入失败" message:@"剪贴板中的内容不包含任何有效的 Atria 设置。"];
++		return;
++	}
++
++	NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
++	[defaults removePersistentDomainForName:ARIPreferenceDomain];
++	defaults = [[NSUserDefaults alloc] initWithSuiteName:ARIPreferenceDomain];
++	[defaults synchronize];
++
++	// Set ARIDidSplashPreferenceKey, since they are in preferences already
++	[defaults setObject:@(YES) forKey:ARIDidSplashPreferenceKey];
++
++	for(NSString *key in settings) {
++		[defaults setObject:settings[key] forKey:key];
++	}
++	[defaults synchronize];
++
++	UIAlertController *alert = [UIAlertController
++		alertControllerWithTitle:@"成功"
++						 message:[NSString stringWithFormat:@"已导入 %lu 项设置。你可以注销以完全生效。\n\n%@", (unsigned long)settings.count, settings]
++				  preferredStyle:UIAlertControllerStyleAlert];
++
++	UIAlertAction *defaultAction = [UIAlertAction
++		actionWithTitle:@"注销"
++				  style:UIAlertActionStyleDestructive
++				handler:^(UIAlertAction *action) {
++					[self respringWithAnimation];
++				}];
++	[alert addAction:defaultAction];
++	[self presentViewController:alert animated:YES completion:nil];
+ }
  
-     UIAlertAction *defaultAction = [UIAlertAction
+ - (void)displayAlert:(NSString *)title message:(NSString *)message {
+-    UIAlertController *alert = [UIAlertController
+-        alertControllerWithTitle:title
+-                         message:message
+-                  preferredStyle:UIAlertControllerStyleAlert];
+-
+-    UIAlertAction *defaultAction = [UIAlertAction
 -        actionWithTitle:@"OK"
-+        actionWithTitle:@"好"
-                   style:UIAlertActionStyleCancel
-                 handler:nil];
+-                  style:UIAlertActionStyleCancel
+-                handler:nil];
+-
+-    [alert addAction:defaultAction];
+-    [self presentViewController:alert animated:YES completion:nil];
++	UIAlertController *alert = [UIAlertController
++		alertControllerWithTitle:title
++						 message:message
++				  preferredStyle:UIAlertControllerStyleAlert];
++
++	UIAlertAction *defaultAction = [UIAlertAction
++		actionWithTitle:@"好"
++				  style:UIAlertActionStyleCancel
++				handler:nil];
++
++	[alert addAction:defaultAction];
++	[self presentViewController:alert animated:YES completion:nil];
+ }
  
+ @end
 diff --git a/Prefs/src/ARITwitterCell.h b/Prefs/src/ARITwitterCell.h
 deleted file mode 100644
 index d50e94e..0000000
