@@ -229,6 +229,22 @@ z6g!TU9D%u)9FA&9j?J}64pg>Dj@q_K4q<mlj^}qsE^au$VZYLYV&+cll^(m7MJ{`B
 z45e}nP|P2GnUuf~7y?6J2n>NCFa(Cc5E$`_>Q1Coh$e`X5>bQ~Q={mC=Ts?LN<s>I
 eN7!T)2K@(C1Yjb$v*|$q0000<MNUMnLSTY{_78~w
 
+diff --git a/Prefs/Resources/Editor/columns.png b/Prefs/Resources/Editor/columns.png
+deleted file mode 100644
+index 2016057d7f5737483adafdfa8ec586dedb68b450..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 431
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL^T<nVv3=Ar-gY
+zUf!5{*g%Bk!sbb=TPC)B%y>0b)}~1<V4`k{f$Iddg*+QYKKI>a|1Vg<FnPYu%+0C(
+zE9cloKl8DieENG&<f`fQ^Hm?8Znu6Rxp`icre<Wk&3)JNMO9CuKWfN+@$uDGefnU1
+z*#+Y#^RC^IUMBwf<}B9jS)uH<+uu}Xi_|>ZYxH)(^J$a5-O<|2SJlSBBVmwmpn;K@
+z4V~ePT^OuT0ILqL6bptyFryW5Sj5cMQ{VS7=U%0mkN#ETCz~r@ZceOPIZv_w*;4nz
+zUy^Kty&lh86*~7zjmcV__D!*0dLsSTuaV@Jf4?N%X624O6}wi?(=6Wh=IZI{ZD-i)
+gKfjOPn{!?~x%*sdbkEa$z!+fgboFyt=akR{066ufTL1t6
+
 diff --git a/Prefs/Resources/Editor/corner_radius.png b/Prefs/Resources/Editor/corner_radius.png
 deleted file mode 100644
 index 0db9840ea1a9a44c24bd4cd07c1f21a681098391..0000000000000000000000000000000000000000
@@ -253,6 +269,109 @@ zE4?P#a-LY=w8;D0mW610ZQT==-MjTe)anb;7Vl+uq({c+?a8-(EO!6F`hEM2_kQ1F
 zl$&UtbNEZm{zuQ3`(Ide?c<~eTNYk_^U^To-;@5iz$7DAzNh~49z&(7Lz{GzlTzmQ
 z*?z0|(Q-s($rBO&e~M4%HO-mQGDG11zou0-@#1qjj=Pnf-3d(c44$rjF6*2UngD;^
 Bc!B@`
+
+diff --git a/Prefs/Resources/Editor/hs.png b/Prefs/Resources/Editor/hs.png
+deleted file mode 100644
+index 7292107921dbc44158c9ab1f72028b7cdcf5bbf1..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 742
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFfH(OaSW-r
+z^>&W!q$URex7k|!3)12`vey`HRCjPbmwc{@t=}PG$x4-X0ovVpjR)Qw*mC-{{*}B{
+zaUabu$14Yk8*{2o3^6+SG;QUbl;z93GFII@=44hh!TYhH-m~kyKd%S;+%#qFoHc@1
+zUaD+ddCUG<(YuiUIsYsj>J$QxGu4)wO>K_TDBJt$ea!RosrDQlLDj`A@6uiGzmnJc
+z99|?N;<|9LrPucAqc<PjiQaK)et*LwY4_=ylaoWMAFJ6*{9vlw7jf&oEc@zH^YcC}
+zz8E0V6_psX=2cwG6MgooCX@KNx%^SLPw{=)zIc&_NOr4X@t>}%Z%uQS3A<TXbvZ5c
+zljsze==76VDK4?nPhzIH#7sYlo#GPVa}Dz5vG61?FiWgUsEA&X*^;=O#r}_NyfRPz
+zY-_2+ire2Va~w`{E`O^Oug>GYmT9fQ9+Qb*4t=-~cZDbU3j>=$!^dj|I~qS_JYDKN
+z-@dtZ)~8k}?+V_3Jlp<G$^X4kk%uSYMeD=mALk@{2IPAlSku(Y*(`nSc-_w#N%EgI
+zdfPuuUQ&PJzr3;-d-zYD`!>&vr+vLsRPnxX@7BvTZkDgxYLeS(B>$^%G$}w($98UU
+z?~2}6d)Ger$DJp2HSuufj$HfRs-2>i@*Arcx$@4wvU;MG`mK=5`)2ryxcVk*&v?Lk
+z>BgrXwcbZ7CHKv_AiU(N+QzvyUGmIlbC}jg%v~F*sGxN@mZ|Mj-^`|kMz7KmR_NTZ
+zlz6v`OTgsJY+$$?0C|!T97G%}NE|rx@!Nz86?#*XJy%Rg3|l!RDS6eDgo4!~Nwqqq
+z|5wQ@yWwP5_A-b+e(GTldBdc@SJ%UzO6*J2@s`@Jb^L(b;yLTvA%2{u&y#bs-{-@G
+R*T96!;OXk;vd$@?2>>c{M;8D9
+
+diff --git a/Prefs/Resources/Editor/iconScale.png b/Prefs/Resources/Editor/iconScale.png
+deleted file mode 100644
+index 0db9840ea1a9a44c24bd4cd07c1f21a681098391..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 800
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFx~QWaSW-r
+z_4ck|(W(HEV;}$DP^tV@lBu&vto_)zW4-|=qa@Nb?l!ZgUUN8j!y>tPYOC{eU&b?6
+zmw#NTX!o%0d$eO+@{@uI#ShYtA68dUQ&e4^&|jJGP2|ZEl_M=bD*jCW+%711)A|3G
+z>`8)#kKP9I*tVUyX)Aj;vFwcGrQfj~c8sT&r&*kt)bQ`U!ycp5%TgUy(#!Uk`5LBO
+zwd%0aK6ch|&*ltWm$|I(eFJ=MY@2r|;fB#q$s^pG{T!~${8&`)`1PhHSM$Tq`wr!N
+zXi*I{PQCdctc(BJ+$9DQ*J|#3TlqrI^`zmBf4h}lo4Ecw|0uSc_2(NK*Po$PN2jJf
+zV{xrq_&2>XRp!)_qKA7+xst0_dc<3}2Hx9TQ=OhAbLL0Q{-mcW$6m$kPkyD+deFc&
+z_eJiUqc{HCmEoDQ)Ig%?ao_h#nLSSv)oWjv0HwD`6hAk7_U+}3bCo@@e?{`1*Z>8!
+z43z>CI=p&(L?kwCTCdt+B=;j}#Up2pHZ8>?Nh^e$mD;p8mn5y2<fPZ8Whs)hBIv^d
+zd2PGmZyXO5lmyxgS`>K_Ih-X9VP$sVmp&8#)1ATOyuRq#&DW~&vz^x0-+m&+lQ20e
+zrNwtqqLSIhV`px(NI9fD&Ni9ayL@44sZsCd&7CGME-aHO`LRrJMj6Ypw#9Nh?pJTz
+zS-f$l)QUToSG=`qY};`C=A68YD;0IRc^3P3IBMH&dE=Vh@G3|D{i`cY8f*D32kjJJ
+zE4?P#a-LY=w8;D0mW610ZQT==-MjTe)anb;7Vl+uq({c+?a8-(EO!6F`hEM2_kQ1F
+zl$&UtbNEZm{zuQ3`(Ide?c<~eTNYk_^U^To-;@5iz$7DAzNh~49z&(7Lz{GzlTzmQ
+z*?z0|(Q-s($rBO&e~M4%HO-mQGDG11zou0-@#1qjj=Pnf-3d(c44$rjF6*2UngD;^
+Bc!B@`
+
+diff --git a/Prefs/Resources/Editor/inset_left.png b/Prefs/Resources/Editor/inset_left.png
+deleted file mode 100644
+index 0518140bd92daa069fa7d590bd2b1659780b3044..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 927
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFh_d2IEGZ*
+zdVAO3J0wuz_{aA=Y8e?KXWVjB+g!fg&+;+4eI%#os`ZNU3(^^qdR`n^i90s3MX547
+z%}!Y0I$L1|m!^=<UeADlH0Npe#L`~c=DDe#H!iL_f0y^p>4%3c&)1&Ynf}f<QTLX_
+zlKFYJG8IFgW*^rv@a|N4>>|;x!#b_A{6WMrhiiH+ZGZX<*4Tea$@$iqaa=PgNvZm;
+zvinVLS0A65bJoT^>`$7ioUI=25~mr)-aYZo#P5C^XL<SZOuTU-F=2(snFNs)RlVVv
+zTP>Y$dAy5C+<$)=&#Z+FCe#0zExRAGwfLUC+jh;Ky#1Dsx!1NC?E7^z;^UkH!ooHC
+zdpmP|CtlKMQRGSFaF#eE&}M*@>4Yq$W_W4NGfDf3LxRE56ZW|9f3E*_dEfI0QH!Kx
+zcUQxW?~csWdb4d^X3tUH<$jmMjgEypdgAGqm%ZVN$uZM9RloU9ADCHWNiA;O&39bH
+zHZjRT`+I~}%p=wGLq{6a+<wm7aYCCfKXbzs8#WW;Q(ljZE|;`*GX9n*Ejq4p{P2+m
+z+aAlEk6G1$iqqsQb}n`acip)-&tSn+L-q1KOO<_iP88HnzH?DhjqT0Tg~kziZC#AJ
+zE2l{4yw4I%{;eI`UE}}flEAA?@yg0Ees>(@+IN1sdS=69hv$}3N#`;WZtUDz_sC(!
+z_G{LD>t{R;=x_~J-afaeX4YoKX^(yH6jU8`uX3KVVyQ$?(NU(@M8AjmmZs0!b@h0z
+zTO8ACn-gPr+@a%iU2jZz(b4pCtveNJu2%9sd?Xfb|C-@(Z*cCn*53k|nvR8rPmXu{
+zo8R%#Z~6P6@<IOnh$kU`b3HvmBl5l$werOoANs7dhDWmcY|p)&!AFnI-Nl7BZa^{C
+ziikEh+vFR!b_)MK`Xh}i`Jn!>9?hP}{SvCd5~}+pT!STCYxk7t?y28nmUPHx{|tps
+zcUfvbR5`y0e(_q#`N>=*rR3BtX`0nbHEv5NWl#KkB2X<ow{OZ<lL)2gy^rGGov8Mh
+zEqTUmTGQwMC;k`f1Q+~n**pFIHbW2lyIU>?eZ6)RlC)<}jo8olDf&XkW;1yvV2)$(
+MboFyt=akR{0Ahrk5&!@I
+
+diff --git a/Prefs/Resources/Editor/inset_right.png b/Prefs/Resources/Editor/inset_right.png
+deleted file mode 100644
+index 97a8d3103bc9022296185638252d59e23a144c96..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 932
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFvoeiIEGZ*
+zdVAM5Ti8+N_{aBbqH96|Pb|GMIi%~xuPduI9u3eJviTDFgRh2JZmBqTlk1e2Etc0E
+z`jd_}yDM@n3RuybEhwTgCBb)-Tu|<&+uoZDjc5P-`+dskl%FZj?D?%Hf4!maHbeb1
+z%VM6#7jJW{2v~MRO8ZBIoMhJ(&R+#rH79KpSMpt`&$BkXam(D&L+`C!9UAiE|DFgm
+zbrKW^P)!eCYv6wI$%z}2wQClOoIRH0`A$P(dB(CJ?O7fPCsQ4RHKUpXO}HN#9#Yfv
+zE(&j+tmeK{^V!;k8TWcGu0J1Tdh6t@qcb*e9e#1Q;?I*6t`ee?%O78S@l(b29*cdd
+zkn)C{zLXEkJr@eJ8MG+!Byu=Q9Ky=vLXleh`ooN*&hRHQUzW%RB-|98|H$a}?$oyi
+z&&`hUYUwWBTPFEfEjoAU+Z|mG4W$=x{CJ_(cKpfyn2qIjpSI1Gxc*a6Yvr+6zMUP0
+z$EOEaTI&>SxSTYp|Doa0>j9ekci!*K{A76Sw$<f^1~%@yxx4+Wj+yRrEjnt;SAPB0
+zq+Y|rZYtq6FHCaznA(ot^tiR=qrtfux;rJ7|CBo^+AUKc__!uzOJwrIg%yi`E=jWK
+zDp}UQ`@E><@f#eb6H=#(muD?J?<`X&{<v~Q`cBt*kJp(^HnejQda-#&z4gR9>%NN2
+zSBiaox#D@!WSbXK%SB!WPkUUl{-j)A{G;3yi+@v+^O6o6tu1n&Ck$jnq-?sTa6dL#
+zvgPPp&wK7g?)zqE{z=gJ9s4v^rQGJ_o^;76tPeA<Dep|~ObnM7owHEp;f}}eoR_Th
+zIKS!Lr^iQc3LM{dn}42h&bBGrUj3TZ!d-JuH@iD?yWxSyGWtJ`O0O%~=Cbhr9m$TP
+zvM9k1kEB+tk><u^_~zD5;TcC)M6?DPb_Z_bTAU-cI7QU$q|Pz#)dtsm>UPG(-3~MU
+z<F{Sp|M3V@&x<^JKkU-|qV;8($7AW`A0E#OdzTu#QfldnTNhpaxt&vRpE@V^^OT;2
+z#~$4d)&5rGe$e5TPjYUGM$mh1=edhwOOyUD)>A$+IkhRUt-4M^ZGqEFq3ks?<de1@
+amtQbdZ2GyvT?>HOj=|H_&t;ucLK6TRH>;Ka
 
 diff --git a/Prefs/Resources/Editor/intensity.png b/Prefs/Resources/Editor/intensity.png
 deleted file mode 100644
@@ -285,6 +404,109 @@ z!=7yA41gkYn|x*acR&=GIv7BXj0lV(Lx+jTF*7VqB>Vs(Ihu;ec%lz2ljH0djZ)o-
 z6g!TU9D%u)9FA&9j?J}64pg>Dj@q_K4q<mlj^}qsE^au$VZYLYV&+cll^(m7MJ{`B
 z45e}nP|P2GnUuf~7y?6J2n>NCFa(Cc5E$`_>Q1Coh$e`X5>bQ~Q={mC=Ts?LN<s>I
 eN7!T)2K@(C1Yjb$v*|$q0000<MNUMnLSTY{_78~w
+
+diff --git a/Prefs/Resources/Editor/offsetX.png b/Prefs/Resources/Editor/offsetX.png
+deleted file mode 100644
+index bc99f9abef7004758a9b0f12b0b76f97eead8622..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 930
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFvobhIEGZ*
+zdV9;?drF|l@sICaIJHE%_A(jH={WWO8BbGQN?gbL1?CrwVx|a~bbQKj6JHm#wM0=b
+zO>>EX1aCyA(hE1W6Eka~Ld=T&?LHr0Ia7OozxB*&+u|MH?|i=FE+B{tWKNS%UUE}G
+z!SPIYN4|mIwEQ)nckC2AF0t6b!{dbH<v5k(DTm_)>ytLjd^zLcm+MCq6=%n(JdTY#
+zGQaZHn#^?lqCeHSKNbWC7WbtXn|WOFbUm?7{NxGiz~>S>Z>4p9JaMw%MESEl9><Km
+z{GP;D6ihAgDSYG;@yJpZXo^|p<UX6ly?*9r_Zi=m{CwxrGT9x6jndDV-$+}uao?i@
+zGgq8geL_&v=!s^Kiho-OulJ|;{+B8XUet8U%3a+Z$)?43dBTL^XUb}wlS}R7C#lN)
+zH2-&eh91+ox#!<sjQ7`4vozZJh;^>%H^uroznPgoXT&iDTNm+Moz=xsy)0}`pT_Ku
+z-cElc)AlS)W_UNraBFh+!>FvI&cSBhdpcz%?ln0wzuV&4Cc}EO)2mj>zL#7PX8o=>
+zC+jGaxw6|5C1)N^&#gH=KTiTRK4z{BTv?H{>#PuWiR&``VAB&mr;kn9ef(5>mb;5)
+ztV#RJpsQlq@unwgP9F<-m3TI1+Vtu5HRo?CtTvr;JL#%Ix32W#SI^dNj<gGlYn-Az
+z^U&qmwd+=J)s)r=2lB?xidlcLICq;TyLVcxZrs0*bw$e>))l;u61ku!=EG?F#PiAo
+zJG&W+O%Kby@4q%%XU5{MGk#y4wT|)L?6aGs3itfFP;yXuv(~rDh||os4WgIHo-eq5
+zyKGPM^<}d6l>@V{%Kq|x%kkptC&#su#nVD%3?t7gUdflcc8*iY%zL-pq2n{mw?3NE
+z_$%MO+~+NalHB9lAB))IW*+{sU}N_~&TYPLBl>J2Z=KeC=DYSr{vXjBD>6&Hmh61%
+zs%2G?mvxjgIJ`3SLxaAW?0H}!khwqi1ozkbb+@`7#>~ylufAb=H*J$-e#~S)D=uJq
+zIOBOVXR}(}spp$I?^jOjIV<&h0-M=sh533#Hm_Wbmg!$}YuuRjzx`P9wV!U&3ZL^W
+ri9PBeu)*=yD*ZXGF1Wy{zYNKif7Y#XK7AUP=@>j+{an^LB{Ts5NWiM3
+
+diff --git a/Prefs/Resources/Editor/offset_left.png b/Prefs/Resources/Editor/offset_left.png
+deleted file mode 100644
+index cb953ff8faea8c75df76b8b522204720dd516f30..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1238
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2buuSlDaSW-r
+z_4clRws5q>@sIgkVo{l{inA~6p5!I?`hHli?zLSL^YY?b-ybl45VY$;Q-YxC>|0H%
+zwHx(XySS%2i8L(=nC&K5GI_T2n#^Z<t4wFAdrm%g<MW(Pb8e<CyZq#EW!>{LCsjNJ
+z>ZKFfJl!Og^t+sS&ZjX+{WO=q=7K#-Pi*kqz<ygzGN?*%lFnOB=eOHjg3{+}ys>n3
+zaBz(OKV#XO7A1uRXSS@1d)SxMt-MrSo6ApgTbHY6nU3Z18(l%7szMq!MW%SU@w%zK
+z^6s>9mPzQ<Q@t7bbbZF=ODptK+;~|_K9*k*cFCT+D$P3lZc@*RLlTAEhAX&~A8qcG
+zT5$D-{-wpS56X8Q;g}MutQs@z<i4!7L<xfE8qZ+^I4Vg{kw~5Qe2HXu>Eoc);bjx2
+z*F2Y8{<!uSr(VFXO8Iwe!KT$rskh&o9eX~%zxGMa9GUAH*Zv$9k4w<GZnI15e(lri
+z+k5N3^2!@{mG(cM(XrS;%}InYfA4`G0=Fh7n?!9?u@DvFyYZw=T*7>1%eSYNf~}9a
+z?mMZkDd^7AH~2L}Tt;5vw(e1p*9#}-8k|13EBQ;3gMI%Ej<@w^m);dQp)ub{{nx?R
+z!Z~R?FBH%AUl7c<xSF|<=Q{5)M#j)I={YXuY+oiVld?*iy3kKU@3U*l(cCI2nU%84
+zeUrp)PJA4*TjcSYt~EQt#b?_k9!L~(Dckd?#yYYv=tx@YZ{Pm!jLcP$A~z?dRxE#G
+zaV~tKXtB%(8RlP+0yjVQC9l;u*Ksqg)v_x3PpiJfgeQf~Z!!dz@*hd~wZSv&M?0f?
+zg;Lj3zt4xmomn^SNIv$Xg|YpIdWg>Z+4}E7Tt3L$3ipmw{l{&4$%c2Q@~J1B?%#aR
+zzj(G#V>0_$et9KzrZ0u3^^-raFP?5GxM05JWv}-V?~h#A<*@&|1p5qO=hxwV?@eAx
+zscCnmZhZOS75A~)i`v&LZ=PelT^ZN;@&{A<-lH#`&70A;-soQ5t9jWIWHbA!Ixim1
+zy{NsfVCQ7V43C&Kp`PX%Vs9ll(_F(uB;VD1{oH$^Z_AFJ>wSgcJj>>nZ8xatysl&|
+z*XkyAR)T$|XynGY?_v?|xjs5O!e=Z$&)t)k*SY4$v8fvQqH`4VE%K@w3!Q5oCawH@
+z)qkhK9AWNvb_sh#H=pgaxK}urqj1We12;GVWBOlb=^u?c+c|yjfr>!$8FAg8r?qUZ
+zxnm~xnJGDIcm9+e0^en&mRBAtk1N`k$Lpf+)>L@OCVk)E%GTQFeRnUX5=^{j5h)j(
+zgxz^!%ipo&8U71x4J_&2xQt8ry_oW9F6Gx^$*!VqN79q+<D`?%Yh1Z&^LCrA`{Itp
+zH~HhPoBr1PGHcqB2Xhu(_*8teIz}sXxk#$4>ZjGd)=xBy*S^(Kf4U-qYgg6L_irMK
+z1ZI0)*(M_Sapgh#&AF30cl-b8Tz^0oQXuGm`^+wKa&l_x@{j%-|FKthHYS~4wssS+
+PpknZJ^>bP0l+XkKxhXT`
+
+diff --git a/Prefs/Resources/Editor/pagedot.png b/Prefs/Resources/Editor/pagedot.png
+deleted file mode 100644
+index 6988bed569d101cb09f816339614fe47ca5c300e..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1221
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S1|%gaKTQNuEa{HEjtmSN`?>!lvI6-E$sR$z
+z3=CCj3=9n|3=F@3LJcn%7)lKo7+xhXFj&oCU=S~uvn$XBC=rkv;hE;^%b*2hb1*P5
+z3NbJPS&Tr)(4NV_0%kKX08Ih{<^_xh*#%5+*|r7D2sTJzk$T2Kpdpc&ArU1JzCKpT
+z`MG+DDfvmMdKI|^AO#FI6;?oIZfZ%QLPc&)Ua?h$trA#;6_5=Q)>l#hD=EpgRf_Np
+zP;kyKN>wn^Gte_ovg1-vP_QXVNwW%aaf50H@@$ndN=gc>^!3Zj%k|2Q_413-^$jg8
+zE%gnI^o@*kfhu&1EAvVcD|GXUl_7?}%yCIAPA<wUD9OyvQvjKpn3P{yVymPCvIq_!
+z?kvenL)es84D}Y!gZdyDeM3D1eYn{`tu`Q0EB~U*RG`fu^X&|6z$#J1p!V44gDgjK
+z48*5kQJ`1txNP*{!Dh!L8TXK#fq|*t)5S5Qg7NLGKtCo!0fqpRDv5Om<<mb@%{yAb
+zRd3TYe^!QihEqr4vJ%sr&$CSQO0074i-|>;OSdvGGO=(7C^$3>C?mnLarU&V`>&E$
+z>#yBcf8C<*`6AsUx6?U~d#Yke|L4xWTfBO{XYY)Ty<5(hom<Mc`o;F_%{AGkw?*vV
+z3QE^j0Tq5(S0DQEBiFl|BFAShem*yOTVYt~q-u5P>%UGteVlGQ=U?x>spn-j_g;Rz
+zXV;I~*&kn?d{--Dxyk6Z#m%brTlwu(`j>wuHkwS8nK~m!3q-0OJ6W`5pY6W3Z~L6*
+z9CPnmbH>bX+r5R~PHnBsXmEP|U932~!&>~)MXC4aS+{JvdCYT~^|cz_>612!zWA%o
+zbbW(ioOnc}s=KP%Y%d_0)>*ho#`!H!cwSpr!Hbxaft@Fp1p&#(q&YgrU)@gsE%h`0
+zb>!d9^I`_K`ThTIop+|R>sxMg>-;19Y>5kHIN#hVJpZgf_$^2Nx5E`%L*C8a@z(CQ
+w-;dPV!rngqf`5U}#bx{j2Ra%di716BUPOyo;rrj;i$S^E)78&qol`;+0OewKPyhe`
+
+diff --git a/Prefs/Resources/Editor/rows.png b/Prefs/Resources/Editor/rows.png
+deleted file mode 100644
+index 38fe5c8f6c927065433982b25c0ec8a50c872fe7..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 481
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL^T<vproLLn>~)
+zy|porDNv&I;_hr#lLXc)2ORXTEalu;vOrn)2E#dl%M3hhdj0W=Zt34-j1E~#@45S3
+zHU0CNO=lIC3;yN1nKreuZbpjjD#5z{aYmk#^iHb0pP6>Y&gk?$|4%l*G$&=wo22)7
+zPn$~Qm&mBZ4R1D`T`W6EWqvGQ<p$?TPi{O-Y2AE}<(NU6VNW7YvczGD?-GwQT0R%<
+zIe(6;Id*=pD4Vo=xt>_<y-nMkCzal-5%_n_j^n+t^v}y1&*}XB)$Xmr!0^Mk?=iFQ
+z^kuKFY42I)eYw>2a%jdbF5mElFIU~!Ds@-_X8N5}9^Y{5zU*CkCb6x{R$nMFowd&G
+za_BrRpk8i<hX02OYZkn`RC2ef^?FI>u60l|v`k{B?hXSv4Ps8u?w*A&vyK<~UI&{Y
+z3Nqtr#;#Mr3xRqW89u~Y^zoa-&RQ3}{=+Oi-|M0vcL2=*DlWR71@<D?oWkjbCb4fV
+v*1g<yp#*4#6UYoH-|$MH(*61q_b~{*bH4uN@4GX=IAid1^>bP0l+XkK?=;yF
 
 diff --git a/Prefs/Resources/Editor/textSize.png b/Prefs/Resources/Editor/textSize.png
 deleted file mode 100644
@@ -375,6 +597,91 @@ zSe0{NtZFVdSu(l9T2U6O$g}@nscv#KC|0Kh92jStL$-aA$sKmuXrJi8JACZvfWt`P
 zz9{2hwLz}VVb=7+cB$*U!^di`%E?+sI53L9?$9!@)$tds+B(sL_nrR`S3|t<ZzFnI
 z99%QPaeJ#R5<Oyok2!8+Too7zWZKuiXSSGsIp<=F^<4o>^w84M($dn>($dn>($dn>
 j($dn>($dn>@}~X)&l)~S)u|>r00000NkvXXu0mjfez9_p
+
+diff --git a/Prefs/Resources/Editor/widgetIconScale.png b/Prefs/Resources/Editor/widgetIconScale.png
+deleted file mode 100644
+index 7292107921dbc44158c9ab1f72028b7cdcf5bbf1..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 742
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bFfH(OaSW-r
+z^>&W!q$URex7k|!3)12`vey`HRCjPbmwc{@t=}PG$x4-X0ovVpjR)Qw*mC-{{*}B{
+zaUabu$14Yk8*{2o3^6+SG;QUbl;z93GFII@=44hh!TYhH-m~kyKd%S;+%#qFoHc@1
+zUaD+ddCUG<(YuiUIsYsj>J$QxGu4)wO>K_TDBJt$ea!RosrDQlLDj`A@6uiGzmnJc
+z99|?N;<|9LrPucAqc<PjiQaK)et*LwY4_=ylaoWMAFJ6*{9vlw7jf&oEc@zH^YcC}
+zz8E0V6_psX=2cwG6MgooCX@KNx%^SLPw{=)zIc&_NOr4X@t>}%Z%uQS3A<TXbvZ5c
+zljsze==76VDK4?nPhzIH#7sYlo#GPVa}Dz5vG61?FiWgUsEA&X*^;=O#r}_NyfRPz
+zY-_2+ire2Va~w`{E`O^Oug>GYmT9fQ9+Qb*4t=-~cZDbU3j>=$!^dj|I~qS_JYDKN
+z-@dtZ)~8k}?+V_3Jlp<G$^X4kk%uSYMeD=mALk@{2IPAlSku(Y*(`nSc-_w#N%EgI
+zdfPuuUQ&PJzr3;-d-zYD`!>&vr+vLsRPnxX@7BvTZkDgxYLeS(B>$^%G$}w($98UU
+z?~2}6d)Ger$DJp2HSuufj$HfRs-2>i@*Arcx$@4wvU;MG`mK=5`)2ryxcVk*&v?Lk
+z>BgrXwcbZ7CHKv_AiU(N+QzvyUGmIlbC}jg%v~F*sGxN@mZ|Mj-^`|kMz7KmR_NTZ
+zlz6v`OTgsJY+$$?0C|!T97G%}NE|rx@!Nz86?#*XJy%Rg3|l!RDS6eDgo4!~Nwqqq
+z|5wQ@yWwP5_A-b+e(GTldBdc@SJ%UzO6*J2@s`@Jb^L(b;yLTvA%2{u&y#bs-{-@G
+R*T96!;OXk;vd$@?2>>c{M;8D9
+
+diff --git a/Prefs/Resources/Editor/widgetXOffset.png b/Prefs/Resources/Editor/widgetXOffset.png
+deleted file mode 100644
+index 4f7ae974590cd4902ebabd56f509578a2574fa5c..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1066
+zcmV+_1l9YAP)<h;3K|Lk000e1NJLTq004#n004#v1ONa4vT!;Y00001b5ch_0Itp)
+z=>Px&<Vi$9RCwC$oI6V^K^TVLhzcqy3O2T)1QG9dgP@K0LxhvwKVT^q8W0pw(s;v4
+z5G*ak!cx#cP!!@FK_N$is7dw|UdYausL?&{On9H|c9%_fnD3kUW@i>4gb+dqA%qY@
+z2qA<JLI@#*5JCtsf@=7&iV&hm!gBaXB8m`J;YYRpB6_fagyRa*9SLlpM_&<DSoswV
+zsmBVc^lTHCzplc9g-iX~$1omTQDMQt1BUf#74E5c(b1z%uDEnn#Y?bgk~>yhSMicc
+zwFnVQlS6}0+0aJDhWn$<gf=n~ZjVa++NiK#;g7pAR<)9`>aL8CRx(2F%7|(uBkHb<
+zq*gML?#i$<J1B!PT$JHKJ7%$sAo}1jLPj3Cu!~1*p~?1-9Z=DU*z3<dVZaC(9k_ly
+zcZwD#bqwM@<p+0+kg=I^_RP5=Zs^_dTiY-}M$C3T44)GL;!{*uI5a}WiE<^3_MZid
+z2aSqh3ki%EA!8JA<=Q#wf1;xwcgh3f7(<~EGD<Nkbey2$yDA27p*-vf6DTldoKc1a
+zJSo=?(EYt}#g+1)XG|G3=qf@G&!Vzz%r;oOw$AjW2%1Rq5Zy<h#R!UGGJ@J{RP^FT
+z<ce_=895xUL{Q|8Fj~K=q7M;~E2eE})2!O09E&1%?4j)|xuQX&%{XQZFVu>$EON&_
+zyr1QcI^2p}5kS82Rcjd*MeaC4%||Ml#b`5*0E%;>gs;L<n%wb0DxDLZ>3oJ<Vd8v7
+z1=d8cOlH14q6Eltj!o{AU|k88<IFc7D>Bwml4CPn%ZiLh=36I4n5>~9XJiy&UWCb9
+z=G$u#7729e!<7%_$S6iYB+zR#e`K!)N1|(8M49n2@(~bS>n-X&8+3WGFM?$`WA|!`
+zj2Y1?F3|9mf~^gEVmQ8ta${u_Vp<HxBk22Tb<&z9cLY&sq>Lhri&k-i-fZgDT2ZVe
+z5lj;-y36ojLgb2jc(b4V42j$k6lJ{bGNwdldiA}D;cgs=+_9kaEIP|5z=X&Z7q(Ym
+zS<xXT+~b%<sSz>?F(z`w9r}Ors-Pa{LdU2PGDgJGyIA(KpK@Y2EGFDdkZ~wRn?5Jr
+zxcU?wF(YI=DJq7XTLpZU^59J)WbD{F(?KVfB(&i4-EoHzG6vq;Mhu-!uh3}179O#S
+zF60>@!-GBqv5ncEzHsI;Cd!};E{gp>{N-|KE~HNjw^*d0*XA3)yE3>f%LX^>*@`$_
+zWN5MLnVWoVD<8Q1+ZHPPFhC0YWQ5W>_%RV%?%-!;l=i_75GkWlewvC9LI@#*5JCtc
+kgb+dqA%qY@2qEN+e<8)7B#@F)EC2ui07*qoM6N<$g0o!TiU0rr
+
+diff --git a/Prefs/Resources/Editor/widgetYOffset.png b/Prefs/Resources/Editor/widgetYOffset.png
+deleted file mode 100644
+index 4e110ed50343dc8518dbf4cc2e51db68fc89b69f..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1125
+zcmeAS@N?(olHy`uVBq!ia0vp^Z6M6S0wgyTSV;jX#^NA%Cx&(BWL`2bu*iG5IEGZ*
+zdOO$GJ0wuzc)hafib#<ioYAd{6Tdz4o;>k}TFg()Uu?CF(;hBrQRqxE+vl*_t3Xmz
+zFNQ7HK!o#|iC4gEN2U9I+{v@5&-?Jkyp=ou^Z)t0XZH%<<<EOwf6lgIKD&zNB$byB
+zR(Ds|B+Yb>;gEJ|yDVa`|F~58i5Bj~v-?Fw*bbYYYwdbu^pk_D`60Kn;-Vc#qPbfS
+zZa8!G!k$H|Pia4TtbJFp(p~>_X`lp8>Mtk9!q)E_yYDBee><h6tf=B)|2|24-$~=N
+z8(Y?V*>(Tqq=!1*8@um4(#$=Oye;W{&GPH%GPNRWS!O=7U^wd&adOi+)A+!c&1n;S
+zm%UiA=l-b{QQ7P}Ukn{LiFNU&Sx8yF65zkNq2SI3?MS1Tl%t=zG^4U*ejn)SGh()T
+zXmLLMw04oq>dGAB^6ZLs_t$;Xr-eVU2>kv+?AY4QvP<$3_Q`P*SI<<qnptZ9Og8^d
+z<3@>(UFus*3eHs=u`c>|Kq6&rQ<9Nc^Oehq?>5ACs`lr-nf)StUg@+QzSW1*O^dtv
+zb2c3CIANVINyU@>(YnO<rIQTXUOp6Y|MurIZ)(?*%Cp5@>kgka3Xhb1^ZrI!-<sVD
+zRx|$UORPGcbG5D`*f8+ddkvnpN!1?>PxXfcNbuN8lxk~Ta^Bdj{JJlEN|5Wu**bj{
+z$8%n3l&!teDPq{i!yc4+PEw*cbG?KACa1~D_qHBhnX>xQ5^<wvJX{$`IxpE(E^i24
+zJ@;Wr;uj0n#p<yVbNvo_{K%ao^`b90daK&a{@I>?p4;A<pXnsTb5MW)@-$#^#)6s}
+zA71<4IIARa%G{<vKXJE<ni5A#5}(X%n&>ZnEPHu^${({Toos&P#YgrS7aGp5yUSvG
+zN^+vyr?r#h{`W2I;$jZ*R8>y8xG+gc@O{9{nGrQI513qjN6uO``CF~F@7FHzchi>v
+z!*kNNigQwljl6aR-Ot+2XFWIbUSsUP-+%WH=c$Ko-oEp&!1=jM>ZYLhs$R$XgeOW%
+zw;h+ZSlp^UG3a*pzXKJ*+K1}?%Xe=KE83{^#{O@kVdm85^8dXRzX?BC^XZTN-^Po_
+zcU|4_Fi%$7*6m!@oewiV+nrTop0akD9DkPDi78hvCAW6(E4A1esCn`Kacj9E4YTGm
+z5ohDLQfk+@*Iz!g@u*9veK+4So%I?&?uefJ*4KIeUg4a~)7o8j=F?AKI9;x7CC8j=
+zvvp5W=jMIoLA%e1XD^!jaOPBn_b>PtmLKI<{XfV2$2{$YcXoV@6wck_o0;!XzVU9&
+z+U`XT;TdOR*ImmD{x!{8@m&#5WLVaTV#_PO^NVY`7yR%rKd5zh=Bm)l#>)%Mn|2*g
+mp7!&I?XC&H&|1R0KHk1%+WN@<Wjlc727{-opUXO@geCys9t=VN
 
 diff --git a/Prefs/Resources/General.plist b/Prefs/Resources/General.plist
 deleted file mode 100644
@@ -1946,7 +2253,7 @@ zhPnzzFgw~C&c8;-XuF|$u{&DxBq;^%$JR;=>}X(%lh-^_YpA|5*+ToeccteG;AQ^*
 E09_{{4*&oF
 
 diff --git a/Prefs/Resources/Root.plist b/Prefs/Resources/Root.plist
-index f15561d..197f2d1 100644
+index f15561d..3d85ebf 100644
 --- a/Prefs/Resources/Root.plist
 +++ b/Prefs/Resources/Root.plist
 @@ -8,23 +8,7 @@
@@ -2020,104 +2327,82 @@ index f15561d..197f2d1 100644
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -82,9 +66,17 @@
+@@ -82,9 +66,18 @@
  			<key>defaults</key>
  			<string>me.lau.AtriaPrefs</string>
  			<key>key</key>
 -			<string>enableAppLibrary</string>
 +			<string>saveIconState</string>
- 			<key>label</key>
--			<string>Force App Library</string>
++			<key>label</key>
 +			<string>保存图标状态</string>
 +		</dict>
++		
++		
++		
 +		<dict>
 +			<key>cell</key>
 +			<string>PSGroupCell</string>
-+			<key>label</key>
-+			<string>常规配置</string>
-+			<key>footerText</key>
-+			<string>需要注销才能生效。</string>
+ 			<key>label</key>
+-			<string>Force App Library</string>
++			<string>编辑器行为</string>
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -94,126 +86,91 @@
+@@ -94,126 +87,57 @@
  			<key>defaults</key>
  			<string>me.lau.AtriaPrefs</string>
  			<key>key</key>
 -			<string>saveIconState</string>
-+			<string>dynamicWidgetSizing</string>
++			<string>showTooltips</string>
  			<key>label</key>
 -			<string>Save Icon State</string>
-+			<string>自适应小组件尺寸</string>
-+			<key>PostNotification</key>
-+			<string>me.lau.Atria/ReloadPrefs</string>
++			<string>显示工具提示</string>
  		</dict>
  		<dict>
  			<key>cell</key>
--			<string>PSGroupCell</string>
-+			<string>PSSwitchCell</string>
-+			<key>default</key>
-+			<true/>
-+			<key>defaults</key>
-+			<string>me.lau.AtriaPrefs</string>
-+			<key>key</key>
-+			<string>scaleInsideFolders</string>
+ 			<string>PSGroupCell</string>
  			<key>label</key>
 -			<string>Options</string>
-+			<string>缩放文件夹内图标</string>
-+			<key>PostNotification</key>
-+			<string>me.lau.Atria/ReloadPrefs</string>
++			<string>从哪打开</string>
  		</dict>
  		<dict>
  			<key>cell</key>
 -			<string>PSLinkCell</string>
 -			<key>detail</key>
 -			<string>ARIChildListController</string>
-+			<string>PSGroupCell</string>
- 			<key>label</key>
+-			<key>label</key>
 -			<string>General Options</string>
 -			<key>child</key>
 -			<string>General</string>
 -			<key>icon</key>
 -			<string>gear</string>
-+			<string>编辑器行为</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
 -			<string>PSLinkCell</string>
 -			<key>detail</key>
 -			<string>ARIChildListController</string>
-+			<string>PSSwitchCell</string>
-+			<key>default</key>
-+			<true/>
-+			<key>defaults</key>
-+			<string>me.lau.AtriaPrefs</string>
-+			<key>key</key>
-+			<string>showTooltips</string>
- 			<key>label</key>
+-			<key>label</key>
 -			<string>Editor</string>
 -			<key>child</key>
 -			<string>Editor</string>
 -			<key>icon</key>
 -			<string>sliders</string>
-+			<string>显示工具提示</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
 -			<string>PSLinkCell</string>
 -			<key>detail</key>
 -			<string>ARIChildListController</string>
-+			<string>PSGroupCell</string>
- 			<key>label</key>
+-			<key>label</key>
 -			<string>Page Labels</string>
 -			<key>child</key>
 -			<string>PageLabels</string>
 -			<key>icon</key>
 -			<string>text</string>
-+			<string>从哪打开</string>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
 -			<string>PSLinkCell</string>
 -			<key>detail</key>
 -			<string>ARIChildListController</string>
@@ -3789,7 +4074,7 @@ index 2709321..a34401e 100644
  Description: A proper homescreen layout editor for iOS 13-16
  Maintainer: ren7995
 diff --git a/src/Editor/ARIEditingMainView.m b/src/Editor/ARIEditingMainView.m
-index a459cd0..62fef91 100644
+index a459cd0..ea8dcb6 100644
 --- a/src/Editor/ARIEditingMainView.m
 +++ b/src/Editor/ARIEditingMainView.m
 @@ -70,7 +70,7 @@
@@ -3801,7 +4086,18 @@ index a459cd0..62fef91 100644
          currentSettingLabel.font = [UIFont systemFontOfSize:20 weight:UIFontWeightSemibold];
          currentSettingLabel.textAlignment = NSTextAlignmentCenter;
          currentSettingLabel.numberOfLines = 1;
-@@ -310,7 +310,7 @@
+@@ -206,10 +206,6 @@
+ }
+ 
+ - (void)setupForSettingKey:(NSString *)key {
+-    // Queue update if adjusting dock columns/rows
+-    if([key isEqualToString:@"dock_columns"] || [key isEqualToString:@"dock_rows"]) {
+-        [[ARIEditManager sharedInstance] setDockLayoutQueued];
+-    }
+     ARITweakManager *manager = [ARITweakManager sharedInstance];
+ 
+     self.currentSetting = key;
+@@ -310,7 +306,7 @@
      if([ARIEditManager sharedInstance].singleListMode) {
          // Single list mode
          ARITweakManager *manager = [ARITweakManager sharedInstance];
@@ -3810,7 +4106,7 @@ index a459cd0..62fef91 100644
  
          _perPage.image = [UIImage systemImageNamed:@"doc.fill"];
      } else {
-@@ -329,8 +329,8 @@
+@@ -329,8 +325,8 @@
  
      if(_heightAnchor.constant == [self getBaseHeight]) {
          // Activate
@@ -3821,7 +4117,7 @@ index a459cd0..62fef91 100644
  
          if(self.currentControls) {
              [self.currentControls endTextEntry];
-@@ -370,7 +370,7 @@
+@@ -370,7 +366,7 @@
                           }];
      } else {
          // End
@@ -3962,35 +4258,74 @@ index b010cc7..b09021e 100644
  
  
 diff --git a/src/Hooks/GridLayout.xm b/src/Hooks/GridLayout.xm
-index eff8fd2..6b2ede2 100644
+index eff8fd2..723d83a 100644
 --- a/src/Hooks/GridLayout.xm
 +++ b/src/Hooks/GridLayout.xm
-@@ -31,9 +31,9 @@ static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols,
- 	} else {
- 		// Usually 2x2, 4x2, 4x4, 4x6
- 		sizes.small = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols / 2), .height = ROUND_SHORT(rows / 3) };
+@@ -10,70 +10,13 @@
+ // Small macro to round to nearest short assuming x is positive
+ #define ROUND_SHORT(x) (short)(x + 0.5)
+ 
+-// Function to calculate the widget grid sizes to be appropriate for the amount of columns and rows
+-// Messy math
+-static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols, double rows, BOOL landscape) {
+-	struct SBHIconGridSizeClassSizes sizes = {};
+-	if([[ARITweakManager sharedInstance] isDeviceIPad]) {
+-		// Usually 1x1, 2x1, 2x2, 2x3
+-		if (landscape) {
+-			// Use rows to calculate widths and columns to calculate height since it is inverted
+-			sizes.small = (struct SBHIconGridSize) { .width = ROUND_SHORT(rows / 6), .height = ROUND_SHORT(cols / 4) };
+-			sizes.medium = (struct SBHIconGridSize) { .width = ROUND_SHORT(rows / 3), .height = ROUND_SHORT(cols / 4) };
+-			sizes.large = (struct SBHIconGridSize) { .width = ROUND_SHORT(rows / 3), .height = ROUND_SHORT(cols / 2) };
+-			sizes.extraLarge = (struct SBHIconGridSize) { .width = ROUND_SHORT(rows / 3), .height = ROUND_SHORT(cols / 1.5) };
+-		} else {
+-			sizes.small = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols / 4), .height = ROUND_SHORT(rows / 5) };
+-			sizes.medium = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols / 2), .height = ROUND_SHORT(rows / 5) };
+-			sizes.large = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols / 2), .height = ROUND_SHORT(rows / 3) };
+-			sizes.extraLarge = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols / 2), .height = ROUND_SHORT(rows / 1.5) };
+-		}
+-	} else {
+-		// Usually 2x2, 4x2, 4x4, 4x6
+-		sizes.small = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols / 2), .height = ROUND_SHORT(rows / 3) };
 -		sizes.medium = (struct SBHIconGridSize) { .width = cols, .height = ROUND_SHORT(rows / 3) };
 -		sizes.large = (struct SBHIconGridSize) { .width = cols, .height = ROUND_SHORT(rows * 2 / 3) };
 -		sizes.extraLarge = (struct SBHIconGridSize) { .width = cols, .height = rows };
-+		sizes.medium = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols), .height = ROUND_SHORT(rows / 3) };
-+		sizes.large = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols), .height = ROUND_SHORT(rows * 2 / 3) };
-+		sizes.extraLarge = (struct SBHIconGridSize) { .width = ROUND_SHORT(cols), .height = ROUND_SHORT(rows) };
- 	}
- 	return sizes;
- }
-@@ -59,8 +59,8 @@ static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols,
- 	NSUInteger rows = [manager intValueForKey:@"hs_rows" forListView:[self _atriaListView]];
+-	}
+-	return sizes;
+-}
+-
+ // List model hook
+ %hook SBIconListModel
+ %property (nonatomic, strong) NSString *_atriaLocation;
  
- 	// Update grid size
+-%new 
+-- (SBIconListView *)_atriaListView {
+-	return [[ARITweakManager sharedInstance].listViewModelMap objectForKey:self];
+-}
+-
+-%new
+-- (void)_atriaUpdateModelGridSizes {
+-	ARITweakManager *manager = [ARITweakManager sharedInstance];
+-	if([manager firmwareVersion] < 14 || !self._atriaLocation || !IsLocationRoot(self._atriaLocation)) return;
+-
+-	struct SBHIconGridSize gridSize = [self gridSize];
+-	// Get the number of columns and rows for the associated list view
+-	// This allows different pages to have differently sized widgets!
+-	NSUInteger cols = [manager intValueForKey:@"hs_columns" forListView:[self _atriaListView]];
+-	NSUInteger rows = [manager intValueForKey:@"hs_rows" forListView:[self _atriaListView]];
+-
+-	// Update grid size
 -	gridSize.height = rows;
 -	gridSize.width = cols;
-+	gridSize.height = ROUND_SHORT(rows);
-+	gridSize.width = ROUND_SHORT(cols);
- 	// setGridSize method only exists on iOS 15+, but the ivar exists on 14 too
- 	MSHookIvar<struct SBHIconGridSize>(self, "_gridSize") = gridSize;
- 
-@@ -73,7 +73,7 @@ static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols,
- 
+-	// setGridSize method only exists on iOS 15+, but the ivar exists on 14 too
+-	MSHookIvar<struct SBHIconGridSize>(self, "_gridSize") = gridSize;
+-
+-	// Update grid size class sizes
+-	if([manager boolValueForKey:@"dynamicWidgetSizing"]) {
+-		MSHookIvar<struct SBHIconGridSizeClassSizes>(self, "_gridSizeClassSizes") = 
+-			generateGridSizeClassSizes(cols, rows, UIInterfaceOrientationIsLandscape([ARITweakManager currentDeviceOrientation]));
+-	}
+-}
+-
  - (struct SBHIconGridSize)gridSize {
  	if(!self._atriaLocation) {
 -		struct SBHIconGridSize size = { .height = 0x7FFF, .width = 0x7FFF };
@@ -3998,21 +4333,109 @@ index eff8fd2..6b2ede2 100644
  		return size;
  	}
  	// If location is already set, size should have been modified as needed
-@@ -115,6 +115,14 @@ static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols,
- 	SBIcon *icon = [self iconAtCoordinate:co metrics:metrics];
- 	if([icon isKindOfClass:objc_getClass("SBWidgetIcon")] && IconListIsRoot(self)) {
- 		ARITweakManager *manager = [ARITweakManager sharedInstance];
-+
-+		CGFloat widgetOffsetX = [manager floatValueForKey:@"hs_widgetXOffset" forListView:self];
-+		CGFloat widgetOffsetY = [manager floatValueForKey:@"hs_widgetYOffset" forListView:self];
-+		// 没有主动调整小组件偏移时，直接沿用系统算出的原点。
-+		// 否则下面的自定义居中算法会与系统布局引擎产生偏差（组件越大偏差越大），
-+		// 解锁/返回桌面的图标动画会按错误的起点飞入，表现为从侧面斜飞进来。
-+		if(widgetOffsetX == 0 && widgetOffsetY == 0) return orig;
-+
- 		NSUInteger iconGridSizeClass = [icon gridSizeClass];
- 		// This is the actual widget icon display size
- 		CGSize iconImageSize = [self iconImageSizeForGridSizeClass:iconGridSizeClass];
+@@ -100,102 +43,11 @@ static struct SBHIconGridSizeClassSizes generateGridSizeClassSizes(double cols,
+ 
+ %end
+ 
+-// Version specific hooks for widget support
+-%group Widgets14
+-
+-%hook SBIconListView
+-
+-// Will crash on iOS 13 due to method signature changes and ARC trying to retain a non-object
+-// This hook is to center widgets in their available grid space. By default, they align with the left
+-// side of the space, which isn't desirable when the layout gets changed. This hook injects our own
+-// icon origin calculation method that is designed to work outside of the default layout.
+-- (CGPoint)originForIconAtCoordinate:(struct SBIconCoordinate)co metrics:(SBIconListViewLayoutMetrics *)metrics {
+-	CGPoint orig = %orig;
+-
+-	SBIcon *icon = [self iconAtCoordinate:co metrics:metrics];
+-	if([icon isKindOfClass:objc_getClass("SBWidgetIcon")] && IconListIsRoot(self)) {
+-		ARITweakManager *manager = [ARITweakManager sharedInstance];
+-		NSUInteger iconGridSizeClass = [icon gridSizeClass];
+-		// This is the actual widget icon display size
+-		CGSize iconImageSize = [self iconImageSizeForGridSizeClass:iconGridSizeClass];
+-		// Spacing between icons on the page
+-		CGSize iconSpacing = [self effectiveIconSpacing];
+-		// The width that a single icon will take up (plus spacing)
+-		CGFloat columnWidth = metrics.alignmentIconSize.width + iconSpacing.width;
+-
+-		// This is the space that we have available to center the widget in
+-		CGFloat spaceForWidget = columnWidth * [self iconGridSizeForClass:iconGridSizeClass].width;
+-		// Apple reordered the fields of the struct for iOS 16
+-		NSUInteger column = [manager firmwareVersion] >= 16 ? co.row : co.col;
+-		// Calculate horizontal space before the widget on the page (hence the column - 1)
+-		CGFloat spaceBeforeWidget = columnWidth * (column - 1) - iconSpacing.width / 2.0F;
+-		// Calculate icon origin using metrics and calculated spacing
+-		// Ensures the widget has equal horizontal spacing on both sides
+-		CGFloat originX = metrics.iconInsets.left + spaceBeforeWidget + (spaceForWidget - iconImageSize.width) / 2.0F;
+-
+-		return CGPointMake(
+-		 	originX + [manager floatValueForKey:@"hs_widgetXOffset" forListView:self],
+-			orig.y + [manager floatValueForKey:@"hs_widgetYOffset" forListView:self]
+-		);
+-	}
+-	return orig;
+-}
+-
+-// This hook forces the list view to respect the adjusted grid size of the widgets
+-- (struct SBHIconGridSize)iconGridSizeForClass:(NSUInteger)arg1 {
+-	if(!IconListIsRoot(self)) return %orig;
+-
+-	// Determine if we need to override the grid sizes
+-	// Size 0 is a 1x1 icon (not a widget)
+-	if(![[ARITweakManager sharedInstance] boolValueForKey:@"dynamicWidgetSizing"] || arg1 == 0) return %orig;
+-	return [[self model] gridSizeForGridSizeClass:arg1];
+-}
+-
+-%end
+-
+-%end
+-
+-%group IconListModelFix14
+-
+-%hook SBIconListModel
+-
+-// Unfortunately, the gridSizeForGridSizeClass method on SBIconListModel only exists on iOS 15+
+-// On iOS 14, we add this method to make it work across versions
+-
+-%new
+-- (struct SBHIconGridSize)gridSizeForGridSizeClass:(NSUInteger)arg1 {
+-	struct SBHIconGridSizeClassSizes gridSizes = [self iconGridSizeClassSizes];
+-	switch (arg1) {
+-		case 1:
+-		return gridSizes.small;
+-		case 2:
+-		return gridSizes.medium;
+-		case 3:
+-		return gridSizes.large;
+-		case 4:
+-		return gridSizes.extraLarge;
+-		default:
+-		struct SBHIconGridSize defaultSize;
+-		return defaultSize;
+-	}
+-}
+-
+-%end
+-
+-%end
+-
+ %ctor {
+ 	ARITweakManager *manager = [ARITweakManager sharedInstance];
+ 	if([manager isEnabled] && [manager boolValueForKey:@"layoutEnabled"]) {
+ 		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+ 
+         %init();
+-
+-		if([manager firmwareVersion] >= 14) {
+-			if([manager firmwareVersion] < 15) {
+-				%init(IconListModelFix14);
+-			}
+-			%init(Widgets14);
+-        }
+ 	}
+ }
 diff --git a/src/Hooks/Helper.xm b/src/Hooks/Helper.xm
 index 00e602e..3d5de72 100644
 --- a/src/Hooks/Helper.xm
@@ -4100,13 +4523,31 @@ index 00e602e..3d5de72 100644
          NSString *const zenithPath = @THEOS_PACKAGE_INSTALL_PREFIX "/Library/MobileSubstrate/DynamicLibraries/Zenith.dylib";
          if([[NSFileManager defaultManager] fileExistsAtPath:zenithPath]) {
 diff --git a/src/Hooks/IconView.xm b/src/Hooks/IconView.xm
-index 6597fba..f48b12f 100644
+index 6597fba..0a1262d 100644
 --- a/src/Hooks/IconView.xm
 +++ b/src/Hooks/IconView.xm
-@@ -45,23 +45,6 @@
- 	return orig;
- }
+@@ -27,167 +27,6 @@
+ @end
  
+ %hook SBIconView
+-// I hope this doesn't cause issues
+-%property (nonatomic, strong) SBIconListView *_atriaLastIconListView;
+-
+-- (CGFloat)iconContentScale {
+-	ARITweakManager *manager = [ARITweakManager sharedInstance];
+-	// Fixes folder icon bug on open
+-	CGFloat orig = %orig;
+-	if([self isFolderIcon]) {
+-		if(IconIsInRoot(self)) {
+-			return [manager floatValueForKey:@"hs_iconScale" forListView:self._atriaLastIconListView];
+-		} else if(IconIsInDock(self)) {
+-			return [manager floatValueForKey:@"dock_iconScale"];
+-		}
+-	}
+-
+-	return orig;
+-}
+-
 -- (void)setAllowsLabelArea:(BOOL)allows {
 -	ARITweakManager *manager = [ARITweakManager sharedInstance];
 -	if([manager isShyLabelsInstalled]) {
@@ -4124,37 +4565,88 @@ index 6597fba..f48b12f 100644
 -	%orig(allows);
 -}
 -
- - (void)_updateIconImageViewAnimated:(BOOL)arg1 {
- 	%orig(arg1);
- 	[self _atriaUpdateIconContentScale];
-@@ -121,15 +104,12 @@
- 		resize();
- 		CATransform3D to = self.layer.sublayerTransform;
- 		animation.toValue = [NSValue value:&to withObjCType:@encode(CATransform3D)];
+-- (void)_updateIconImageViewAnimated:(BOOL)arg1 {
+-	%orig(arg1);
+-	[self _atriaUpdateIconContentScale];
+-}
+-
+-- (void)setIconContentScale:(CGFloat)scale {
+-	%orig(scale);
+-	[self _atriaUpdateIconContentScale];
+-}
+-
+-%new
+-- (void)_atriaUpdateIconContentScale {
+-	// Reset icon content scale
+-	ARITweakManager *manager = [ARITweakManager sharedInstance];
+-	CATransform3D old = self.layer.sublayerTransform;
+-
+-	// Use containsString because we need to check for the suggestions location too
+-	BOOL inDock = IconIsInDock(self) || [self.location containsString:@"Floating"];
+-	if(!(inDock || IconIsInRoot(self) || (IconIsInFolder(self) && [manager boolValueForKey:@"scaleInsideFolders"]))) {
+-		if(old.m11 != 1 || old.m22 != 1) self.layer.sublayerTransform = CATransform3DMakeScale(1, 1, 1);
+-		return;
+-	}
+-
+-	CGFloat customScale = 1;
+-	BOOL isWidget = [self.icon isKindOfClass:objc_getClass("SBWidgetIcon")];
+-	if(isWidget) {
+-		customScale = [manager floatValueForKey:@"hs_widgetIconScale" forListView:self._atriaLastIconListView];
+-	} else {
+-		if(IconIsInRoot(self) || (IconIsInFolder(self) && [manager boolValueForKey:@"scaleInsideFolders"])) {
+-			customScale = [manager floatValueForKey:@"hs_iconScale" forListView:self._atriaLastIconListView];
+-		} else if(inDock) {
+-			customScale = [manager floatValueForKey:@"dock_iconScale" forListView:self._atriaLastIconListView];
+-		}
+-	}
+-
+-	// "Returns a transform that scales by (sx, sy, sz)."
+-	// By doing this, we essentially make sure that any icon animations
+-	// also respect our scaling (since sublayerTransform is set for our icon layer)
+-	if(old.m11 == customScale && old.m22 == customScale) return;
+-
+-	void (^resize)() = ^void() {
+-		self.layer.sublayerTransform = CATransform3DMakeScale(
+-			customScale,
+-			customScale,
+-			1);
+-	};
+-
+-	// Animate if in edit mode
+-	if([ARIEditManager sharedInstance].isEditing) {
+-		// Stupid Core Animation
+-		[CATransaction begin];
+-		[CATransaction setAnimationDuration:0.2f];
+-		// Setup animation to and from
+-		CATransform3D from = self.layer.sublayerTransform;
+-		CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"sublayerTransform"];
+-		animation.fromValue = [NSValue value:&from withObjCType:@encode(CATransform3D)];
+-		resize();
+-		CATransform3D to = self.layer.sublayerTransform;
+-		animation.toValue = [NSValue value:&to withObjCType:@encode(CATransform3D)];
 -		// Add completion handler (must be done before adding animation to layer)
 -		[CATransaction setCompletionBlock:^{ [self _atriaGenerateDropShadow:self.bounds]; }];
- 		// Add animation to layer and commit
- 		[self.layer addAnimation:animation forKey:animation.keyPath];
- 		[CATransaction commit];
- 	} else {
+-		// Add animation to layer and commit
+-		[self.layer addAnimation:animation forKey:animation.keyPath];
+-		[CATransaction commit];
+-	} else {
 -		// Resize and update drop shadow immediately
-+		// Resize immediately
- 		resize();
+-		resize();
 -		[self _atriaGenerateDropShadow:self.bounds];
- 	}
- }
- 
-@@ -137,57 +117,10 @@
- 	%orig;
- 	if(self.superview && [self.superview isKindOfClass:objc_getClass("SBIconListView")]) {
- 		self._atriaLastIconListView = (SBIconListView *)self.superview;
+-	}
+-}
+-
+-- (void)didMoveToSuperview {
+-	%orig;
+-	if(self.superview && [self.superview isKindOfClass:objc_getClass("SBIconListView")]) {
+-		self._atriaLastIconListView = (SBIconListView *)self.superview;
 -		// Update allowsLabelArea
 -		[self setAllowsLabelArea:self.allowsLabelArea];
- 	}
+-	}
 -	[self _atriaSetupDropShadow:[[[objc_getClass("SBIconController") sharedInstance] iconManager] isEditing]];
- 	[self _updateIconImageViewAnimated:YES];
- }
- 
+-	[self _updateIconImageViewAnimated:YES];
+-}
+-
 -- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
 -	[self _atriaSetupDropShadow:editing];
 -	%orig(editing, animated);
@@ -4202,7 +4694,7 @@ index 6597fba..f48b12f 100644
  %new
  - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type {
  	SBSApplicationShortcutItem *item = [[objc_getClass("SBSApplicationShortcutItem") alloc] init];
-@@ -198,7 +131,29 @@
+@@ -198,7 +37,29 @@
  	UIImage *image = [UIImage systemImageNamed:@"gear"];
  
  	// Tint our image
@@ -4233,7 +4725,7 @@ index 6597fba..f48b12f 100644
  
  	// Get data respresentation of the image
  	NSData *iconData = UIImagePNGRepresentation(image);
-@@ -214,19 +169,16 @@
+@@ -214,19 +75,16 @@
  	// Add shortcut item to activate editor
  	// I found this really cool gist to allow me to do this, tyvm to the author <3
  	// Link: https://gist.github.com/MTACS/8e26c4f430b27d6a1d2a11f0a828f250
@@ -4258,7 +4750,7 @@ index 6597fba..f48b12f 100644
  	}
  
  	return items;
-@@ -244,48 +196,6 @@
+@@ -244,48 +102,6 @@
  
  %end
  
@@ -4308,10 +4800,10 @@ index 6597fba..f48b12f 100644
  	if([[ARITweakManager sharedInstance] isEnabled]) {
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
 diff --git a/src/Hooks/MainLayout.xm b/src/Hooks/MainLayout.xm
-index 4af459b..2293602 100644
+index 4af459b..d9097c8 100644
 --- a/src/Hooks/MainLayout.xm
 +++ b/src/Hooks/MainLayout.xm
-@@ -5,11 +5,6 @@
+@@ -5,43 +5,26 @@
  
  #import "Shared.h"
  #import "../Manager/ARITweakManager.h"
@@ -4320,10 +4812,11 @@ index 4af459b..2293602 100644
 -#import "../UI/Label/ARIPageLabelView.h"
 -#import "../UI/Label/ARIWelcomeLabelView.h"
 -#import "../UI/ARIBackgroundView.h"
+-
+-static BOOL didLaunchSB = NO;
  
- static BOOL didLaunchSB = NO;
- 
-@@ -18,18 +13,10 @@ static BOOL didLaunchSB = NO;
+ @interface SBHDefaultIconListLayoutProvider : NSObject
+ - (SBIconListFlowExtendedLayout *)layoutForIconLocation:(NSString *)location;
  @end
  
  %hook SBIconListView
@@ -4342,7 +4835,19 @@ index 4af459b..2293602 100644
  - (SBIconListFlowExtendedLayout *)layout {
  	SBIconListFlowExtendedLayout *orig = %orig;
  
-@@ -70,21 +57,6 @@ static BOOL didLaunchSB = NO;
+ 	SBIconListModel *model = [self model];
+ 	ARITweakManager *manager = [ARITweakManager sharedInstance];
+  	if(!model._atriaLocation) model._atriaLocation = self.iconLocation;
+- 	[manager.listViewModelMap setObject:self forKey:model];
+ 
+ 	if(self._originalLayout != orig || self._atriaNeedsLayout) {
+ 		self._originalLayout = orig;
+ 		[self _atriaUpdateLayoutCache];
+-		[model _atriaUpdateModelGridSizes];
+ 		self._atriaNeedsLayout = NO;
+ 	}
+ 
+@@ -70,57 +53,29 @@ static BOOL didLaunchSB = NO;
  		// This helps prevent unnecessary work, and additionally prevents issues related to the page reordering view
  		if([self.icons count] == 0) return;
  
@@ -4364,7 +4869,26 @@ index 4af459b..2293602 100644
  		// Per-page layout requires copying this object
  		SBIconListGridLayoutConfiguration *config = [orig.layoutConfiguration copy];
  
-@@ -111,8 +83,7 @@ static BOOL didLaunchSB = NO;
+-		NSUInteger cols = [manager intValueForKey:@"hs_columns" forListView:self];
+-		NSUInteger rows = [manager intValueForKey:@"hs_rows" forListView:self];
+-
+-		// Set number of columns/rows, inverting for landscape
+-		[config setNumberOfPortraitColumns:cols];
+-		[config setNumberOfPortraitRows:rows];
+-		[config setNumberOfLandscapeColumns:rows];
+-		[config setNumberOfLandscapeRows:cols];
+-
+ 		// Offset moves the whole page
+ 		CGFloat topOffset = [manager floatValueForKey:@"hs_offset_top" forListView:self];
+-		CGFloat leftOffset = [manager floatValueForKey:@"hs_offset_left" forListView:self];
+ 
+ 		// Insets
+ 		CGFloat topInset = [manager floatValueForKey:@"hs_inset_top" forListView:self];
+ 		CGFloat bottomInset = [manager floatValueForKey:@"hs_inset_bottom" forListView:self];
+-		CGFloat leftInset = [manager floatValueForKey:@"hs_inset_left" forListView:self];
+-		CGFloat rightInset = [manager floatValueForKey:@"hs_inset_right" forListView:self];
+ 
+ 		// Spacing is actually just inset adjustments that give the use the illusion of change
  		CGFloat spaceX = [manager floatValueForKey:@"hs_spacing_x" forListView:self];
  		CGFloat spaceY = [manager floatValueForKey:@"hs_spacing_y" forListView:self];
  
@@ -4374,7 +4898,29 @@ index 4af459b..2293602 100644
  
  		// Set layout insets
  		UIEdgeInsets origPortrait = config.portraitLayoutInsets;
-@@ -145,47 +116,6 @@ static BOOL didLaunchSB = NO;
+ 		UIEdgeInsets portraitInsets = UIEdgeInsetsMake(
+ 			origPortrait.top + topInset + topOffset,
+-			origPortrait.left + leftInset + leftOffset,
++			origPortrait.left,
+ 			origPortrait.bottom + bottomInset - topOffset,
+-			origPortrait.right + rightInset - leftOffset
++			origPortrait.right
+ 		);
+ 		// Make final insets with adjustments for icon spacing
+ 		[config setPortraitLayoutInsets:UIEdgeInsetsMake(
+@@ -134,9 +89,9 @@ static BOOL didLaunchSB = NO;
+ 		UIEdgeInsets origLandscape = config.landscapeLayoutInsets;
+ 		UIEdgeInsets landscapeInsets = UIEdgeInsetsMake(
+ 			origLandscape.top + topInset + topOffset,
+-			origLandscape.left + leftInset + leftOffset,
++			origLandscape.left,
+ 			origLandscape.bottom + bottomInset - topOffset,
+-			origLandscape.right + rightInset - leftOffset
++			origLandscape.right
+ 		);
+ 		[config setLandscapeLayoutInsets:UIEdgeInsetsMake(
+ 			landscapeInsets.top - spaceY / 2,
+@@ -145,47 +100,6 @@ static BOOL didLaunchSB = NO;
  			landscapeInsets.right - spaceX / 2
  		)];
  
@@ -4422,21 +4968,168 @@ index 4af459b..2293602 100644
  		// Create a new flow layout with our modified (and copied) configuration
  		// layoutConfiguration is readonly on SBIconListFlowExtendedLayout
  		if([manager firmwareVersion] >= 14) {
-@@ -200,9 +130,6 @@ static BOOL didLaunchSB = NO;
- 		NSUInteger cols = [manager intValueForKey:@"dock_columns"];
- 		NSUInteger rows = [manager intValueForKey:@"dock_rows"];
- 
+@@ -195,36 +109,15 @@ static BOOL didLaunchSB = NO;
+ 			self._atriaCachedLayout = [[objc_getClass("SBIconListFlowLayout") alloc] initWithLayoutConfiguration:config];
+ 		}
+ 	} else if(IconListIsDock(self)) {
+-		SBIconListGridLayoutConfiguration *config = orig.layoutConfiguration;
+-
+-		NSUInteger cols = [manager intValueForKey:@"dock_columns"];
+-		NSUInteger rows = [manager intValueForKey:@"dock_rows"];
+-
 -		// Disable dock
 -		if([manager boolValueForKey:@"disableDock"]) cols = rows = 0;
 -
- 		[config setNumberOfPortraitColumns:cols];
- 		[config setNumberOfPortraitRows:rows];
- 		// Flip for landscape
+-		[config setNumberOfPortraitColumns:cols];
+-		[config setNumberOfPortraitRows:rows];
+-		// Flip for landscape
+-		[config setNumberOfLandscapeColumns:rows];
+-		[config setNumberOfLandscapeRows:cols];
+-
+-		if([manager firmwareVersion] >= 14) {
+-			self.additionalLayoutInsets = UIEdgeInsetsMake(
+-				[manager floatValueForKey:@"dock_inset_top"],
+-				[manager floatValueForKey:@"dock_inset_left"],
+-				[manager floatValueForKey:@"dock_inset_bottom"],
+-				[manager floatValueForKey:@"dock_inset_right"]
+-			);
+-		} else {
++		// 程序坞的行列数、四边边距与纵向间距均已移除，
++		// 仅保留图标横向间距。其余沿用系统原生布局。
++		if([manager firmwareVersion] < 14) {
+ 			CGFloat spaceX = [manager floatValueForKey:@"dock_spacing_x"];
+-			CGFloat spaceY = [manager floatValueForKey:@"dock_spacing_y"];
+-
+ 			self.layoutInsets = UIEdgeInsetsMake(
+-				[manager floatValueForKey:@"dock_inset_top"] - spaceY / 2,
+-				[manager floatValueForKey:@"dock_inset_left"] - spaceX / 2,
+-				[manager floatValueForKey:@"dock_inset_bottom"] - spaceY / 2,
+-				[manager floatValueForKey:@"dock_inset_right"] - spaceX / 2
++				0,
++				0 - spaceX / 2,
++				0,
++				0 - spaceX / 2
+ 			);
+ 		}
+ 
+@@ -240,10 +133,9 @@ static BOOL didLaunchSB = NO;
+ 	ARITweakManager *manager = [ARITweakManager sharedInstance];
+ 	if([manager firmwareVersion] >= 14 && IconListIsDock(self)) {
+ 		CGFloat spaceX = [manager floatValueForKey:@"dock_spacing_x"];
+-		CGFloat spaceY = [manager floatValueForKey:@"dock_spacing_y"];
+ 		// I divide by 2 to keep it consistent with behavior of root
+ 		// Root icon spacing is managed by adjusting insets, since that is what works
+-		return CGSizeMake(spacing.width + spaceX / 2, spacing.height + spaceY / 2);
++		return CGSizeMake(spacing.width + spaceX / 2, spacing.height);
+ 	}
+ 	return spacing;
+ }
+@@ -258,48 +150,6 @@ static BOOL didLaunchSB = NO;
+ 
+ %end
+ 
+-%hook SBIconController
+-
+-- (void)viewWillAppear:(BOOL)animated {
+-	%orig;
+-	didLaunchSB = YES;
+-}
+-
+-%end
+-
+-// Layout provider hook
+-%hook SBHDefaultIconListLayoutProvider
+-
+-- (SBIconListFlowExtendedLayout *)layoutForIconLocation:(NSString *)location {
+-	SBIconListFlowExtendedLayout *orig = %orig;
+-	// We override the original class for root, unless we are the subclass
+-	ARITweakManager *manager = [ARITweakManager sharedInstance];
+-	if(IsLocationRoot(location) && ![self isMemberOfClass:objc_getClass("ARIAppLibraryIconListLayoutProvider")]) {
+-		NSUInteger cols = [manager intValueForKey:@"hs_columns"];
+-		NSUInteger rows = [manager intValueForKey:@"hs_rows"];
+-
+-		// By setting the cols and rows to 0x7F (127) after SpringBoard launches, it fixes a bug 
+-		// where icons would disappear before they scroll visually offscreen on iOS 14.
+-		if (didLaunchSB) cols = rows = 0x7F;
+-
+-		[orig.layoutConfiguration setNumberOfPortraitColumns:cols];
+-		[orig.layoutConfiguration setNumberOfPortraitRows:rows];
+-		[orig.layoutConfiguration setNumberOfLandscapeColumns:rows];
+-		[orig.layoutConfiguration setNumberOfLandscapeRows:cols];
+-	} else if(IsLocationDock(location)) {
+-		// Fix dock layout. This is needed, do not remove!
+-		NSUInteger cols = [manager intValueForKey:@"dock_columns"];
+-		NSUInteger rows = [manager intValueForKey:@"dock_rows"];
+-		[orig.layoutConfiguration setNumberOfPortraitColumns:cols];
+-		[orig.layoutConfiguration setNumberOfPortraitRows:rows];
+-		[orig.layoutConfiguration setNumberOfLandscapeColumns:rows];
+-		[orig.layoutConfiguration setNumberOfLandscapeRows:cols];
+-	}
+-	return orig;
+-}
+-
+-%end
+-
+ static void preferencesChanged() {
+     [[ARITweakManager sharedInstance] updateLayoutForRoot:YES forDock:YES animated:YES];
+ }
+diff --git a/src/Hooks/PageDots.xm b/src/Hooks/PageDots.xm
+index abd56ae..467684d 100644
+--- a/src/Hooks/PageDots.xm
++++ b/src/Hooks/PageDots.xm
+@@ -23,7 +23,6 @@
+     ARITweakManager *manager = [ARITweakManager sharedInstance];
+ 	UIView *pageControl = [manager firmwareVersion] >= 16 ? self.scrollAccessoryView : self.pageControl;	
+     CGRect newFrame = pageControl.frame;
+-	newFrame.origin.x += [manager floatValueForKey:@"pagedot_offsetX"];
+     newFrame.origin.y += [manager floatValueForKey:@"pagedot_offsetY"];
+ 	pageControl.frame = newFrame;
+ }
+diff --git a/src/Manager/ARIEditManager.h b/src/Manager/ARIEditManager.h
+index 6afa66c..12bd521 100644
+--- a/src/Manager/ARIEditManager.h
++++ b/src/Manager/ARIEditManager.h
+@@ -16,7 +16,6 @@
+ @property (nonatomic, readonly, assign) BOOL singleListMode;
+ - (void)toggleEditView:(BOOL)toggle withTargetLocation:(NSString *)targetLoc;
+ - (NSMutableArray *)currentValidSettings;
+-- (void)setDockLayoutQueued;
+ - (void)toggleSingleListMode;
+ - (void)presentEditAlert;
+ - (SBIconListView *)currentIconListViewIfSinglePage;
 diff --git a/src/Manager/ARIEditManager.m b/src/Manager/ARIEditManager.m
-index 1913330..ee05f22 100644
+index 1913330..a6cd01c 100644
 --- a/src/Manager/ARIEditManager.m
 +++ b/src/Manager/ARIEditManager.m
-@@ -97,17 +97,13 @@
+@@ -6,7 +6,6 @@
+ 
+ @implementation ARIEditManager {
+     BOOL _isEditing;
+-    BOOL _queueDockLayout;
+     BOOL _singleList;
+     NSString *_editingLocation;
+     SBIconListView *_current;
+@@ -70,12 +69,6 @@
+         _isEditing = NO;
+         _editingLocation = nil;
+ 
+-        // Finish layout
+-        if(_queueDockLayout) {
+-            [[ARITweakManager sharedInstance] relayoutEntireIconModel];
+-            _queueDockLayout = NO;
+-        }
+-
+         [UIView animateWithDuration:0.15f
+             delay:0.0f
+             options:UIViewAnimationOptionCurveEaseIn
+@@ -90,24 +83,16 @@
+     }
+ }
+ 
+-- (void)setDockLayoutQueued {
+-    _queueDockLayout = YES;
+-}
+-
  - (void)presentEditAlert {
      ARITweakManager *manager = [ARITweakManager sharedInstance];
      UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Atria"
@@ -4460,31 +5153,61 @@ index 1913330..ee05f22 100644
                                              handler:^(UIAlertAction *action){
                                              }]];
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
-index 8749041..7bff79b 100644
+index 8749041..2b4ee8b 100644
 --- a/src/Manager/ARITweakManager.h
 +++ b/src/Manager/ARITweakManager.h
-@@ -43,7 +43,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -41,11 +41,6 @@ typedef struct SBRootFolderViewMetrics {
+     struct CGRect _field11;
+ } SBRootFolderViewMetrics;
  
- @interface SBIcon : NSObject
- - (NSUInteger)gridSizeClass;
+-@interface SBIcon : NSObject
+-- (NSUInteger)gridSizeClass;
 -- (id)application;
- @end
- 
+-@end
+-
  @interface SBDockView : UIView
-@@ -76,12 +75,8 @@ typedef struct SBRootFolderViewMetrics {
+ - (void)setBackgroundAlpha:(CGFloat)alpha;
+ - (void)_atriaUpdateDockForSettingsChanged;
+@@ -55,11 +50,7 @@ typedef struct SBRootFolderViewMetrics {
+ @interface SBIconListModel : NSObject
+ @property (nonatomic, strong) NSString *_atriaLocation;
+ @property (nonatomic, strong) id folder;
+-- (SBIconListView *)_atriaListView;
+-- (void)_atriaUpdateModelGridSizes;
+ - (struct SBHIconGridSize)gridSize;
+-- (struct SBHIconGridSizeClassSizes)iconGridSizeClassSizes;          // iOS 14
+-- (struct SBHIconGridSize)gridSizeForGridSizeClass:(NSUInteger)arg1; // iOS 15+
+ - (NSUInteger)maxNumberOfIcons;
+ - (NSArray *)icons;
+ - (void)layout;
+@@ -67,7 +58,6 @@ typedef struct SBRootFolderViewMetrics {
+ 
+ @class SBSApplicationShortcutItem;
+ @interface SBIconView : UIView
+-@property (nonatomic, strong) SBIconListView *_atriaLastIconListView;
+ @property (nonatomic, strong) id icon;
+ @property (nonatomic, strong) UIView *contentContainerView;
+ @property (nonatomic, assign) BOOL allowsLabelArea;
+@@ -75,18 +65,11 @@ typedef struct SBRootFolderViewMetrics {
+ @property (nonatomic, assign) CGFloat iconLabelAlpha;
  @property (nonatomic, assign, getter=isIconContentScalingEnabled) BOOL iconContentScalingEnabled;
  @property (nonatomic, strong) NSString *location;
- - (void)_updateIconImageViewAnimated:(BOOL)arg1;
+-- (void)_updateIconImageViewAnimated:(BOOL)arg1;
 -- (void)_updateLabelArea;
  - (BOOL)isFolderIcon;
 -- (CGFloat)iconImageCornerRadius;
- - (void)_atriaUpdateIconContentScale;
+-- (void)_atriaUpdateIconContentScale;
 -- (void)_atriaSetupDropShadow:(BOOL)isEditing;
 -- (void)_atriaGenerateDropShadow:(CGRect)rect;
  - (SBSApplicationShortcutItem *)_atriaGenerateItemWithTitle:(NSString *)title type:(NSString *)type;
  @end
  
-@@ -106,8 +101,6 @@ typedef struct SBRootFolderViewMetrics {
+ @interface SBIconListGridLayoutConfiguration : NSObject
+-@property (nonatomic, readwrite, assign) struct SBHIconGridSizeClassSizes iconGridSizeClassSizes;
+ @property (nonatomic, readwrite, assign) NSUInteger numberOfPortraitColumns;
+ @property (nonatomic, readwrite, assign) NSUInteger numberOfPortraitRows;
+ @property (nonatomic, readwrite, assign) NSUInteger numberOfLandscapeColumns;
+@@ -106,8 +89,6 @@ typedef struct SBRootFolderViewMetrics {
  @end
  
  @class SBIcon;
@@ -4493,7 +5216,7 @@ index 8749041..7bff79b 100644
  @interface SBIconListView : UIView
  @property (nonatomic, assign, getter=isEditing, nonatomic) BOOL editing;
  @property (nonatomic, strong) NSString *iconLocation;
-@@ -116,21 +109,14 @@ typedef struct SBRootFolderViewMetrics {
+@@ -116,27 +97,13 @@ typedef struct SBRootFolderViewMetrics {
  @property (nonatomic, assign) UIEdgeInsets additionalLayoutInsets; // iOS 14+
  @property (nonatomic, assign) UIEdgeInsets layoutInsets;           // iOS 13
  
@@ -4508,14 +5231,20 @@ index 8749041..7bff79b 100644
  
  - (NSArray<SBIconView *> *)icons;
 -- (SBIconListViewLayoutMetrics *)layoutMetrics;
- - (SBIcon *)iconAtCoordinate:(struct SBIconCoordinate)co metrics:(id)metrics;
+-- (SBIcon *)iconAtCoordinate:(struct SBIconCoordinate)co metrics:(id)metrics;
 -- (struct SBIconCoordinate)coordinateForIcon:(id)icon;
- - (CGPoint)originForIconAtCoordinate:(struct SBIconCoordinate)co metrics:(id)metrics;
+-- (CGPoint)originForIconAtCoordinate:(struct SBIconCoordinate)co metrics:(id)metrics;
 -- (CGPoint)centerForIconCoordinate:(struct SBIconCoordinate)co metrics:(id)metrics;
- - (CGSize)iconImageSizeForGridSizeClass:(NSUInteger)size;
- - (CGSize)effectiveIconSpacing;
+-- (CGSize)iconImageSizeForGridSizeClass:(NSUInteger)size;
+-- (CGSize)effectiveIconSpacing;
  - (SBIconListModel *)model;
-@@ -157,7 +143,6 @@ typedef struct SBRootFolderViewMetrics {
+-- (struct SBHIconGridSize)iconGridSizeForClass:(NSUInteger)cls;
+-- (void)setVisibleColumnRange:(NSRange)range;
+-- (void)setVisibleRowRange:(NSRange)range;
+ - (void)layoutIconsNow;
+ @end
+ 
+@@ -157,7 +124,6 @@ typedef struct SBRootFolderViewMetrics {
  @interface SBHIconManager : NSObject
  @property (nonatomic, assign, getter=isEditing) BOOL editing;
  - (SBIconListModel *)iconModel;
@@ -4523,7 +5252,15 @@ index 8749041..7bff79b 100644
  @end
  
  @interface SBFloatingDockView : UIView
-@@ -183,7 +168,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -167,7 +133,6 @@ typedef struct SBRootFolderViewMetrics {
+ 
+ @interface SBFloatingDockViewController : UIViewController
+ - (SBFloatingDockView *)dockView;
+-- (SBIconView *)libraryPodIconView;
+ @end
+ 
+ @interface SBFloatingDockController : NSObject
+@@ -183,7 +148,6 @@ typedef struct SBRootFolderViewMetrics {
  @end
  
  @interface SBIconController : UIViewController
@@ -4531,8 +5268,11 @@ index 8749041..7bff79b 100644
  - (SBRootFolderController *)_rootFolderController;
  - (SBHIconManager *)iconManager;
  + (SBIconController *)sharedInstance;
-@@ -195,7 +179,6 @@ typedef struct SBRootFolderViewMetrics {
- @property (nonatomic, readonly, strong) NSMapTable *listViewModelMap;
+@@ -192,10 +156,8 @@ typedef struct SBRootFolderViewMetrics {
+ @interface ARITweakManager : NSObject
+ @property (nonatomic, readonly, assign, getter=isEnabled) BOOL enabled;
+ @property (nonatomic, readonly, strong) NSUserDefaults *preferences;
+-@property (nonatomic, readonly, strong) NSMapTable *listViewModelMap;
  @property (nonatomic, readonly, assign) NSUInteger firmwareVersion;
  @property (nonatomic, readonly, assign, getter=isDeviceIPad) BOOL deviceIPad;
 -@property (nonatomic, readonly, assign, getter=isShyLabelsInstalled) BOOL shyLabelsInstalled;
@@ -4540,11 +5280,14 @@ index 8749041..7bff79b 100644
  - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated;
  - (void)relayoutEntireIconModel;
 diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
-index 9f08730..e25d382 100644
+index 9f08730..e6537e6 100644
 --- a/src/Manager/ARITweakManager.m
 +++ b/src/Manager/ARITweakManager.m
-@@ -18,14 +18,12 @@
-     NSMapTable *_listViewModelMap;
+@@ -15,18 +15,14 @@
+     NSUserDefaults *_preferences;
+     NSMutableOrderedSet<NSString *> *_orderedSettingKeys;
+     NSMutableDictionary<NSString *, ARIOption *> *_optionsRegistry;
+-    NSMapTable *_listViewModelMap;
      NSUInteger _firmwareVersion;
      BOOL _deviceIPad;
 -    BOOL _shyLabelsInstalled;
@@ -4555,10 +5298,11 @@ index 9f08730..e25d382 100644
  @synthesize firmwareVersion = _firmwareVersion;
  @synthesize deviceIPad = _deviceIPad;
 -@synthesize shyLabelsInstalled = _shyLabelsInstalled;
- @synthesize listViewModelMap = _listViewModelMap;
+-@synthesize listViewModelMap = _listViewModelMap;
  
  // Shared instance and init methods
-@@ -37,8 +35,6 @@
+ 
+@@ -37,12 +33,9 @@
          UIDevice *device = [UIDevice currentDevice];
          _firmwareVersion = [[[device systemVersion] componentsSeparatedByString:@"."][0] integerValue];
          _deviceIPad = [[device model] hasPrefix:@"iPad"];
@@ -4567,7 +5311,11 @@ index 9f08730..e25d382 100644
          // NSUserDefaults to get what values the user set
          _preferences = [[NSUserDefaults alloc] initWithSuiteName:@"me.lau.AtriaPrefs"];
          _enabled = [_preferences objectForKey:@"enabled"] ? [[_preferences objectForKey:@"enabled"] boolValue] : YES;
-@@ -51,66 +47,21 @@
+-        _listViewModelMap = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsWeakMemory valueOptions:NSPointerFunctionsWeakMemory];
+ 
+         // Migrate old settings
+         [self _migrateSettings];
+@@ -51,281 +44,63 @@
          _orderedSettingKeys = [[NSMutableOrderedSet alloc] initWithCapacity:50];
          _optionsRegistry = [[NSMutableDictionary alloc] init];
  
@@ -4631,13 +5379,16 @@ index 9f08730..e25d382 100644
 -                 defaultValue:@(YES)
 -                   lowerLimit:0
 -                   upperLimit:0];
-         [self _registerOption:@"scaleInsideFolders"
-                   translation:nil
-                  defaultValue:@(YES)
-@@ -121,90 +72,74 @@
-                  defaultValue:@(YES)
-                    lowerLimit:0
-                    upperLimit:0];
+-        [self _registerOption:@"scaleInsideFolders"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
+-        [self _registerOption:@"dynamicWidgetSizing"
+-                  translation:nil
+-                 defaultValue:@(YES)
+-                   lowerLimit:0
+-                   upperLimit:0];
 -        [self _registerOption:@"floatingDockAppLibrary"
 -                  translation:nil
 -                 defaultValue:@(YES)
@@ -4654,33 +5405,31 @@ index 9f08730..e25d382 100644
 -                   lowerLimit:0
 -                   upperLimit:0];
 -
-         // Homescreen
-         [self _registerOption:@"hs_rows"
+-        // Homescreen
+-        [self _registerOption:@"hs_rows"
 -                  translation:@"Rows"
-+                  translation:@"行数"
-                  defaultValue:@(6)
-                    lowerLimit:2.0F
-                    upperLimit:20.0F];
-         [self _registerOption:@"hs_columns"
+-                 defaultValue:@(6)
+-                   lowerLimit:2.0F
+-                   upperLimit:20.0F];
+-        [self _registerOption:@"hs_columns"
 -                  translation:@"Columns"
-+                  translation:@"列数"
-                  defaultValue:@(4)
-                    lowerLimit:2.0F
-                    upperLimit:20.0F];
-         [self _registerOption:@"hs_iconScale"
+-                 defaultValue:@(4)
+-                   lowerLimit:2.0F
+-                   upperLimit:20.0F];
+-        [self _registerOption:@"hs_iconScale"
 -                  translation:@"Icon Scale"
-+                  translation:@"图标缩放"
-                  defaultValue:@(1.0)
-                    lowerLimit:0.01F
-                    upperLimit:2.0F];
-         [self _registerOption:@"hs_widgetIconScale"
+-                 defaultValue:@(1.0)
+-                   lowerLimit:0.01F
+-                   upperLimit:2.0F];
+-        [self _registerOption:@"hs_widgetIconScale"
 -                  translation:@"Widget Scale"
-+                  translation:@"小组件缩放"
-                  defaultValue:@(1.0)
-                    lowerLimit:0.01F
-                    upperLimit:3.0F];
-         [self _registerOption:@"hs_spacing_x"
+-                 defaultValue:@(1.0)
+-                   lowerLimit:0.01F
+-                   upperLimit:3.0F];
+-        [self _registerOption:@"hs_spacing_x"
 -                  translation:@"Icon Spacing X"
++                        // Homescreen
++                                        [self _registerOption:@"hs_spacing_x"
 +                  translation:@"图标横向间距"
                   defaultValue:@(0)
                     lowerLimit:-100.0F
@@ -4693,110 +5442,103 @@ index 9f08730..e25d382 100644
                     upperLimit:100.0F];
          [self _registerOption:@"hs_inset_top"
 -                  translation:@"Top Inset"
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-        [self _registerOption:@"hs_inset_left"
+-                  translation:@"Left Inset"
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-        [self _registerOption:@"hs_inset_bottom"
+-                  translation:@"Bottom Inset"
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-        [self _registerOption:@"hs_inset_right"
+-                  translation:@"Right Inset"
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-        [self _registerOption:@"hs_offset_top"
+-                  translation:@"Page Top Offset"
 +                  translation:@"顶部边距"
                   defaultValue:@(0)
                     lowerLimit:-200.0F
                     upperLimit:200.0F];
-         [self _registerOption:@"hs_inset_left"
--                  translation:@"Left Inset"
-+                  translation:@"左侧边距"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
-         [self _registerOption:@"hs_inset_bottom"
--                  translation:@"Bottom Inset"
+-        [self _registerOption:@"hs_offset_left"
+-                  translation:@"Page Left Offset"
++                [self _registerOption:@"hs_inset_bottom"
 +                  translation:@"底部边距"
                   defaultValue:@(0)
                     lowerLimit:-200.0F
                     upperLimit:200.0F];
-         [self _registerOption:@"hs_inset_right"
--                  translation:@"Right Inset"
-+                  translation:@"右侧边距"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
-         [self _registerOption:@"hs_offset_top"
--                  translation:@"Page Top Offset"
+-        [self _registerOption:@"hs_widgetXOffset"
+-                  translation:@"Widget X Offset"
++                [self _registerOption:@"hs_offset_top"
 +                  translation:@"页面顶部偏移"
                   defaultValue:@(0)
                     lowerLimit:-200.0F
                     upperLimit:200.0F];
-         [self _registerOption:@"hs_offset_left"
--                  translation:@"Page Left Offset"
-+                  translation:@"页面左侧偏移"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
-         [self _registerOption:@"hs_widgetXOffset"
--                  translation:@"Widget X Offset"
-+                  translation:@"小组件 X 偏移"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
-         [self _registerOption:@"hs_widgetYOffset"
+-        [self _registerOption:@"hs_widgetYOffset"
 -                  translation:@"Widget Y Offset"
-+                  translation:@"小组件 Y 偏移"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
-@@ -213,119 +148,64 @@
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-
+-        // Dock options
++                                // Dock options
          // For some reason, on iOS 15 only (not 13-14 or 16+), calling +isFloatingDockSupported leads to a respring loop.
          // Once SpringBoard launches, this option will be re-registered to adjust the default value if floating dock is enabled.
-         [self _registerOption:@"dock_columns"
+-        [self _registerOption:@"dock_columns"
 -                  translation:@"Columns"
-+                  translation:@"列数"
-                  defaultValue:@(4)
-                    lowerLimit:2.0F
-                    upperLimit:20.0F];
-         [self _registerOption:@"dock_rows"
+-                 defaultValue:@(4)
+-                   lowerLimit:2.0F
+-                   upperLimit:20.0F];
+-        [self _registerOption:@"dock_rows"
 -                  translation:@"Rows"
-+                  translation:@"行数"
-                  defaultValue:@(1)
-                    lowerLimit:1.0F
-                    upperLimit:5.0F];
-         [self _registerOption:@"dock_iconScale"
+-                 defaultValue:@(1)
+-                   lowerLimit:1.0F
+-                   upperLimit:5.0F];
+-        [self _registerOption:@"dock_iconScale"
 -                  translation:@"Icon Scale"
-+                  translation:@"图标缩放"
-                  defaultValue:@(1)
-                    lowerLimit:0.01F
-                    upperLimit:2.0F];
-         [self _registerOption:@"dock_bg"
+-                 defaultValue:@(1)
+-                   lowerLimit:0.01F
+-                   upperLimit:2.0F];
+-        [self _registerOption:@"dock_bg"
 -                  translation:@"Background Alpha"
++                                [self _registerOption:@"dock_bg"
 +                  translation:@"背景透明度"
                   defaultValue:@(1)
                     lowerLimit:0.0F
                     upperLimit:1.0F];
          [self _registerOption:@"dock_spacing_x"
 -                  translation:@"Icon Spacing X"
+-                 defaultValue:@(0)
+-                   lowerLimit:-100.0F
+-                   upperLimit:100.0F];
+-        [self _registerOption:@"dock_spacing_y"
+-                  translation:@"Icon Spacing Y"
 +                  translation:@"图标横向间距"
                   defaultValue:@(0)
                     lowerLimit:-100.0F
                     upperLimit:100.0F];
-         [self _registerOption:@"dock_spacing_y"
--                  translation:@"Icon Spacing Y"
-+                  translation:@"图标纵向间距"
-                  defaultValue:@(0)
-                    lowerLimit:-100.0F
-                    upperLimit:100.0F];
-         [self _registerOption:@"dock_inset_top"
+-        [self _registerOption:@"dock_inset_top"
 -                  translation:@"Top Inset"
-+                  translation:@"顶部边距"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
-         [self _registerOption:@"dock_inset_left"
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-        [self _registerOption:@"dock_inset_left"
 -                  translation:@"Left Inset"
-+                  translation:@"左侧边距"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
-         [self _registerOption:@"dock_inset_bottom"
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-        [self _registerOption:@"dock_inset_bottom"
 -                  translation:@"Bottom Inset"
-+                  translation:@"底部边距"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
-         [self _registerOption:@"dock_inset_right"
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-        [self _registerOption:@"dock_inset_right"
 -                  translation:@"Right Inset"
 -                 defaultValue:@(0)
 -                   lowerLimit:-200.0F
@@ -4815,11 +5557,10 @@ index 9f08730..e25d382 100644
 -                   upperLimit:200.0F];
 -        [self _registerOption:@"label_inset_top"
 -                  translation:@"Vertical Inset"
-+                  translation:@"右侧边距"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
- 
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-
 -        // Blur background
 -        [self _registerOption:@"blur_alpha"
 -                  translation:@"Background Alpha"
@@ -4859,20 +5600,20 @@ index 9f08730..e25d382 100644
 -                   upperLimit:200.0F];
 -
 -        // Page dots
-+                                                                // Page dots
-         [self _registerOption:@"pagedot_offsetX"
+-        [self _registerOption:@"pagedot_offsetX"
 -                  translation:@"Dot X Offset"
-+                  translation:@"圆点 X 偏移"
-                  defaultValue:@(0)
-                    lowerLimit:-150.0F
-                    upperLimit:150.0F];
-         [self _registerOption:@"pagedot_offsetY"
+-                 defaultValue:@(0)
+-                   lowerLimit:-150.0F
+-                   upperLimit:150.0F];
+-        [self _registerOption:@"pagedot_offsetY"
 -                  translation:@"Dot Y Offset"
++                                                                                                        // Page dots
++                [self _registerOption:@"pagedot_offsetY"
 +                  translation:@"圆点 Y 偏移"
                   defaultValue:@(0)
                     lowerLimit:-200.0F
                     upperLimit:200.0F];
-@@ -362,13 +242,6 @@
+@@ -362,13 +137,6 @@
  
      NSDictionary *dict = [_preferences dictionaryRepresentation];
      for(NSString *key in [dict allKeys]) {
@@ -4886,7 +5627,7 @@ index 9f08730..e25d382 100644
          if([key length] <= 3) continue;
          // Previous per-page layout prefix was formatted as _%d_ and now is Page%d_
          NSString *sub = [key substringToIndex:3];
-@@ -420,7 +293,7 @@
+@@ -420,7 +188,7 @@
          return;
      }
  
@@ -4895,18 +5636,45 @@ index 9f08730..e25d382 100644
      [self updateLayoutForRoot:updateRoot forDock:[editingLocation isEqualToString:@"dock"] animated:animated];
  }
  
-@@ -501,9 +374,9 @@
+@@ -433,10 +201,7 @@
+         SBIconListView *current = [self currentListView];
+         // Update visible columns and rows for current list view. Otherwise, SB doesn't
+         // update this until we start scrolling
+-        if([current respondsToSelector:@selector(setVisibleColumnRange:)])
+-            [current setVisibleColumnRange:NSMakeRange(0, [self intValueForKey:@"hs_columns" forListView:current])];
+-        if([current respondsToSelector:@selector(setVisibleRowRange:)])
+-            [current setVisibleRowRange:NSMakeRange(0, [self intValueForKey:@"hs_rows" forListView:current])];
++        // 列数/行数自定义已移除，无需再按偏好设置可见行列范围
+     };
+ 
+     void (^applyLayout)() = ^void() {
+@@ -453,9 +218,6 @@
+                 [[fdController userIconListView] layoutIconsNow];
+                 [[fdController suggestionsIconListView] layoutIconsNow];
+                 SBFloatingDockViewController *fdvc = [fdController floatingDockViewController];
+-                // Fix for library pod icon
+-                if([fdvc respondsToSelector:@selector(libraryPodIconView)])
+-                    [[fdvc libraryPodIconView] _atriaUpdateIconContentScale];
+                 // Update dock background
+                 [[fdvc dockView] _atriaUpdateDockForSettingsChanged];
+             }
+@@ -500,16 +262,6 @@
+ }
  
  - (void)onSpringboardLaunched {
-     // If floating dock is enabled, default to 6 dock columns. See explanation in init method for why this is done here.
+-    // If floating dock is enabled, default to 6 dock columns. See explanation in init method for why this is done here.
 -    if([self boolValueForKey:@"forceFloatingDock"] || [[self class] isUsingFloatingDock]) {
-+    if([[self class] isUsingFloatingDock]) {
-         [self _registerOption:@"dock_columns"
+-        [self _registerOption:@"dock_columns"
 -                  translation:@"Columns"
-+                  translation:@"列数"
-                  defaultValue:@(15) // iPad Pro dock icon limit
-                    lowerLimit:2.0F
-                    upperLimit:20.0F];
+-                 defaultValue:@(15) // iPad Pro dock icon limit
+-                   lowerLimit:2.0F
+-                   upperLimit:20.0F];
+-        [self relayoutEntireIconModel];
+-    }
+-
+     if([[self class] isUsingFloatingDock]) {
+         // Update floating dock background alpha to fix a bug specific to iOS 14
+         SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
 diff --git a/src/UI/ARIBackgroundView.h b/src/UI/ARIBackgroundView.h
 deleted file mode 100644
 index 61bf145..0000000
