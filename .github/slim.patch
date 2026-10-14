@@ -2471,7 +2471,7 @@ zhPnzzFgw~C&c8;-XuF|$u{&DxBq;^%$JR;=>}X(%lh-^_YpA|5*+ToeccteG;AQ^*
 E09_{{4*&oF
 
 diff --git a/Prefs/Resources/Root.plist b/Prefs/Resources/Root.plist
-index f15561d..6819e79 100644
+index f15561d..87c53e0 100644
 --- a/Prefs/Resources/Root.plist
 +++ b/Prefs/Resources/Root.plist
 @@ -8,47 +8,7 @@
@@ -2519,11 +2519,11 @@ index f15561d..6819e79 100644
 -			<string>Enable/Disable</string>
 -			<key>footerText</key>
 -			<string>A respring is required for these settings to change. Enabling "Save State" allows your icon layout to be preserved, even when going to safemode/stock.</string>
-+			<string>拖动滑块即可调节，右侧显示当前数值。关闭开关即停用全部修改。</string>
++			<string>拖动滑块即可调节，右侧显示当前数值。点击右侧数值可直接输入，关闭开关即停用全部修改。</string>
  		</dict>
  		<dict>
  			<key>cell</key>
-@@ -60,163 +20,56 @@
+@@ -60,163 +20,78 @@
  			<key>key</key>
  			<string>enabled</string>
  			<key>label</key>
@@ -2577,14 +2577,16 @@ index f15561d..6819e79 100644
 -			<string>saveIconState</string>
 -			<key>label</key>
 -			<string>Save Icon State</string>
--		</dict>
--		<dict>
--			<key>cell</key>
--			<string>PSGroupCell</string>
--			<key>label</key>
++			<integer>0</integer>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
 -			<string>Options</string>
--		</dict>
--		<dict>
++			<string>程序坞</string>
+ 		</dict>
+ 		<dict>
 -			<key>cell</key>
 -			<string>PSLinkCell</string>
 -			<key>detail</key>
@@ -2631,18 +2633,17 @@ index f15561d..6819e79 100644
 -			<string>Customization</string>
 -			<key>icon</key>
 -			<string>paint</string>
-+			<integer>0</integer>
- 		</dict>
- 		<dict>
- 			<key>cell</key>
- 			<string>PSGroupCell</string>
+-		</dict>
+-		<dict>
+-			<key>cell</key>
+-			<string>PSGroupCell</string>
 -		</dict>
 -		<dict>
 -			<key>cell</key>
 -			<string>PSButtonCell</string>
 -			<key>action</key>
 -			<string>resetPrefs:</string>
- 			<key>label</key>
+-			<key>label</key>
 -			<string>Reset All Preferences</string>
 -		</dict>
 -		<dict>
@@ -2650,21 +2651,33 @@ index f15561d..6819e79 100644
 -			<string>PSButtonCell</string>
 -			<key>action</key>
 -			<string>resetSaveState:</string>
--			<key>label</key>
++			<key>cellClass</key>
++			<string>ARIValueSliderCell</string>
++			<key>defaults</key>
++			<string>me.lau.AtriaPrefs</string>
++			<key>key</key>
++			<string>dock_bg</string>
+ 			<key>label</key>
 -			<string>Reset Save State</string>
--		</dict>
--		<dict>
--			<key>cell</key>
--			<string>PSGroupCell</string>
--			<key>label</key>
++			<string>背景透明度</string>
++			<key>min</key>
++			<integer>0</integer>
++			<key>max</key>
++			<integer>1</integer>
++			<key>default</key>
++			<integer>1</integer>
+ 		</dict>
+ 		<dict>
+ 			<key>cell</key>
+ 			<string>PSGroupCell</string>
+ 			<key>label</key>
 -			<string>Credits</string>
 -			<key>footerText</key>
 -			<string>Thank you to everyone who has helped me along the way of making this tweak! A special thanks to everyone who helped test the tweak throughout its various stages. Much love to you all 💜
 -- ren</string>
-+			<string>翻页点</string>
- 		</dict>
- 		<dict>
- 			<key>cellClass</key>
+-		</dict>
+-		<dict>
+-			<key>cellClass</key>
 -			<string>ARITwitterCell</string>
 -			<key>username</key>
 -			<string>Quartz88244782</string>
@@ -2686,9 +2699,10 @@ index f15561d..6819e79 100644
 -			<string>Icons/Advice</string>
 -			<key>height</key>
 -			<integer>70</integer>
--		</dict>
--		<dict>
--			<key>cellClass</key>
++			<string>翻页点</string>
+ 		</dict>
+ 		<dict>
+ 			<key>cellClass</key>
 -			<string>ARITwitterCell</string>
 -			<key>displayName</key>
 -			<string>Atria Beta Testers</string>
@@ -5530,68 +5544,25 @@ index a1613f8..38f82c8 100644
 +		%init(AppLibraryFix);
  	}
  }
-diff --git a/src/Hooks/DockController.xm b/src/Hooks/DockController.xm
-new file mode 100644
-index 0000000..0f4c497
---- /dev/null
-+++ b/src/Hooks/DockController.xm
-@@ -0,0 +1,38 @@
-+//
-+//  仅保留「引导页弹出时收起 / 关闭后恢复」所需的浮动程序坞实例引用。
-+//  程序坞本身的布局与背景相关功能已移除。
-+//
-+
-+#import "Shared.h"
-+#import "../Manager/ARITweakManager.h"
-+
-+static SBFloatingDockController *fdController;
-+
-+%hook SBFloatingDockController
-+
-+// iOS 13-15
-+- (id)initWithIconController:(id)arg1 {
-+    id orig = %orig;
-+    fdController = orig;
-+    return orig;
-+}
-+
-+// iOS 16+
-+- (id)initWithWindowScene:(id)arg1 iconController:(id)arg2 {
-+    id orig = %orig;
-+    fdController = orig;
-+    return orig;
-+}
-+
-+%new
-++ (SBFloatingDockController *)_atriaSharedInstance {
-+    return fdController;
-+}
-+
-+%end
-+
-+%ctor {
-+	if([[ARITweakManager sharedInstance] isEnabled]) {
-+		%init();
-+	}
-+}
 diff --git a/src/Hooks/DockView.xm b/src/Hooks/DockView.xm
-deleted file mode 100644
-index b010cc7..0000000
+index b010cc7..98cf5bd 100644
 --- a/src/Hooks/DockView.xm
-+++ /dev/null
-@@ -1,167 +0,0 @@
--//
++++ b/src/Hooks/DockView.xm
+@@ -1,6 +1,8 @@
+ //
 -// Created by ren7995 on 2021-04-25 12:49:45
 -// Copyright (c) 2021 ren7995. All rights reserved.
--//
--
--#import "Shared.h"
--#import "../Manager/ARITweakManager.h"
--
--@interface SBFloatingDockPlatterView : UIView
--@property (nonatomic, strong) UIView *backgroundView;
--@end
--
++//  程序坞背景透明度（dock_bg）—— 仅支持 iOS 16
++//
++//  iOS 16 只有悬浮程序坞（SBFloatingDockView），
++//  不存在 iOS 13 那种经典 Dock（SBDockView），所以只 hook 这一套即可。
+ //
+ 
+ #import "Shared.h"
+@@ -10,122 +12,34 @@
+ @property (nonatomic, strong) UIView *backgroundView;
+ @end
+ 
 -static SBFloatingDockController *fdController;
 -
 -%hook SBDockView
@@ -5616,7 +5587,12 @@ index b010cc7..0000000
 -    }
 -    %orig([[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"]);
 -}
--
++// 偏好变化后立即刷新程序坞背景，做到拖动滑块即时可见
++static void preferencesChanged() {
++    dispatch_async(dispatch_get_main_queue(), ^{
++        ARITweakManager *manager = [ARITweakManager sharedInstance];
++        if(![manager isEnabled]) return;
+ 
 -- (void)traitCollectionDidChange:(UITraitCollection *)old {
 -    %orig(old);
 -    // Call the setter to force the background alpha to reset
@@ -5624,13 +5600,18 @@ index b010cc7..0000000
 -    // Don't ask me how, but calling -setBackgroundAlpha: directly wasn't working,
 -    // but this does, even with 0.0 delay. What works works I guess
 -    [self performSelector:@selector(setBackgroundAlpha:) withObject:@(1.0f) afterDelay:0.0];
--}
--
++        SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
++        [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
++    });
+ }
+ 
 -%end
 -
--
--%hook SBFloatingDockController
--
++// 保存浮动程序坞实例，供引导页收起/恢复以及背景刷新使用
++static SBFloatingDockController *fdController;
+ 
+ %hook SBFloatingDockController
+ 
 -// iOS 13-15
 -- (id)initWithIconController:(id)arg1 {
 -    id orig = %orig;
@@ -5639,12 +5620,13 @@ index b010cc7..0000000
 -}
 -
 -// iOS 16+
--- (id)initWithWindowScene:(id)arg1 iconController:(id)arg2 {
--    id orig = %orig;
--    fdController = orig;
--    return orig;
--}
--
++// iOS 16
+ - (id)initWithWindowScene:(id)arg1 iconController:(id)arg2 {
+     id orig = %orig;
+     fdController = orig;
+     return orig;
+ }
+ 
 -- (BOOL)isGesturePossible {
 -    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableFloatingDockGestures"]) return NO;
 -    return %orig;
@@ -5652,11 +5634,11 @@ index b010cc7..0000000
 -
 -// handlePresentFloatingDockGesture:
 -
--%new
--+ (SBFloatingDockController *)_atriaSharedInstance {
--    return fdController;
--}
--
+ %new
+ + (SBFloatingDockController *)_atriaSharedInstance {
+     return fdController;
+ }
+ 
 -+ (BOOL)isFloatingDockSupported {
 -    ARITweakManager *manager = [ARITweakManager sharedInstance];
 -    return ([manager boolValueForKey:@"forceFloatingDock"] && ![manager boolValueForKey:@"disableDock"]) || %orig;
@@ -5708,45 +5690,32 @@ index b010cc7..0000000
 -}
 -
 -
--%end
--
--
--%hook SBFloatingDockView
--
--%new
--- (void)_atriaUpdateDockForSettingsChanged {
--    self.backgroundView.layer.opacity = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];
--}
--
--- (void)didMoveToSuperview {
--    %orig;
--    [self _atriaUpdateDockForSettingsChanged];
--}
--
--- (void)traitCollectionDidChange:(UITraitCollection *)old {
--    %orig(old);
--    [self performSelector:@selector(_atriaUpdateDockForSettingsChanged) withObject:nil afterDelay:0.0];
--}
--
--%end
--
--
--%hook SBFloatingDockPlatterView
--
--- (void)setBackgroundView:(UIView *)arg1 {
--    arg1.layer.opacity = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];
--    %orig(arg1);
--}
--
--%end
--
--
--%ctor {
--	if([[ARITweakManager sharedInstance] isEnabled]) {
--		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
--		%init();
--	}
--}
+ %end
+ 
+ 
+@@ -143,6 +57,7 @@ static SBFloatingDockController *fdController;
+ 
+ - (void)traitCollectionDidChange:(UITraitCollection *)old {
+     %orig(old);
++    // 深浅模式切换后系统会重置背景，这里再刷一次
+     [self performSelector:@selector(_atriaUpdateDockForSettingsChanged) withObject:nil afterDelay:0.0];
+ }
+ 
+@@ -163,5 +78,14 @@ static SBFloatingDockController *fdController;
+ 	if([[ARITweakManager sharedInstance] isEnabled]) {
+ 		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
+ 		%init();
++
++		CFNotificationCenterAddObserver(
++			CFNotificationCenterGetDarwinNotifyCenter(),
++			NULL,
++			(CFNotificationCallback)preferencesChanged,
++			(CFStringRef)@"me.lau.Atria/ReloadPrefs",
++			NULL,
++			CFNotificationSuspensionBehaviorDeliverImmediately
++		);
+ 	}
+ }
 diff --git a/src/Hooks/GridLayout.xm b/src/Hooks/GridLayout.xm
 index eff8fd2..92e9bf3 100644
 --- a/src/Hooks/GridLayout.xm
@@ -6987,7 +6956,7 @@ index 1913330..0000000
 -
 -@end
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
-index 8749041..2156a58 100644
+index 8749041..73541a6 100644
 --- a/src/Manager/ARITweakManager.h
 +++ b/src/Manager/ARITweakManager.h
 @@ -1,6 +1,6 @@
@@ -7102,27 +7071,26 @@ index 8749041..2156a58 100644
  @end
  
  @interface SBRootFolderController : UIViewController
-@@ -156,18 +105,6 @@ typedef struct SBRootFolderViewMetrics {
+@@ -156,8 +105,6 @@ typedef struct SBRootFolderViewMetrics {
  
  @interface SBHIconManager : NSObject
  @property (nonatomic, assign, getter=isEditing) BOOL editing;
 -- (SBIconListModel *)iconModel;
 -- (BOOL)relayout;
--@end
--
--@interface SBFloatingDockView : UIView
--@property (nonatomic, strong) UIView *backgroundView;
--- (void)_atriaUpdateDockForSettingsChanged;
--@end
--
--@interface SBFloatingDockViewController : UIViewController
--- (SBFloatingDockView *)dockView;
+ @end
+ 
+ @interface SBFloatingDockView : UIView
+@@ -167,50 +114,30 @@ typedef struct SBRootFolderViewMetrics {
+ 
+ @interface SBFloatingDockViewController : UIViewController
+ - (SBFloatingDockView *)dockView;
 -- (SBIconView *)libraryPodIconView;
  @end
  
  @interface SBFloatingDockController : NSObject
-@@ -175,42 +112,24 @@ typedef struct SBRootFolderViewMetrics {
- - (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16+
+-- (id)initWithIconController:(id)arg1;                      // iOS 13-15
+-- (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16+
++- (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16
  - (void)_dismissFloatingDockIfPresentedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
  - (void)_presentFloatingDockIfDismissedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
 -- (SBIconListView *)userIconListView;
@@ -7164,7 +7132,7 @@ index 8749041..2156a58 100644
  
  // Get/set preference values
  - (int)intValueForKey:(NSString *)key;
-@@ -221,17 +140,7 @@ typedef struct SBRootFolderViewMetrics {
+@@ -221,17 +148,7 @@ typedef struct SBRootFolderViewMetrics {
  - (void)resetValueForKey:(NSString *)key;
  
  // Get/set preference values by icon list view
@@ -7184,7 +7152,7 @@ index 8749041..2156a58 100644
  + (instancetype)sharedInstance;
  + (UIInterfaceOrientation)currentDeviceOrientation;
 diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
-index 9f08730..9f14bde 100644
+index 9f08730..3161a89 100644
 --- a/src/Manager/ARITweakManager.m
 +++ b/src/Manager/ARITweakManager.m
 @@ -1,10 +1,9 @@
@@ -7221,7 +7189,7 @@ index 9f08730..9f14bde 100644
  
  // Shared instance and init methods
  
-@@ -37,295 +31,24 @@
+@@ -37,295 +31,30 @@
          UIDevice *device = [UIDevice currentDevice];
          _firmwareVersion = [[[device systemVersion] componentsSeparatedByString:@"."][0] integerValue];
          _deviceIPad = [[device model] hasPrefix:@"iPad"];
@@ -7393,10 +7361,10 @@ index 9f08730..9f14bde 100644
 -                   upperLimit:200.0F];
 -        [self _registerOption:@"hs_widgetYOffset"
 -                  translation:@"Widget Y Offset"
--                 defaultValue:@(0)
--                   lowerLimit:-200.0F
--                   upperLimit:200.0F];
--
+                  defaultValue:@(0)
+                    lowerLimit:-200.0F
+                    upperLimit:200.0F];
+ 
 -        // Dock options
 -        // For some reason, on iOS 15 only (not 13-14 or 16+), calling +isFloatingDockSupported leads to a respring loop.
 -        // Once SpringBoard launches, this option will be re-registered to adjust the default value if floating dock is enabled.
@@ -7415,7 +7383,8 @@ index 9f08730..9f14bde 100644
 -                 defaultValue:@(1)
 -                   lowerLimit:0.01F
 -                   upperLimit:2.0F];
--        [self _registerOption:@"dock_bg"
++        // Dock
+         [self _registerOption:@"dock_bg"
 -                  translation:@"Background Alpha"
 -                 defaultValue:@(1)
 -                   lowerLimit:0.0F
@@ -7482,9 +7451,10 @@ index 9f08730..9f14bde 100644
 -        [self _registerOption:@"blur_intensity"
 -                  translation:@"Tint Intensity"
 -                 defaultValue:@(0.5F)
--                   lowerLimit:0.0F
--                   upperLimit:1.0F];
--
++                 defaultValue:@(1.0)
+                    lowerLimit:0.0F
+                    upperLimit:1.0F];
+ 
 -        [self _registerOption:@"blur_inset_top"
 -                  translation:@"Top Position"
 -                 defaultValue:@(0)
@@ -7502,10 +7472,10 @@ index 9f08730..9f14bde 100644
 -                   upperLimit:200.0F];
 -        [self _registerOption:@"blur_inset_right"
 -                  translation:@"Right Position"
-                  defaultValue:@(0)
-                    lowerLimit:-200.0F
-                    upperLimit:200.0F];
- 
+-                 defaultValue:@(0)
+-                   lowerLimit:-200.0F
+-                   upperLimit:200.0F];
+-
          // Page dots
 -        [self _registerOption:@"pagedot_offsetX"
 -                  translation:@"Dot X Offset"
@@ -7517,7 +7487,7 @@ index 9f08730..9f14bde 100644
                   defaultValue:@(0)
                     lowerLimit:-200.0F
                     upperLimit:200.0F];
-@@ -351,39 +74,6 @@
+@@ -351,39 +80,6 @@
      // Save state
      [self _migrateSettingFromKey:@"saveState" toKey:@"_saveState"];
  
@@ -7557,7 +7527,7 @@ index 9f08730..9f14bde 100644
      // Set migration Version
      [self setValue:@(1) forKey:@"_settingsMigrationVersion"];
  }
-@@ -394,73 +84,24 @@
+@@ -394,71 +90,27 @@
  }
  
  - (void)_registerOption:(NSString *)key
@@ -7607,7 +7577,8 @@ index 9f08730..9f14bde 100644
 -    };
  
      void (^applyLayout)() = ^void() {
--        if(forDock) {
++        // iOS 16 只有悬浮程序坞，直接刷新它的背景透明度
+         if(forDock) {
 -            // Layout dock icons and set alpha
 -            if(![[self class] isUsingFloatingDock]) {
 -                // -dockListView doesn't exist on 13 but the ivar does
@@ -7626,13 +7597,12 @@ index 9f08730..9f14bde 100644
 -                // Update dock background
 -                [[fdvc dockView] _atriaUpdateDockForSettingsChanged];
 -            }
--        }
--
-+        // 程序坞的布局项与背景透明度均已移除，只需重新排布主屏幕各页
++            SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
++            [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
+         }
+ 
          if(forRoot) {
-             // Enumerate list views in root and lay them out as well
-             for(SBIconListView *listView in rootFolderView.iconListViews) {
-@@ -469,91 +110,32 @@
+@@ -469,91 +121,34 @@
          }
      };
  
@@ -7683,7 +7653,9 @@ index 9f08730..9f14bde 100644
 -        SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
 -        [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
 -    }
-+    // 程序坞背景透明度已移除，启动后无需再修复浮坞背景
++    // 启动后刷新一次程序坞背景，确保透明度被正确应用
++    SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
++    [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
  }
  
  - (SBRootFolderView *)rootFolderView {
@@ -7726,7 +7698,7 @@ index 9f08730..9f14bde 100644
  // Get/set preference values
  
  - (int)intValueForKey:(NSString *)key {
-@@ -595,78 +177,6 @@
+@@ -595,78 +190,6 @@
  // Get/set preference values by icon list view
  // We try to locate value for the current list view, if it exists
  
