@@ -5545,10 +5545,10 @@ index a1613f8..38f82c8 100644
  	}
  }
 diff --git a/src/Hooks/DockView.xm b/src/Hooks/DockView.xm
-index b010cc7..06a7222 100644
+index b010cc7..9ea06f5 100644
 --- a/src/Hooks/DockView.xm
 +++ b/src/Hooks/DockView.xm
-@@ -1,10 +1,17 @@
+@@ -1,131 +1,66 @@
  //
 -// Created by ren7995 on 2021-04-25 12:49:45
 -// Copyright (c) 2021 ren7995. All rights reserved.
@@ -5566,9 +5566,12 @@ index b010cc7..06a7222 100644
  #import "../Manager/ARITweakManager.h"
 +#import <objc/runtime.h>
  
++// 该类只在本地声明（ARITweakManager.h 中没有），
++// 因此 %new 添加的方法必须在此显式声明，否则其它位置调用会找不到 selector
  @interface SBFloatingDockPlatterView : UIView
  @property (nonatomic, strong) UIView *backgroundView;
-@@ -12,120 +19,45 @@
++- (void)_atriaUpdateDockForSettingsChanged;
+ @end
  
  static SBFloatingDockController *fdController;
  
@@ -5707,7 +5710,7 @@ index b010cc7..06a7222 100644
  %end
  
  
-@@ -133,16 +65,18 @@ static SBFloatingDockController *fdController;
+@@ -133,16 +68,18 @@ static SBFloatingDockController *fdController;
  
  %new
  - (void)_atriaUpdateDockForSettingsChanged {
@@ -5727,7 +5730,7 @@ index b010cc7..06a7222 100644
      [self performSelector:@selector(_atriaUpdateDockForSettingsChanged) withObject:nil afterDelay:0.0];
  }
  
-@@ -151,11 +85,29 @@ static SBFloatingDockController *fdController;
+@@ -151,11 +88,29 @@ static SBFloatingDockController *fdController;
  
  %hook SBFloatingDockPlatterView
  
@@ -5758,7 +5761,7 @@ index b010cc7..06a7222 100644
  %end
  
  
-@@ -163,5 +115,14 @@ static SBFloatingDockController *fdController;
+@@ -163,5 +118,14 @@ static SBFloatingDockController *fdController;
  	if([[ARITweakManager sharedInstance] isEnabled]) {
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
  		%init();
