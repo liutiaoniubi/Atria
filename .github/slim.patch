@@ -5545,7 +5545,7 @@ index a1613f8..38f82c8 100644
  	}
  }
 diff --git a/src/Hooks/DockView.xm b/src/Hooks/DockView.xm
-index b010cc7..179f40f 100644
+index b010cc7..e6402dd 100644
 --- a/src/Hooks/DockView.xm
 +++ b/src/Hooks/DockView.xm
 @@ -1,10 +1,13 @@
@@ -5564,7 +5564,7 @@ index b010cc7..179f40f 100644
  
  @interface SBFloatingDockPlatterView : UIView
  @property (nonatomic, strong) UIView *backgroundView;
-@@ -12,120 +15,34 @@
+@@ -12,120 +15,31 @@
  
  static SBFloatingDockController *fdController;
  
@@ -5580,12 +5580,8 @@ index b010cc7..179f40f 100644
 -    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableDock"])
 -        return 0;
 -    return %orig;
-+// 供 ARITweakManager 在布局更新、启动完成时调用（沿用原版的 controller 调用链）
-+void AtriaUpdateDockBackground(void) {
-+    SBFloatingDockController *controller = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
-+    [[[controller floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
- }
- 
+-}
+-
 -// Override background alpha
 -- (void)setBackgroundAlpha:(CGFloat)alpha {
 -    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableDock"]) {
@@ -5593,14 +5589,8 @@ index b010cc7..179f40f 100644
 -        return;
 -    }
 -    %orig([[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"]);
-+// 偏好变化时立即应用，使拖动滑块可以实时看到效果
-+static void preferencesChanged() {
-+    dispatch_async(dispatch_get_main_queue(), ^{
-+        if(![[ARITweakManager sharedInstance] isEnabled]) return;
-+        AtriaUpdateDockBackground();
-+    });
- }
- 
+-}
+-
 -- (void)traitCollectionDidChange:(UITraitCollection *)old {
 -    %orig(old);
 -    // Call the setter to force the background alpha to reset
@@ -5608,8 +5598,17 @@ index b010cc7..179f40f 100644
 -    // Don't ask me how, but calling -setBackgroundAlpha: directly wasn't working,
 -    // but this does, even with 0.0 delay. What works works I guess
 -    [self performSelector:@selector(setBackgroundAlpha:) withObject:@(1.0f) afterDelay:0.0];
--}
--
++// 偏好变化时立即应用，使拖动滑块可以实时看到效果
++// 注意：这里用 Objective-C 消息调用，不能封装成 C 函数跨文件使用
++// —— .xm 按 Objective-C++ 编译，C 函数会被名字修饰，.m 里会找不到符号
++static void preferencesChanged() {
++    dispatch_async(dispatch_get_main_queue(), ^{
++        if(![[ARITweakManager sharedInstance] isEnabled]) return;
++        SBFloatingDockController *controller = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
++        [[[controller floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
++    });
+ }
+ 
 -%end
 -
 -
@@ -5696,7 +5695,7 @@ index b010cc7..179f40f 100644
  %end
  
  
-@@ -143,6 +60,7 @@ static SBFloatingDockController *fdController;
+@@ -143,6 +57,7 @@ static SBFloatingDockController *fdController;
  
  - (void)traitCollectionDidChange:(UITraitCollection *)old {
      %orig(old);
@@ -5704,7 +5703,7 @@ index b010cc7..179f40f 100644
      [self performSelector:@selector(_atriaUpdateDockForSettingsChanged) withObject:nil afterDelay:0.0];
  }
  
-@@ -163,5 +81,14 @@ static SBFloatingDockController *fdController;
+@@ -163,5 +78,14 @@ static SBFloatingDockController *fdController;
  	if([[ARITweakManager sharedInstance] isEnabled]) {
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
  		%init();
@@ -6715,7 +6714,7 @@ index abd56ae..8c146a3 100644
  }
  
 diff --git a/src/Hooks/Shared.h b/src/Hooks/Shared.h
-index db006c0..546bd48 100644
+index db006c0..92718b7 100644
 --- a/src/Hooks/Shared.h
 +++ b/src/Hooks/Shared.h
 @@ -1,6 +1,6 @@
@@ -6727,13 +6726,6 @@ index db006c0..546bd48 100644
  //
  
  #import <Foundation/Foundation.h>
-@@ -33,3 +33,6 @@
- #define IconIsInAppLibrary(x) IsLocationAppLibrary(x.location)
- #define IconIsInAppLibraryPod(x) IsLocationAppLibraryPod(x.location)
- #define IconIsInFolder(x) IsLocationFolder(x.location)
-+
-+// 刷新程序坞背景透明度（实现见 DockView.xm）
-+void AtriaUpdateDockBackground(void);
 diff --git a/src/Manager/ARIEditManager.h b/src/Manager/ARIEditManager.h
 deleted file mode 100644
 index 6afa66c..0000000
@@ -7163,7 +7155,7 @@ index 8749041..de7d97c 100644
  + (instancetype)sharedInstance;
  + (UIInterfaceOrientation)currentDeviceOrientation;
 diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
-index 9f08730..a60a444 100644
+index 9f08730..3161a89 100644
 --- a/src/Manager/ARITweakManager.m
 +++ b/src/Manager/ARITweakManager.m
 @@ -1,10 +1,9 @@
@@ -7538,7 +7530,7 @@ index 9f08730..a60a444 100644
      // Set migration Version
      [self setValue:@(1) forKey:@"_settingsMigrationVersion"];
  }
-@@ -394,71 +90,26 @@
+@@ -394,71 +90,27 @@
  }
  
  - (void)_registerOption:(NSString *)key
@@ -7608,11 +7600,12 @@ index 9f08730..a60a444 100644
 -                // Update dock background
 -                [[fdvc dockView] _atriaUpdateDockForSettingsChanged];
 -            }
-+            AtriaUpdateDockBackground();
++            SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
++            [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
          }
  
          if(forRoot) {
-@@ -469,91 +120,33 @@
+@@ -469,91 +121,34 @@
          }
      };
  
@@ -7664,7 +7657,8 @@ index 9f08730..a60a444 100644
 -        [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
 -    }
 +    // 启动后刷新一次程序坞背景，确保透明度被正确应用
-+    AtriaUpdateDockBackground();
++    SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
++    [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
  }
  
  - (SBRootFolderView *)rootFolderView {
@@ -7707,7 +7701,7 @@ index 9f08730..a60a444 100644
  // Get/set preference values
  
  - (int)intValueForKey:(NSString *)key {
-@@ -595,78 +188,6 @@
+@@ -595,78 +190,6 @@
  // Get/set preference values by icon list view
  // We try to locate value for the current list view, if it exists
  
