@@ -5545,20 +5545,21 @@ index a1613f8..38f82c8 100644
  	}
  }
 diff --git a/src/Hooks/DockView.xm b/src/Hooks/DockView.xm
-index b010cc7..d9feee4 100644
+index b010cc7..06a7222 100644
 --- a/src/Hooks/DockView.xm
 +++ b/src/Hooks/DockView.xm
-@@ -1,131 +1,61 @@
+@@ -1,10 +1,17 @@
  //
 -// Created by ren7995 on 2021-04-25 12:49:45
 -// Copyright (c) 2021 ren7995. All rights reserved.
-+//  程序坞背景透明度（dock_bg）—— 仅支持 iOS 16
++//  程序坞背景透明度（dock_bg）—— 仅 iOS 16
 +//
-+//  沿用原作者的实现，并补上 iOS 16 所需的刷新路径：
-+//    SBFloatingDockView.backgroundView       在 iOS 16 上为 nil，赋值无效；
-+//    SBFloatingDockPlatterView.backgroundView 才是 dock 背景的实际承载者，
-+//    但原作者只在 -setBackgroundView: 里应用过一次，之后再无刷新入口。
-+//  这里给 platterView 补一个可重复调用的刷新方法，并在偏好变化时一并调用。
++//  已删除与透明度无关的部分：
++//    · -dockHeight / disableDock 分支 —— 那是「隐藏程序坞」，不是透明度，
++//      且 disableDock 未注册，读出来恒为 NO，永远走不到。
++//    · %hook SBDockView 整块 —— iOS 13 经典程序坞，iOS 16 上不存在。
++//    · -initWithIconController: —— iOS 13-15 的初始化，iOS 16 不走。
++//    · 偏好刷新里的经典程序坞分支 —— iOS 16 恒为悬浮程序坞。
  //
  
  #import "Shared.h"
@@ -5567,15 +5568,15 @@ index b010cc7..d9feee4 100644
  
  @interface SBFloatingDockPlatterView : UIView
  @property (nonatomic, strong) UIView *backgroundView;
- @end
+@@ -12,120 +19,45 @@
  
  static SBFloatingDockController *fdController;
-+// 缓存实例，避免依赖 controller 调用链（iOS 16 上该链不一定可用）
+ 
+-%hook SBDockView
++// 缓存实例，刷新时直接调用，不再依赖 controller 调用链
 +static SBFloatingDockView *atriaDockView = nil;
 +static SBFloatingDockPlatterView *atriaPlatterView = nil;
  
--%hook SBDockView
--
 -%new
 -- (void)_atriaUpdateDockForSettingsChanged {
 -    ARITweakManager *manager = [ARITweakManager sharedInstance];
@@ -5588,7 +5589,7 @@ index b010cc7..d9feee4 100644
 -    if([[ARITweakManager sharedInstance] boolValueForKey:@"disableDock"])
 -        return 0;
 -    return %orig;
-+static void atriaApplyAlphaToBackground(UIView *backgroundView) {
++static void atriaApplyAlpha(UIView *backgroundView) {
 +    if(!backgroundView) return;
 +    CGFloat alpha = atriaDockAlpha();
 +    backgroundView.alpha = alpha;
@@ -5706,12 +5707,12 @@ index b010cc7..d9feee4 100644
  %end
  
  
-@@ -133,16 +63,18 @@ static SBFloatingDockController *fdController;
+@@ -133,16 +65,18 @@ static SBFloatingDockController *fdController;
  
  %new
  - (void)_atriaUpdateDockForSettingsChanged {
 -    self.backgroundView.layer.opacity = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];
-+    atriaApplyAlphaToBackground(self.backgroundView);
++    atriaApplyAlpha(self.backgroundView);
  }
  
  - (void)didMoveToSuperview {
@@ -5726,13 +5727,13 @@ index b010cc7..d9feee4 100644
      [self performSelector:@selector(_atriaUpdateDockForSettingsChanged) withObject:nil afterDelay:0.0];
  }
  
-@@ -151,11 +83,29 @@ static SBFloatingDockController *fdController;
+@@ -151,11 +85,29 @@ static SBFloatingDockController *fdController;
  
  %hook SBFloatingDockPlatterView
  
 +%new
 +- (void)_atriaUpdateDockForSettingsChanged {
-+    atriaApplyAlphaToBackground(self.backgroundView);
++    atriaApplyAlpha(self.backgroundView);
 +}
 +
 +- (void)didMoveToSuperview {
@@ -5741,11 +5742,11 @@ index b010cc7..d9feee4 100644
 +    [self _atriaUpdateDockForSettingsChanged];
 +}
 +
-+// 原作者的实现：系统设置背景时应用一次
++// 系统创建背景时应用一次（原作者的实现）
  - (void)setBackgroundView:(UIView *)arg1 {
 -    arg1.layer.opacity = [[ARITweakManager sharedInstance] floatValueForKey:@"dock_bg"];
 +    atriaPlatterView = self;
-+    atriaApplyAlphaToBackground(arg1);
++    atriaApplyAlpha(arg1);
      %orig(arg1);
  }
  
@@ -5757,7 +5758,7 @@ index b010cc7..d9feee4 100644
  %end
  
  
-@@ -163,5 +113,14 @@ static SBFloatingDockController *fdController;
+@@ -163,5 +115,14 @@ static SBFloatingDockController *fdController;
  	if([[ARITweakManager sharedInstance] isEnabled]) {
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
  		%init();
@@ -5962,7 +5963,7 @@ index eff8fd2..92e9bf3 100644
  	}
  }
 diff --git a/src/Hooks/Helper.xm b/src/Hooks/Helper.xm
-index 00e602e..7d507f2 100644
+index 00e602e..d6af439 100644
 --- a/src/Hooks/Helper.xm
 +++ b/src/Hooks/Helper.xm
 @@ -1,13 +1,11 @@
@@ -5981,7 +5982,7 @@ index 00e602e..7d507f2 100644
  
  #include <dlfcn.h>
  
-@@ -16,53 +14,19 @@
+@@ -16,90 +14,22 @@
  
  - (void)viewDidAppear:(BOOL)animated {
      %orig;
@@ -6040,10 +6041,16 @@ index 00e602e..7d507f2 100644
  %end
  
  
-@@ -76,30 +40,6 @@
- %end
- 
- 
+-%hook SpringBoard
+-
+-- (void)applicationDidFinishLaunching:(id)arg1 {
+-    %orig;
+-    [[ARITweakManager sharedInstance] onSpringboardLaunched];
+-}
+-
+-%end
+-
+-
 -%group TodayViewFixiPad
 -%hook SBTodayViewController
 -
@@ -6071,7 +6078,7 @@ index 00e602e..7d507f2 100644
  %group ZenithFix
  %hook SBIconListModel
  
-@@ -135,10 +75,6 @@
+@@ -135,10 +65,6 @@
  		NSLog(@"[Atria]: Loading hooks from %s", __FILE__);
  		%init();
  
@@ -6414,7 +6421,7 @@ index 6597fba..0000000
 -	}
 -}
 diff --git a/src/Hooks/MainLayout.xm b/src/Hooks/MainLayout.xm
-index 4af459b..db78722 100644
+index 4af459b..d39e603 100644
 --- a/src/Hooks/MainLayout.xm
 +++ b/src/Hooks/MainLayout.xm
 @@ -1,47 +1,26 @@
@@ -6707,7 +6714,8 @@ index 4af459b..db78722 100644
 -%end
 -
  static void preferencesChanged() {
-     [[ARITweakManager sharedInstance] updateLayoutForRoot:YES forDock:YES animated:YES];
+-    [[ARITweakManager sharedInstance] updateLayoutForRoot:YES forDock:YES animated:YES];
++    [[ARITweakManager sharedInstance] updateLayoutForRoot:YES animated:YES];
  }
  
  %ctor {
@@ -7012,7 +7020,7 @@ index 1913330..0000000
 -
 -@end
 diff --git a/src/Manager/ARITweakManager.h b/src/Manager/ARITweakManager.h
-index 8749041..de7d97c 100644
+index 8749041..3459e41 100644
 --- a/src/Manager/ARITweakManager.h
 +++ b/src/Manager/ARITweakManager.h
 @@ -1,6 +1,6 @@
@@ -7136,18 +7144,18 @@ index 8749041..de7d97c 100644
  @end
  
  @interface SBFloatingDockView : UIView
-@@ -167,50 +114,31 @@ typedef struct SBRootFolderViewMetrics {
- 
- @interface SBFloatingDockViewController : UIViewController
- - (SBFloatingDockView *)dockView;
--- (SBIconView *)libraryPodIconView;
+@@ -165,52 +112,27 @@ typedef struct SBRootFolderViewMetrics {
+ - (void)_atriaUpdateDockForSettingsChanged;
  @end
  
+-@interface SBFloatingDockViewController : UIViewController
+-- (SBFloatingDockView *)dockView;
+-- (SBIconView *)libraryPodIconView;
+-@end
+-
  @interface SBFloatingDockController : NSObject
 -- (id)initWithIconController:(id)arg1;                      // iOS 13-15
--- (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16+
-+- (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16
-+- (SBFloatingDockViewController *)floatingDockViewController;
+ - (id)initWithWindowScene:(id)arg1 iconController:(id)arg2; // iOS 16+
  - (void)_dismissFloatingDockIfPresentedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
  - (void)_presentFloatingDockIfDismissedAnimated:(BOOL)arg1 completionHandler:(id)arg2;
 -- (SBIconListView *)userIconListView;
@@ -7172,11 +7180,12 @@ index 8749041..de7d97c 100644
  @property (nonatomic, readonly, assign, getter=isDeviceIPad) BOOL deviceIPad;
 -@property (nonatomic, readonly, assign, getter=isShyLabelsInstalled) BOOL shyLabelsInstalled;
 -- (void)updateLayoutForEditing:(BOOL)animated;
- - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated;
+-- (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated;
 -- (void)relayoutEntireIconModel;
 -- (void)feedbackForButton;
- - (void)onSpringboardLaunched;
+-- (void)onSpringboardLaunched;
 -- (NSUInteger)indexOfListView:(SBIconListView *)target;
++- (void)updateLayoutForRoot:(BOOL)forRoot animated:(BOOL)animated;
  - (SBRootFolderView *)rootFolderView;
 -- (NSArray<SBIconListView *> *)allRootListViews;
 -- (NSString *)prefixForListView:(SBIconListView *)target;
@@ -7189,7 +7198,7 @@ index 8749041..de7d97c 100644
  
  // Get/set preference values
  - (int)intValueForKey:(NSString *)key;
-@@ -221,17 +149,7 @@ typedef struct SBRootFolderViewMetrics {
+@@ -221,17 +143,7 @@ typedef struct SBRootFolderViewMetrics {
  - (void)resetValueForKey:(NSString *)key;
  
  // Get/set preference values by icon list view
@@ -7209,7 +7218,7 @@ index 8749041..de7d97c 100644
  + (instancetype)sharedInstance;
  + (UIInterfaceOrientation)currentDeviceOrientation;
 diff --git a/src/Manager/ARITweakManager.m b/src/Manager/ARITweakManager.m
-index 9f08730..3161a89 100644
+index 9f08730..7086f97 100644
 --- a/src/Manager/ARITweakManager.m
 +++ b/src/Manager/ARITweakManager.m
 @@ -1,10 +1,9 @@
@@ -7584,7 +7593,7 @@ index 9f08730..3161a89 100644
      // Set migration Version
      [self setValue:@(1) forKey:@"_settingsMigrationVersion"];
  }
-@@ -394,71 +90,27 @@
+@@ -394,73 +90,24 @@
  }
  
  - (void)_registerOption:(NSString *)key
@@ -7620,7 +7629,8 @@ index 9f08730..3161a89 100644
 -
 -// Updates all layout
 -
- - (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated {
+-- (void)updateLayoutForRoot:(BOOL)forRoot forDock:(BOOL)forDock animated:(BOOL)animated {
++- (void)updateLayoutForRoot:(BOOL)forRoot animated:(BOOL)animated {
      SBRootFolderView *rootFolderView = [self rootFolderView];
  
 -    void (^updateVisibleIcons)(BOOL finished) = ^void(BOOL finished) {
@@ -7634,8 +7644,7 @@ index 9f08730..3161a89 100644
 -    };
  
      void (^applyLayout)() = ^void() {
-+        // iOS 16 只有悬浮程序坞，直接刷新它的背景透明度
-         if(forDock) {
+-        if(forDock) {
 -            // Layout dock icons and set alpha
 -            if(![[self class] isUsingFloatingDock]) {
 -                // -dockListView doesn't exist on 13 but the ivar does
@@ -7654,12 +7663,13 @@ index 9f08730..3161a89 100644
 -                // Update dock background
 -                [[fdvc dockView] _atriaUpdateDockForSettingsChanged];
 -            }
-+            SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
-+            [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
-         }
- 
+-        }
+-
++        // 程序坞背景透明度由 DockView.xm 自行监听偏好变化处理
          if(forRoot) {
-@@ -469,91 +121,34 @@
+             // Enumerate list views in root and lay them out as well
+             for(SBIconListView *listView in rootFolderView.iconListViews) {
+@@ -469,91 +116,28 @@
          }
      };
  
@@ -7694,7 +7704,7 @@ index 9f08730..3161a89 100644
 -    [generator impactOccurred];
 -}
 -
- - (void)onSpringboardLaunched {
+-- (void)onSpringboardLaunched {
 -    // If floating dock is enabled, default to 6 dock columns. See explanation in init method for why this is done here.
 -    if([self boolValueForKey:@"forceFloatingDock"] || [[self class] isUsingFloatingDock]) {
 -        [self _registerOption:@"dock_columns"
@@ -7710,11 +7720,8 @@ index 9f08730..3161a89 100644
 -        SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
 -        [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
 -    }
-+    // 启动后刷新一次程序坞背景，确保透明度被正确应用
-+    SBFloatingDockController *fdController = [objc_getClass("SBFloatingDockController") _atriaSharedInstance];
-+    [[[fdController floatingDockViewController] dockView] _atriaUpdateDockForSettingsChanged];
- }
- 
+-}
+-
  - (SBRootFolderView *)rootFolderView {
      return [[[objc_getClass("SBIconController") sharedInstance] _rootFolderController] rootFolderView];
  }
@@ -7755,7 +7762,7 @@ index 9f08730..3161a89 100644
  // Get/set preference values
  
  - (int)intValueForKey:(NSString *)key {
-@@ -595,78 +190,6 @@
+@@ -595,78 +179,6 @@
  // Get/set preference values by icon list view
  // We try to locate value for the current list view, if it exists
  
